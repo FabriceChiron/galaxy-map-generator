@@ -28,4 +28,4 @@ Warning:
   - This project makes heavy use of nested CSS transforms, which can be quite a drag on computer's resources!
   - This project is only fully compatible with Google Chrome. Firefox can't handle that much nested transformations, Safari can't display webp images, and MS Edge can't do much in this case.
 
-The full content is stored in a json file.
+The full content is based on the Mass Effect Trilogy games, and stored in a json file.
