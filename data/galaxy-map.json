@@ -2979,7 +2979,6 @@
             {
               "name": "quaji",
               "image": "venus-texture.webp",
-              "filter": "",
               "clouds": "Clouds4.webp",
               "cloudsFilter": "",
               "texture": true,
@@ -3027,18 +3026,196 @@
           "name": "Amazon",
           "star": "Amazon",
           "bodies": [
+            {
+              "name": "agebinium",
+              "image": "mercury-texture.webp",
+              "filter": "saturate(1.5)",
+              "overlay": "rgba(200, 0, 0, .5)",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "1.8",
+              "size": "4910/6378",
+              "day": "42.1/24",
+              "coords": "w",
+              "details": "Agebinium is a small terrestrial world with an extremely thin atmosphere of carbon dioxide and krypton. Though the planet has sufficient mass to maintain a much thicker atmosphere, much of it has been blasted away.<br><br>The red giant Amazon is a long-period variable star, currently at the nadir of a 16-year cycle. At peak, its energy output doubles, lashing Agebinium with intense heat and radiation.<br><br>The crust is mainly composed of aluminum with deposits of tin. Much of the surface is coated with fine silicate dust, which easily penetrates the smallest cracks to foul machinery."
+            },
+            {
+              "name": "derneuca",
+              "image": "Martian.webp",
+              "filter": "saturate(1.2) hue-rotate(10deg)",
+              "texture": true,
+              "orbit": "1.4",
+              "year": "3.1",
+              "size": "11728/6378",
+              "day": "65.5/24",
+              "coords": "ne",
+              "details": "Derneuca is an enormous terrestrial world, nearly twice the size of Earth. Its environment is similar to that of Mars; arid, and a mix of craggy basalt highlands and sand-scoured deserts of iron-laced silcate dust.<br><br>Derneuca's atmosphere mainly consists of carbon dioxide and argon, but the planet's mass is great enough that measurable amounts of helium, and even molecular hydrogen, remain trapped in its atmosphere.<br><br>The planet's gravity well is deep enough that it has collected nearly a dozen small satellites, most captured asteroids. Its surfaced is scarred by many large craters, marking the final resting place of other captured asteroids."
+            },
+            {
+              "name": "sonedma",
+              "image": "Cracklepotblue.webp",
+              "filter": "hue-rotate(-50deg) contrast(0.8) saturate(1.7)",
+              "texture": true,
+              "orbit": "3.3",
+              "year": "6.2",
+              "size": "9647/6378",
+              "day": "44.7/24",
+              "coords": "n",
+              "details": "Sonedma is the second of the Amazon system's arid \"super-terrestrial\" worlds. It is considerably less dense than its neighbor Derneuca and has an atmosphere of carbon dioxide and ethane. Its frozen surface is mainly composed of iron-laced silicates with deposits of sulfur."
+            },
+            {
+              "name": "sybin",
+              "image": "Cracklepotblue.webp",
+              "filter": "hue-rotate(-70deg) saturate(1.2)",
+              "texture": true,
+              "orbit": "7.2",
+              "year": "15.1",
+              "size": "4645/6378",
+              "day": "62.6/24",
+              "coords": "e",
+              "details": "A small rock and ice planet, Sybin has an extremely thin atmosphere of hydrogen sulfide and ethane. Its frozen surface is mainly composed of magnesium and silicates with deposits of iron.<br><br>Sybin's crust contains significant deposits of green serpentine, a mineral formed by volcanic activity. This suggests Sybin was a more geologically active world in the distant past."
+            },
+            {
+              "name": "tremar",
+              "image": "Gaseous5.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "12.7",
+              "year": "33.4",
+              "size": "61266/6378",
+              "day": "12.5/24",
+              "coords": "n",
+              "details": "Tremar is a standard hydrogen-helium gas giant with traces of methane and nitrogen in its upper atmosphere."
+            }
           ]
         },
         {
           "name": "Columbia",
           "star": "Columbia",
           "bodies": [
+            {
+              "name": "clojila",
+              "image": "Volcanic.webp",
+              "filter": "",
+              "texture": true,
+              "clouds": "Clouds2.cvp",
+              "orbit": "1.1",
+              "year": "0.3",
+              "size": "7014/6378",
+              "day": "47.6/24",
+              "coords": "s",
+              "details": "Clojiia is a \"hothouse\" terrestrial world with a dense atmosphere of nitrogen and sulphur dioxide. The surface is scorching hot, and mainly composed of iron with deposits of gold.<br><br>The core of Clojiia is very hot and tectonically active. Volcanic eruptions are common, and the outgassing continues to add to the density of the atmosphere. The largest active volcano has a caldera nearly 100 kilometers in diameter, and its basalt floods have covered an area roughly equivalent to the size of the Earth continent of Australia."
+            },
+            {
+              "name": "",
+              "image": "",
+              "filter": "",
+              "texture": true,
+              "clouds": "",
+              "orbit": "",
+              "year": "",
+              "size": "5378/6378",
+              "day": "24/24",
+              "coords": "s",
+              "details": ""
+            },
+            {
+              "name": "",
+              "image": "",
+              "filter": "",
+              "texture": true,
+              "clouds": "",
+              "orbit": "",
+              "year": "",
+              "size": "5378/6378",
+              "day": "24/24",
+              "coords": "s",
+              "details": ""
+            },
+            {
+              "name": "",
+              "image": "",
+              "filter": "",
+              "texture": true,
+              "clouds": "",
+              "orbit": "",
+              "year": "",
+              "size": "5378/6378",
+              "day": "24/24",
+              "coords": "s",
+              "details": ""
+            }
           ]
         },
         {
           "name": "Yangtze",
           "star": "Yangtze",
           "bodies": [
+            {
+              "name": "",
+              "image": "",
+              "filter": "",
+              "texture": true,
+              "clouds": "",
+              "orbit": "",
+              "year": "",
+              "size": "5378/6378",
+              "day": "24/24",
+              "coords": "s",
+              "details": ""
+            },
+            {
+              "name": "",
+              "image": "",
+              "filter": "",
+              "texture": true,
+              "clouds": "",
+              "orbit": "",
+              "year": "",
+              "size": "5378/6378",
+              "day": "24/24",
+              "coords": "s",
+              "details": ""
+            },
+            {
+              "name": "",
+              "image": "",
+              "filter": "",
+              "texture": true,
+              "clouds": "",
+              "orbit": "",
+              "year": "",
+              "size": "5378/6378",
+              "day": "24/24",
+              "coords": "s",
+              "details": ""
+            },
+            {
+              "name": "",
+              "image": "",
+              "filter": "",
+              "texture": true,
+              "clouds": "",
+              "orbit": "",
+              "year": "",
+              "size": "5378/6378",
+              "day": "24/24",
+              "coords": "s",
+              "details": ""
+            },
+            {
+              "name": "",
+              "image": "",
+              "filter": "",
+              "texture": true,
+              "clouds": "",
+              "orbit": "",
+              "year": "",
+              "size": "5378/6378",
+              "day": "24/24",
+              "coords": "s",
+              "details": ""
+            }
           ]
         }
       ]
