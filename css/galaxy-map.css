@@ -1,0 +1,295 @@
+/* line 1, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy {
+  background: #000;
+  position: relative;
+  z-index: 1;
+  background: url("../img/galaxy-map/stars.webp") center;
+  background-size: contain;
+}
+
+/* line 10, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+.map-container {
+  transform: rotateX(var(--angle));
+  width: inherit;
+  height: inherit;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
+  margin: auto;
+  transition: all var(--transition-duration) ease;
+}
+
+/* line 21, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map {
+  transform: translate3d(-50%, -50%, 0);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
+  transition: all var(--transition-duration) ease;
+  border-radius: 50%;
+  width: 100%;
+  height: 100vw;
+}
+
+@media screen and (orientation: portrait) {
+  /* line 21, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+  #galaxy-map {
+    width: 100%;
+    height: 100vw;
+  }
+}
+
+/* line 40, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map #holder-image,
+#galaxy-map #clusters {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 48, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map #holder-image {
+  background: url("../img/galaxy-map/galaxy-alpha.webp") rgba(0, 0, 0, 0.8) no-repeat center;
+  background-size: contain;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  box-shadow: 0 0 3vh 3vh rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+}
+
+/* line 58, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map.active {
+  transition: all var(--transition-duration) ease;
+}
+
+/* line 62, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map.active #holder-image {
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+/* line 70, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map.active .cluster {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* line 76, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster {
+  --clusterColor: #53cbf1;
+  position: absolute;
+  width: var(--clusterSize);
+  height: var(--clusterSize);
+  pointer-events: auto;
+  transform: translate3d(-50%, -50%, 1px);
+  top: var(--top);
+  left: var(--left);
+  opacity: 1;
+}
+
+/* line 92, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster .cluster .name {
+  transform: rotateX(calc(var(--angle) * -1)) scale(1);
+}
+
+/* line 97, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster .shape {
+  transition: all 1s ease;
+  transition: all var(--transition-duration) ease;
+  transition-property: background;
+  -webkit-mask: url(../img/galaxy-map/cluster.svg);
+  -webkit-mask-size: cover;
+  mask-type: luminance;
+  background-color: #53cbf1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+
+/* line 115, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster:not(.inactive):hover > .shape {
+  background: #f33a10;
+}
+
+/* line 125, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster.inactive, #galaxy-map .cluster.inactive:hover {
+  --clusterColor: #cccccc;
+}
+
+/* line 130, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster .container {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0;
+  transition: all var(--transition-duration) ease, border-radius 0.3s 0.7s ease;
+  background: url("../img/galaxy-map/cluster-1.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* line 148, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster .container .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 100%;
+  height: 100%;
+}
+
+/* line 156, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster .container .content .cluster {
+  display: none;
+}
+
+/* line 162, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all var(--transition-duration) ease;
+  border-radius: 50%;
+  width: 2px;
+  height: 2px;
+  margin: -1px;
+  background: var(--clusterColor);
+  width: calc(var(--clusterSize) * 0.25);
+  height: calc(var(--clusterSize) * 0.25);
+  margin: calc(var(--clusterSize) * -0.125);
+  background: #f5f5c0;
+}
+
+/* line 181, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster .name {
+  position: absolute;
+  transform: rotateX(calc(var(--angle) * -1)) scale(0);
+  white-space: nowrap;
+  transform-origin: bottom left;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 2px var(--clusterColor);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 50%, var(--clusterColor) 100%);
+  padding: .25rem .75rem;
+  font-size: .75rem;
+  font-weight: 400;
+  margin-bottom: calc(var(--clusterSize) * .5);
+  margin-left: calc(var(--clusterSize) * .5);
+  bottom: 50%;
+  left: 50%;
+  transition: all var(--transition-duration) ease;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+
+/* line 205, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster .name .close-cluster {
+  font-size: 0;
+  cursor: pointer;
+}
+
+/* line 211, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster:hover {
+  z-index: 1;
+}
+
+/* line 214, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster:hover > .center {
+  box-shadow: 0 0 calc(var(--clusterSize) * 0.1) calc(var(--clusterSize) / 8) var(--clusterColor);
+}
+
+/* line 218, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster:hover > .name {
+  transform: rotateX(calc(var(--angle) * -1)) scale(1);
+}
+
+/* line 223, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster.active, #galaxy-map .cluster.active:hover {
+  background: #000;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate3d(-50%, -50%, 1px) rotateX(calc(var(--angle) * -1));
+  border-radius: 0;
+  box-shadow: 0 0 0 0 var(--clusterColor);
+  opacity: 1;
+  pointer-events: none;
+  transition: all var(--transition-duration) ease;
+  cursor: var(--cursor);
+}
+
+/* line 238, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster.active > .shape, #galaxy-map .cluster.active:hover > .shape {
+  opacity: 0;
+  display: none;
+}
+
+/* line 243, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster.active .center, #galaxy-map .cluster.active:hover .center {
+  opacity: 0;
+}
+
+/* line 247, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster.active .container, #galaxy-map .cluster.active:hover .container {
+  opacity: 1;
+  pointer-events: auto;
+  position: fixed;
+  top: 50%;
+  margin-top: -50vh;
+}
+
+@media screen and (orientation: portrait) {
+  /* line 247, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+  #galaxy-map .cluster.active .container, #galaxy-map .cluster.active:hover .container {
+    height: 100vw;
+    margin-top: -50vw;
+  }
+}
+
+/* line 259, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster.active .container .content, #galaxy-map .cluster.active:hover .container .content {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 273, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster.active .container .cluster, #galaxy-map .cluster.active:hover .container .cluster {
+  display: block;
+  --top: 50%;
+  --left: 50%;
+  pointer-events: auto;
+  transform: rotateX(var(--angle));
+  --clusterSize: 5rem;
+}
+
+/* line 281, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster.active .container .cluster .center, #galaxy-map .cluster.active:hover .container .cluster .center {
+  opacity: 1;
+}
+
+/* line 287, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster.active > .name, #galaxy-map .cluster.active:hover > .name {
+  transform: rotateX(0deg) scale(1) translateX(-50%);
+  bottom: calc(50% + 50vh - 4.5rem);
+  left: 50%;
+  pointer-events: auto;
+  position: fixed;
+  z-index: 3;
+}
+
+/* line 298, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/galaxy-map.scss */
+#galaxy-map .cluster.active > .name .close-cluster, #galaxy-map .cluster.active:hover > .name .close-cluster {
+  font-size: inherit;
+}
+
+/*# sourceMappingURL=../css/galaxy-map.map */

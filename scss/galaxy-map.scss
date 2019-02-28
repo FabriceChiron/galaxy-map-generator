@@ -1,0 +1,304 @@
+#galaxy {
+  background: #000;
+  position: relative;
+  z-index: 1;
+  background: url('../img/galaxy-map/stars.webp') center;
+  background-size: contain;
+  // overflow: auto;
+}
+
+.map-container {
+  transform: rotateX(var(--angle));
+  width: inherit;
+  height: inherit;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
+  margin: auto;
+  transition: all var(--transition-duration) ease;
+}
+
+#galaxy-map {
+  transform: translate3d(-50%, -50%, 0);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
+  // margin: auto;
+  transition: all var(--transition-duration) ease;
+  border-radius: 50%;
+  width: 100%;
+  height: 100vw;
+
+  @media screen and (orientation: portrait) {
+    width: 100%;
+    height: 100vw;
+  }
+
+  #holder-image,
+  #clusters {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  #holder-image {
+    background: url('../img/galaxy-map/galaxy-alpha.webp') rgba(0,0,0,.8) no-repeat center;
+    background-size: contain;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    box-shadow: 0 0 3vh 3vh rgba(0,0,0,.8);
+    border-radius: 50%;
+  }
+  
+  &.active {
+    transition: all var(--transition-duration) ease;
+
+
+    #holder-image {
+      opacity: 0;
+      pointer-events: none;
+
+      width: 0;
+      height: 0;
+    }
+
+    .cluster {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  .cluster {
+    --clusterColor: rgba(83,203,241,1);
+    position: absolute;
+    width: var(--clusterSize);
+    height: var(--clusterSize);
+    // box-shadow: 0 0 .25rem .25rem rgba(83,203,241,1);
+    // box-shadow: 
+    //   0 0 0 calc(var(--clusterSize) / 12) var(--clusterColor),
+    //   inset 0 0 0 calc(var(--clusterSize) / 12) var(--clusterColor);
+    pointer-events: auto;
+    transform: translate3d(-50%, -50%, 1px);
+    top: var(--top);
+    left: var(--left);
+    opacity: 1;
+
+    .cluster {
+      .name {
+        transform: rotateX(calc(var(--angle) * -1)) scale(1);
+      }
+    }
+
+    .shape {
+      transition: all 1s ease;
+      transition: all var(--transition-duration) ease;
+      transition-property: background;
+      -webkit-mask: url(../img/galaxy-map/cluster.svg);
+      -webkit-mask-size: cover;
+      mask-type: luminance;
+      background-color: #53cbf1;
+      // background-color: var(--clusterColor);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      pointer-events: none;
+    }
+
+
+    &:not(.inactive):hover {
+      > .shape {
+        background: rgba(243,58,16,1);
+      }
+      // box-shadow: 
+      // 0 0 0 calc(var(--clusterSize) / 12) var(--clusterColor),
+      // inset 0 0 0 calc(var(--clusterSize) / 12) var(--clusterColor),
+      // 0 0 0 calc(var(--clusterSize) / 2) rgba(241,83,83,.6);
+      // rgba(253, 69, 69, 0.6);
+    }
+
+    &.inactive,
+    &.inactive:hover {
+      --clusterColor: rgba(204,204,204,1);
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      // background: url('../img/galaxy-map/cluster-1.jpg') no-repeat;
+      background-size: cover;
+      opacity: 0;
+      transition: all var(--transition-duration) ease, border-radius .3s .7s ease;
+      background: url('../img/galaxy-map/cluster-1.jpg') no-repeat;
+      background-size: cover;
+
+      // .bg {
+      //   width: 100%;
+      //   height: 100%;
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      // }
+
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: 100%;
+        height: 100%;
+
+        .cluster {
+          display: none;
+        }
+      }
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      // box-shadow: 0 0 0 calc(var(--clusterSize) / 4) var(--clusterColor);
+      // box-shadow: 0 0 4px calc(var(--clusterSize) / 6) var(--clusterColor);
+      transition: all var(--transition-duration) ease;
+      border-radius: 50%;
+      width: 2px;
+      height: 2px;
+      margin: -1px;
+      background: var(--clusterColor);
+      
+      width: calc(var(--clusterSize) * 0.25);
+      height: calc(var(--clusterSize) * 0.25);
+      margin: calc(var(--clusterSize) * -0.125);
+      background: #f5f5c0;
+    }
+
+    .name {
+      position: absolute;
+      transform: rotateX(calc(var(--angle) * -1)) scale(0);
+      white-space: nowrap;
+      transform-origin: bottom left;
+      text-transform: uppercase;
+      // text-transform: capitalize;
+      // color: rgba(var(--clusterColor),1);
+      color: #fff;
+      font-weight: 600; 
+      // border: 2px solid var(--clusterColor);
+      box-shadow: inset 0 0 0 2px var(--clusterColor);
+      background: linear-gradient(to right, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%, var(--clusterColor) 100%);
+      padding: .25rem .75rem;
+      font-size: .75rem;
+      font-weight: 400;
+      margin-bottom: calc(var(--clusterSize) * .5);
+      margin-left: calc(var(--clusterSize) * .5);
+      bottom: 50%;
+      left: 50%;
+      transition: all var(--transition-duration) ease;
+      pointer-events: none;
+      transform-style: preserve-3d;
+
+      .close-cluster {
+        font-size: 0;
+        cursor: pointer;
+      }
+    }
+
+    &:hover {
+      z-index: 1;
+
+      > .center {
+        // background: var(--clusterColor);
+        box-shadow: 0 0 calc(var(--clusterSize) * 0.1) calc(var(--clusterSize) / 8) var(--clusterColor);
+      }
+      > .name {
+        transform: rotateX(calc(var(--angle) * -1)) scale(1);
+      }
+    }
+
+    &.active,
+    &.active:hover {
+      background: #000;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 100vh;
+      transform: translate3d(-50%, -50%, 1px) rotateX( calc(var(--angle) * -1) );
+      border-radius: 0;
+      box-shadow: 0 0 0 0 var(--clusterColor);
+      opacity: 1;
+      pointer-events: none;
+      transition: all var(--transition-duration) ease;
+      cursor: var(--cursor);
+
+      > .shape {
+        opacity: 0;
+        display: none;
+      }
+
+      .center {
+        opacity: 0;
+      }
+
+      .container {
+        opacity: 1;
+        pointer-events: auto;
+        position: fixed;
+        top: 50%;
+        margin-top: -50vh;
+
+        @media screen and (orientation: portrait) {
+          height: 100vw;
+          margin-top: -50vw;
+        }
+
+        .content {
+          width: 100%;
+          height: 100%;
+          // max-width: 100%;
+          // max-height: 100%;
+          // width: 80vw;
+          // height: 80vw;
+
+          // @media screen and (orientation: portrait) {
+          //   width: 80vh;
+          //   height: 80vh;
+          // }
+        }
+
+        .cluster {
+          display: block;
+          --top: 50%;
+          --left: 50%;
+          pointer-events: auto;
+          transform: rotateX(var(--angle));
+          --clusterSize: 5rem;
+
+          .center {
+            opacity: 1;
+          }
+        }
+      }
+
+      > .name {
+        transform: rotateX(0deg) scale(1) translateX(-50%);
+        // bottom: calc(50% + 50vh - 4rem);
+        bottom: calc(50% + 50vh - 4.5rem);
+        // left: calc(50% - 50vw + .5rem);
+
+        left: 50%;   
+        pointer-events: auto;
+        position: fixed;
+        z-index: 3;
+
+        .close-cluster {
+          font-size: inherit;
+        }
+      }
+    }
+  }
+}

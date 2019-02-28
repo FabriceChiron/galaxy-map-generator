@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coded Solar System Generator</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/stellar-system.css">
+  <link rel="stylesheet" href="css/galaxy-map.css">
+  <link rel="stylesheet" href="css/keyframes.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <!-- <link rel="stylesheet" href="css/scrollbars.css"> -->
+  <!-- <script type="text/javascript" src="js/webpjs-0.0.2.min.js"></script> -->
+  <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+  <script src="js/utils.js"></script>
+  <script defer>
+    const md = new MobileDetect(window.navigator.userAgent);
+    const isMobile = md.mobile();
+    const urlParams = new URLSearchParams(window.location.search);
+    const realSizes = (urlParams.get('realSizes') === 'true') || false;
+    const showStarShip = (isMobile) ? false : ((urlParams.get('showStarShip') === 'true') || false);
+
+    // let showStarShip = (isMobile) ? false : true;
+    // let allowDrag = (isMobile) ? false : true;
+
+    allowDrag = true;
+  </script>
+  <script src="js/drag.js" defer></script>
+  <script src="js/to-generate.json"></script>
+  <script src="data/galaxy-map.json"></script>
+  <script src="js/galaxy-map-generator.js" defer></script>
+  <script src="js/cluster-generator.js" defer></script>
+  <script src="js/stellar-system-generator.js" defer></script>
+  <script src="js/settings.js" defer></script>
+  <script src="js/actions.js" defer></script>
+  <script src="js/starship.js" defer></script>
+  <script src="js/mouse-track.js" defer></script>
+  <script src="js/generate.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+</head>
+<!-- <body onmousemove="mousePosition(event, '#mouseTracker')"> -->
+<body data-angle="--angle: 70.2deg; --decalY: -11%;">
+
+  <input type="checkbox" id="toggle-2d" class="hidden-input" onchange="toggleInput('angle', this)">
+  <input type="checkbox" id="toggle-settings" class="hidden-input" name="toggle-settings">
+
+  <div class="settings">
+    <div class="buttons">
+      <label for="toggle-sizes" id="toggle-sizes" class="symbols toggle" title="Toggle real sizes" onclick="toggleSizes(this)">p</label>
+      <label for="toggle-fullscreen" id="toggle-fullscreen" class="symbols" title="Toggle Fullscreen">></label>
+      <label for="toggle-starship" id="toggle-starship" title="Toggle Starship" onclick="toggleStarShip(this)"><img src="img/tempest.svg" alt=""></label>
+      <label for="toggle-settings" class="symbols" title="Toggle setting">^</label>
+    </div>
+
+<!--     <label for="toggle-2d">
+  <span>3D</span>
+</label> -->
+
+    <div class="setting">
+      <span>Angle:</span>
+      <input type="range" id="change-angle" name="angle" min="-90" max="90" value="22" step="1" onchange="changeInput('angle', this.value); ">
+      <span>22</span>
+    </div>
+
+    <div class="setting">
+      <span>Perspective</span>
+
+      <input type="range" id="change-perspective" name="perspective" max="1010" min="50" value="1010" step="10" onchange="changeInput('perspective', this.value); ">
+
+      <span>none</span>
+    </div>
+
+    <div class="setting">
+      <span>Orbit scale:</span>
+      <input type="range" id="change-orbit" name="orbit" min=".05" max="10" value="3" step=".05" onchange="changeInput('orbit', this.value);">
+      <span>15</span>
+    </div>
+
+    <div class="setting">
+      <span>Planet scale:</span>
+      <input type="range" id="change-planet" name="planet" min="0.25" max="2.5" value="1" step=".25" onchange="changeInput('planet', this.value)">
+      <span>1</span>
+    </div>
+
+    <div class="setting">
+      <span>Year duration:</span>
+      <input type="range" id="change-year" name="year" min="5" max="60" value="30" step="5" onchange="changeInput('year', this.value)">
+      <span>1</span>
+    </div>
+
+    <div class="setting">
+      <span>Day duration:</span>
+      <input type="range" id="change-day" name="day" min=".5" max="25" value="10" step=".5" onchange="changeInput('day', this.value)">
+      <span>1</span>
+    </div>
+
+    <div class="setting">
+      <span>Ship size:</span>
+      <input type="range" id="change-ship" name="ship" min=".5" max="10" value="3.5" step=".25" onchange="changeInput('ship', this.value)">
+      <span>1</span>
+    </div>
+    
+  </div>
+
+  <span id="mouseTracker">
+    <span id="rotateShip">
+      <span id="starShip">
+        <span class="half left"><span class="bg"></span></span>
+        <span class="half right"><span class="bg"></span></span>
+        <span class="reactor"></span>
+      </span>
+    </span>
+  </span>
+
+  <div id="dragInfos">
+  </div>
+
+  <section id="galaxy">
+    <div class="map-container">
+      <div id="galaxy-map">
+        <div id="holder-image"></div>
+        <div id="clusters"></div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    if(isMobile) {
+      document.body.className += ' touch';
+    }
+  </script>
+</body>
+</html>

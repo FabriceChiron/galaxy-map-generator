@@ -1,0 +1,80 @@
+var data = [
+  {
+    "id": "solar-system",
+    "star": "sun",
+    "planets": [
+      {mercury: {
+          "name": "mercury",
+          "orbit": 0.387,
+          "size": 0.383,
+          "year": 0.24,
+          "coords": "s",
+        }
+      },
+      { 
+        venus : {
+          "name": "venus",
+          "orbit": 0.723,
+          "size": 0.95,
+          "year": 0.61,
+          "coords": "ne",
+        }
+      },
+      { 
+        earth:{
+          "name": "earth",
+          "orbit": 1,
+          "size": 1,
+          "year": 1,
+          "coords": "nw",
+          "details": "Earth is the third planet from the Sun and the only object in the Universe known to harbor life. According to radiometric dating and other sources of evidence, Earth formed over 4 billion years ago. Earth's gravity interacts with other objects in space, especially the Sun and the Moon, Earth's only natural satellite."
+        }
+      },
+      {
+        mars: {
+          "name": "mars",
+          "orbit": 1.52,
+          "size": 0.532,
+          "year": 1.8808,
+          "coords": "se",
+        }
+      },
+      {
+        jupiter: {
+          "name": "jupiter",
+          "orbit": 5.2,
+          "size": 10.973,
+          "year": 11.862,
+          "coords": "sw",
+        }
+      },
+      {
+        saturn: {
+          "name": "saturn",
+          "orbit": 9.536,
+          "size": 9.014,
+          "year": 29,
+          "coords": "n",
+        }
+      },
+      {
+        uranus: {
+          "name": "uranus",
+          "orbit": 19.189,
+          "size": 4.007,
+          "year": 84,
+          "coords": "s",
+        }
+      },
+      {
+        neptune: {
+          "name": "neptune",
+          "orbit": 30.103,
+          "size": 4.007,
+          "year": 165,
+          "coords": "ne",
+        }
+      },
+    ]
+  }
+]

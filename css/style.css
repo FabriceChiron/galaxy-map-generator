@@ -1,0 +1,695 @@
+/* line 1, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+:root {
+  --hover-factor: 1.5;
+  --transition-duration: .3s;
+  --angle: 70.2deg;
+  --decalY: -11%;
+  --tilt: none;
+  --perspective: none;
+  --sizeFactor: 1;
+  --orbitFactor: 1;
+  --earthYear: 30s;
+  --thisYear: 1;
+  --orbit-duration: calc(var(--earthYear) * var(--thisYear));
+  --earthSize: 1rem;
+  --thisSize: 1;
+  --planet-size: calc(var(--earthSize) * var(--thisSize) * var(--sizeFactor));
+  --earthOrbit: 15rem;
+  --thisOrbit: 1;
+  --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor));
+  --earthDay: 5s;
+  --thisDay: 1;
+  --revolution-duration: calc(var(--earthDay) * var(--thisDay));
+}
+
+/* line 30, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+body {
+  margin: 0;
+  background: #000 url("../img/2k_stars_milky_way.jpg") fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Assistant', sans-serif;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* line 42, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+body.hideMouse section {
+  cursor: none;
+}
+
+/* line 46, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+body.hideMouse #mouseTracker {
+  display: block;
+}
+
+/* line 53, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+#mouse-infos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1rem;
+  display: none;
+}
+
+/* line 62, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+#mouseTracker {
+  position: fixed;
+  height: 0;
+  width: 0;
+  background: none;
+  z-index: 1000;
+  pointer-events: none;
+  transition: none;
+  display: none;
+  transform: rotateX(var(--angle));
+}
+
+/* line 76, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+#mouseTracker #rotateShip {
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
+  position: absolute;
+  transition: all .05s ease;
+}
+
+/* line 84, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+#mouseTracker #rotateShip #starShip {
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0);
+  width: 1.166rem;
+  height: 2rem;
+  background: url("../img/tempest.svg") no-repeat;
+  background-size: cover;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
+}
+
+/* line 95, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+#mouseTracker #rotateShip #starShip .reactor {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+  transition: all .1s ease;
+  border-radius: 0 0 50% 50%;
+  background: radial-gradient(ellipse at top, #fcfcfc 22%, rgba(83, 203, 241, 0.5) 100%);
+}
+
+/* line 116, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.settings {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #000 url("../img/2k_stars_milky_way.jpg") fixed;
+  background-size: 100%;
+}
+
+/* line 127, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.settings .setting {
+  display: flex;
+}
+
+/* line 130, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.settings .setting span {
+  margin: 0 1rem;
+  min-width: 3rem;
+  text-align: right;
+}
+
+/* line 137, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.settings input[type="range"] {
+  position: relative;
+  display: block;
+}
+
+/* line 141, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.settings input[type="range"]:before {
+  content: attr("name");
+}
+
+/* line 144, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.settings input[type="range"]:after {
+  content: attr("value");
+}
+
+/* line 150, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+section {
+  width: 100vw;
+  height: 100vh;
+  min-width: 100%;
+  overflow: auto;
+  overflow: hidden;
+  perspective: var(--perspective);
+}
+
+/* line 163, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.hidden-input {
+  display: none;
+}
+
+/* line 167, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+[for="toggle-2d"] {
+  position: fixed;
+  z-index: 1;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+}
+
+/* line 173, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+[for="toggle-2d"] span:first-child {
+  display: block;
+}
+
+/* line 174, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+[for="toggle-2d"] span:last-child {
+  display: none;
+}
+
+/* line 182, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+#toggle-2d:checked + section [for="toggle-2d"] span:first-child {
+  display: none;
+}
+
+/* line 183, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+#toggle-2d:checked + section [for="toggle-2d"] span:last-child {
+  display: block;
+}
+
+/* line 187, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.cc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transition: all var(--transition-duration) ease;
+  transform-style: preserve-3d;
+}
+
+/* line 202, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+#galaxy {
+  background: #000;
+  background-size: contain;
+}
+
+/* line 207, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+#galaxy-map {
+  transform: rotateX(var(--angle));
+  width: inherit;
+  height: inherit;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
+  margin: auto;
+  transition: all var(--transition-duration) ease;
+  pointer-events: none;
+  background: url("../img/galaxy-map.jpg") no-repeat #000 center;
+}
+
+/* line 227, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system {
+  transform: rotateX(var(--angle));
+  width: inherit;
+  height: inherit;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
+  margin: auto;
+  transition: all var(--transition-duration) ease;
+  pointer-events: none;
+}
+
+/* line 239, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system:hover .astralBody {
+  opacity: 0.1;
+}
+
+/* line 242, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system:hover .astralBody + .rings-holder,
+.stellar-system:hover .astralBody + .stallelite-holder {
+  opacity: 0.1;
+}
+
+/* line 247, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system:hover .astralBody:hover {
+  opacity: 1;
+}
+
+/* line 250, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system:hover .astralBody:hover + .rings-holder,
+.stellar-system:hover .astralBody:hover ~ .satellite-holder .astralBody {
+  opacity: 1;
+}
+
+/* line 257, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system:hover .rings-holder,
+.stellar-system:hover .stallelite-holder {
+  opacity: 0.1;
+}
+
+/* line 261, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system:hover .rings-holder:hover,
+.stellar-system:hover .stallelite-holder:hover {
+  opacity: 1;
+}
+
+/* line 267, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system:hover .active .astralBody,
+.stellar-system:hover .active .rings-holder,
+.stellar-system:hover .active .stallelite-holder {
+  opacity: 1;
+}
+
+/* line 276, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system.hovered .orbit:not(.active) .astralBody {
+  pointer-events: none !important;
+}
+
+/* line 280, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system.hovered .astralBody {
+  opacity: 0;
+}
+
+/* line 283, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system.hovered .astralBody + .rings-holder,
+.stellar-system.hovered .astralBody + .stallelite-holder {
+  opacity: 0;
+}
+
+/* line 288, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system.hovered .astralBody:hover {
+  opacity: 1;
+}
+
+/* line 291, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system.hovered .astralBody:hover + .rings-holder,
+.stellar-system.hovered .astralBody:hover ~ .satellite-holder .astralBody {
+  opacity: 1;
+}
+
+/* line 298, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system.hovered .rings-holder,
+.stellar-system.hovered .stallelite-holder {
+  opacity: 0;
+}
+
+/* line 302, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system.hovered .rings-holder:hover,
+.stellar-system.hovered .stallelite-holder:hover {
+  opacity: 1;
+}
+
+/* line 308, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system.hovered .orbit.active .astralBody,
+.stellar-system.hovered .orbit.active .rings-holder,
+.stellar-system.hovered .orbit.active .stallelite-holder {
+  opacity: 1;
+}
+
+/* line 316, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system.hovered .orbit.active .orbit .astralBody {
+  pointer-events: auto !important;
+}
+
+/* line 325, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .star {
+  transform: rotateX(calc(var(--angle) * -1)) translate3d(-50%, var(--decalY), 0);
+  background-size: cover;
+  pointer-events: none;
+}
+
+/* line 334, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .star#sun .bg {
+  width: 150%;
+  height: 150%;
+  border-radius: inherit;
+  background-size: cover;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+/* line 344, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .star .astralBody {
+  box-shadow: 0 0 calc(var(--planet-size)*4) calc(var(--planet-size)*0.5) rgba(255, 214, 29, 0.9);
+}
+
+/* line 350, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit {
+  --orbit-duration: calc(var(--earthYear) * var(--thisYear));
+  --revolution-duration: calc(var(--earthDay) * var(--thisDay));
+  --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor));
+  --planet-size: calc(var(--earthSize) * var(--thisSize) * var(--sizeFactor));
+  transform-style: preserve-3d;
+  animation: orbit var(--orbit-duration) infinite linear;
+  box-shadow: 0 0 0px 1px rgba(255, 255, 255, 0.05), inset 0 0 0px 1px rgba(255, 255, 255, 0.05);
+  width: var(--orbit-size);
+  height: var(--orbit-size);
+  margin: calc(var(--orbit-size)/-2) 0 0 calc(var(--orbit-size)/-2);
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+/* line 365, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit.active {
+  z-index: 100;
+  --planet-size: 30rem;
+}
+
+/* line 370, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit.active .orbit.satellite {
+  --orbit-size: calc(45rem * var(--thisActiveFactor));
+}
+
+/* line 375, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position {
+  transition: margin calc(var(--transition-duration) * 2) ease;
+}
+
+/* line 377, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position.n {
+  margin-top: 0%;
+  margin-left: 50%;
+}
+
+/* line 381, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position.nw {
+  margin-top: 14.5%;
+  margin-left: 14.5%;
+}
+
+/* line 385, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position.w {
+  margin-top: 50%;
+  margin-left: 0%;
+}
+
+/* line 389, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position.sw {
+  margin-top: 85.5%;
+  margin-left: 14.5%;
+}
+
+/* line 393, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position.s {
+  margin-top: 100%;
+  margin-left: 50%;
+}
+
+/* line 397, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position.se {
+  margin-top: 85.5%;
+  margin-left: 85.5%;
+}
+
+/* line 401, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position.e {
+  margin-top: 50%;
+  margin-left: 100%;
+}
+
+/* line 405, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position.ne {
+  margin-top: 14.5%;
+  margin-left: 85.5%;
+}
+
+/* line 409, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position.c {
+  margin-top: 50%;
+  margin-left: 50%;
+}
+
+/* line 414, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder {
+  width: var(--planet-size);
+  height: var(--planet-size);
+  margin: calc(var(--planet-size)/-2) 0 0 calc(var(--planet-size)/-2);
+  animation: orbit var(--orbit-duration) reverse infinite linear;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all var(--transition-duration) ease;
+}
+
+/* line 424, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody {
+  width: 100%;
+  height: 100%;
+  transform: rotateX(calc(var(--angle) * -1)) translate3d(-50%, var(--decalY), 0);
+  transform-style: preserve-3d;
+  transform-origin: center;
+  background: rgba(255, 255, 255, 0.1);
+  background-position: center;
+  background-size: cover;
+  pointer-events: auto;
+}
+
+/* line 435, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody.texture {
+  --revolution-duration: calc(var(--earthDay) * var(--thisDay));
+  animation: slide var(--revolution-duration) linear infinite;
+}
+
+/* line 440, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody .mask, .stellar-system .orbit .position .astralBody-holder .astralBody .clouds {
+  background: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%) rotateZ(0deg);
+}
+
+/* line 448, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody .clouds {
+  animation: slide calc(var(--revolution-duration) * 1.5) linear infinite;
+}
+
+/* line 452, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody .mask {
+  background-repeat: no-repeat;
+  background-image: url("../img/mask-sphere-v5.png");
+  box-shadow: inset 0 0 calc(var(--planet-size)*0.25) black;
+  padding: .5%;
+}
+
+/* line 459, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody .hover-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 470, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody .holder-infos {
+  position: relative;
+  transition: all var(--transition-duration) ease;
+  transform: translate3d(0, -50%, 0);
+  top: 25%;
+  color: rgba(255, 255, 255, 0);
+  padding: 1rem;
+  left: 75%;
+  font-size: 1rem;
+  line-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* line 483, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody .holder-infos .infos {
+  position: absolute;
+  padding: 1rem;
+  margin: 0 1rem;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 0);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 492, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody .holder-infos .infos .name {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: .25rem;
+  font-weight: bold;
+}
+
+/* line 499, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody .holder-infos .infos .details {
+  border-top: 1px solid #fff;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  width: 30vw;
+  display: none;
+}
+
+/* line 508, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody .holder-infos .infos .details p {
+  margin: 0;
+}
+
+/* line 512, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody .holder-infos .infos .details ul {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style-position: inside;
+}
+
+/* line 526, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .astralBody:hover .holder-infos {
+  color: white;
+  line-height: 1.5rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 540, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .rings-holder {
+  margin-top: 50%;
+  margin-left: 50%;
+}
+
+/* line 544, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .rings-holder .rings {
+  --orbit-size: calc(var(--planet-size)*1.75);
+  animation: orbit var(--orbit-duration) reverse infinite linear;
+  box-shadow: 0 0 5px calc(var(--planet-size)*0.15) rgba(255, 255, 255, 0.5), inset 0 0 5px calc(var(--planet-size)*0.15) rgba(255, 255, 255, 0.5), 0 0 calc(var(--planet-size)*0.05) calc(var(--planet-size)*0.05) rgba(255, 255, 255, 0.5), inset 0 0 calc(var(--planet-size)*0.05) calc(var(--planet-size)*0.05) rgba(255, 255, 255, 0.5);
+}
+
+/* line 551, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit .position .astralBody-holder .satellite-holder {
+  margin-top: 50%;
+  margin-left: 50%;
+}
+
+/* line 609, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit.active .orbit .astralBody-holder, .stellar-system .orbit.active:hover .orbit .astralBody-holder {
+  width: calc(var(--planet-size) *2);
+  height: calc(var(--planet-size) *2);
+  margin: calc(var(--planet-size)/-1) 0 0 calc(var(--planet-size)/-1);
+}
+
+/* line 625, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit.active > .position > .astralBody-holder,
+.stellar-system .orbit.active > .position > .astralBody-holder:hover, .stellar-system .orbit.active:hover > .position > .astralBody-holder,
+.stellar-system .orbit.active:hover > .position > .astralBody-holder:hover {
+  width: 100%;
+  height: 100%;
+  width: var(--planet-size);
+  height: var(--planet-size);
+  margin: calc(var(--planet-size)/-2) 0 0 calc(var(--planet-size)/-2);
+}
+
+/* line 638, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit.active > .position > .astralBody-holder > .astralBody > .holder-infos,
+.stellar-system .orbit.active > .position > .astralBody-holder:hover > .astralBody > .holder-infos, .stellar-system .orbit.active:hover > .position > .astralBody-holder > .astralBody > .holder-infos,
+.stellar-system .orbit.active:hover > .position > .astralBody-holder:hover > .astralBody > .holder-infos {
+  color: white;
+  line-height: 1.5rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 644, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit.active > .position > .astralBody-holder > .astralBody > .holder-infos .details,
+.stellar-system .orbit.active > .position > .astralBody-holder:hover > .astralBody > .holder-infos .details, .stellar-system .orbit.active:hover > .position > .astralBody-holder > .astralBody > .holder-infos .details,
+.stellar-system .orbit.active:hover > .position > .astralBody-holder:hover > .astralBody > .holder-infos .details {
+  display: block;
+}
+
+/* line 656, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit.active > .position > .astralBody-holder .rings,
+.stellar-system .orbit.active > .position > .astralBody-holder:hover .rings, .stellar-system .orbit.active:hover > .position > .astralBody-holder .rings,
+.stellar-system .orbit.active:hover > .position > .astralBody-holder:hover .rings {
+  --planet-size: 60vh;
+  --orbit-size: calc(var(--planet-size)*1.75);
+  box-shadow: 0 0 5px calc(var(--planet-size)*0.15) rgba(255, 255, 255, 0.5), inset 0 0 5px calc(var(--planet-size)*0.15) rgba(255, 255, 255, 0.5), 0 0 calc(var(--planet-size)*0.05) calc(var(--planet-size)*0.05) rgba(255, 255, 255, 0.5), inset 0 0 calc(var(--planet-size)*0.05) calc(var(--planet-size)*0.05) rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (orientation: portrait) {
+  /* line 656, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+  .stellar-system .orbit.active > .position > .astralBody-holder .rings,
+  .stellar-system .orbit.active > .position > .astralBody-holder:hover .rings, .stellar-system .orbit.active:hover > .position > .astralBody-holder .rings,
+  .stellar-system .orbit.active:hover > .position > .astralBody-holder:hover .rings {
+    --planet-size: 60vw;
+  }
+}
+
+/* line 667, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit.active > .position > .astralBody-holder:hover .rings,
+.stellar-system .orbit.active > .position > .astralBody-holder:hover:hover .rings, .stellar-system .orbit.active:hover > .position > .astralBody-holder:hover .rings,
+.stellar-system .orbit.active:hover > .position > .astralBody-holder:hover:hover .rings {
+  --orbit-size: calc(var(--planet-size)*1.75);
+}
+
+/* line 675, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit:hover,
+.stellar-system .orbit:hover > .position > .astralBody-holder {
+  animation-play-state: paused;
+  z-index: 1;
+}
+
+/* line 684, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit:not(.active):hover .position .astralBody-holder .orbit {
+  --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor) * 2);
+  --planet-size: calc(var(--earthSize) * var(--thisSize) * var(--sizeFactor) * 1.25);
+}
+
+/* line 698, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit:hover {
+  box-shadow: 0 0 0px 1px rgba(255, 255, 255, 0.25), inset 0 0 0px 1px rgba(255, 255, 255, 0.25);
+}
+
+/* line 704, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit:hover .position .astralBody-holder {
+  width: calc(var(--planet-size) *2);
+  height: calc(var(--planet-size) *2);
+  margin: calc(var(--planet-size)/-1) 0 0 calc(var(--planet-size)/-1);
+}
+
+/* line 715, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/style.scss */
+.stellar-system .orbit:hover .position .astralBody-holder .rings-holder .rings {
+  --orbit-size: calc(var(--planet-size)*2.75);
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes suborbit {
+  0% {
+    transform: rotateX(90deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(90deg) rotateZ(-360deg);
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/*# sourceMappingURL=../css/style.map */

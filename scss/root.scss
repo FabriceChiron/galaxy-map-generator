@@ -1,0 +1,313 @@
+:root {
+  --hover-factor: 1.5;
+  --transition-duration: .3s;
+  --cursor: default;
+
+  --angle: 70.2deg;
+  --decalY: -11%;
+  --tilt: none;
+  --perspective: none;
+  --orbit-tilt: 0deg;
+
+  --shipLength: 2rem;
+
+  // Galaxy Map
+  --clusterSize: 2.5rem;
+
+  // Stellar Systems
+  --sizeFactor: 1;
+  --orbitFactor: 1;
+  --thisStarSize: 0;
+
+  --earthYear: 30s;
+  --thisYear: 1;
+  --orbit-duration: calc(var(--earthYear) * var(--thisYear));
+
+  --earthSize: 1rem;
+  --thisSize: 1;
+  --planet-size: calc(var(--earthSize) * var(--thisSize) * var(--sizeFactor));
+
+  --earthOrbit: 15rem;
+  --thisOrbit: 1;
+  --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor));
+
+  --earthDay: 5s;
+  --thisDay: 1;
+  --revolution-duration: calc(var(--earthDay) * var(--thisDay));
+}
+
+body {
+  // --angle: 90deg;
+  // --decalY: 0%;
+  margin: 0;
+  background: #000 url('../img/2k_stars_milky_way.jpg') fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Assistant', sans-serif;
+  // font-family: 'mass-effect', sans-serif;
+  overflow: hidden;
+  overflow-y: auto;
+
+  &.allows-starship {
+    --cursor: none;
+
+    a {
+      cursor: none;
+    }
+
+    #mouseTracker {
+      display: block;
+    }
+  }
+
+}
+
+#mouse-infos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1rem;
+  display: none;
+}
+
+#status {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 1rem;
+}
+
+#mouseTracker {
+  position: fixed;
+  // position: absolute;
+  height: 0;
+  width: 0;
+  background: none;
+  // z-index: 1000;
+  pointer-events: none;
+  transition: none;
+  display: none;
+  transform: rotateX(var(--angle));
+  z-index: 3;
+  // transition: all .1s ease;
+  // box-sizing: border-box;
+
+  #rotateShip {
+    transform-style: preserve-3d;
+    transform-origin: center;
+    perspective-origin: center;
+    // transform: rotateZ(20deg);
+    position: absolute;
+    transition: all .05s ease;
+
+    span {
+      display: block;
+    }
+
+    #starShip {
+      position: absolute;
+      transform: translate3d(-50%, -50%, 0);
+      width: calc(var(--shipLength) * 0.583);
+      height: var(--shipLength);
+      /* background: url(../img/tempest.svg) no-repeat; */
+      background-size: cover;
+      transform-style: preserve-3d;
+      transform-origin: center;
+      perspective-origin: center;
+
+      .half {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        transform-style: preserve-3d;
+        transform-origin: center;
+        perspective-origin: center;
+
+        .bg {
+          position: absolute;
+          width: 200%;
+          height: 100%;
+          background: url('../img/tempest.svg') no-repeat;
+          background-size: cover;
+        }
+
+        &.right {
+          left: 50%;
+          transform: rotateY(-45deg);
+          transform-origin: left;
+
+          .bg {
+            right: 0;
+          }
+        }
+
+        &.left {
+          right: 50%;
+          transform: rotateY(45deg);
+          transform-origin: right;
+
+          .bg {
+            left: 0;
+          }
+        }
+
+      }
+    
+      .reactor {
+        display: block;
+        width: 60%;
+        height: 2rem;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+        // transform: translate3d(-50%, 0, 0);
+        // background: rgba(0, 230, 255, 1);
+        pointer-events: none;
+        transition: all .1s ease;
+        border-radius: 0 0 50% 50%;
+        // background: radial-gradient(ellipse at center, rgba(135,224,253,1) 0%,rgba(83,203,241,1) 44%,rgba(5,171,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: radial-gradient(ellipse at top, rgba(252,252,252,1) 22%, rgba(83,203,241,.5) 100%);
+      }
+    }
+  }
+}
+
+.buttons {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  z-index: 3;
+  // padding: .5rem;
+  display: flex;
+  flex-direction: column-reverse;
+
+  label {
+    border: 1px solid rgba(255,255,255,0);
+    padding: .5rem;
+    cursor: pointer;
+    width: 1.25rem;
+    height: 1.25rem;
+    text-align: center;
+
+    &:last-child {
+      border-top: none;
+    }
+
+    &.toggle:not(.active) {
+      opacity: .5;
+    }
+
+    &#toggle-starship {
+      img {
+        width: 0.7rem;
+        transform: rotate(45deg);
+        filter: brightness(100) saturate(0);
+      }
+    }
+  }
+}
+
+.touch #toggle-starship {
+  display: none;
+}
+
+
+#toggle-settings:checked + .settings {
+  transform: translateX(0);
+  border-color: rgba(255,255,255,.5);
+
+  label[for="toggle-settings"] {
+    border-color: rgba(255,255,255,.5);
+    border-right-color: rgba(0,0,0,1);
+  }
+}
+
+.settings {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #000 url('../img/2k_stars_milky_way.jpg') fixed;
+  background-size: 100%;
+  transition: all var(--transition-duration) ease;
+  transform: translateX(100%);
+  border: solid rgba(255,255,255,0);
+  border-width: 0 0 1px 1px;
+
+  .setting {
+    display: flex;
+
+    span {
+      margin: 0 1rem;
+      min-width: 3rem;
+      text-align: right;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  input[type="range"]{
+    position: relative;
+    display: block;
+
+    &:before {
+      content: attr('name');
+    }
+    &:after {
+      content: attr('value');
+    }
+  }
+}
+
+#dragInfos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  z-index: 10;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  min-width: 100%;
+  overflow: auto;
+  overflow: hidden;
+  perspective: var(--perspective);
+}
+
+.hidden-input {
+  display: none;
+}
+
+[for="toggle-2d"] {
+  position: fixed;
+  z-index: 1;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  span:first-child {display: block;}    
+  span:last-child {display: none;}
+}
+
+.cc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transition: all var(--transition-duration) ease;
+  transform-style: preserve-3d;
+}

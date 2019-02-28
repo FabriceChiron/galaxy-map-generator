@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/fonts.css",
+	"sources": [
+		"../scss/fonts.scss"
+	],
+	"sourcesContent": [
+		"@font-face{ \n      font-family: 'WebSymbolsLigaRegular';\n          src: url('../fonts/websymbolsligaregular.eot');\n          src: url('../fonts/websymbolsligaregular.eot?#iefix') format('embedded-opentype'),\n               url('../fonts/websymbolsligaregular.woff') format('woff'),\n               url('../fonts/websymbolsligaregular.ttf') format('truetype'),\n               url('../fonts/websymbolsligaregular.svg#WebSymbolsRegular') format('svg');\n}\n\n.symbols {\n  font-family: 'WebSymbolsLigaRegular';\n}\n\n@font-face {\n    font-family: 'mass-effect';\n    src: url('../fonts/me123-webfont.woff2') format('woff2'),\n         url('../fonts/me123-webfont.woff') format('woff'),\n         url('../fonts/me123-webfont.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n\n}"
+	],
+	"mappings": "AAAA,UAAU;EACJ,WAAW,EAAE,uBAAwB;EACjC,GAAG,EAAE,yCAAG;EACR,GAAG,EAAE,gDAAG,CAA8C,2BAAM,EACvD,0CAAG,CAAwC,cAAM,EACjD,yCAAG,CAAuC,kBAAM,EAChD,2DAAG,CAAyD,aAAM;;;;AAGjF,AAAA,QAAQ,CAAC;EACP,WAAW,EAAE,uBAAwB;CACtC;;AAED,UAAU;EACN,WAAW,EAAE,aAAc;EAC3B,GAAG,EAAE,mCAAG,CAAiC,eAAM,EAC1C,kCAAG,CAAgC,cAAM,EACzC,iCAAG,CAA+B,kBAAM;EAC7C,WAAW,EAAE,MAAO;EACpB,UAAU,EAAE,MAAO",
+	"names": []
+}

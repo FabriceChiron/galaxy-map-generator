@@ -1,0 +1,797 @@
+.stellar-system_section {
+  // --top: 0;
+  // --bottom: 0;
+  // --left: 0;
+  // --right: 0;
+  // bottom: var(--bottom);
+  // right: var(--right);
+  // width: 100%;
+  // height: 100%;
+  // transform: scale(var(--scale)) translate3d(var(--translate), var(--translate), 0);
+  // transform: scale(var(--scale));
+  // transition: all 5s ease;
+  background: #000 url('../img/2k_stars_milky_way.jpg');
+  position: fixed;
+  z-index: 2;
+  transition: all var(--transition-duration) ease;
+  overflow: hidden;
+  cursor: var(--cursor);
+  pointer-events: auto;
+
+  // &.allowScroll {
+  //   overflow: auto;
+  //   position: relative;
+  // }
+  
+  > .name {
+    white-space: nowrap;
+    color: #fff;
+    box-shadow: inset 0 0 0 2px #53cbf1; 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(83, 203, 241, 0.4) 63%);
+    padding: .25rem .5rem .25rem 0.65rem;
+    font-size: .75rem;
+    font-weight: 400;
+    // margin: 5px;
+    transition: all var(--transition-duration) ease;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: fixed;
+    left: 50%;
+    top: 1.5rem;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
+
+
+.stellar-system {
+  transform: rotateX(var(--angle));
+  width: 100%;
+  height: 100%;
+  width: var(--maxSize, 100%);
+  height: var(--maxSize, 100%);
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
+  margin: auto;
+  transition: transform var(--transition-duration) ease;
+  pointer-events: none;
+  position: relative;
+
+  &:hover {
+    .asteroids {
+      opacity: 0.1;
+    }
+
+    .astralBody {
+      opacity: 0.1;
+
+      & + .rings-holder,
+      & + .stallelite-holder {
+        opacity: 0.1;        
+      }
+
+      &:hover {
+        opacity: 1;
+      
+        & + .rings-holder,
+        & ~ .satellite-holder .astralBody {
+          opacity: 1;
+        }
+      }
+    }
+
+    .rings-holder,
+    .stallelite-holder {
+      opacity: 0.1;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .active {
+      .astralBody,
+      .rings-holder,
+      .stallelite-holder {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.hovered,
+  &.hovered:hover {
+    .orbit:not(.active) .astralBody {
+      pointer-events: none !important;
+    }
+
+    .asteroids {
+      opacity: 0;
+    }
+
+    .astralBody {
+      opacity: 0;
+
+      & + .rings-holder,
+      & + .stallelite-holder {
+        opacity: 0;
+      }
+
+      &:hover {
+        opacity: 1;
+      
+        & + .rings-holder,
+        & ~ .satellite-holder .astralBody {
+          opacity: 1;
+        }
+      }
+    }
+
+    .rings-holder,
+    .stallelite-holder {
+      opacity: 0;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .orbit.active {
+      .astralBody,
+      .rings-holder,
+      .stallelite-holder {
+        opacity: 1;
+      }
+      
+      // .astralBody {
+        .orbit {
+          .astralBody {
+            pointer-events: auto !important;
+          }
+        }
+      // }
+    }
+  }
+
+
+}
+
+.orbit.star {
+  transform: rotateX(calc(var(--angle) * -1)) translate3d(-50%, var(--decalY), 0);
+  background-size: cover;
+  pointer-events: none;
+  box-shadow: none;
+  
+  &#sun {
+    // background-color: yellow;
+    // background-image: url(../img/png-hd/sun.png);
+
+    .bg {
+      width: 150%;
+      height: 150%;
+      // background-image: url(../img/png-hd/sun/halo.png);
+      border-radius: inherit;
+      background-size: cover;
+      transform: translate3d(-50%,-50%,0);
+    }
+  }
+
+  .position {
+    .astralBody-holder {
+      .astralBody {
+        background: radial-gradient(ellipse at center, rgba(254,252,234,1) 14%,rgba(241,218,54,1) 75%);
+        background: radial-gradient(ellipse at center, rgba(254,252,234,1) 14%,rgba(221,204,51,1) 75%);
+        box-shadow: 0 0 calc(var(--planet-size)*4) calc(var(--planet-size)*0.5) rgba(255, 214, 29, 0.9);
+        box-shadow: 0 0 12rem 1.5rem rgba(255, 214, 29, 0.9), 0 0 2rem 0.5rem rgba(255, 214, 29, 0.9);
+
+        filter: var(--filter);
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+.orbit {
+  --orbit-duration: calc(var(--earthYear) * var(--thisYear));
+  --revolution-duration: calc(var(--earthDay) * var(--thisDay));
+  --orbit-size: calc(calc( var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor)) + calc(var(--addStarSize) * var(--earthSize)));
+  --planet-size: calc(var(--earthSize) * var(--thisSize) * var(--sizeFactor));
+  transform-style: preserve-3d;
+  animation: orbit var(--orbit-duration) infinite linear;
+  box-shadow: 0 0 0px 1px  rgba(255,255,255,.05), inset 0 0 0px 1px rgba(255,255,255,.05);
+  // border: 2px solid rgba(255,255,255,.1);
+  width: var(--orbit-size);
+  height: var(--orbit-size);
+  margin: calc(var(--orbit-size)/-2) 0 0 calc(var(--orbit-size)/-2);
+  box-sizing: border-box;
+  pointer-events: none;
+
+  &.tidal {
+    .position .astralBody-holder .astralBody.texture {
+      --revolution-duration: var(--orbit-duration);
+    }
+  }
+
+  &.satellite {
+    --addStarSize: 0;
+  }
+
+  &.asteroids,
+  &.asteroids:hover,
+  &.star,
+  &.star {
+    box-shadow: none;
+  }
+
+  .asteroid-holder.position {
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform-origin: left;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all var(--transition-duration);
+    margin: 0;
+
+    .asteroid-wrapper.astralBody-holder {
+      display: block;
+      width: 2px;
+      height: 2px;
+      animation: orbit var(--orbit-duration) reverse infinite linear;
+      position: absolute;
+      left: 100%;
+
+      .counter-orbit {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        position: absolute;
+        transform: translate3d(-50%,-50%,0);
+      }
+
+      .asteroid {
+        background: #ccc;
+        border-radius: 50%;
+        display: block;
+        width: 100%;
+        height: 100%;
+        transform: rotateX(calc(var(--angle) * -1)) translate3d(0, var(--decalY), 0);
+        transform-style: preserve-3d;
+        transform-origin: center;
+      }
+    }
+
+  }
+
+  &.active {
+    z-index: 100;
+    // --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor));
+    --planet-size: 40vw;
+
+    .orbit.satellite {
+      --orbit-size: calc(60vw * var(--thisActiveFactor));
+    }
+
+    @media screen and (max-width: 680px) {
+      --planet-size: 60vw;
+  
+      .orbit.satellite {
+        --orbit-size: calc(90vw * var(--thisActiveFactor));
+      }
+    }
+  }
+
+  &.planet {
+    --planet-orbit-duration: calc(var(--earthYear) * var(--thisYear));
+
+    > .position:before {
+      content: '';
+      display: block;
+      height: calc(calc(var(--orbit-size) - calc(var(--earthSize) * 3)) / 2);
+      width: 0px;
+      box-shadow: 0 0 5px 2px rgba(83,203,241,.25);
+      // background: rgba(83, 203, 241, 0.4);
+      // background: linear-gradient(to bottom, rgba(83,203,241,0) 0%,rgba(83,203,241,0.4) 20%,rgba(83,203,241,0.4) 60%,rgba(83,203,241,0) 90%);
+      position: absolute;
+      top: var(--top); 
+      left: var(--left);
+      opacity: 0;
+      transform: rotateZ(var(--lineAngle));
+      transform-origin: var(--transformOrigin);
+      transition: all 1s ease;
+    }
+
+    &.outside {
+      > .position:before {
+        opacity: 1;
+      }
+    }
+  }
+  .position {
+    --orig-orbit-tilt: var(--orbit-tilt);
+    transition: margin calc(var(--transition-duration) * 2) ease;
+    margin-top: var(--top);
+    margin-left: var(--left);
+    &.n {
+      --top: 0%;
+      --left: 50%;
+      --lineAngle: 0deg;
+      --transformOrigin: top;
+      --translateX: -50%;
+    }
+    &.nw {
+      --top: 14.5%;
+      --left: 14.5%;
+      --lineAngle: -45deg;
+      --transformOrigin: top left;
+    }
+    &.w {
+      --top: 50%;
+      --left: 0%;
+      --lineAngle: -90deg;
+      --transformOrigin: top;
+    }
+    &.sw {
+      --top: 85.5%;
+      --left: 14.5%;
+      --lineAngle: -135deg;
+      --transformOrigin: top left;
+    }
+    &.s {
+      --top: 100%;
+      --left: 50%;
+      --lineAngle: -180deg;
+      --transformOrigin: top;
+    }
+    &.se {
+      --top: 85.5%;
+      --left: 85.5%;
+      --lineAngle: -225deg;
+      --transformOrigin: top left;
+    }
+    &.e {
+      --top: 50%;
+      --left: 100%;
+      --lineAngle: -270deg;
+      --transformOrigin: top;
+    }
+    &.ne {
+      --top: 14.5%;
+      --left: 85.5%;
+      --lineAngle: -315deg;
+      --transformOrigin: top left;
+    }
+    &.c {
+      margin-top: 50%;
+      margin-left: 50%;
+    }
+  
+    .astralBody-holder {
+      // --orbit-tilt: calc(var(--orbit-tilt) * -1);
+      --orbit-tilt: 0deg;
+      width: var(--planet-size);
+      height: var(--planet-size);
+      margin: calc(var(--planet-size)/-2) 0 0 calc(var(--planet-size)/-2);
+      animation: orbit var(--orbit-duration) reverse infinite linear;
+      position: absolute;
+      transform-style: preserve-3d;
+      transition: all var(--transition-duration) ease;
+
+
+      .astralBody {
+        --shadow-size: var(--planet-size);
+        width: 100%;
+        height: 100%;
+        transform: rotateX(calc(var(--angle) * -1)) translate3d(-50%, var(--decalY), 0);
+        transform-style: preserve-3d;
+        transform-origin: center;
+        background: rgba(255,255,255,.1);
+        background-position: center;
+        background-size: cover;
+        pointer-events: auto;
+
+        &.texture {
+          --revolution-duration: calc(var(--earthDay) * var(--thisDay));
+          animation: slide var(--revolution-duration) linear infinite;
+
+          .mask {
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+
+            &:empty {
+              padding: .5%;
+              box-shadow: inset 0 0 calc(var(--shadow-size) * .04) calc(var(--shadow-size) * .06) rgba(0, 208, 255, 0.2);
+              box-shadow: inset 0 0 calc(var(--shadow-size) * .03) calc(var(--shadow-size) * .03) rgba(0, 208, 255, 0.2)
+              // background-image: url('../img/mask-sphere-v5.png');
+              // box-shadow: inset 0 0 calc(var(--planet-size)*0.25) rgba(0,0,0,1);
+            }
+          }
+
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: inherit;
+          border-radius: inherit;
+          filter: var(--filter);
+        }
+
+        .mask, .clouds {
+          background: center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          transform: translate(-50%, -50%) rotateZ(0deg);
+        }
+
+        .clouds {
+          animation: slide calc(var(--revolution-duration) * 1.5) linear infinite;
+        }
+
+        .mask {
+          overflow: hidden;
+
+
+          &:after {
+            content: '';
+            // transform-style: preserve-3d;
+            // transform-origin: center;
+            animation: var(--animationName) var(--planet-orbit-duration) infinite linear;
+            z-index: 1;
+            border-radius: 50%;
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+          }
+        }
+
+        // .shadow {
+        //   width: 100%;
+        //   height: 100%;
+        //   position: relative;
+        //   overflow: hidden;
+        //   border-radius: 50%;
+
+          
+
+        //   // .shadow-inner {
+        //   //   // --planet-size: var(--planet-size);
+        //   //   // box-shadow: inset calc(var(--planet-size) * 1) 0 calc(var(--planet-size) * .1) calc(var(--planet-size) * .1) rgba(255,0,0,1);
+        //   //   animation: var(--planet-orbit-duration) infinite linear;
+        //   //   border-radius: 50%;
+        //   //   position: absolute;
+        //   //   width: 200%;
+        //   //   height: 200%;
+        //   //   top: 50%;
+        //   //   left: 50%;
+        //   //   transform: translate3d(-50%, -50%, 0);
+        //   // }
+        // }
+
+        .hover-area {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          min-width: 1.5rem;
+          min-height: 1.5rem;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        
+        .holder-infos {
+          position: absolute;
+          transition: all var(--transition-duration) ease;
+          transform: rotateZ(calc(var(--orig-orbit-tilt) * -1)) translate3d(0, -50%, 0);
+          top: 50%;
+          color: rgba(255,255,255,0);
+          padding: 1rem;
+          left: 75%;
+          font-size: 1rem;
+          line-height: 0;
+          opacity: 0;
+          visibility: hidden;
+
+          .infos {
+            position: absolute;
+            padding: 1rem;
+            margin: 0 1rem;
+            top: 50%;
+            left: 0;
+            transform: translate3d(0, -50%, 0);
+            background: rgba(0,0,0,.5);
+
+        
+            .name {
+              text-transform: uppercase;
+              font-size: 1.25rem;
+              letter-spacing: .25rem;
+              font-weight: bold;
+            }
+
+            .details {
+              border-top: 1px solid #fff;
+              padding-top: 1rem;
+              margin-top: 1rem;
+              width: 30vw;
+              display: none;
+              // max-height: 50vh;
+              // overflow: auto;
+
+              p {
+                margin: 0;
+              }
+
+              ul {
+                margin: 0 0 1rem;
+                padding: 0;
+                list-style-position: inside;
+              }
+            }
+          }
+
+          @media screen and (max-width: 680px) {
+            left: 50%;
+
+            .infos {
+              margin: 0;
+
+              .details {
+                max-height: 50vh;
+                width: calc(50vw - 2rem);
+                overflow: auto;
+              }
+            }
+          }
+        }
+
+        
+
+
+        &:hover {
+
+          .holder-infos {
+            color: rgba(255,255,255,1);
+            line-height: 1.5rem;
+            opacity: 1;
+            visibility: visible;
+
+            .details {
+              // display: block;
+            }
+          }
+        }
+
+      }
+
+      .rings-holder {
+        margin-top: 50%;
+        margin-left: 50%;
+      
+        .rings {
+          --orbit-size: calc(var(--planet-size)*1.75);
+          animation: orbit var( --orbit-duration) reverse infinite linear;
+          box-shadow: 0 0 5px calc(var(--planet-size)*0.15) var(--ringsColor, rgba(255, 255, 255, 0.5)), 
+          inset 0 0 5px calc(var(--planet-size)*0.15) var(--ringsColor, rgba(255, 255, 255, 0.5)), 
+          0 0 calc(var(--planet-size)*0.05) calc(var(--planet-size)*0.05) var(--ringsColor, rgba(255, 255, 255, 0.5)), 
+          inset 0 0 calc(var(--planet-size)*0.05) calc(var(--planet-size)*0.05) var(--ringsColor, rgba(255, 255, 255, 0.5));
+        }
+      }
+
+      .satellite-holder {
+        margin-top: 50%;
+        margin-left: 50%;
+        
+        .astralBody {
+          // pointer-events: none;
+        }
+      }
+
+    }
+  }
+
+
+  &.active,
+  &.active:hover {
+    
+
+    // --planet-size: 60vh;
+    // @media screen and (orientation: portrait) {
+    //   --planet-size: 60vw;
+    // }
+
+    // min-width: calc(var(--planet-size) * var(--thisActiveFactor));
+    // min-height: calc(var(--planet-size) * var(--thisActiveFactor));
+    // margin: calc(var(--planet-size) * var(--thisActiveFactor) / -3) 0 0 calc(var(--planet-size) * var(--thisActiveFactor) / -3);
+
+    // border: 2px solid rgba(255,255,255,0);
+
+    // &:hover {
+    //   border: 2px solid rgba(255,255,255,0);
+    // }
+
+
+    .orbit {
+      &.satellite {
+        // --planet-size: 60vh;
+        // --satellite-orbit: 60vh;
+        @media screen and (orientation: portrait) {
+          // --planet-size: 60vw;
+          // --satellite-orbit: 60vw;
+        }
+        
+        // width: calc(var(--orbit-size) * var(--thisActiveFactor));
+        // height: calc(var(--orbit-size) * var(--thisActiveFactor));
+        // margin: calc(var(--orbit-size)/-1) 0 0 calc(var(--orbit-size)/-1)
+        // .orbit {
+        //   --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor) * 2);
+        //   --planet-size: calc(var(--earthSize) * var(--thisSize) * var(--sizeFactor) * 1.25);
+        // }
+        // min-width: calc(var(--satellite-orbit) * var(--thisActiveFactor));
+        // min-height: calc(var(--satellite-orbit) * var(--thisActiveFactor));
+        // margin: calc(var(--satellite-orbit) * var(--thisActiveFactor) / -3) 0 0 calc(var(--planet-size) * var(--thisActiveFactor) / -3);
+      }
+
+      .position {
+        // --sizeFactor: 2;
+      }
+      // Satellites
+      .astralBody-holder {
+        // width: var(--planet-size);
+        // height: var(--planet-size);
+        width: calc(var(--planet-size) *2);
+        height: calc(var(--planet-size) *2);
+        margin: calc(var(--planet-size)/-1) 0 0 calc(var(--planet-size)/-1);
+        .astralBody {
+          // pointer-events: auto;
+        }
+      }
+    }
+
+    > .position {
+      // margin-top: 50%;
+      // margin-left: 50%;
+
+      > .astralBody-holder, 
+      > .astralBody-holder:hover {
+        // width: 30vw;
+        // height: 30vw;
+        width: 100%;
+        height: 100%;
+
+        width: var(--planet-size);
+        height: var(--planet-size);
+        margin: calc(var(--planet-size)/-2) 0 0 calc(var(--planet-size)/-2);
+
+        // planets
+        > .astralBody {
+          &.texture {
+            .mask {
+              box-shadow: none;
+
+              &:after {
+                width: calc(100% + 15px);
+                height: calc(100% + 15px);
+                box-shadow: inset 5px 5px 15px 8px rgba(0, 208, 255, .95), inset -10px -10px 20px 20px rgba(0, 0, 0, .95);
+              }
+            }
+          }
+
+          > .holder-infos {
+            color: rgba(255,255,255,1);
+            line-height: 1.5rem;
+            opacity: 1;
+            visibility: visible;
+
+            .details {
+              display: block;
+            }
+          }
+
+
+          > .hover-area {
+            // width: 100vw;
+            // height: 100vh;
+          }
+        }
+
+        .rings {
+          --planet-size: 60vh;
+          @media screen and (orientation: portrait) {
+            --planet-size: 60vw;
+          }
+          --orbit-size: calc(var(--planet-size)*1.75);
+          box-shadow: 0 0 5px calc(var(--planet-size)*0.15) var(--ringsColor, rgba(255, 255, 255, 0.5)), 
+                      inset 0 0 5px calc(var(--planet-size)*0.15) var(--ringsColor, rgba(255, 255, 255, 0.5)), 
+                      0 0 calc(var(--planet-size)*0.05) calc(var(--planet-size)*0.05) var(--ringsColor, rgba(255, 255, 255, 0.5)), 
+                      inset 0 0 calc(var(--planet-size)*0.05) calc(var(--planet-size)*0.05) var(--ringsColor, rgba(255, 255, 255, 0.5));
+
+        }
+
+        &:hover {
+          .rings {
+            --orbit-size: calc(var(--planet-size)*1.75);
+          }
+        }
+      }
+    }
+  }
+
+  &:hover,
+  &:hover > .position > .astralBody-holder {
+    animation-play-state: paused;
+    z-index: 1;
+  }
+
+  &:hover .position .astralBody {
+    --shadow-size: calc(var(--planet-size) * 2);
+    
+    .mask:after {
+      animation-play-state: paused;
+    }
+  }
+
+  &:not(.active):hover {
+    .position {
+      .astralBody-holder {
+        .orbit {
+          --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor) * 2);
+          --planet-size: calc(var(--earthSize) * var(--thisSize) * var(--sizeFactor) * 1.25);
+        }
+
+        .rings-holder {
+          .rings {
+
+          }
+        }
+      }
+    }
+  }
+
+  &:not(.asteroids):not(.star):hover {
+    box-shadow: 0 0 0px 1px  rgba(255,255,255,.25), inset 0 0 0px 1px rgba(255,255,255,.25);
+    // border: 2px solid rgba(255,255,255,.2);
+  
+    .position {
+      
+      .astralBody-holder {
+      }
+    }
+
+  }
+
+  &:not(.star):hover {
+    .position {
+      .astralBody-holder {
+        width: calc(var(--planet-size) *2);
+        height: calc(var(--planet-size) *2);
+        margin: calc(var(--planet-size)/-1) 0 0 calc(var(--planet-size)/-1);
+    
+        .orbit {
+          // --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor) * 2);
+          // --planet-size: calc(var(--earthSize) * var(--thisSize) * var(--sizeFactor) * 1.25);
+        }
+    
+        .rings-holder {
+          .rings {
+            --orbit-size: calc(var(--planet-size)*2.75);
+          }
+        } 
+
+      }
+    }
+  }
+}
