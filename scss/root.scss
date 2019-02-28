@@ -236,6 +236,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   background: #000 url('../img/2k_stars_milky_way.jpg') fixed;
+  background: rgba(0,0,0,.5);
   background-size: 100%;
   transition: all var(--transition-duration) ease;
   transform: translateX(100%);
