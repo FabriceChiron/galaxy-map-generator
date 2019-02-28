@@ -15,7 +15,7 @@ const toggleNavLayer = function(input) {
   }
 }
 
-const generateMenu = () => {
+const generateMenu = (galaxyMap) => {
   const nav = document.createElement('nav');
   nav.id += 'navigation';
 
@@ -128,6 +128,5 @@ const generateMenu = () => {
   });
 
   document.body.prepend(nav);
+  hashHandler();
 }
-
-generateMenu();

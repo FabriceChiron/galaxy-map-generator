@@ -1,16 +1,26 @@
-galaxyMap.clusters.map(cluster => {
-  const ClusterName = toClassObject(camelize(cluster.name));
-  window[ClusterName] = new Cluster(cluster, '#clusters');
-  window[ClusterName].render();
+fetch('data/galaxy-map.json')
+.then(res => res.json())
+.then(galaxyMap => {
+  galaxyMap.clusters.map(
+    cluster => {
+      const ClusterName = toClassObject(camelize(cluster.name));
+      window[ClusterName] = new Cluster(cluster, '#clusters');
+      window[ClusterName].render();
 
-  if(cluster.bodies.length > 0) {
-    cluster.bodies.map(stellarSystem => {
-      const StellarSystemName = toClassObject(camelize(stellarSystem.name));
-      window[StellarSystemName] = new StellarSystem(stellarSystem, `#${spaceToDash(cluster.name).toLowerCase()}`, `${spaceToDash(cluster.name).toLowerCase()}`);
-      window[StellarSystemName].render();
-    });
+      if(cluster.bodies.length > 0) {
+        cluster.bodies.map(stellarSystem => {
+          const StellarSystemName = toClassObject(camelize(stellarSystem.name));
+          window[StellarSystemName] = new StellarSystem(stellarSystem, `#${spaceToDash(cluster.name).toLowerCase()}`, `${spaceToDash(cluster.name).toLowerCase()}`);
+          window[StellarSystemName].render();
+        })
+      }
+    })
+
+    generateMenu(galaxyMap);
   }
-});
+)
+
+
 
 const calculateMaxDiagonal = (selector, containers) => {
 

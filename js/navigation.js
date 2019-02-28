@@ -1,6 +1,6 @@
-const nav = document.getElementById('navigation');
 
 const highlightNav = (aPath) => {
+  const nav = document.getElementById('navigation');
   // console.log(aPath);
 
   [...nav.querySelector('ul').querySelectorAll('input')].map(input => {
@@ -94,8 +94,6 @@ function hashHandler() {
   const currentHash = window.location.hash.split('?')[0].substring(1);
   decomposeHash(currentHash);
 }
-
-window.onload = hashHandler();
 
 // window.addEventListener('hashchange', hashHandler, false);
 window.onhashchange = function() {

@@ -1,4 +1,4 @@
-var galaxyMap = {
+{
   "name": "Milky Way",
   "clusters" : [
     {
