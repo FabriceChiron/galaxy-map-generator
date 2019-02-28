@@ -2956,6 +2956,13 @@
           "star": "Erebus",
           "top": 39,
           "left": 18,
+          "asteroids": [
+            {
+              "orbit": "2.3",
+              "year": "2.3",
+              "bodies": 150
+            }
+          ],
           "bodies": [
             {
               "name": "nepmos",
@@ -2968,6 +2975,44 @@
               "day": "68.1/24",
               "coords": "w",
               "details": "Nepmos is a resource-rich terrestrial world somewhat larger than Earth, with a dense atmosphere of sulphur dioxide and argon. Nepmos' crust is very thin and unstable, not more than 8 kilometers deep in any location. Subsurface magma flows are a hazard to ground travel, and earthquakes are frequent. While heavy metals and radioactives are plentiful, this geological instability has deterred investment by mining concerns."
+            },
+            {
+              "name": "quaji",
+              "image": "venus-texture.webp",
+              "filter": "",
+              "clouds": "Clouds4.webp",
+              "cloudsFilter": "",
+              "texture": true,
+              "orbit": "4.2",
+              "year": "2.9",
+              "size": "5160/6378",
+              "day": "38.7",
+              "coords": "s",
+              "details": "Quaji is a terrestrial planet with an atmosphere of methane and ethane. The surface is composed of silica with deposits of uranium and heavy metals. Clouds of small water ice crystals are common. Quaji's skies are full of fine silica dust. From the surface, the sky has a pronounced salmon hue."
+            },
+            {
+              "name": "wermani",
+              "image": "Gaseous7.webp",
+              "filter": "hue-rotate(70deg) saturate(1.6) contrast(1.4)",
+              "texture": true,
+              "orbit": "7",
+              "year": "9.9",
+              "size": "71541/6378",
+              "day": "9.2/24",
+              "coords": "ne",
+              "details": "Wermani has only been visited once by a single, unmanned probe. It is a standard hydrogen-helium gas giant with large formations of water vapor clouds in the atmosphere."
+            },
+            {
+              "name": "chofen",
+              "image": "Gaseous3.webp",
+              "filter": "saturate(0.3)",
+              "texture": true,
+              "orbit": "13",
+              "year": "56.9",
+              "size": "21481/6378",
+              "day": "13.7",
+              "coords": "nw",
+              "details": "Chofen is an unusually small hydrogen-helium gas giant, with traces of sulphur and hydrocarbons in the atmosphere. The Alliance surveyor ship Ibn Battuta provided inconclusive evidence of hydrocarbon life in the atmosphere (over 1000 meters below the cloud tops), where pressure compresses Chofen's hydrogen into a liquid state.<br><br>Proof of life in the atmosphere would prove many long-standing theories. Unfortunately, only a probe with extremely expensive mass effect generators could survive the crushing pressure long enough to send back useful data – and the probe would be lost in the attempt. Simple expense makes investigation doubtful."
             }
           ]
         }
