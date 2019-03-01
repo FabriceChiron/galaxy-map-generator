@@ -3021,6 +3021,7 @@
       "name": "Voyager Cluster",
       "top": 60.5,
       "left": 86.3,
+      "image": "",
       "bodies": [
         {
           "name": "Amazon",
@@ -3092,13 +3093,26 @@
         {
           "name": "Columbia",
           "star": "Columbia",
+          "asteroids": [
+            {
+              "orbit": 2.7,
+              "year": 2.7,
+              "bodies": 100
+            },
+            {
+              "orbit": 7.7,
+              "year": 7.7,
+              "bodies": 300
+            }
+          ],
           "bodies": [
             {
               "name": "clojila",
               "image": "Volcanic.webp",
-              "filter": "",
+              "filter": "hue-rotate(50deg) saturate(1.7)",
               "texture": true,
-              "clouds": "Clouds2.cvp",
+              "clouds": "Clouds2.webp",
+              "cloudsFilter": "opacity(10%)",
               "orbit": "1.1",
               "year": "0.3",
               "size": "7014/6378",
@@ -3107,43 +3121,41 @@
               "details": "Clojiia is a \"hothouse\" terrestrial world with a dense atmosphere of nitrogen and sulphur dioxide. The surface is scorching hot, and mainly composed of iron with deposits of gold.<br><br>The core of Clojiia is very hot and tectonically active. Volcanic eruptions are common, and the outgassing continues to add to the density of the atmosphere. The largest active volcano has a caldera nearly 100 kilometers in diameter, and its basalt floods have covered an area roughly equivalent to the size of the Earth continent of Australia."
             },
             {
-              "name": "",
-              "image": "",
-              "filter": "",
+              "name": "nepheron",
+              "image": "sun-texture.webp",
+              "filter": "saturate(0.2) hue-rotate(150deg)",
               "texture": true,
-              "clouds": "",
-              "orbit": "",
-              "year": "",
-              "size": "5378/6378",
-              "day": "24/24",
-              "coords": "s",
-              "details": ""
+              "orbit": "4.1",
+              "year": "0.8",
+              "size": "6865/6378",
+              "day": "56.2/24",
+              "coords": "ne",
+              "details": "Nepheron is a barren, volcanic terrestrial world with an atmosphere of carbon dioxide and krypton. Its surface is mainly composed of sodium with deposits of magnesium.<br><br>Aside from displays of geologic beauty (including many spectacular volcanoes), this barren world is of little interest. Entries relating to Nepheron in the astronomical database are sparse."
             },
             {
-              "name": "",
-              "image": "",
+              "name": "ontaheter",
+              "image": "pluto-texture.webp",
               "filter": "",
               "texture": true,
               "clouds": "",
-              "orbit": "",
-              "year": "",
-              "size": "5378/6378",
-              "day": "24/24",
-              "coords": "s",
-              "details": ""
+              "orbit": "5.4",
+              "year": "5.2",
+              "size": "3718/6378",
+              "day": "56.3/24",
+              "coords": "w",
+              "details": "Ontaheter is an unusually large ice world, with a core of silicate rock and light metals, and a trace atmosphere of krypton and xenon. The crust is mainly composed of water ice. Ontaheter's ice sheets show obvious signs of large scale fracture and refreezing, centered on a massive crater near the south pole."
             },
             {
-              "name": "",
-              "image": "",
-              "filter": "",
+              "name": "gromar",
+              "image": "Ice2snow.webp",
+              "filter": "saturate(2) contrast(1.1) hue-rotate(-20deg)",
               "texture": true,
-              "clouds": "",
-              "orbit": "",
-              "year": "",
-              "size": "5378/6378",
-              "day": "24/24",
-              "coords": "s",
-              "details": ""
+              "orbit": "11.9",
+              "year": "115.6",
+              "size": "4911/6378",
+              "day": "30.3/24",
+              "coords": "nw",
+              "details": "Gromar is a rocky, terrestrial world with a trace atmosphere of krypton and xenon. The frozen surface is mainly composed of copper with deposits of calcium. Prior to the Alliance's expansion into the Voyage Cluster [sic], Gromar hosted half of a turian interferometric telescope array. Connected with similar telescope in the Attican Beta cluster by an expensive chain of FTL comm buoys, the two functioned as a virtual \"lens\" with an effective aperture equal to the thousands of light years between them. The turians used this to map the Terminus Systems with great accuracy."
             }
           ]
         },
@@ -3152,69 +3164,52 @@
           "star": "Yangtze",
           "bodies": [
             {
-              "name": "",
-              "image": "",
-              "filter": "",
+              "name": "renshato",
+              "image": "uranus-texture.webp",
+              "filter": "saturate(3) hue-rotate(220deg)",
               "texture": true,
               "clouds": "",
-              "orbit": "",
-              "year": "",
-              "size": "5378/6378",
-              "day": "24/24",
-              "coords": "s",
-              "details": ""
+              "orbit": "1.1",
+              "year": "0.5",
+              "size": "25957/6378",
+              "day": "18.1/24",
+              "coords": "se",
+              "details": "Renshato is close-orbiting \"Hot Jupiter\" with traces of sulphur in its hydrogen-helium atmosphere. The disruptive gravity well of the gas giant prevented any planets from forming nearby."
             },
             {
-              "name": "",
-              "image": "",
-              "filter": "",
+              "name": "binthu",
+              "image": "Rockbits1.webp",
+              "filter": "brightness(0.9) contrast(1.5)",
               "texture": true,
-              "clouds": "",
-              "orbit": "",
-              "year": "",
-              "size": "5378/6378",
-              "day": "24/24",
-              "coords": "s",
-              "details": ""
+              "orbit": "4.7",
+              "year": "5",
+              "size": "5935/6378",
+              "day": "53.2/24",
+              "coords": "w",
+              "details": "Binthu has an atmosphere of carbon dioxide, with a permanent haze of toxic chlorine and clouds of sulphur dioxide that periodically drop torrents of acidic rain on the surface. Its crust is mainly composed of sulphur with deposits of calcium."
             },
             {
-              "name": "",
-              "image": "",
+              "name": "dregir",
+              "image": "pluto-texture.webp",
               "filter": "",
               "texture": true,
-              "clouds": "",
-              "orbit": "",
-              "year": "",
-              "size": "5378/6378",
-              "day": "24/24",
-              "coords": "s",
-              "details": ""
+              "orbit": "7.8",
+              "year": "23.7",
+              "size": "2843/6378",
+              "day": "34/24",
+              "coords": "w",
+              "details": "Dregir is a small, barren rock world with a trace atmosphere of krypton and xenon. The surface is frigid, and mainly composed of silicates with deposits of magnesium, aluminum, and other light metals. Dregir has a weak magnetic field, making it unsuitable for drive discharge operations."
             },
             {
-              "name": "",
-              "image": "",
-              "filter": "",
+              "name": "patajiri",
+              "image": "moon-texture.webp",
               "texture": true,
-              "clouds": "",
-              "orbit": "",
-              "year": "",
-              "size": "5378/6378",
-              "day": "24/24",
-              "coords": "s",
-              "details": ""
-            },
-            {
-              "name": "",
-              "image": "",
-              "filter": "",
-              "texture": true,
-              "clouds": "",
-              "orbit": "",
-              "year": "",
-              "size": "5378/6378",
-              "day": "24/24",
-              "coords": "s",
-              "details": ""
+              "orbit": "11",
+              "year": "123.6",
+              "size": "7304/6378",
+              "day": "57.7/24",
+              "coords": "n",
+              "details": "Patajiri has a thin atmosphere composed of neon and chlorine. Its frozen surface is mainly composed of silica with deposits of copper. During the long, cold night, the chlorine in the atmosphere falls to the ground in the form of frost."
             }
           ]
         }
