@@ -1182,6 +1182,91 @@
       ]
     },
     {
+      "name": "Caleston Rift",
+      "image": "caleston-rift.webp",
+      "top": 38.8,
+      "left": 70.4,
+      "bodies": [
+        {
+          "name": "Aysur",
+          "star": "Aysur",
+          "top": 57,
+          "left": 62,
+          "bodies": [
+            {
+              "name": "agnin",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.5)",
+              "texture": true,
+              "orbit": "0.7",
+              "year": "0.6",
+              "size": "4384/6378",
+              "day": "61.1/24",
+              "coords": "se",
+              "details": "A hothouse planet, Agnin's scorching clouds of methane and sulfur dioxide give the planet a pale green color in visible light. The SO2 from volcanic activity rains down as sulfuric acid in the upper atmosphere, but this is boiled away before the liquid ever reaches the surface. Agnin's harsh environment has prevented exploration by anything except probes."
+            },
+            {
+              "name": "shasu",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(6.5) brightness(0.3) saturate(5)",
+              "overlay": "rgba(123, 10, 10, 0.6)",
+              "texture": true,
+              "orbit": "1.4",
+              "year": "1.7",
+              "size": "1454/6378",
+              "day": "37.4/24",
+              "coords": "w",
+              "details": "Shasu is a dwarf planet that is believed to have been ejected from Agnin during a giant impact with another planet-sized body. At the time, Agnin had a magma ocean covering much of its surface, and the liquid rock sprayed into space, where it coalesced and cooled over millions of years. The theory is that during the cooling, Shasu first orbited Agnin but was eventually pulled from that orbit by the gravity wells of other planets, primarily Dranen.<br><br>Today, Shasu is relatively temperate, with a light hydrogen-helium atmosphere, attracting spacers who use its atmosphere to refuel. Its crust composition is similar to Agnin, evident in its high sulfur content."
+            },
+            {
+              "name": "dranen",
+              "image": "Gaseous3.webp",
+              "filter": "brightness(0.3) saturate(3) hue-rotate(40deg)",
+              "texture": true,
+              "orbit": "2.5",
+              "year": "4",
+              "size": "72021/6378",
+              "day": "17.1/24",
+              "coords": "n",
+              "details": "A sizable hydrogen-nitrogen gas giant just on the far side of its pale yellow star's \"frost line\", Dranen is known for its spectacular storms. At least three persistent observable \"spots\" -- actually cyclonic and anticyclonic storms -- have lasted for over 544 years, significantly longer than Jupiter's Great Red Spot. The largest of these spots, the Ishna, has consistently held a diameter over three times that of Earth.<br><br>Dranen has 44 moons. Two of them are of special interest to the Citadel Committee on Habitable Worlds. The first, Arvuna, is a life-bearing world that has already been colonized. The second, Alahya, is slowly being terraformed into an ammonia-based world for volus populations."
+            }
+          ]
+        },
+        {
+          "name": "Balor",
+          "star": "Balor",
+          "top": 52,
+          "left": 38,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Solveig",
+          "star": "Solveig",
+          "top": 37,
+          "left": 42,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Talava",
+          "star": "Talava",
+          "top": 39,
+          "left": 30,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Yakawa",
+          "star": "Yakawa",
+          "top": 35,
+          "left": 68,
+          "bodies": [
+          ]
+        }
+      ]
+    },
+    {
       "name": "Exodus Cluster",
       "top": 75.8,
       "left": 53.6,

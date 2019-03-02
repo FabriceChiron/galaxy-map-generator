@@ -129,15 +129,17 @@ const generateMenu = (galaxyMap) => {
 
   document.body.prepend(nav);
   hashHandler();
-  
+
   [...nav.querySelectorAll('ul a')].map(link => {
     const thisHref = link.href.split('#')[1];
     const matchingCluster = document.querySelector(`a.cluster[href="#${thisHref}"]`);
-    link.onmouseenter = function() {
-      matchingCluster.className += ' hovered';
-    };
-    link.onmouseleave = function() {
-      matchingCluster.className = matchingCluster.className.replace(' hovered', '');
-    };
+    if(matchingCluster) {
+      link.onmouseenter = function() {
+        matchingCluster.className += ' hovered';
+      };
+      link.onmouseleave = function() {
+        matchingCluster.className = matchingCluster.className.replace(' hovered', '');
+      };
+    }
   })
 }
