@@ -10,7 +10,6 @@ dimRet = (val, scale) => {
     } else {
       return trinum * scale;
     }
-    // return val;
 }
 
 class Asteroids {
@@ -74,16 +73,16 @@ class AstralBody {
   constructor(obj, targetElement, parentName, bodyType, index, path, override) {
     this.obj = obj;
     this.name = obj.name;
-    this.path = path;
+    this.path = `#${path.split('#')[1]}`;
     this.parentName = parentName;
     this.realOrbit = obj.orbit;
     this.orbitSize = (obj.orbit) ? dimRet(obj.orbit, 3) : 1;
     this.orbitTilt = (obj.orbitTilt) ? obj.orbitTilt : 0;
     this.orbitFactor = (obj.orbitFactor) ? obj.orbitFactor : 1;
-    this.bodySize = (obj.size) ? ( (realSizes === false && bodyType === 'star') ? 3 : obj.size) : (bodyType === "star") ? ((realSizes === true) ? 50 : 3) : 1;
+    this.bodySize = (obj.size) ? ( (realSizes === false && bodyType === 'star') ? 3 : eval(obj.size)) : (bodyType === "star") ? ((realSizes === true) ? 50 : 3) : 1;
     this.realYear = obj.year;
-    this.yearLength = (obj.year) ? obj.year : 1;
-    this.dayLength = (obj.day) ? obj.day : 1;
+    this.yearLength = (obj.year) ? eval(obj.year) : 1;
+    this.dayLength = (obj.day) ? eval(obj.day) : 1;
     this.coords = (override && override.coords) ? override.coords : ((obj.coords) ? obj.coords : (bodyType === "star") ? 'c' : 'nw');
     this.details = obj.details;
     this.rings = (obj.rings) ? obj.rings : null;
