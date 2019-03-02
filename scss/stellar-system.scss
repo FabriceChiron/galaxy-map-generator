@@ -205,9 +205,9 @@
   animation: orbit var(--orbit-duration) infinite linear;
   box-shadow: 0 0 0px 1px  rgba(255,255,255,.05), inset 0 0 0px 1px rgba(255,255,255,.05);
   // border: 2px solid rgba(255,255,255,.1);
-  width: var(--orbit-size);
-  height: var(--orbit-size);
-  margin: calc(var(--orbit-size)/-2) 0 0 calc(var(--orbit-size)/-2);
+  width: calc(var(--orbit-size) + var(--planet-size));
+  height: calc(var(--orbit-size) + var(--planet-size));
+  margin: calc(calc(var(--orbit-size) + var(--planet-size))/-2) 0 0 calc(calc(var(--orbit-size) + var(--planet-size))/-2);
   box-sizing: border-box;
   pointer-events: none;
 
@@ -560,7 +560,8 @@
         
 
 
-        &:hover {
+        &:hover,
+        &.hovered {
 
           .holder-infos {
             color: rgba(255,255,255,1);
@@ -587,6 +588,9 @@
           inset 0 0 5px calc(var(--planet-size)*0.15) var(--ringsColor, rgba(255, 255, 255, 0.5)), 
           0 0 calc(var(--planet-size)*0.05) calc(var(--planet-size)*0.05) var(--ringsColor, rgba(255, 255, 255, 0.5)), 
           inset 0 0 calc(var(--planet-size)*0.05) calc(var(--planet-size)*0.05) var(--ringsColor, rgba(255, 255, 255, 0.5));
+          width: var(--orbit-size);
+          height: var(--orbit-size);
+          margin: calc(var(--orbit-size)/-2) 0 0 calc(var(--orbit-size)/-2);
         }
       }
 
