@@ -1192,6 +1192,13 @@
           "star": "Aysur",
           "top": 57,
           "left": 62,
+          "asteroids": [
+            {
+              "orbit": "6.3",
+              "year": "15.8",
+              "bodies": 200
+            }
+          ],
           "bodies": [
             {
               "name": "agnin",
@@ -1215,7 +1222,7 @@
               "year": "1.7",
               "size": "1454/6378",
               "day": "37.4/24",
-              "coords": "w",
+              "coords": "s",
               "details": "Shasu is a dwarf planet that is believed to have been ejected from Agnin during a giant impact with another planet-sized body. At the time, Agnin had a magma ocean covering much of its surface, and the liquid rock sprayed into space, where it coalesced and cooled over millions of years. The theory is that during the cooling, Shasu first orbited Agnin but was eventually pulled from that orbit by the gravity wells of other planets, primarily Dranen.<br><br>Today, Shasu is relatively temperate, with a light hydrogen-helium atmosphere, attracting spacers who use its atmosphere to refuel. Its crust composition is similar to Agnin, evident in its high sulfur content."
             },
             {
@@ -1227,8 +1234,70 @@
               "year": "4",
               "size": "72021/6378",
               "day": "17.1/24",
+              "coords": "sw",
+              "details": "A sizable hydrogen-nitrogen gas giant just on the far side of its pale yellow star's \"frost line\", Dranen is known for its spectacular storms. At least three persistent observable \"spots\" -- actually cyclonic and anticyclonic storms -- have lasted for over 544 years, significantly longer than Jupiter's Great Red Spot. The largest of these spots, the Ishna, has consistently held a diameter over three times that of Earth.<br><br>Dranen has 44 moons. Two of them are of special interest to the Citadel Committee on Habitable Worlds. The first, Arvuna, is a life-bearing world that has already been colonized. The second, Alahya, is slowly being terraformed into an ammonia-based world for volus populations.",
+              "bodies": [
+                {
+                  "name": "arvuna",
+                  "image": "Tropical.webp",
+                  "filter": "",
+                  "clouds": "earth-clouds.webp",
+                  "texture": true,
+                  "orbit": "1.5",
+                  "year": "66/365",
+                  "size": "6448/6378",
+                  "day": "29.2/24",
+                  "coords": "e",
+                  "details": "Arvuna, a moon of Dranen, is classified as a water world because oceans or ice cover 90% of its surface. Besides prodigious sea life, Arvuna is home to a host of venomous arthropodal pests in the tropical zone with metallic carapaces similar to those found on Palaven to resist radiation coming from Dranen's magnetosphere. There are several well-shielded human colonies on Arvuna, although they are alienated from the Council and politically insignificant to the Traverse and Terminus Systems."
+                }
+              ]
+            },
+            {
+              "name": "mahavid",
+              "image": "asteroid-01_alpha.webp",
+              "filter": "saturate(0.2) hue-rotate(120deg)",
+              "orbit": "6.3",
+              "year": "15.8",
+              "size": "535*5/6378",
+              "day": "10.3/24",
+              "coords": "ne",
+              "details": "Mahavid is a metallic asteroid in the very sparse Nahata Belt. It has a high nickel and iron content in the form of kamacite. The rights to mine Mahavid belong to T-GES Mineral Works, who sell their products primarily to the colonists of Arvuna. A close fly-by reveals light emanating from its facilities."
+            },
+            {
+              "name": "alformus",
+              "image": "Gaseous4.webp",
+              "filter": "hue-rotate(25deg) saturate(1.2)",
+              "texture": true,
+              "orbit": "10.1",
+              "year": "32.2",
+              "size": "67626/6378",
+              "day": "8.8/24",
+              "coords": "e",
+              "details": "A hydrogen-helium gas giant, Alformus had its helium-3 refueling stations destroyed in an attack by Grow Zero, an anti-population terrorist group that wanted no more immigration to Arvuna. A consortium of Arvuna-based corporations are currently rebuilding the stations."
+            },
+            {
+              "name": "shir",
+              "image": "mercury-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "20",
+              "year": "89.7",
+              "size": "4900/6378",
+              "day": "31/24",
               "coords": "n",
-              "details": "A sizable hydrogen-nitrogen gas giant just on the far side of its pale yellow star's \"frost line\", Dranen is known for its spectacular storms. At least three persistent observable \"spots\" -- actually cyclonic and anticyclonic storms -- have lasted for over 544 years, significantly longer than Jupiter's Great Red Spot. The largest of these spots, the Ishna, has consistently held a diameter over three times that of Earth.<br><br>Dranen has 44 moons. Two of them are of special interest to the Citadel Committee on Habitable Worlds. The first, Arvuna, is a life-bearing world that has already been colonized. The second, Alahya, is slowly being terraformed into an ammonia-based world for volus populations."
+              "details": "A remote rock planet capped in ice, Shir has been exploited by Arvunan corporations for its minerals. Home to gold veins, which is used in spaceship shielding as well as jewelry, and cobalt deposits, used in high-tensile alloys, Shir shows no signs of being exhausted any time soon. A light gravity helps keep the planetary exportation process cheap."
+            },
+            {
+              "name": "tamgauta",
+              "image": "pluto-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "42.2",
+              "year": "275.1",
+              "size": "3354/6378",
+              "day": "64.8/24",
+              "coords": "nw",
+              "details": "The outermost planet of the Aysur system, Tamgauta is remote and largely unexplored. Its carbon dioxide atmosphere has long since frozen into fields of dry ice."
             }
           ]
         },

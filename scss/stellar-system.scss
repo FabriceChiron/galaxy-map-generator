@@ -391,7 +391,6 @@
         transform: rotateX(calc(var(--angle) * -1)) translate3d(-50%, var(--decalY), 0);
         transform-style: preserve-3d;
         transform-origin: center;
-        background: rgba(255,255,255,.1);
         background-position: center;
         background-size: cover;
         pointer-events: auto;
