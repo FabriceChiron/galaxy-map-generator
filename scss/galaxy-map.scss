@@ -111,7 +111,8 @@
     }
 
 
-    &:not(.inactive):hover {
+    &:not(.inactive):hover,
+    &:not(.inactive).hovered {
       > .shape {
         background: rgba(243,58,16,1);
       }
@@ -123,7 +124,8 @@
     }
 
     &.inactive,
-    &.inactive:hover {
+    &.inactive:hover,
+    &.inactive.hovered {
       --clusterColor: rgba(204,204,204,1);
     }
 
@@ -208,7 +210,8 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &.hovered {
       z-index: 1;
 
       > .center {
@@ -221,7 +224,8 @@
     }
 
     &.active,
-    &.active:hover {
+    &.active:hover,
+    &.active.hovered {
       background: #000;
       top: 50%;
       left: 50%;

@@ -17,9 +17,6 @@ const highlightNav = (aPath) => {
       if(nav.querySelector(`#input-${item}`)) { 
         nav.querySelector(`#input-${item}`).checked = true; 
       }
-      // if(aPath.length <= 2) {
-      //   document.querySelector(`#toggle-map`).checked = true;
-      // }
     }
   });
 }
