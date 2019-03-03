@@ -1306,7 +1306,76 @@
           "star": "Balor",
           "top": 52,
           "left": 38,
+          "asteroids": [
+            {
+              "orbit": 5,
+              "year": 5,
+              "bodies": 100
+            }
+          ],
           "bodies": [
+            {
+              "name": "cernunnos",
+              "image": "Gaseous7.webp",
+              "filter": "hue-rotate(40deg) contrast(1.75)",
+              "texture": true,
+              "orbit": "0.07",
+              "year": "31/365",
+              "size": "49231/6378",
+              "day": "17/24",
+              "coords": "e",
+              "details": "Cernunnos is a sizable gas giant with high nitrogen content. It is believed to be an extrasolar capture due to its close stellar location. In a rare phenomenon, it is near enough to its red dwarf star to be within the life zone, although its massive size prevents the tidal lock that usually occurs at this range.",
+              "bodies": [
+                {
+                  "name": "caleston",
+                  "image": "Martian.webp",
+                  "filter": "",
+                  "texture": true,
+                  "orbit": "0.07",
+                  "year": "21.5",
+                  "size": "6600/6378",
+                  "day": "21.5/24",
+                  "coords": "ne",
+                  "details": "Caleston is wracked with volcanism due to tidal stresses from Cernunnos. Because of weak solar output, plant-like life on Caleston is not carbon-based and photosynthetic but silicon-based and thermosynthetic, requiring heat rather than sunlight to power its chemical reactions. These organisms flourish in volcanic vents and during solar flares, when Balor can double or triple in luminosity."
+                }
+              ]
+            },
+            {
+              "name": "bres",
+              "image": "pluto-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "2.9",
+              "year": "4.9",
+              "size": "915/6378",
+              "day": "23.3/24",
+              "coords": "nw",
+              "details": "A member of the Fomor Belt, Bres is a dwarf planet with no atmosphere. It is, however, rich in lithium, which is integral to the heat sinks of starships and hand-held weapons. A large robo-mining operation from Caleston can be found here."
+            },
+            {
+              "name": "elatha",
+              "image": "mercury-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "5.5",
+              "year": "23.6",
+              "size": "1812/6378",
+              "day": "57.3/24",
+              "coords": "se",
+              "details": "A tiny rock planet, Elatha is noted for its frigid temperatures and crushing nitrogen and krypton atmosphere. Lying out beyond the Fomor Belt, there is little to recommend it."
+            },
+            {
+              "name": "partholon",
+              "image": "Rockbits1.webp",
+              "filter": "saturate(0.1)",
+              "texture": true,
+              "orbit": "11.2",
+              "year": "68.6",
+              "size": "11921/6378",
+              "day": "28.2/24",
+              "coords": "n",
+              "details": "A large planet composed of ice surrounding a rocky core, Partholon retains trace gases of nitrogen and carbon monoxide. Its crushing gravity makes for an inhospitable stay and makes most mining infeasible. However, its orbit's proximity to the mass relay in the system means space travelers will, for the next few years, use it for a gravitational slingshot to add speed on their way to and from Caleston."
+            }
           ]
         },
         {
@@ -1315,6 +1384,44 @@
           "top": 37,
           "left": 42,
           "bodies": [
+            {
+              "name": "surtur",
+              "image": "mercury-texture.webp",
+              "overlay": "rgba(50, 210, 50, 0.15)",
+              "texture": true,
+              "orbit": "0.7",
+              "year": "0.6",
+              "size": "4433/6378",
+              "day": "65/24",
+              "coords": "s",
+              "details": "Surtur is a small but dense desert planet close to its parent star. All but traces of its nitrogen-carbon monoxide atmosphere have burned away, leaving it cooler than similar planets in other systems. Robo-mining has proved lucrative, as it has developed significant deposits of beryllium and palladium.",
+              "bodies": [
+                {
+                  "name": "sinmara",
+                  "image": "moon-texture.webp",
+                  "filter": "",
+                  "texture": true,
+                  "orbit": "0.1",
+                  "year": "0.1",
+                  "size": "1000/6378",
+                  "day": "tidal",
+                  "coords": "e",
+                  "details": "Surtur's moon Sinmara has been used for many generations to monitor its parent star Solveig. It has no atmosphere to interfere with solar observational equipment, which is critical at this juncture; the star recently showed signs of erupting prematurely into a red giant."
+                }
+              ]
+            },
+            {
+              "name": "thrivaldi",
+              "image": "Gaseous3.webp",
+              "filter": "saturate(3) contrast(1.2) hue-rotate(40deg) brightness(0.6)",
+              "texture": true,
+              "orbit": "1.5",
+              "year": "1.8",
+              "size": "35957/6378",
+              "day": "11/24",
+              "coords": "sw",
+              "details": "The hydrogen-helium gas giant Thrivaldi's refueling stations provide helium-3 for commercial spacecraft visiting the system. It has nine known moons and many smaller bodies in its rings."
+            }
           ]
         },
         {
@@ -1322,7 +1429,57 @@
           "star": "Talava",
           "top": 39,
           "left": 30,
+          "filter": "hue-rotate(-30deg) brightness(0.8)",
           "bodies": [
+            {
+              "name": "aitarus",
+              "image": "mars-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.5",
+              "year": "0.3",
+              "size": "8945/6378",
+              "day": "65.1/24",
+              "coords": "e",
+              "details": "A large rock planet orbiting an F-class star, Aitarus is pummeled by radiation, heavy gravity, and tectonic activity. Its crust is mostly silicates and of little value. Travel is not advised."
+            },
+            {
+              "name": "kaushus",
+              "image": "mercury-texture.Webp",
+              "filter": "contrast(4) brightness(0.7)",
+              "overlay": "rgba(255,30,30,0.6)",
+              "texture": true,
+              "orbit": "1.2",
+              "year": "1",
+              "size": "6212/6378",
+              "day": "42.6/24",
+              "coords": "nw",
+              "details": "Home to the spectacular Infinity Caldera, Kaushus is a young planet with extreme tectonic and volcanic activity. With nine supervolcanoes that can throw out at least 1,000 cubic kilometers of dense rock equivalents each, Kaushus' activity has put its atmosphere in a state of shroud. It will likely suffer from global dimming for at least the next ten years. Though much of the surface is no more dangerous than many other inner-ring planets, this extreme tectonic activity has given Kaushus a bad reputation and discouraged all resource exploitation."
+            },
+            {
+              "name": "maitrum",
+              "image": "Martian.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "2.8",
+              "year": "3.6",
+              "size": "4642/6378",
+              "day": "24/24",
+              "coords": "s",
+              "details": "A small hot rock with few resources, Maitrum is used by the turian armed forces for its maximum security prison and interrogation centers. The temperatures are high enough to prevent any escape without an environmental suit, but low enough that construction of additional buildings will not be hindered."
+            },
+            {
+              "name": "taitus",
+              "image": "Venusian.webp",
+              "filter": "contrast(1.5) hue-rotate(30deg)",
+              "texture": true,
+              "orbit": "4.0",
+              "year": "6.1",
+              "size": "6045/6378",
+              "day": "22.2/24",
+              "coords": "sw",
+              "details": "A desert of whitish potassium salts and reddish iron oxides, Taitus is far enough away from its parent star to have a tolerable surface temperature."
+            }
           ]
         },
         {
@@ -1330,7 +1487,71 @@
           "star": "Yakawa",
           "top": 35,
           "left": 68,
+          "filter": "hue-rotate(-45deg) brightness(0.9)",
           "bodies": [
+            {
+              "name": "sakata",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(34deg) contrast(1.2) saturate(1.6)",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "0.5",
+              "size": "11672/6378",
+              "day": "35.8/24",
+              "coords": "nw",
+              "details": "A large Venusian hothouse, Sakata's rough weather and active magnetosphere has a reputation for confounding or destroying space probes launched to investigate it. What has been discovered is that its dense atmosphere is largely carbon dioxide and sodium and its surface, lime. Its magnetosphere suggests an iron-rich core, but its heavy gravity precludes most development."
+            },
+            {
+              "name": "nambu",
+              "image": "Gaseous4.webp",
+              "filter": "contrast(2) hue-rotate(20deg)",
+              "texture": true,
+              "orbit": "1.1",
+              "year": "1.2",
+              "size": "47852/6378",
+              "day": "15.5/24",
+              "coords": "e",
+              "rings": true,
+              "ringsColor": "rgba(100,100,100,0.4)",
+              "details": "A hydrogen-helium gas giant, Nambu has an extensive ring system but only twenty moons -- comparatively few. Its moon Sumiko is the smallest moon known to be tectonically active in the Milky Way, covered by bright factures. Visitors to Maskawa often take advantage of Nambu's refueling platforms."
+            },
+            {
+              "name": "maskawa",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(3)",
+              "overlay": "rgba(130, 0, 255, 0.5)",
+              "texture": true,
+              "orbit": "2.0",
+              "year": "2.8",
+              "size": "7105/6378",
+              "day": "37.6/24",
+              "coords": "nw",
+              "details": "A dense rock planet, Maskawa has a thick methane-ammonia atmosphere. Because of its similar conditions to the volus homeworld Irune billions of years ago when it first formed life, a large volus university, the Ten-Clan Academy, hosts symposia on the planet's surface. Unfortunately, despite their security precautions, pirates, organ-leggers, and slavers throughout the Terminus Systems have learned that kidnapped students and professors are a source of easy money. This only adds to the university's reputation as a visit or tenure at the Academy is a clear mark of commitment on any scientific resume."
+            },
+            {
+              "name": "karumto",
+              "image": "moon-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "2.3",
+              "year": "3.8",
+              "size": "6529/6378",
+              "day": "33.4/24",
+              "coords": "se",
+              "details": "An Earth-sized planet wrapped in an impermeable haze of carbon dioxide and ash, Karumto is an unforgiving place. Earthquakes, volcanic gases, and shrouds of dust have prevented any major settlements. Its sulfurous crust has yet to produce resources of interest."
+            },
+            {
+              "name": "kobayashi",
+              "image": "Gaseous6.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "3.9",
+              "year": "7.7",
+              "size": "6378/6378",
+              "day": "24/24",
+              "coords": "n",
+              "details": "A hydrogen-helium gas giant, Kobayashi has a faint ring system. A \"rust belt\" of decrepit refueling stations and abandoned habitats on its moons have attracted vorcha, krogan, and other ne'er-do-wells. Living a hand-to-mouth existence with no garden planet supplying them, they trade helium-3 fuel and recycled waste products to survive. Kidnapees from Maskawa are typically brought to Kobayashi to be released or sold as chattel to out-of-system slavers."
+            }
           ]
         }
       ]
