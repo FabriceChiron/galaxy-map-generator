@@ -1693,6 +1693,13 @@
           "star": "tasale",
           "top": 47,
           "left": 56,
+          "asteroids": [
+            {
+              "orbit": 3.7,
+              "year": 3.7,
+              "bodies": 100
+            }
+          ],
           "bodies": [
             {
               "name": "beregale",
