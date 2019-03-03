@@ -17,10 +17,10 @@
               "name": "wuo",
               "image": "Martian.webp",
               "texture": true,
-              "orbit": "76.4/20",
+              "orbit": "76.4",
               "year": "158",
               "size": "6959/6378",
-              "day": "158*365",
+              "day": "tidal",
               "coords": "s",
               "details": "Wuo is a terrestrial planet only known from scan data picked up by unmanned probes. Though over 76 AU from the blue giant Gorgon, temperatures in Wuo's orbit are still dangerously high. Only ships with very powerful heat radiating systems can venture that deep into the system. Fortunately, Wuo is not a terribly interesting world. It has a thin atmosphere of nitrogen and methane, and the scorching surface is mainly composed of alumina with deposits of platinum. The world is tidally locked to Gorgon, leaving the sunward side a scorched and irradiated wasteland, and the dark side frigid and ice-crusted."
             },
@@ -28,10 +28,10 @@
               "name": "vectra",
               "image": "Gaseous5.webp",
               "texture": true,
-              "orbit": "99.45/20",
+              "orbit": "99.45",
               "year": "234.7",
               "size": "69833/6378",
-              "day": "234.7*365",
+              "day": "tidal",
               "coords": "n",
               "details": "Vectra is a typical hydrogen-helium gas giant with traces of methane and sodium in its atmosphere. The heat of the star Gorgon is slowly blasting away the gas giant's massive atmosphere, which is visible as a long, dim tail that trails behind the planet."
             },
@@ -39,10 +39,10 @@
               "name": "camaron",
               "image": "Rockbits1.webp",
               "texture": true,
-              "orbit": "199/30",
+              "orbit": "199",
               "year": "664.8",
               "size": "5198/6378",
-              "day": "664.8*365",
+              "day": "tidal",
               "coords": "ne",
               "details": "Camaron is a terrestrial world with a thin atmosphere of carbon dioxide and argon. The surface is scorching hot, primarily composed of iron with deposits of nickel. Like Wuo, Camaron is tide-locked to the blue giant, forever \"looking into the face of the Gorgon\"."
             },
@@ -50,10 +50,10 @@
               "name": "sharblu",
               "image": "Cracklepotblue.webp",
               "texture": true,
-              "orbit": "373.63/50",
+              "orbit": "373.63",
               "year": "1711",
               "size": "43342/6378",
-              "day": "1711*365",
+              "day": "tidal",
               "coords": "sw",
               "details": "The asari crew who initially surveyed the system (during Earth's 17th century) named Sharblu after a then-popular soprano. The singer was renowned for her unusual skin tone, which was quite similar to that of the planet. Sharblu is too small to be a \"standard hydrogen-helium gas giant\" (William Hubbard, The New Solar System 4th ed, 1999; p. 194). In addition its 17.8 sol-mass star cannot have formed before 7.48 million years ago. It is too hot to attract ices. It is more likely a superterrestrial protoplanet. The clear gasses in its atmosphere will suffice to induce a Rayleigh scattering effect and an appearance of deep blue (with clouds)."
             },
@@ -61,10 +61,10 @@
               "name": "slekon",
               "image": "Gaseous7.webp",
               "texture": true,
-              "orbit": "709.9/100",
+              "orbit": "709.9",
               "year": "4483.1",
-              "size": "77.115/6378",
-              "day": "4483.1*365",
+              "size": "77115/6378",
+              "day": "tidal",
               "coords": "se",
               "details": "Orbiting at an unbelievable distance of 710 AU (over 66 billion kilometers) from Gorgon, Slekon is a huge gas giant, with an atmosphere tainted by methane and chlorine."
             }
@@ -165,6 +165,8 @@
               "name": "intai'sei",
               "image": "Savannah.webp",
               "texture": true,
+              "clouds": "Clouds3.webp",
+              "cloudsFilter": "opacity(70%)",
               "orbit": "15.68",
               "year": "47.8",
               "size": "5987/6378",
@@ -1552,6 +1554,231 @@
               "coords": "n",
               "details": "A hydrogen-helium gas giant, Kobayashi has a faint ring system. A \"rust belt\" of decrepit refueling stations and abandoned habitats on its moons have attracted vorcha, krogan, and other ne'er-do-wells. Living a hand-to-mouth existence with no garden planet supplying them, they trade helium-3 fuel and recycled waste products to survive. Kidnapees from Maskawa are typically brought to Kobayashi to be released or sold as chattel to out-of-system slavers."
             }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crescent Nebula",
+      "image": "crescent.webp",
+      "top": 36.7,
+      "left": 20,
+      "bodies": [
+        {
+          "name": "lusarn",
+          "star": "lusarn",
+          "top": 43,
+          "left": 39,
+          "asteroids": [
+            {
+              "orbit": 1.8,
+              "year": 1.8,
+              "bodies": 150
+            }
+          ],
+          "bodies": [
+            {
+              "name": "jontan",
+              "image": "saturn-texture.webp",
+              "filter": "contrast(1.5) brightness(0.9) saturate(1.5)",
+              "texture": true,
+              "orbit": "0.2",
+              "year": "25/365",
+              "size": "67428/6378",
+              "day": "tidal",
+              "coords": "e",
+              "details": "Jontan is a fairly standard close-orbiting \"Pegasid\" gas giant, orbiting the star Lusarn at high velocity and heated to temperatures of over 1,000 degrees. Analysis of its orbit has revealed a core of heavy elements with a mass double that of the planet's hydrogen-helium atmosphere."
+            },
+            {
+              "name": "euntanta",
+              "image": "mars-texture.webp",
+              "filter": "hue-rotate(60deg) saturate(0.7)",
+              "texture": true,
+              "orbit": "1.04",
+              "year": "0.3",
+              "size": "7740/6378",
+              "day": "24.2/24",
+              "coords": "nw",
+              "details": "Euntanta is remarkably close to Earth. Its orbital distance is similar, and while slightly larger, its reduced density yields similar mass, atmospheric pressure, and gravity. There the similarities end, for Lusarn is a hot class F star, emitting over eight times the energy of Sol. Euntanta is a parched wasteland, its water long since boiled away into its nitrogen-carbon dioxide atmosphere."
+            },
+            {
+              "name": "doriae",
+              "image": "pluto-texture.webp",
+              "filter": "saturate(2) hue-rotate(190deg)",
+              "texture": true,
+              "orbit": "2.48",
+              "year": "3",
+              "size": "8700/6378",
+              "day": "63/24",
+              "coords": "s",
+              "details": "Doriae is a large, hot world with a poisonous atmosphere of acidic nitrogen oxides. While the planet is too close to Lusarn for this to condense and fall as rain, this makes the environment too hostile for forms of life more sophisticated than bacteria to evolve."
+            },
+            {
+              "name": "tarith",
+              "image": "Swamp.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "7.8",
+              "year": "16.7",
+              "size": "5677/6378",
+              "day": "27.7/24",
+              "coords": "n",
+              "details": "Tarith is broadly Earth-like, with a fatal flaw; it has a relatively high amount of chlorine in its atmosphere, the reason for the greenish haze that becomes apparent when looking at the horizon. Chlorine has become a vital component in Tarinth's [sic] plant life; as a defense mechanism against native herbivores, many species evolved the ability to release clouds of toxic chlorine when disturbed. This gas is heavier than the atmospheric oxygen, and tends to settle in low places. While avoidable, this has placed Tarith near the bottom of the lists for colonization."
+            },
+            {
+              "name": "xetic",
+              "image": "Gaseous4.webp",
+              "filter": "hue-rotate(-30deg) brightness(0.8) contrast(1.3)",
+              "texture": true,
+              "orbit": "15.6",
+              "year": "47.4",
+              "size": "30054/6378",
+              "day": "13.7/24",
+              "coords": "w",
+              "details": "A common methane-ammonia gas giant, Xetic is best known for the infamous Kal'thor Camp. Established on the ice moon of Gesis, Kal'thor was a Blue Suns hostile environment training facility, run by a cadre of former batarian Special Intervention Unit operators. In 2168, a cluster-wide scandal broke out when it was revealed that the mortality rate of recruits sent to the camp might be as high as 18%."
+            }
+          ]
+        },
+        {
+          "name": "ondeste",
+          "star": "ondeste",
+          "top": 30,
+          "left": 25,
+          "bodies": [
+            {
+              "name": "zesmeni",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(3)",
+              "overlay": "rgba(28, 63, 111, 0.53)",
+              "texture": true,
+              "orbit": "0.8",
+              "year": "1.3",
+              "size": "5806/6378",
+              "day": "37.6/24",
+              "coords": "nw",
+              "details": "Cold, dim, and shrouded by a methane-ammonia atmosphere, Zesmeni has nevertheless attracted development by asari mining concerns that service military industries. There are significant lodes of valuable light metals present, including titanium and lithium. Titanium is the primary material used in mass accelerator slugs, and lithium is used in the military-grade \"droplet\" heat radiators used aboard warships."
+            },
+            {
+              "name": "acaeria",
+              "image": "Swamp.webp",
+              "filter": "saturate(0.4) contrast(1.2) brightness(1.2)",
+              "texture": true,
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(80%)",
+              "orbit": "1.68",
+              "year": "4",
+              "size": "6272/6378",
+              "day": "36.2/24",
+              "coords": "e",
+              "details": "Though nearly the size of Earth, Acaeria contains only 28% of its mass. It has a trace atmosphere of neon and molecular nitrogen, but the predominant carbon dioxide has long since frozen and fallen to the surface as frost. While Acaeria has a core of heavy metals, the bulk of the planet's volume consists of water ice. Several unique forms of long-chain carbon molecules have been recovered on the surface, pushed up from beneath the ice by cryovolcanic processes. Acaeria has a large rocky moon, compositionally similar to Luna."
+            },
+            {
+              "name": "maisuth",
+              "image": "Terrestrial1.webp",
+              "filter": "saturate(0.1)",
+              "clouds": "Clouds2.webp",
+              "cloudsFilter": "opacity(60%)",
+              "texture": true,
+              "orbit": "2.35",
+              "year": "6.6",
+              "size": "3893/6378",
+              "day": "54.7/24",
+              "coords": "se",
+              "details": "Farthest from the dim red dwarf Ondeste, the ice dwarf Maisuth has attracted no interest beyond a cursory flyby by automated probe in 1874. No significant resources were noted."
+            }
+          ]
+        },
+        {
+          "name": "tasale",
+          "star": "tasale",
+          "top": 47,
+          "left": 56,
+          "bodies": [
+            {
+              "name": "beregale",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(3)",
+              "overlay": "rgba(28, 63, 111, 0.53)",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "0.5",
+              "size": "10640/6378",
+              "day": "45.7/24",
+              "coords": "sw",
+              "details": "While not a classical \"hothouse\" world like Venus, Beregale [sic] is scarcely more hospitable. In addition to being closest to the star Tasale, its core contains many radioactives and other heavy elements. These increase the heat of the planets and drive volcanism."
+            },
+            {
+              "name": "illium",
+              "image": "Terrestrial2.webp",
+              "filter": "saturate(0.8)",
+              "texture": true,
+              "orbit": "1.3",
+              "year": "1.5",
+              "size": "7431/6378",
+              "day": "25/24",
+              "coords": "ne",
+              "details": "llium is a classic garden world, developed to serve as entrepot between the Terminus Systems and the Asari Republics. To abet this trade, the normally stringent customs laws of Council space on product safety, proscribed materials, and sapient trafficking are relaxed. Officially Illium is not an asari world; it is colonized and operated by asari corporate interests. This gives it the same legal latitude enjoyed by the human corporate research enclaves of Noveria."
+            },
+            {
+              "name": "ponolus",
+              "image": "mercury-texture.webp",
+              "filter": "",
+              "overlay": "rgba(255,30,30,0.6)",
+              "texture": true,
+              "orbit": "2.08",
+              "year": "3",
+              "size": "5489/6378",
+              "day": "36.2/24",
+              "coords": "e",
+              "details": "A fairly typical Venusian \"hothouse,\" Ponolus seems almost tame compared to the violent volcanic outbursts of the inner world, Beregale. In contrast, Ponolus is nearly inert, with no active volcanoes or plate tectonics."
+            },
+            {
+              "name": "teukria",
+              "image": "moon-texture.webp",
+              "filter": "brightness(0.8) contrast(1.2)",
+              "texture": true,
+              "orbit": "3.05",
+              "year": "5.33",
+              "size": "1120/6378",
+              "day": "17.3/24",
+              "coords": "s",
+              "details": "Named for a legendary asari archer from Thessia's Iron Age, Teukria is an asteroid large enough to qualify as a dwarf planet or, as some term it, a \"mesoplanet\". Its gravity is sufficient to give it a spherical shape. Developed for nickel and iron mining, Teukria was abandoned before the Reapers reached the system. Its facilities are now dark and cold."
+            },
+            {
+              "name": "thail",
+              "image": "Gaseous4.webp",
+              "filter": "saturate(1.5) contrast(1.2) hue-rotate(20deg)",
+              "texture": true,
+              "rings": true,
+              "ringsColor": "rgba(255, 255, 255, 0.4)",
+              "orbit": "4.46",
+              "year": "9.4",
+              "size": "55263/6378",
+              "day": "15.5/24",
+              "coords": "nw",
+              "details": "Thail is a typical hydrogen-helium gas giant. Its complex system of rings is unstable, dating back only a few million years. They are thought to be the shattered remains of a comet."
+            },
+            {
+              "name": "naxell",
+              "image": "Gaseous6.webp",
+              "filter": "hue-rotate(20deg) saturate(1.4) contrast(0.9)",
+              "texture": true,
+              "orbit": "9.37",
+              "year": "28.8",
+              "size": "22981/6378",
+              "day": "10.1/24",
+              "coords": "n",
+              "details": "Naxell is an ammonia-methane ice giant. Several smaller energy corporations shut out of the big market in the Faia gateway system are attempting to develop a local helium-3 fuel mining infrastructure to service Illium. The leading investor is the human corporation Eldfell-Ashland Energy. Their efforts have been hampered by the extralegal pressure the \"H-3 Cartels\" in Faia system can bring to bear, from simple price undercuts to bureaucratic obstructions (denied permits and constant \"health and safety\" inspections)."
+            }
+          ]
+        },
+        {
+          "name": "zelene",
+          "star": "zelene",
+          "top": 66,
+          "left": 55,
+          "bodies": [
+
           ]
         }
       ]
