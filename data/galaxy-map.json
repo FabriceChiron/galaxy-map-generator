@@ -1785,7 +1785,58 @@
           "top": 66,
           "left": 55,
           "bodies": [
-
+            {
+              "name": "nepyma",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.5)",
+              "overlay": "rgba(7, 82, 7, 0.5)",
+              "texture": true,
+              "orbit": "0.8",
+              "year": "0.8",
+              "size": "6378/6378",
+              "day": "tidal",
+              "coords": "e",
+              "details": "Tidally locked to the star Zelene, Nepyma has the expected \"hot pole\" and \"cold pole.\" Along the terminator is a thin band of nearly-habitable terrain. Unfortunately, the local biosphere is based on a chlorinated oxygen atmosphere. It is not sophisticated, but it has proven highly dangerous."
+            },
+            {
+              "name": "helyme",
+              "image": "Terrestrial3.webp",
+              "filter": "",
+              "texture": true,
+              "tilt": 38,
+              "clouds": "Clouds3.webp",
+              "cloudsFilter": "opacity(50%)",
+              "orbit": "1.2",
+              "year": "1.5",
+              "size": "5522/6378",
+              "day": "44.4/24",
+              "coords": "n",
+              "details": "Helyme is a \"post-garden\" world that once enjoyed an Earth-like oxygen-nitrogen atmosphere. It is still blessed with plentiful water, but a generally cold climate (and extreme seasonal shifts, courtesy of a 38-degree axial tilt). <br><br>Helyme is thought to be the homeworld of the arthenn, a spacefaring species which disappeared approximately 300,000 years ago. Precisely what happened to Helyme is still under debate. It appears a global extinction occurred, wiping out all native animal life forms more complex than zooplankton. Plant forms were not affected, but the lack of oxygen-breathing life caused oxygenation of the atmosphere. Plant life was reduced after lightning storms ignited global wildfires."
+            },
+            {
+              "name": "epho",
+              "image": "pluto-texture.webp",
+              "overlay": "rgba(255, 205, 0, 0.31)",
+              "texture": true,
+              "orbit": "1.56",
+              "year": "2.22",
+              "size": "8031/6378",
+              "day": "70/24",
+              "coords": "sw",
+              "details": "Epho is a rocky world with an atmosphere of oxygen and carbon dioxide. There are large craters scattered across its surface, obviously from hypervelocity kinetic impactors. Stretching between these locations are the shattered remains of magnetic levitation rail lines, which strongly suggests the craters represent the former locations of arthenni mining outposts or other settlements. The equatorial region contains an extensive network of canyons, formed by the planet's abundant liquid water."
+            },
+            {
+              "name": "gaelon",
+              "image": "Gaseous6.webp",
+              "filter": "saturate(1.9) contrast(0.9)",
+              "texture": true,
+              "orbit": "2.96",
+              "year": "5.7",
+              "size": "63539/6378",
+              "day": "8.9/24",
+              "coords": "se",
+              "details": "Gaelon is surrounded by an extensive ring system. The inner rings are composed pulverized nano-manufactured carbon materials, thought to be the remains of an arthenni helium-3 mining infrastructure. The few pieces of larger debris found indicate a materials technology at least equal to the current galactic state-of-the-art.<br><br>The outer rings consist of water-ice, silicate dust, and the odd bit of rock. Analysis of the debris often show [sic] shock damage and evidence of rapid heating."
+            }
           ]
         }
       ]
