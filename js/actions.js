@@ -20,7 +20,7 @@ const createActiveAstralBody = (astralBody, stellarSystem) => {
     // history.pushState(astralBodyToActivate.id, astralBodyToActivate.id, astralBodyToActivate.id);
   let activeAstralBody = astralBodyToActivate.cloneNode(true);
   
-  activeAstralBody.style = '';
+  // activeAstralBody.style = '';
   activeAstralBody.id += 'Active';
   activeAstralBody.className += ' active';
 

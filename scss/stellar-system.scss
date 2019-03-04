@@ -273,6 +273,8 @@
     z-index: 100;
     // --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor));
     --planet-size: 40vw;
+    --animationName: none !important;
+
 
     .orbit.satellite {
       --orbit-size: calc(60vw * var(--thisActiveFactor));
@@ -385,6 +387,7 @@
 
 
       .astralBody {
+        // --orbit-tilt: 0deg;
         --shadow-size: var(--planet-size);
         width: 100%;
         height: 100%;
@@ -423,6 +426,7 @@
           background: inherit;
           border-radius: inherit;
           filter: var(--filter);
+          transform: rotateZ(var(--tilt));
         }
 
         .mask, .clouds {
@@ -435,6 +439,10 @@
 
         .clouds {
           animation: slide calc(var(--revolution-duration) * 1.5) linear infinite;
+          transform: rotateZ(var(--tilt));
+          position: absolute;
+          top: 0;
+          left: 0;
         }
 
         .mask {
@@ -610,6 +618,13 @@
   &.active,
   &.active:hover {
     
+    animation-play-state: paused;
+    // animation: none;
+
+    .position .astralBody-holder {
+      animation-play-state: paused;
+      // animation: none;
+    }
 
     // --planet-size: 60vh;
     // @media screen and (orientation: portrait) {

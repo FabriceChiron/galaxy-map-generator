@@ -78,6 +78,7 @@ class AstralBody {
     this.realOrbit = obj.orbit;
     this.orbitSize = (obj.orbit) ? dimRet(obj.orbit, 3) : 1;
     this.orbitTilt = (obj.orbitTilt) ? obj.orbitTilt : 0;
+    this.tilt = (obj.tilt) ? obj.tilt : 0;
     this.orbitFactor = (obj.orbitFactor) ? obj.orbitFactor : 1;
     this.bodySize = (obj.size) ? ( (realSizes === false && bodyType === 'star') ? 3 : eval(obj.size)) : (bodyType === "star") ? ((realSizes === true) ? 50 : 3) : 1;
     this.realYear = obj.year;
@@ -237,13 +238,15 @@ class AstralBody {
         style: `
         --thisOrbit: ${this.orbitSize};
         --orbit-tilt: ${this.orbitTilt}deg;
+        --tilt: ${this.tilt}deg;
         --thisStarSize: ${this.starSize};
         --orbitFactor: ${this.orbitFactor};
         --thisSize: ${this.bodySize}; 
         --sizeFactor: ${this.sizeFactor};
         --thisYear: ${this.yearLength};
         --thisDay: ${this.dayLength};
-        --thisActiveFactor: ${(1 + (this.index * 0.25))};
+        --thisActiveFactor: ${(1 + (this.index * 0.25))
+        };
          `,
       });
     }
@@ -283,6 +286,10 @@ class AstralBody {
 
     this.addBackground();
 
+    if(this.tilt > 0) {
+      console.log(this.tilt);
+      this.astralOrbit.style.setProperty('--tilt', `${this.tilt}deg)`);
+    }
     
     this.addLight();
 
@@ -290,10 +297,10 @@ class AstralBody {
       this.addClouds();
     }
 
-
     if(this.rings) {
       this.addRings();
     }
+
 
     if(this.details && this.details.length) {
       this.addDetails();
