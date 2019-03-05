@@ -1842,6 +1842,179 @@
       ]
     },
     {
+      "name": "Eagle Nebula",
+      "top": 42.4,
+      "left": 32.9,
+      "image": "eagle-nebula.webp",
+      "bodies": [
+        {
+          "name": "Amun",
+          "star": "Amun",
+          "filter": "brightness(1.4) hue-rotate(-40deg)",
+          "top": 15,
+          "left": 63,
+          "bodies": [
+            {
+              "name": "sekhmet",
+              "image": "Gaseous1.webp",
+              "filter": "hue-rotate(160deg) contrast(1.3) saturate(1.2)",
+              "texture": true,
+              "orbit": "0.4",
+              "year": "0.3",
+              "size": "38347/6378",
+              "day": "9/24",
+              "coords": "sw",
+              "details": "A hydrogen-helium gas giant believed to have entered Amun's system within the last billion years."
+            },
+            {
+              "name": "sobek",
+              "image": "Gaseous1.webp",
+              "filter": "hue-rotate(160deg) contrast(1.7) saturate(1.5)",
+              "overlay": "rgba(3, 107, 103, 0.5)",
+              "texture": true,
+              "orbit": "0.8",
+              "year": "0.7",
+              "size": "72530/6378",
+              "day": "12.4/24",
+              "coords": "ne",
+              "details": "Sobek is a hydrogen-nitrogen gas giant believed to be an extrasolar capture."
+            },
+            {
+              "name": "anhur",
+              "image": "Alpine.webp",
+              "filter": "saturate(0.8) contrast(1.1)",
+              "overlay": "",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(75%) blur(2px)",
+              "texture": true,
+              "orbit": "1.7",
+              "year": "2.2",
+              "size": "6829/6378",
+              "day": "12.4/24",
+              "coords": "e",
+              "details": "A garden world with heavy populations of humans and batarians, Anhur was home to one of the ugliest violations of sapient rights in modern human history."
+            },
+            {
+              "name": "neith",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.5)",
+              "texture": true,
+              "orbit": "3.4",
+              "year": "6.3",
+              "size": "7008/6378",
+              "day": "54.7/24",
+              "coords": "nw",
+              "details": "Cold and dry, Neith has a thin nitrogen atmosphere and vast salt flats at its equator, which is warm enough for liquid water to pool during the summer period. The revealed salt is collected and sold to sodium-poor planets for agricultural purposes."
+            },
+            {
+              "name": "bast",
+              "image": "Gaseous3.webp",
+              "filter": "hue-rotate(-40deg) saturate(1.3) contrast(1.3) brightness(0.8)",
+              "overlay": "",
+              "texture": true,
+              "orbit": "7",
+              "year": "18.6",
+              "size": "18557/6378",
+              "day": "13.6/24",
+              "coords": "n",
+              "details": "A small hydrogen-nitrogen gas giant, Bast and its moons served as the Eclipse mercenary company's fallback position after their defeat on Neith. Once they had gathered their strength they leaked a false position to the Na'hesit consortium to lure them into a trap, which devolved into a pitched battle. Both sides claimed victory. Na'hesit lost more ships but could afford the setback in a way Eclipse could not."
+            }
+          ]
+        },
+        {
+          "name": "Imir",
+          "star": "Imir",
+          "filter": "brightness(1.4) hue-rotate(-40deg)",
+          "top": 31,
+          "left": 56,
+          "asteroids": [
+            {
+              "orbit": 2.5,
+              "year": 2.5,
+              "bodies": 80
+            }
+          ],
+          "bodies": [
+            {
+              "name": "osalri",
+              "image": "Gaseous1.webp",
+              "filter": "saturate(0.2) contrast(1.8) hue-rotate(50deg)",
+              "texture": true,
+              "overlay": "rgba(156, 224, 35, 0.25)",
+              "orbit": "0.6",
+              "year": "0.5",
+              "size": "2622/6378",
+              "day": "33.4/24",
+              "coords": "sw",
+              "details": "Osalri is a boiling hot dwarf planet close to the G-class star Imir. Too hot for lucrative exploitation, its only satellites are defunct solar arrays destroyed by pirates long ago."
+            },
+            {
+              "name": "korlus",
+              "image": "pluto-texture.webp",
+              "filter": "saturate(3) hue-rotate(-80deg) contrast(0.7)",
+              "clouds": "Clouds4.webp",
+              "cloudsFilter": "blur(2px) opacity(90%) brightness(0.7) contrast(0.7)",
+              "texture": true,
+              "orbit": "1.3",
+              "year": "1.5",
+              "size": "6850/6378",
+              "day": "28.9/24",
+              "coords": "nw",
+              "details": "\"A garbage scow with a climate\" was how one Citadel Council member described Korlus at the turn of the century, and ever since then the Korlus Tourist Bureau has been attempting to re-brand their planet. It hasn't worked -- though they have tried calling it \"the recycling center of the galaxy\", corruption scandals and a staggering murder rate ensure that Korlus' image is permanently stained."
+            },
+            {
+              "name": "quodis",
+              "image": "Gaseous8.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "5",
+              "year": "11.2",
+              "size": "48918/6378",
+              "day": "13.3/24",
+              "coords": "e",
+              "details": "A hydrogen-helium gas giant, Quodis is used by countless spaceships to discharge their drive cores after coming into the system. Commercial vessels restock on their supplies of helium-3 from one of its many orbital platforms."
+            },
+            {
+              "name": "gregas",
+              "image": "venus-texture.webp",
+              "filter": "saturate(0.2) hue-rotate(130deg)",
+              "texture": true,
+              "orbit": "10",
+              "year": "31.7",
+              "size": "5240/6378",
+              "day": "69.9/24",
+              "coords": "se",
+              "details": "Cold and distant, Gregas is currently 65 percent rock by mass and 35 percent frozen methane and nitrogen ices. In the planet's \"summer years\" these percentages change as the sun heats its ice and it evaporates into a thin atmosphere. Its calcium-heavy crust has been scouted by countless Korlus surveying teams, most of whom came back empty-handed."
+            }
+          ]
+        },
+        {
+          "name": "Malgus",
+          "star": "Malgus",
+          "top": 20,
+          "left": 45,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Relic",
+          "star": "Relic",
+          "top": 20,
+          "left": 65,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Strabo",
+          "star": "Strabo",
+          "top": 50,
+          "left": 35,
+          "bodies": [
+          ]
+        }
+      ]
+    },
+    {
       "name": "Exodus Cluster",
       "top": 75.8,
       "left": 53.6,
@@ -2969,6 +3142,7 @@
               "texture": true,
               "image": "earth-texture.webp",
               "orbit": "1",
+              "tilt": 23.5,
               "size": "1",
               "year": "1",
               "coords": "nw",
