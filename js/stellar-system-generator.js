@@ -336,7 +336,11 @@ class AstralBody {
 }
 
 instantiateAstralBody = (bodyToCreate, containerSelector, parentName, type, name, index, path) => {
-  const Name = toClassObject(name);
+  let Name = toClassObject(name).replace(' ', '');
+
+  if(type === 'star') {
+    Name += 'Star';
+  }
   
   window[Name] = new AstralBody(
     bodyToCreate,

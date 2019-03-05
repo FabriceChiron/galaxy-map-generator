@@ -115,8 +115,19 @@ const removeStellarSystemUnless = (systemToKeepId) => {
     el.style.setProperty('--scale', '0');
 
     setTimeout(function() {
+      i = 0;
+      
+      [...el.querySelectorAll('.orbit')].map(item => {
+        bodyToRemove = (item.classList.contains('star')) ? `${item.id}Star` : item.id;
+
+        if(item.id) {
+          delete window[toClassObject(bodyToRemove.replace('-',''))] 
+        } else {
+          delete window[`${el.id.replace('_section', '')}_asteroids${i}`]
+          i++
+        }
+      });
       removeElement(el.id);
-      // document.body.className = document.body.className.replace(' allows-starship', '');
     }, 500);
   }
 }

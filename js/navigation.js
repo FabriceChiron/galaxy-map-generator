@@ -27,12 +27,10 @@ const decomposeHash = (sPath) => {
   highlightNav(aPath);
 
   if(aPath[0] === ''){
-    // document.getElementById('mouseTracker').style.display = 'none';
     closeClusterUnless();
     removeStellarSystemUnless();
     removeActiveAstralBodyUnless();
   } else {
-    // document.getElementById('mouseTracker').style.display = 'block';
     closeClusterUnless(aPath[0]);
     openCluster(aPath[0], showStarShip);
     
@@ -57,13 +55,9 @@ const decomposeHash = (sPath) => {
       }
   
       if(aPath.length > 2) {
-        // removeActiveAstralBodyUnless(aPath[aPath.length - 1]);
-
-        // const astralBodyTarget = document.getElementById(aPath[aPath.length - 1]);
         const astralBodyTarget = document.querySelector(`.orbit[id^=${aPath[aPath.length - 1]}]`);
 
         if(document.querySelector('.orbit.active') !== null) {
-          // console.log('yo');
           removeElement(document.querySelector('.orbit.active').id);
         } 
         
