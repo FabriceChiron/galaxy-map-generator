@@ -2075,9 +2075,9 @@
             {
               "name": "first land",
               "image": "Gaseous10.webp",
-              "filter": "contrast(1.5)",
+              "filter": "contrast(2) saturate(0.4)",
               "rings": true,
-              "ringsColor": "rgba(108, 191, 22, 0.5)",
+              "ringsColor": "rgba(138, 159, 115, 0.6)",
               "texture": true,
               "orbit": "2.1",
               "year": "3.4",
