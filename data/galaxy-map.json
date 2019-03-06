@@ -1994,6 +1994,43 @@
           "top": 20,
           "left": 45,
           "bodies": [
+            {
+              "name": "uzin",
+              "image": "Gaseous2.webp",
+              "filter": "saturate(0.9) contrast(2.4) hue-rotate(40deg)",
+              "overlay": "rgba(142, 48, 8, 0.7)",
+              "texture": true,
+              "orbit": "0.3",
+              "year": "0.2",
+              "size": "74137/6378",
+              "day": "12.4/24",
+              "coords": "s",
+              "details": "Named for one of many krogan gods of vengeance, Uzin is a gas giant close enough to its orange sun that none of its moons are considered habitable. Its composition is largely hydrogen and methane, with traces of xenon that the krogan collect for use in ion drives. Uzin is well within the \"frost line\" where gas giants usually do not form, leading astronomers to believe that its orbit used to be further from the star. If so this would indicate a seriously unstable orbit, and the planet may plunge into its star within a few million years."
+            },
+            {
+              "name": "wrill",
+              "image": "Martian.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "0.5",
+              "size": "5999/6378",
+              "day": "30.1/24",
+              "coords": "",
+              "details": "A planet only a vorcha could love, Wrill is notable for its \"near miss\" climate: punishing heat and a thin toxic methane-ethane atmosphere. Its surface is dotted with krogan and vorcha habitats eking out a meager living off the planet's tin and copper deposits and killing anyone who cuts into their profits."
+            },
+            {
+              "name": "flett",
+              "image": "mars-texture.webp",
+              "filter": "hue-rotate(50deg) saturate(1) contrast(0.7)",
+              "texture": true,
+              "orbit": "1.2",
+              "year": "1.5",
+              "size": "5623/6378",
+              "day": "48.2/24",
+              "coords": "e",
+              "details": "Uninhabitable by most species, Flett is home to the Blood Pack's vorcha training and breeding grounds. The thick atmosphere is nearly all nitrogen and lacks oxygen, which poses no hazard to the vorcha. Needing little but imports of food and water, vorcha mercenaries and mercenaries-to-be train religiously to overpower and kill whoever the company is at war with this time."
+            }
           ]
         },
         {
@@ -2001,15 +2038,132 @@
           "star": "Relic",
           "top": 20,
           "left": 65,
+          "asteroids": [
+            {
+              "orbit": 11,
+              "year": 11,
+              "bodies": 200
+            }
+          ],
           "bodies": [
+            {
+              "name": "murky water",
+              "image": "neptune-texture.webp",
+              "filter": "",
+              "clouds": "Clouds4.webp",
+              "cloudsFilter": "opacity(60%) saturate(0) brightness(2)",
+              "texture": true,
+              "orbit": "0.7",
+              "year": "0.7",
+              "size": "10551/6378",
+              "day": "53.9/24",
+              "coords": "s",
+              "details": "Despite the name, Murky Water has yet to show any signs of having water whatsoever. Its name is a literal translation from the original hanar, who consider murky water a sign of danger. Murky Water has a hazy, crushing atmosphere of carbon dioxide and methane which brings the surface heat to boiling levels. It remains unexploited, its gravity and temperature too high to bother."
+            },
+            {
+              "name": "fitful current",
+              "image": "Martian.webp",
+              "filter": "hue-rotate(50deg) saturate(0.6) contrast(1.1)",
+              "texture": true,
+              "orbit": "1.2",
+              "year": "1.5",
+              "size": "9260/6378",
+              "day": "41.9/24",
+              "coords": "nw",
+              "details": "Fitful Current was so named because it orbits in retrograde, indicating that it may have been an extrasolar planet that was captured by the Relic System's gravity well. Large for a rock planet, Fitful Current has only traces of hydrogen in its extremely thin atmosphere. Hanar robo-miners have recovered some uranium and thorium deposits from its depths."
+            },
+            {
+              "name": "first land",
+              "image": "Gaseous10.webp",
+              "filter": "contrast(1.5)",
+              "rings": true,
+              "ringsColor": "rgba(108, 191, 22, 0.5)",
+              "texture": true,
+              "orbit": "2.1",
+              "year": "3.4",
+              "size": "53826/6378",
+              "day": "10.9/24",
+              "coords": "ne",
+              "details": "A hydrogen-helium gas giant believed to be an extrasolar capture, First Land is home to many space stations supporting the ubiquitous refueling platforms. A thriving community of drell and hanar make their homes in orbit here, giving the solar system's robo-miners somewhere to go when the 50-hour days and nights are driving them mad."
+            },
+            {
+              "name": "island wind",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(320deg) contrast(1.4) saturate(1.2)",
+              "texture": true,
+              "orbit": "3.9",
+              "year": "7.7",
+              "size": "73088/6378",
+              "day": "17/24",
+              "coords": "e",
+              "details": "A large hydrogen-nitrogen gas giant, Island Wind is named for the sweet-smelling land breezes that come off of the archipelagos of Kahje in the evening. As tumultuous as any other Jovian giant, Island Wind has cyclones that span tens of thousands of kilometers."
+            },
+            {
+              "name": "rough tide",
+              "image": "Martian.webp",
+              "filter": "hue-rotate(-80deg) saturate(1.2) contrast(1.4)",
+              "texture": true,
+              "orbit": "7.8",
+              "year": "21.8",
+              "size": "2125/6378",
+              "day": "67.7/24",
+              "coords": "n",
+              "details": "A dwarf planet with a shroud of carbon monoxide and dioxide that keeps it warm, Rough Tide was so named when large veins of platinum and palladium were struck and miners from all over the cluster came in to stake their claims. Hanar police and their drell enforcers clashed with krogan and vorcha in an ugly series of race riots in the late 2170s, and the planet has only grudgingly kept a shaky peace since then."
+            },
+            {
+              "name": "preying mouth",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(190deg) contrast(1.7) brightness(0.8)",
+              "texture": true,
+              "orbit": "16",
+              "year": "64.2",
+              "size": "40775/6378",
+              "day": "11.7/24",
+              "coords": "w",
+              "details": "A hydrogen-helium gas giant, Preying Mouth is a ship-killing enigma, the Bermuda Triangle of the Terminus Systems. There are many theories why ships never return from there: undetectable space debris; old disruptor torpedoes and magnetic mines from a long-forgotten war; even miniature black holes. But what is clear is that too many ships have been lost there for it to be happenstance."
+            },
+            {
+              "name": "beach thunder",
+              "image": "moon-texture.webp",
+              "filter": "contrast(1.3)",
+              "texture": true,
+              "orbit": "33",
+              "year": "190.2",
+              "size": "8058/6378",
+              "day": "54.1/24",
+              "coords": "se",
+              "details": "Beach Thunder lives and dies on the price of titanium, the metal being the only reason to come to this frozen rock. A best-selling e-novel, \"The Hard Stuff\", has popularized the story of the miners on the planet. It follows the hanar and drell robo-miners competing with krogan and vorcha who simply put on environment suits and lase the titanium out more or less by hand. As the novel's promotional screed says, \"accidents are frequent, rivalry is fierce, and vengeance served up fast\"."
+            }
           ]
         },
         {
           "name": "Strabo",
           "star": "Strabo",
+          "filter": "saturate(0.2) brightness(1.5)",
           "top": 50,
           "left": 35,
+          "asteroids": [
+            {
+              "orbit": 2,
+              "year": 2,
+              "bodies": 250
+            }
+          ],
           "bodies": [
+            {
+              "name": "antigar",
+              "image": "Gaseous10.webp",
+              "filter": "contrast(1.5) saturate(0.5)",
+              "rings": true,
+              "ringsColor": "rgba(108, 138, 76, 0.5)",
+              "texture": true,
+              "orbit": "4",
+              "year": "8",
+              "size": "24193/6378",
+              "day": "11.2/24",
+              "coords": "e",
+              "details": "Charted by a salarian mining expedition that went off course due to computer error, Antigar is a hydrogen and helium gas giant with 11 known moons and dusty rings."
+            }
           ]
         }
       ]
