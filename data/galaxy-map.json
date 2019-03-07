@@ -2169,6 +2169,87 @@
       ]
     },
     {
+      "name": "Far Rim",
+      "top": 22.8,
+      "left": 81,
+      "image": "far-rim.webp",
+      "bodies": [
+        {
+          "name": "Dholen",
+          "star": "Dholen",
+          "top": 35,
+          "left": 54,
+          "size": 150,
+          "filter": "hue-rotate(-66deg) saturate(2)",
+          "asteroids": [
+            {
+              "orbit": 1.9,
+              "year": 1.9,
+              "bodies": 60
+            }
+          ],
+          "bodies": [
+            {
+              "name": "gotha",
+              "image": "mars-texture.webp",
+              "filter": "hue-rotate(33deg)",
+              "texture": true,
+              "orbit": "1.5",
+              "year": "1.8",
+              "size": "1056/6378",
+              "day": "66.4/24",
+              "coords": "sw",
+              "details": "A dwarf planet, Gotha has a pressure-cooker atmosphere that brings its surface temperature to a scorching level. Carbon dioxide and ethane are plentiful in the planet's hazy atmosphere."
+            },
+            {
+              "name": "charoum",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-70deg) contrast(1.2) brightness(0.8)",
+              "texture": true,
+              "orbit": "2.9",
+              "year": "4.9",
+              "size": "54532/6378",
+              "day": "11.3/24",
+              "coords": "e",
+              "details": "Once a starship refueling station for the quarians, Charoum has expanded under geth rule. Thousands of orbital platforms surround the planet and its many moons, refining helium into helium-3. A vast geth fleet comes and goes between Charoum and Haestrom, preventing all but the most stealthy of spy drones from discovering any information about it. Current estimates place the geth fleet numbers between 5,000 and 10,000 ships, with unknown levels of armament."
+            },
+            {
+              "name": "heastrom",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(24deg) saturate(0.7)",
+              "texture": true,
+              "orbit": "6.3",
+              "year": "15.8",
+              "size": "6721/6378",
+              "day": "18.5/24",
+              "coords": "ne",
+              "details": "Formerly a quarian colony, Haestrom was established to observe the phenomena on Dholen, the system's parent star. Dholen appeared to be unstable with a high possibility of erupting prematurely into a red giant.<br><br>Haestrom was lost to the geth in 1896 CE. Soon after, all communication from the planet and its attendant space stations ceased. The geth have shown no signs of treating Dholen as a threat over the past three centuries other than establishing several space stations near it. Dholen's magnetic eruptions and solar output overwhelm most communications near it, and it is unclear how the geth have compensated."
+            }
+          ]
+        },
+        {
+          "name": "Ma-at",
+          "star": "Ma-at",
+          "top": 60,
+          "left": 62,
+          "bodies": [
+            {
+              "name": "ammut",
+              "image": "Gaseous10.webp",
+              "filter": "saturate(0.7) contrast(1.5) hue-rotate(-20deg)",
+              "texture": true,
+              "orbit": "102.1",
+              "year": "1036",
+              "size": "92430/6378",
+              "day": "12.2/24",
+              "coords": "e",
+              "details": "Ammut is an enormous hydrogen-helium gas giant with a mass approximately nine times that of Jupiter and nearly 2,900 times that of Earth. Despite massive pressure its core has failed to ignite in a fusion reaction, qualifying it as a failed star. It is believed to have captured all other planet-sized bodies in the solar system as moons or in impact events leading to its name, which means \"Devourer\". Unintimidated by this phenomena, the geth have colonized many of Ammut's moons and skim the hydrogen from Ammut's upper atmosphere."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Exodus Cluster",
       "top": 75.8,
       "left": 53.6,
@@ -2802,6 +2883,46 @@
               "coords": "nw",
               "details": "Veyaria is a huge hydrogen-helium gas giant with traces of methane in its atmosphere."
             }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hades Nexus",
+      "top": 39,
+      "left": 88.5,
+      "image": "hades-nexus.webp",
+      "bodies": [
+        {
+          "name": "Hekat",
+          "star": "Hekat",
+          "top": 55,
+          "left": 61,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Hoplos",
+          "star": "Hoplos",
+          "top": 47,
+          "left": 70,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Pamyat",
+          "star": "Pamyat",
+          "top": 41,
+          "left": 57,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Sheol",
+          "star": "Sheol",
+          "top": 41,
+          "left": 34,
+          "bodies": [
           ]
         }
       ]
