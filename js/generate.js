@@ -9,7 +9,7 @@ fetch('data/galaxy-map.json')
 
       if(cluster.bodies.length > 0) {
         cluster.bodies.map(stellarSystem => {
-          const StellarSystemName = toClassObject(camelize(stellarSystem.name));
+          const StellarSystemName = toClassObject(noDash(camelize(stellarSystem.name)));
           window[StellarSystemName] = new StellarSystem(stellarSystem, `#${spaceToDash(cluster.name).toLowerCase()}`, `${spaceToDash(cluster.name).toLowerCase()}`);
           window[StellarSystemName].render();
         })
