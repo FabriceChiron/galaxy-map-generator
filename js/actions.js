@@ -29,8 +29,8 @@ const createActiveAstralBody = (astralBody, stellarSystem) => {
   // stripHref(activeAstralBody.querySelector('.astralBody').href);
 
   [...activeAstralBody.querySelectorAll('.orbit')].map(innerAstralBody =>{
-    innerAstralIndex = innerAstralBody.dataset.index;
-    innerAstralBody.style = `--thisActiveFactor: ${(1 + (innerAstralIndex * 0.25))};`;
+    // innerAstralIndex = innerAstralBody.dataset.index;
+    // innerAstralBody.style += `--thisActiveFactor: ${(1 + (innerAstralIndex * 0.25))};`;
   });
 
   toggleClass(stellarSystem, 'hovered');
