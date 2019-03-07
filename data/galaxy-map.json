@@ -2894,11 +2894,61 @@
       "image": "hades-nexus.webp",
       "bodies": [
         {
-          "name": "Hekat",
-          "star": "Hekat",
+          "name": "Hekate",
+          "star": "Hekate",
+          "filter": "saturate(0.2)",
           "top": 55,
           "left": 61,
           "bodies": [
+            {
+              "name": "asteria",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(30deg) saturate(0.5)",
+              "texture": true,
+              "orbit": "1.3",
+              "year": "1.5",
+              "size": "5900/6378",
+              "day": "21.4/24",
+              "coords": "nw",
+              "details": "A habitable planet known for its arid sulfurous deserts, Asteria is colonized near the poles to avoid the uncomfortable temperatures that can reach 65 degrees Celsius in more southern latitudes. While the seas contain primitive animal life, little of it can live on land, leaving the soil to hardy plants that can survive in the extreme heat. Asteria is home to thriving human and asari agrarian colonies but little in the way of manufacturing or mining."
+            },
+            {
+              "name": "ker",
+              "image": "martian.webp",
+              "filter": "hue-rotate(-10deg)",
+              "texture": true,
+              "orbit": "2.2",
+              "year": "3.3",
+              "size": "6420/6378",
+              "day": "61.7/24",
+              "coords": "se",
+              "details": "A dry, desolate planet, Ker is temperate but supports little life above the microscopic level. Its Earth-like temperatures and gravity make it an appealing place to build habitation hideaways, attracting batarian slavers and criminals who can't afford more luxurious safehouses on other planets. Its forgiving nitrogen-helium atmosphere makes EVAs possible with a minimal amount of equipment; a breathing mask and warm clothing is [sic] usually sufficient."
+            },
+            {
+              "name": "triodia",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(130deg) contrast(1.4) brightness(0.8) saturate(1.5)",
+              "texture": true,
+              "orbit": "4.8",
+              "year": "10.5",
+              "size": "27206/6378",
+              "day": "18.7/24",
+              "coords": "e",
+              "details": "A modestly-sized gas giant with an icy core, Triodia's hydrogen and methane atmosphere gives it a bluish color. It has fourteen moons, named after asari virtues."
+            },
+            {
+              "name": "bothros",
+              "image": "pluto-texture.webp",
+              "filter": "",
+              "overlay": "rgba(0, 125, 150, 0.3)",
+              "texture": true,
+              "orbit": "8.5",
+              "year": "14.8",
+              "size": "7191/6378",
+              "day": "51/24",
+              "coords": "w",
+              "details": "A rock and ice planet, Bothros is home to a scientific curiosity. Evidence of a primate-like spacefaring civilization was found frozen in its equatorial ice, ranging from melted fragments of metal to preserved remains of the creatures still wearing suits for extra-vehicular activity. Further exploration revealed that their habitation centers were vaporized by orbital bombardments from railgun-like weapons hitting with a force of approximately 120 kilotons of TNT. Only those that fled or happened to be away from the habitats were preserved in the ice, where they died of asphyxiation.<br><br>This unknown species did not come from Asteria, but scientific teams are looking for evidence that they visited there. It is difficult to believe they would colonize a frozen rock like Bothros and ignore a lush garden world. Their world of origin is also a mystery."
+            }
           ]
         },
         {
@@ -2907,6 +2957,73 @@
           "top": 47,
           "left": 70,
           "bodies": [
+            {
+              "name": "talaria",
+              "image": "mercury-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.1",
+              "year": "0.1",
+              "size": "3569/6378",
+              "day": "tidal",
+              "coords": "e",
+              "details": "A rock with all traces of atmosphere burned away, Talaria orbits the star Hoplos at a blistering pace: every 36 days. Though tidally locked, even its twilight belt and shaded side are too barren to support life. With so many resources on its sister planet Trident, Talaria has largely been ignored by the galactic surveying community."
+            },
+            {
+              "name": "makhaira",
+              "image": "Cracklepotblue.webp",
+              "filter": "saturate(0.3)",
+              "texture": true,
+              "orbit": "0.5",
+              "year": "129",
+              "size": "4733/6378",
+              "day": "34.9/24",
+              "coords": "nw",
+              "details": "A small rock planet, Makhaira's thin atmosphere and high albedo keeps it from being much hotter than it is. The crust is high in sodium oxide, giving the planet a whitish tinge.",
+              "bodies": [
+                {
+                  "name": "kopis",
+                  "image": "moon-texture.webp",
+                  "filter": "",
+                  "texture": true,
+                  "orbitFactor": 1,
+                  "orbit": "0.1",
+                  "year": "0.05",
+                  "size": "1733/6378",
+                  "day": "21.3",
+                  "coords": "s",
+                  "details": "Makhaira's largest moon, Kopis, is a desolate place with an extremely thin atmosphere. Its crust is largely silica-based, and there are no signs of water. Like its parent planet, its high albedo keeps it from being a total inferno, and when occluded by Makhaira, its temperatures can be nearly tolerable. Its low gravity can easily be countered by a vehicular or personal mass effect field for comfortable exploration."
+                }
+              ]
+            },
+            {
+              "name": "trident",
+              "image": "Tropical.webp",
+              "filter": "saturate(0.7) hue-rotate(15deg)",
+              "clouds": "earth-clouds.webp", 
+              "texture": true,
+              "orbit": "2",
+              "year": "2.8",
+              "size": "6905/6378",
+              "day": "27.6/24",
+              "coords": "se",
+              "details": "A human-dominated world with over 95% of its surface covered by salt water, Trident is home to a dazzling array of life. The oceans are filled with creatures ranging from tiny bivalves to mammoth vertebrates unequaled even by Earth's whales and ichthyosaurs. Small archipelagos create what little land there is, and its valuable real estate is fought over constantly."
+            },
+            {
+              "name": "aegis",
+              "image": "Gaseous3.webp",
+              "filter": "contrast(1.5) hue-rotate(-50deg)",
+              "overlay": "rgba(0, 200, 0, 0.3)",
+              "rings": true,
+              "ringsColor": "rgba(221, 182, 51, 0.3)",
+              "texture": true,
+              "orbit": "4.5",
+              "year": "9.6",
+              "size": "53682/6378",
+              "day": "27.6/24",
+              "coords": "w",
+              "details": "A hydrogen-helium gas giant, Aegis was the site of an unparalleled cosmic event roughly 1.8 million years ago. An extrasolar body about 200 square kilometers in size was drawn into Aegis' gravity well and struck the Jovian planet, blasting enough dust and material into orbit to create a ring."
+            }
           ]
         },
         {
@@ -2914,15 +3031,84 @@
           "star": "Pamyat",
           "top": 41,
           "left": 57,
+          "asteroids": [
+            {
+              "orbit": 8.5,
+              "year": 24.8,
+              "bodies": 200 
+            }
+          ],
           "bodies": [
+            {
+              "name": "komarov",
+              "image": "mercury-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "1",
+              "year": "1",
+              "size": "6861/6378",
+              "day": "39.6/24",
+              "coords": "nw",
+              "details": "First charted by the asari but colonized by humans, the Pamyat system is home to Komarov, an Earth-sized body near the star. It has little atmosphere to speak of, but this has not stopped exploration by robo-miners, who have recovered iridium from the planet's crust."
+            },
+            {
+              "name": "dobrovolski",
+              "image": "pluto-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "2.3",
+              "year": "3.5",
+              "size": "6972/6378",
+              "day": "59.1/24",
+              "coords": "s",
+              "details": "Another near-Earth-sized rock planet without much atmosphere to speak of, Dobrovolski is home to Altai Mineral Works, a local extraction company noted for its success in eezo refining. The planet itself provides aluminum for local fabricators, which are churning out habitats at an astonishing rate for a system that has no garden planets. With its ore supply coming all the way from the Sheol system, Dobrovolski is held up as the proof of the miner's cliche: \"Where there's eezo, there's an economy.\""
+            },
+            {
+              "name": "patsayev",
+              "image": "Swamp.webp",
+              "filter": "saturate(0.7) contrast(0.9) hue-rotate(-20deg)",
+              "texture": true,
+              "orbit": "4.2",
+              "year": "8.6",
+              "size": "6351/6378",
+              "day": "18.9/24",
+              "coords": "w",
+              "details": "A rock planet encased in frozen oceans, Patsayev is notable for the largest written message ever created by a human being. Andrei Kobzar, a disgruntled miner whose fortunes were spent prospecting for eezo, used the mass accelerator cannon of a local mercenary group's A-61 Mantis gunship to carve a 208-kilometer long message in the ice saying \"Zdes' nichego net\", Russian for \"There's nothing here.\"<br><br>The message can easily be seen from space. Ironically, the message itself, intended to discourage future colonists, now draws small tourist crowds."
+            },
+            {
+              "name": "volkov",
+              "image": "Venusian.webp",
+              "filter": "contrast(2) saturate(0.7) hue-rotate(20deg)",
+              "texture": true,
+              "orbit": "8.5",
+              "year": "24.8",
+              "size": "1705/6378",
+              "day": "68.2/24",
+              "coords": "n",
+              "details": "A dwarf planet, Volkov has a thick atmosphere of nitrogen and krypton. Home to a thriving iridium mining community, Volkov's reputation is summed up as \"rich but dangerous.\" Pirates often lurk behind Volkov's two moonlets, Zenevieva and Alena, and cripple freighters leaving the atmosphere. To make matters worse, Volkov sits in the Chazov Belt, a field of asteroids and other small bodies, which leads to frequent meteor strikes on the planet. Meteor-related casualties remain rare, but on Volkov, the chances of such a death are high enough that they are factored into insurance premiums."
+            }
           ]
         },
         {
           "name": "Sheol",
           "star": "Sheol",
+          "filter": "hue-rotate(-70deg) brightness(0.5)",
           "top": 41,
           "left": 34,
           "bodies": [
+            {
+              "name": "gei hinnom",
+              "image": "pluto-texture.webp",
+              "filter": "",
+              "overlay": "rgba(148, 65, 2, 0.52)",
+              "texture": true,
+              "orbit": "0.83",
+              "year": "0.8",
+              "size": "2379/6378",
+              "day": "tidal",
+              "coords": "ne",
+              "details": "A nearly atmosphere-less, tidally-locked planet orbiting a red dwarf star, Gei Hinnom was the first place human explorers discovered a dedicated Prothean burial ground. While a few sites were saved for posterity, Eldfell-Ashland Mining successfully lobbied to scout the rest of the planet for element zero, and soon was embroiled in a scandal. Mining teams were looting grave sites, searching for eezo and other treasures, and many got rich off the so-called \"cemetery business.\""
+            }
           ]
         }
       ]
