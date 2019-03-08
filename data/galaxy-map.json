@@ -3743,7 +3743,7 @@
               "year": "0.6",
               "size": "1511/6378",
               "day": "19.3/24",
-              "coords": "se",
+              "coords": "w",
               "details": "Only known from scan data picked up by space probes, Aigela is currently classified as a dwarf planet. A warm barren rock, its thin atmosphere is composed of carbon dioxide and oxygen. Significant alumina deposits in its crust make its density and gravity very low indeed."
             },
             {
@@ -3758,15 +3758,115 @@
               "day": "53.6/24",
               "coords": "se",
               "details": "Believed to be a post-garden world, Zanethu has large deposits of calcium carbonate in its sedimentary rocks, indicating it may have once had plate tectonics and even plant life. Its swirling clouds of dust and snow may have occurred more recently and blocked the sun, creating a mass extinction event. Its surface gravity is comfortable and its temperature tolerable by most sapient species."
+            },
+            {
+              "name": "synalus",
+              "image": "Martian.webp",
+              "filter": "hue-rotate(40deg) contrast(1.1) brightness(1.3)",
+              "texture": true,
+              "orbit": "2.2",
+              "year": "3.3",
+              "size": "5391/6378",
+              "day": "66.8/24",
+              "coords": "nw",
+              "details": "Space probes indicate that Synalus is nowhere near as hospitable as its neighbor, Zanethu. Synalus's hydrogen-argon atmosphere is thought to be anathema to life, but the presence of borax on the surface, spawned by a boron-heavy core, indicates the planet may once have had water."
+            },
+            {
+              "name": "thegan",
+              "image": "Cracklepotblue.webp",
+              "filter": "brightness(0.6) contrast(1.4)",
+              "texture": true,
+              "orbit": "4.1",
+              "year": "8.3",
+              "size": "3581/6378",
+              "day": "28.5/24",
+              "coords": "e",
+              "details": "Thegan rounds out the trio of planets scouted only by space probe in this backwater solar system. A frozen ball with significant amounts of tin in its crust, Thegan has a fractional atmosphere with trace amounts of carbon dioxide and carbon monoxide. Strange radiation emissions have been charted coming off of Thegan, but it is unknown if these are from radioactive elements or merely a star's radiation reflected by a high-albedo surface."
             }
           ]
         },
         {
           "name": "Sowilo",
           "star": "Sowilo",
+          "filter": "hue-rotate(-10deg)",
           "top": 28,
           "left": 53,
           "bodies": [
+            {
+              "name": "uruz",
+              "image": "moon-texture.webp",
+              "filter": "contrast(1.3)",
+              "overlay": "rgba(255, 100, 0, 0.3)",
+              "texture": true,
+              "orbit": "0.25",
+              "year": "0.1",
+              "size": "9266/6378",
+              "day": "51/24",
+              "coords": "sw",
+              "details": "A large rock planet with a pressure-cooker atmosphere of nitrogen and argon, Uruz's silicate-rich crust is relatively low density. It was largely ignored by the salarian explorers who first charted the system."
+            },
+            {
+              "name": "kenaz",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.1)",
+              "overlay": "rgba(72, 0, 200, 0.17)",
+              "texture": true,
+              "orbit": "0.55",
+              "year": "0.5",
+              "size": "5501/6378",
+              "day": "68.3/24",
+              "coords": "n",
+              "details": "Kenaz's extremely thin atmosphere is mostly methane and helium. The salarian explorers who named the system set up a small mining presence for recovering nickel and chromium, used in making stainless steels."
+            },
+            {
+              "name": "hagalaz",
+              "image": "Rockbits1.webp",
+              "filter": "hue-rotate(60deg) contrast(1.3)",
+              "texture": true,
+              "clouds": "Clouds1.webp",
+              "cloudsFilter": "opacity(60%)",
+              "orbit": "0.95",
+              "year": "1",
+              "size": "6309/6378",
+              "day": "98.3",
+              "coords": "e",
+              "details": "Hagalaz is a second-tier garden world that receives little attention from the galactic community. A salarian mining expedition initially discovered the planet, which was promptly strong-armed away from them by organized crime figures. Hagalaz's exploration rights were then sold to the highest bidder, which led to a brief burst of mining colonies in the 2000s, but most of those were abandoned when other planets were found with more accessible resources.<br><br>Though Hagalaz has a nitrogen-oxygen atmosphere capable of supporting life, its rotational period is slower than Earth's, making its day and night 98 Earth days long. The intense heat on one side of the planet and the extreme cold on the other make for violent storm cells wherever the sun is rising or setting. As a result, the flora and fauna of Hagalaz have developed the capability to live in cycles of ice, flooding, baking heat, and dramatic air pressure changes. The biota of the planet has been largely unexploited by the exotic pet and gardening trades, since simulating their natural conditions is problematic for the average consumer."
+            },{
+              "name": "ansuz",
+              "image": "venus-texture.webp",
+              "filter": "saturate(0.3)",
+              "texture": true,
+              "orbit": "1.6",
+              "year": "2",
+              "size": "8795/6378",
+              "day": "26.4/24",
+              "coords": "nw",
+              "details": "A large rock planet, Ansuz was once under development by a consortium of robo-mining interests, but an epidemic of accidents and sabotage cost the lives of hundreds of workers and eventually drove them off the world. Despite numerous accusations among the mining corporations and a dozen or more trials, popular opinion holds that the real saboteurs were never found."
+            },
+            {
+              "name": "thurisaz",
+              "image": "Gaseous10.webp",
+              "filter": "saturate(0.5) contrast(1.1) hue-rotate(-20deg)",
+              "texture": true,
+              "orbit": "3",
+              "year": "5.2",
+              "size": "57287/6378",
+              "day": "18.8/24",
+              "coords": "s",
+              "details": "A hydrogen-helium gas giant, Thurisaz has a decrepit automated infrastructure for refueling merchant vessels with helium-3. Painted onto the metal in a salarian dialect are the words \"Self Serve\"."
+            },
+            {
+              "name": "isa",
+              "image": "Cracklepotblue.webp",
+              "filter": "brightness(0.75) contrast(1.2)",
+              "texture": true,
+              "orbit": "5.4",
+              "year": "12.6",
+              "size": "7219/6378",
+              "day": "66.5/24",
+              "coords": "se",
+              "details": "A rock and ice planet, Isa has a thin atmosphere of methane and ethane. Its borax deposits, largely trapped beneath the ice, were never considered valuable enough to mine since synthetic substitutes and alternative sources became widely available."
+            }
           ]
         }
       ]
