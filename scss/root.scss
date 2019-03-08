@@ -48,6 +48,7 @@ body {
   // font-family: 'mass-effect', sans-serif;
   overflow: hidden;
   overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
 
   &.allows-starship {
     --cursor: none;
