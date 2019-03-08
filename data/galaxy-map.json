@@ -3092,7 +3092,7 @@
         {
           "name": "Sheol",
           "star": "Sheol",
-          "filter": "hue-rotate(-70deg) brightness(0.5)",
+          "filter": "hue-rotate(-70deg) brightness(0.75)",
           "top": 41,
           "left": 34,
           "bodies": [
@@ -3554,6 +3554,219 @@
               "coords": "n",
               "details": "A standard hydrogen-helium gas giant, Thesalgon's atmosphere is tinted blue by trace quantities of methane."
             }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hourglass Nebula",
+      "top": 27.3,
+      "left": 31.7,
+      "image": "hourglass-nebula.webp",
+      "bodies": [
+        {
+          "name": "Faryar",
+          "star": "Faryar",
+          "top": 37,
+          "left": 58,
+          "asteroids": [
+            {
+              "orbit": 12.05,
+              "year": 12.05,
+              "bodies": 150
+            }
+          ],
+          "bodies": [
+            {
+              "name": "quarem",
+              "image": "Martian.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.2",
+              "year": "0.1",
+              "size": "3187/6378",
+              "day": "53.1/24",
+              "coords": "sw",
+              "details": "A scorchingly hot planet close to its parent star, Quarem was bombarded by comets and asteroids during its earliest geological periods. As the solar system stabilized, these occurrences leveled off until the planet became geologically inactive. Its nitrogen and helium atmosphere is extremely thick due to heavy metals making the planet's core very dense. Unfortunately, these metals are deep below the crust making mining impractical."
+            },
+            {
+              "name": "daratar",
+              "image": "mars-texture.webp",
+              "filter": "hue-rotate(30deg) saturate(0.6)",
+              "texture": true,
+              "orbit": "0.9",
+              "year": "0.9",
+              "size": "3937/6378",
+              "day": "62.8/24",
+              "coords": "ne",
+              "details": "Though ancient riverbeds crisscross the plains of Daratar, photodissociation has long since dried up the world. There are indications of ancient mining operations, but any structures have long since been buried or worn away by the planet's seasonal dust storms."
+            },
+            {
+              "name": "tunfigel",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.4)",
+              "texture": true,
+              "orbit": "1.8",
+              "year": "2.4",
+              "size": "10772/6378",
+              "day": "35.5/24",
+              "coords": "w",
+              "details": "First charted by the salarians, Tunfigel (which means \"hard heart\") is noted for its platinum and uranium deposits, making robo-mining a lucrative activity. While the surface temperature is well within the range of a comfortable EVA excursion, the extremely dense Tunfigel generates a dangerous gravitational pull five times that of Earth. The salarian miners exploiting the planet derisively nickname planets such as these \"elcor tourist traps\"."
+            },
+            {
+              "name": "nephros",
+              "image": "Gaseous8.webp",
+              "filter": "contrast(1.3)",
+              "texture": true,
+              "orbit": "7.5",
+              "year": "20.6",
+              "size": "44750/6378",
+              "day": "11.9/24",
+              "coords": "s",
+              "details": "Nephros (which means \"restless sleep\") is a relatively small hydrogen-nitrogen gas giant. Its atmosphere is home to spectacular winds of up to 350 kilometers/hour and electrical systems up to 700 times the power of those on Earth, which indicate that its hydrogen clouds contain moderate amounts of water vapor."
+            },
+            {
+              "name": "alingon",
+              "image": "Cracklepotblue.webp",
+              "filter": "saturate(0) contrast(1.2) brightness(0.8)",
+              "overlay": "rgba(101, 59, 13, 0.6)",
+              "texture": true,
+              "orbit": "10.1",
+              "year": "31.7",
+              "size": "3085/6378",
+              "day": "56.3/24",
+              "coords": "",
+              "details": "Alingon (which means \"deceptive\") was so named by salarian scouts because as their probes landed on the planet their instruments started going awry. This turned out to be due to the high concentration of magnetically active periclase (magnesia) in the core and crust of the planet. This interferes with scans and broadcasts, which has given rise to countless spacer stories of pirates lying in wait in Alingon's magnetosphere or crashed ships with untold fortunes stranded on the surface. In reality, any pirates would have a hard time locating prey amid all the interference and would live lives cut off from the rest of the galaxy because the magnetosphere kills extraplanetary communication.<br><br>Alingon's other natural features are a thin atmosphere of carbon dioxide, spectacular dry ice formations, and xenon gas, which can be skimmed from the upper atmosphere and used in ion thrusters."
+            },
+            {
+              "name": "wenrum",
+              "image": "Gaseous6.webp",
+              "filter": "saturate(0.2) hue-rotate(180deg) brightness(3.3)",
+              "overlay": "rgba(255, 255, 255, 0.6)",
+              "texture": true,
+              "orbit": "11.8",
+              "year": "40.6",
+              "size": "1574/6378",
+              "day": "59.3/24",
+              "coords": "n",
+              "details": "Wenrum (\"white knight\") takes its name from a salarian story in the Romantic period of a knight who refused all temptation to riches, carnality, and even flavorful food until justice was served to the poor and oppressed. The planet is named because of its white, highly reflective surface, composed mainly of titanium dioxide and ice and no atmosphere to speak of to dim its albedo."
+            },
+            {
+              "name": "antictra",
+              "image": "Rockplates1.webp",
+              "filter": "saturate(0.6)",
+              "texture": true,
+              "orbit": "12.3",
+              "year": "43.3",
+              "size": "5658/6378",
+              "day": "21.1/24",
+              "coords": "w",
+              "details": "Antictra (which means \"fused metal\") is so named because of its spectacular craters. A planet high in various grades of iron oxide, Antictra is regularly pummeled by loose asteroids in the nearby belt between it and Wenrum. The iron melted and fused by the incoming meteors makes for spectacular landscape shots that look alien no matter what part of the galaxy you may be from. However, due to frequent meteor impacts exploration is considered highly dangerous even to those with advanced kinetic barriers."
+            }
+          ]
+        },
+        {
+          "name": "Osun",
+          "star": "Osun",
+          "filter": "saturate(0.2) hue-rotate(100deg) brightness(1.6)",
+          "top": 62,
+          "left": 53,
+          "bodies": [
+            {
+              "name": "orunmila",
+              "image": "Gaseous10.webp",
+              "filter": "contrast(1.5) hue-rotate(-30deg) saturate(0.6)",
+              "texture": true,
+              "orbit": "0.5",
+              "year": "0.3",
+              "size": "34653/6378",
+              "day": "13.7/24",
+              "coords": "sw",
+              "details": "A medium-sized gas giant, Orunmila is close enough to its parent star to suffer massive changes in temperature during its day and night periods. This leads to powerful convection currents and storms throughout its hydrogen/helium atmosphere. Gathering helium-3 to refuel is possible for the hardiest of exploration craft, but lesser ships are nearly always lost in the attempt.<br><br>Orunmila is within the \"frost line\" of its solar system, where icy-cored gas giants do not usually form. For this reason, it is believed to be an extrasolar planet captured by its star's gravity."
+            },
+            {
+              "name": "erinle",
+              "image": "Terrestrial3.webp",
+              "filter": "saturate(0.5) hue-rotate(-20deg) contrast(1.2)",
+              "texture": true,
+              "clouds": "Clouds1.webp",
+              "cloudsFilter": "opacity(60%)",
+              "orbit": "0.95",
+              "year": "0.9",
+              "size": "6711/6378",
+              "day": "32.4/24",
+              "coords": "ne",
+              "details": "Erinle is a garden world in its last stages of habitability. While its soil still supports agriculture, its animal biodiversity has fallen to record lows, and the most successful remaining life is toxic blue-green algae and insect-like pest species. A large salarian colony is trying to restore biodiversity to the planet, but setbacks are a fact of life. Mineral and fuel mining remains lucrative, however, and Erinle has a thriving spaceport that refuels many ships passing into the Terminus Systems."
+            },
+            {
+              "name": "aganju",
+              "image": "Martian.webp",
+              "filter": "hue-rotate(140deg) saturate(0.7)",
+              "texture": true,
+              "orbit": "3.2",
+              "year": "5.7",
+              "size": "10008/6378",
+              "day": "23.3/24",
+              "coords": "e",
+              "details": "Aganju is an extremely large rock planet with a thin atmosphere of hydrogen and carbon monoxide. Abundant in both copper and platinum, the crust has been scanned by mining bots from Erinle, but the specialized equipment to work in Aganju's heavy gravity (more than 5 G's) has created prohibitive costs, and so Aganju is largely unexploited."
+            },
+            {
+              "name": "olokun",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-50deg) saturate(0.8) contrast(1.2)",
+              "texture": true,
+              "rings": true,
+              "ringsColor": "rgba(200, 101, 20, 0.5)",
+              "orbit": "6",
+              "year": "14.7",
+              "size": "64718/6378",
+              "day": "11.9/24",
+              "coords": "w",
+              "details": "Olokun ('sky harvest') is a standard gas giant composed of hydrogen and helium. The spacefarers from Erinle gather helium-3 from here rather than Orunmila, as its atmosphere is much more predictable."
+            }
+            
+          ]
+        },
+        {
+          "name": "Ploitari",
+          "star": "Ploitari",
+          "filter": "saturate(0.7) hue-rotate(-30deg) brightness(0.8)",
+          "top": 43,
+          "left": 31,
+          "bodies": [
+            {
+              "name": "aigela",
+              "image": "Martian.webp",
+              "filter": "saturate(0.3) contrast(1.2) brightness(1.8) hue-rotate(90deg)",
+              "texture": true,
+              "orbit": "0.7",
+              "year": "0.6",
+              "size": "1511/6378",
+              "day": "19.3/24",
+              "coords": "se",
+              "details": "Only known from scan data picked up by space probes, Aigela is currently classified as a dwarf planet. A warm barren rock, its thin atmosphere is composed of carbon dioxide and oxygen. Significant alumina deposits in its crust make its density and gravity very low indeed."
+            },
+            {
+              "name": "zanethu",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.7) brightness(1.3)",
+              "overlay": "rgba(10, 100, 30, 0.4)",
+              "texture": true,
+              "orbit": "1.9",
+              "year": "2.6",
+              "size": "6619/6378",
+              "day": "53.6/24",
+              "coords": "se",
+              "details": "Believed to be a post-garden world, Zanethu has large deposits of calcium carbonate in its sedimentary rocks, indicating it may have once had plate tectonics and even plant life. Its swirling clouds of dust and snow may have occurred more recently and blocked the sun, creating a mass extinction event. Its surface gravity is comfortable and its temperature tolerable by most sapient species."
+            }
+          ]
+        },
+        {
+          "name": "Sowilo",
+          "star": "Sowilo",
+          "top": 28,
+          "left": 53,
+          "bodies": [
           ]
         }
       ]
