@@ -416,14 +416,13 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
     sectionSystem.appendChild(divSystem);
     document.body.appendChild(sectionSystem);
 
-    if(allowDrag === true && first === true) {
-      const myBlock = document.querySelector('body');
-      const mc = new Hammer(myBlock);
-      mc.add( new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 0, domEvents: true }) );
-      mc.on("pan", handleDrag);
+    // if(allowDrag === true && first === true) {
+    //   const myBlock = document.querySelector('body');
 
-      first = false;
-    }
+    //   initDrag(myBlock);
+
+    //   first = false;
+    // }
 
     instantiateAstralBody(system, `#${divSystem.id}`, `${system.star}`, "star", system.star, 0, path);
     

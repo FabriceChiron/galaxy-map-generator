@@ -1,5 +1,12 @@
 const dragInfosEl = document.getElementById('dragInfos');
 
+const initDrag = (myBlock) => {
+  const mc = new Hammer(myBlock);
+  mc.add( new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 0, domEvents: true }) );
+  mc.on("pan", handleDrag);
+}
+
+
 if(allowDrag === true) {
 
   var lastPosX = 0;
@@ -12,7 +19,6 @@ if(allowDrag === true) {
       if ( ! isDragging ) {
         isDragging = true;
         lastPosX = elem.offsetLeft;
-        // console.log(elem.offsetLeft);
         lastPosY = elem.offsetTop;
 
         // dragInfos.innerHTML = isDragging;
@@ -28,6 +34,7 @@ if(allowDrag === true) {
         isDragging = false;
         // dragInfos.innerHTML = isDragging;
       }
+
     }
   }
 }

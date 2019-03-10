@@ -17,7 +17,12 @@ fetch('data/galaxy-map.json')
     })
 
     generateMenu(galaxyMap);
-  }
+
+    if(allowDrag === true) {
+      const myBlock = document.querySelector('body');
+      initDrag(myBlock);
+      }
+    }
 )
 
 
