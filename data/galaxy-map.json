@@ -3875,7 +3875,32 @@
       "name": "Ismar Frontier",
       "top": 45.8,
       "left": 9.3,
+      "image": "ismar-frontier.webp",
       "bodies": [
+        {
+          "name": "Aquila",
+          "star": "Aquila",
+          "top": 52,
+          "left": 41,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Elysta",
+          "star": "Elysta",
+          "top": 34,
+          "left": 61,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Faia",
+          "star": "Faia",
+          "top": 32,
+          "left": 32,
+          "bodies": [
+          ]
+        }
       ]
     },
     {
@@ -4028,7 +4053,47 @@
           "star": "Nith",
           "top": 45,
           "left": 31,
+          "filter": "saturate(0.4) hue-rotate(150deg) brightness(1.1)",
+          "size": 150,
           "bodies": [
+            {
+              "name": "mantun",
+              "image": "Martian.webp",
+              "filter": "saturate(0.15) contrast(1) brightness(2.2) hue-rotate(50deg)",
+              "texture": true,
+              "orbit": "57.2",
+              "year": "112.1",
+              "size": "150/6378",
+              "day": "24/24",
+              "coords": "nw",
+              "details": "The class-B blue giant Nith was once the most strategically valuable system within krogan territory. Though far too hot for habitable planets, Nith emits thousands of times the energy of a main sequence star like Earth's Sol.<br><br>With help from salarian uplift teams, the krogan constructed a chain of solar power collector stations in orbit around Nith. These vast arrays beamed power to particle accelerators on the surface of Mantun, which manufactured antiproton fuel for warship thrusters. In the Krogan Rebellions, the Spectre agents managed to get a virus into the computers of the solar power arrays; every fifth array suddenly applied braking thrusters. The arrays behind them \"piled up,\" and all were reduced to wreckage. This has since dispersed into a relatively stable ring system.<br><br>The krogan never had the resources to rebuild the solar arrays, depriving them of their fleet's main fuel supply for the remainder of the war. The particle accelerators still exist on Mantun, but have not been used in thousands of years."
+            },
+            {
+              "name": "tula",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-60deg) brightness(0.6) saturate(1.5) contrast(1.2)",
+              "texture": true,
+              "orbit": "108.7",
+              "year": "293.9",
+              "size": "5204/6378",
+              "day": "59.7/24",
+              "size": "6378/6378",
+              "day": "24/24",
+              "coords": "e",
+              "details": "Tula's methane-ammonia atmosphere traps the blistering heat of Nith, driving dayside temperatures up over 1000 degrees. While some lodes of useful metals are present, the planet's incredible heat makes mining impractical."
+            },
+            {
+              "name": "vard",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(120deg) brightness(0.8) saturate(1.5) contrast(1.2)",
+              "texture": true,
+              "orbit": "195.6",
+              "year": "709.6",
+              "size": "36670/6378",
+              "day": "18/24",
+              "coords": "n",
+              "details": "Vard is a methane-ammonia ice giant. Until the Krogan Rebellions, it had a sizable helium-3 fuel refining infrastructure. Once the solar arrays orbiting Nith were destroyed, the constant flow of antiproton tankers visiting the system disappeared. There was little point to maintaining the facilities, so they were shut down and abandoned. Today the ancient stations are \"squatted\" by transients, criminals, and outcasts. Although few are safe for habitation, neither the krogan nor the Council Demilitarization Enforcement Mission (CDEM) patrols care if they take their chances."
+            }
           ]
         }
       ]
