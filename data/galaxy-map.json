@@ -4953,6 +4953,302 @@
       ]
     },
     {
+      "name": "Omega Nebula",
+      "top": 27.9,
+      "left": 49.4,
+      "image": "omega-nebula.webp",
+      "bodies": [
+        {
+          "name": "Amada",
+          "star": "Amada",
+          "filter": "saturate(0.2) hue-rotate(90deg) brightness(1.6)",
+          "top": 20,
+          "left": 64,
+          "bodies": [
+            {
+              "name": "takkan",
+              "image": "Martian.webp",
+              "filter": "brightness(0.5) contrast(1.3)",
+              "texture": true,
+              "orbit": "1.2",
+              "year": "1",
+              "size": "4312/6378",
+              "day": "45.8/24",
+              "coords": "sw",
+              "details": "Orbiting closest to the F-class star Amada, Takkan is a blistering, sun-blasted hell. Neither its carbon dioxide nor its weak magnetic field provides any protection from the star's harsh radiation. Fortunately, Takkan has few significant resources, and is only notable for an unusual purple desert in the southern hemisphere, thought to be the result of eroded spessartite."
+            },
+            {
+              "name": "karora",
+              "image": "moon-texture.webp",
+              "filter": "contrast(1.2)",
+              "texture": true,
+              "orbit": "2.4",
+              "year": "2.9",
+              "size": "2446/6378",
+              "day": "63.6/24",
+              "coords": "e",
+              "details": "Karora is essentially a great rock in space, tidally locked to Amada. Its only notable feature is a chain of craters stitching across the northern hemisphere, thought to be the result of impacts by a swarm of meteors. Karora's low density suggests it contains no mineral wealth beyond common light metals. It maintains a tenuous atmosphere of krypton and xeon."
+            },
+            {
+              "name": "eingana",
+              "image": "pluto-texture.webp",
+              "filter": "saturate(4) brightness(0.5) hue-rotate(-90deg) contrast(1.4)",
+              "texture": true,
+              "orbit": "5.3",
+              "year": "12.2",
+              "size": "5733/6378",
+              "day": "20.8/24",
+              "coords": "nw",
+              "details": "Eingana is a hot, beautiful, and deadly world, covered with the debris of ancient starships. Approximately 127,000 years ago, a series of battles were fought over it by two organic species, the thoi'han and the inusannon. Although no records of the conflict remain, most historians agree that both races wanted to colonize Eingana, and neither were willing to share. The two lost hundreds of ships in a series of battles over Eingana and its moon, Barraiya; many of these were eventually pulled in by the planet's gravity well.<br><br>The mass effect drive cores of these ships broke apart, dumping refined element zero over large stretches of landscape. This poisoned the environment and a wave of extinctions followed. Many of the animal species that remained showed a tendency to develop biotic powers. As the ecology of Eingana is energetic and aggressive, this makes colonization a deadly peril."
+            },
+            {
+              "name": "alchera",
+              "image": "venus-texture.webp",
+              "filter": "saturate(0.2) hue-rotate(130deg) contrast(1.5) brightness(1.2)",
+              "texture": true,
+              "orbit": "9.5",
+              "year": "29.4",
+              "size": "9229/6378",
+              "day": "59.2/24",
+              "coords": "s",
+              "details": "Alchera's crust is composed of carbon and water ice. While low density, its large size allows it to retain a thick atmosphere of methane and ammonia. It is believed that if Alchera had acquired a bit more mass when the Amada star system formed, it would have formed the core of a second outer-system gas giant. Alchera has three moons: Uluru, Wandjina, and Baiame."
+            },
+            {
+              "name": "anjea",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-7deg) saturate(0.9) contrast(1.2) brightness(0.7)",
+              "texture": true,
+              "orbit": "15.3",
+              "year": "60",
+              "size": "23120/6378",
+              "day": "17.4/24",
+              "coords": "w",
+              "details": "Anjea is a typical ammonia-methane ice giant. Traces of chlorine in the atmosphere give it a distinct green tint. Penetrating scans have revealed large numbers of hollow, unpowered objects with dimensions of 3.14 by 12.56 by 28.26 meters circulating in the equatorial cloud bands. These objects appear to have \"sails\" or \"wings\" attached, allowing them to be borne aloft by Anjea's winds. While they are too deep to be reached for study, popular conjecture in xenoarcheological circles holds that they are \"coffins\" of an ancient race who laid their dead to rest in the gas giant."
+            }
+          ]
+        },
+        {
+          "name": "Arinlarkan",
+          "star": "Arinlarkan",
+          "filter": "saturate(0.2) hue-rotate(90deg) brightness(1.6)",
+          "top": 50,
+          "left": 67,
+          "asteroids": [
+            {
+              "orbit": 0.8,
+              "year": 0.8,
+              "bodies": 150
+            }
+          ],
+          "bodies": [
+            {
+              "name": "utha",
+              "image": "Terrestrial4.webp",
+              "filter": "hue-rotate(20deg) saturate(0.5) brightness(0.7)",
+              "texture": true,
+              "clouds": "Clouds1.webp",
+              "cloudsFilter": "opacity(60%)",
+              "orbit": "4",
+              "year": "6.1",
+              "size": "6050/6378",
+              "day": "49.4/24",
+              "coords": "e",
+              "details": "Punished with UV and gamma radiation from the Class F Star it orbits, Utha is no one's first choice for a planet to land on. Covered in seawater, Utha has a hydrosphere and ozone layer similar to Earth's, but that simply isn't enough to ward off the life-killing radiation. Its nitrogen-rich, oxygen-poor atmosphere goes unchanged by the few proteins that have managed to form in the ocean depths.<br><br>Utha, however, has served as a way station for slaves escaping their batarian masters. What little land it has is tectonically stable, and its considerable radiation belt and electrical storms grant cover from many common types of sensors. Fleeing ships typically hide on Utha long enough to discharge their drive cores and stock up on deuterium before trying to make it to the cluster's mass relay."
+            }
+          ]
+        },
+        {
+          "name": "Batalla",
+          "star": "Batalla",
+          "filter": "hue-rotate(-15deg)",
+          "top": 41,
+          "left": 30,
+          "bodies": [
+            {
+              "name": "logasiri",
+              "image": "mercury-texture.webp",
+              "filter": "brightness(0.35) contrast(1.5)",
+              "overlay": "rgba(37, 0, 128, 0.24)",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "0.5",
+              "size": "5014/6378",
+              "day": "49.7/24",
+              "coords": "sw",
+              "details": "A step above a carbonaceous asteroid, Logasiri is a planet with a carbon-heavy crust and a trace atmosphere of CO2 and helium. Its surface is cool enough to have liquid water, but it is rapidly drying out as it has lost the critical mass to have a self-sustaining hydrologic cycle.<br><br>Nevertheless, the batarians have colonized the world, forcing slaves to work in their mines and agri-habitats. The labor is hot, endless, and backbreaking, even in the low-G environment. Every horror story told by slaves elsewhere in the cluster seems to be topped by one from Logasiri. The most famous is that of the slaver Silparon, who worked to death 420 slaves over the course of a galactic standard year and ground up their bodies for compost in his greenhouses. He was eventually poisoned by his wife, but his shadow – and his business model – still hangs over this miserable planet."
+            },
+            {
+              "name": "thunawanuro",
+              "image": "Swamp.webp",
+              "filter": "hue-rotate(90deg) saturate(0.5)",
+              "clouds": "Clouds4.webp",
+              "cloudsFilter": "opacity(70%)",
+              "texture": true,
+              "orbit": "1.1",
+              "year": "1.3",
+              "size": "11993/6378",
+              "day": "51.7/24",
+              "coords": "e",
+              "details": "A strange island of peace in the lawless Terminus Systems, Thunawanuro is a planet of crushing gravity but abundant life. As its ponderous name indicates, it was colonized by the elcor, who have several booming industries on the planet. Hydroelectric dams and biofuels from tough woody algae provide much of the planet's energy. Mines export uranium, thorium, and gold taken to space with generous use of mass effect fields. Of course, pirates target the elcor's shipping as soon as it leaves orbit, but the elcor's deals with mercenary companies keep away all but the most foolhardy of attackers."
+            },
+            {
+              "name": "nearog",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(120deg) saturate(1.4) contrast(0.6)",
+              "texture": true,
+              "orbit": "4.8",
+              "year": "11.8",
+              "size": "19976/6378",
+              "day": "16.5/24",
+              "coords": "nw",
+              "details": "Nearog is a hydrogen-methane gas giant whose moons were once home to Essul, a batarian warlord who terrorized the Terminus Systems. Attempting to unite a pirate army under his banner, he successfully conducted a rapid blitz against 11 habitable worlds.<br><br>Fortunately for the rest of the galaxy, Essul's crimes caught the attention of the Spectres, who deduced his hidden location and assassinated him. Essul's empire, built on a hyperextended army, soon came crashing down. His lost stockpiles of element zero have become something of a legend, and foolish spacers have spent countless amounts of time and money searching the Batalla system, convinced they will be the ones that finally strike it rich."
+            }
+          ]
+        },
+        {
+          "name": "Fathar",
+          "star": "Fathar",
+          "filter": "hue-rotate(-30deg) saturate(0.9) brightness(0.8)",
+          "top": 17,
+          "left": 49,
+          "bodies": [
+            {
+              "name": "lorek",
+              "image": "Terrestrial3.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.2",
+              "year": "59.6/365",
+              "size": "6754/6378",
+              "day": "tidal",
+              "coords": "e",
+              "details": "Lorek is an extremely rare example of a habitable world circling a red dwarf star. Originally an independent asari colony named Esan, it was annexed by the Batarian Hegemony in 1913, causing a minor galactic incident. Despite several attempts, the local Terminus warlords have never been able to take Lorek for themselves.<br><br>Lorek is a low-density world composed of rock, light metals, and a water-based crust. It is tidally locked to Fathar with a sunward \"hot pole\" and shadowed \"cold pole\". Water on the sunward side evaporates quickly, traveling over the islands of the habitable terminator zone in the form of massive fast-moving thunderstorms and finally settling as snow on the frozen dark side. There are fears that the buildup of ice cap mass on the far side may cause axial reorientation over the course of several million years, but batarian officials dismiss the idea as an irresponsible theory disseminated by counter-hegemonist subversives."
+            },
+            {
+              "name": "korar",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.7)",
+              "overlay": "rgba(255, 106, 0, 0.36)",
+              "texture": true,
+              "orbit": "0.32",
+              "year": "0.3",
+              "size": "1919/6378",
+              "day": "24/24",
+              "coords": "nw",
+              "details": "Korar is a small, lifeless rock blessed with significant deposits of thorium, which is used in radiation shielding and the manufacture of spaceframe alloys. A few miners eke out an existence on the surface, selling their ore at Lorek and praying that the intermittent raids by the Terminus pirate clans will pass their homestead by. There have been no children born on Korar since the infamous pirate raid of 2047, when every child on the planet was rounded up and taken as a slave. Any couple finding themselves pregnant preemptively moves offworld."
+            },
+            {
+              "name": "dorgal",
+              "image": "Swamp.webp",
+              "clouds": "Clouds1.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.54",
+              "year": "0.7",
+              "size": "3521/6378",
+              "day": "51.4/24",
+              "coords": "s",
+              "details": "The surface of Dorgal is an ethane-soaked mush. The planet hovers near the boiling point of the hydrocarbon and supports a diverse if simple and slow-moving carbon-based ecology. The planet's gravity is strong enough to retain an atmosphere of molecular nitrogen and carbon monoxide, but the methane that dominated billions of years ago has long since been lost."
+            }
+          ]
+        },
+        {
+          "name": "Kairavamori",
+          "star": "Kairavamori",
+          "filter": "hue-rotate(-40deg)",
+          "top": 40,
+          "left": 73,
+          "bodies": [
+            {
+              "name": "sehtor",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.6) brightness(0.7)",
+              "overlay": "rgba(255, 153, 0, 0.23)",
+              "texture": true,
+              "orbit": "0.7",
+              "year": "0.7",
+              "size": "5810/6378",
+              "day": "47.8/24",
+              "coords": "nw",
+              "details": "A rocky planet with a crushing atmosphere, Sehtor has been scanned from orbit but largely left unexplored due to its sweltering conditions. Its atmosphere contains nitrogen but also an unusually high percentage of ethane, which can coalesce in pockets near the surface. The alumina-heavy crust of the planet can reach glowing-hot temperatures during the daytime, reaching the ethane's auto-ignition temperature and creating pockets of flame across the landscape. For this reason extra-vehicular activities are discouraged on Sehtor, and no company has been willing to invest in exploration."
+            },
+            {
+              "name": "vatar",
+              "image": "Martian.webp",
+              "filter": "saturate(0.15) hue-rotate(150deg) contrast(1.25) brightness(1.75)",
+              "texture": true,
+              "orbit": "1.4",
+              "year": "1.9",
+              "size": "6352/6378",
+              "day": "18/24",
+              "coords": "e",
+              "details": "Located within the life zone of a dimming orange sun, Vatar would be habitable except for its carbon-dioxide atmosphere and an icy surface that kills most oxygen-producing bacteria. Nonetheless, mercenary companies and slavers have numerous strongholds on the planet, out of reach of any galactic authority."
+            },
+            {
+              "name": "uwan oche",
+              "image": "moon-texture.webp",
+              "filter": "contrast(1.5) brightness(0.7)",
+              "overlay": "rgba(179, 28, 4, 0.7)",
+              "texture": true,
+              "orbit": "2.7",
+              "year": "5",
+              "size": "6529/6378",
+              "day": "57.5/24",
+              "coords": "n",
+              "details": "Uwan Oche (\"Uwan Prime\") is a stony planet encased in ice under a methane-heavy sky. Named for the Uwan Consortium, the batarian manufacturing firm that financed its exploration, Uwan Oche's crust provides much of the boron allotropes used in omni-gel throughout the Terminus Systems. The area has naturally become a haven for pirates, who attempt to steal the refined gel or its ingredients as soon as the cargo ships leave the atmosphere."
+            }
+          ]
+        },
+        {
+          "name": "Sahrabarik",
+          "star": "Sahrabarik",
+          "filter": "saturate(0.5) hue-rotate(0deg)",
+          "top": 27,
+          "left": 49,
+          "bodies": [
+            {
+              "name": "urdak",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-40deg) saturate(0.8) contrast(1.2)",
+              "texture": true,
+              "orbit": "0.8",
+              "year": "1.3",
+              "size": "72512/6378",
+              "day": "19.2/24",
+              "coords": "e",
+              "details": "Urdak is a close-orbiting brown dwarf; most red-brown dwarf binary systems have an average separation of 8 AU. The Sahrabarik system is about 12 billion years old and it has long since used up the deuterium used to fuel fusion, so Urdak is not luminous like some brown dwarfs are.<br><br>Urdak is a class L brown dwarf with a relatively low temperature of 1,300 degrees Celsius, but its heat and gravity have made it unpopular for development. There are rumors that the heads of several of Omega's crime syndicates maintain private residences on various moons. Whatever the truth of the matter, battles between syndicate vessels are often observed around the ring plane. News outlets on Omega maintain satellites at Urdak's Lagrange points for real-time coverage of these battles, which garner high viewer ratings."
+            },
+            {
+              "name": "imorkan",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(110deg) saturate(0.8) contrast(1.2)",
+              "texture": true,
+              "orbit": "3.4",
+              "year": "11.5",
+              "size": "53491/6378",
+              "day": "18.7/24",
+              "coords": "nw",
+              "details": "A standard methane-ammonia gas giant, Imorkan is the main source of helium-3 fuel for ships coming to or from Omega. Most of its fueling stations are run by criminal cartels, who engage in cutthroat (sometimes literally) pricing wars. Imorkan is also widely known for its layover stations, where pirates in a hurry can find fuel, ammunition, intoxicants, gambling, and sexual companionship at any hour."
+            },
+            {
+              "name": "bindur",
+              "image": "Tropical.webp",
+              "filter": "saturate(0.2) hue-rotate(20deg)",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(40%)",
+              "texture": true,
+              "orbit": "6.12",
+              "year": "27.7",
+              "size": "4907/6378",
+              "day": "53.3/24",
+              "coords": "n",
+              "details": "If it were closer to Sahrabarik, Bindur would have an atmosphere of carbon dioxide and ethane. In the deep cold of the outer solar system, however, both elements have long since frozen to the ground."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Pangaea Expanse",
       "top": 32.9,
       "left": 62.8,
