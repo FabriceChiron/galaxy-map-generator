@@ -4821,6 +4821,138 @@
       ]
     },
     {
+      "name": "Nubian Expanse",
+      "top": 53.6,
+      "left": 85.9,
+      "image": "nubian-expanse.webp",
+      "bodies": [
+        {
+          "name": "Dakka",
+          "star": "Dakka",
+          "top": 69,
+          "left": 32,
+          "bodies": [
+            {
+              "name": "bannik",
+              "image": "Martian.webp",
+              "filter": "saturate(1) hue-rotate(-20deg) contrast(1.4)",
+              "texture": true,
+              "orbit": "0.73",
+              "year": "0.6",
+              "size": "7963/6378",
+              "day": "54.8/24",
+              "coords": "sw",
+              "details": "Bannik is a large superterrestrial \"hothouse\" with a crushing carbon dioxide atmosphere. A high average density of over seven grams per cubic centimeter indicates that Bannik is a mineralogical treasure trove. If only there were some way to safely reach its seas of molten metal and lodes of radioactives. The planet's mass is so great that trace amounts of helium and molecular hydrogen can be found in the atmosphere."
+            },
+            {
+              "name": "pragia",
+              "image": "Savannah.webp",
+              "filter": "saturate(0.5) hue-rotate(40deg) contrast(1.4)",
+              "texture": true,
+              "clouds": "Clouds2.webp",
+              "cloudsFilter": "opacity(80%)",
+              "orbit": "1.3",
+              "year": "1.5",
+              "size": "5137/6378",
+              "day": "29.6/24",
+              "coords": "se",
+              "details": "The jungle-planet Pragia is overrun by choking hypergrowth caused by industrially-mutated plant species. This, combined with its relative isolation and lack of population, has made Pragia an occasional base of operations for drug-runners, weapons-smugglers, pirates, mercenaries, terrorists, and intelligence agents seeking secrecy.<br><br>Sustained habitation on Pragia is extremely difficult, where mutant and even poisonous plant-life can overgrow colonies in days instead of years."
+            },
+            {
+              "name": "alkonost",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(135deg) saturate(1.1) contrast(1.4) brightness(0.8)",
+              "texture": true,
+              "orbit": "2.47",
+              "year": "3.9",
+              "size": "17946/6378",
+              "day": "18.8/24",
+              "coords": "nw",
+              "details": "Alkonost is a standard ice giant with a methane-ammonia atmosphere. It has an unusually strong magnetic field, which is occasionally useful when ships need to discharge their drives."
+            },
+            {
+              "name": "gamayun",
+              "image": "Gaseous10.webp",
+              "filter": "saturate(0.7) contrast(1.4) brightness(0.7) hue-rotate(-10deg)",
+              "texture": true,
+              "orbit": "5.19",
+              "year": "11.8",
+              "size": "50875/6378",
+              "day": "65.6/24",
+              "coords": "n",
+              "details": "Gamayun is a hydrogen-helium gas giant with six large, icy moons. The outermost one, Gigula, is of note for a well-preserved wreckage of an ancient starship that was recovered by a turian military surveyor. Little information has been released to the public on the vessel, aside from a scholarly paper regarding how the internal layout suggests a horizontally-oriented race."
+            },
+            {
+              "name": "zirnitra",
+              "image": "Cracklepotblue.webp",
+              "filter": "brightness(0.8) saturate(1.7)",
+              "overlay": "rgba(0, 0, 150, 0.2)",
+              "texture": true,
+              "orbit": "7.78",
+              "year": "21.8",
+              "size": "2683/6378",
+              "day": "44.9/24",
+              "coords": "ne",
+              "details": "Cold, distant Zirnitra has an extremely low density, and is thought to be mainly water ice around a small rocky core. It has little to recommend it."
+            }
+          ]
+        },
+        {
+          "name": "Kalabsha",
+          "star": "Kalabsha",
+          "top": 48,
+          "left": 30,
+          "bodies": [
+            {
+              "name": "yamm",
+              "image": "Terrestrial1.webp",
+              "filter": "saturate(0.4)",
+              "clouds": "earth-clouds.webp",
+              "texture": true,
+              "orbit": "2",
+              "year": "2.8",
+              "size": "6501/6378",
+              "day": "69.6/24",
+              "coords": "se",
+              "details": "With over 90% of its surface covered in oceans, Yamm is a habitable nitrogen-oxygen world but its extremes can be quite hostile to sapient life. The heat from its extremely long days reaches dangerous levels, ranging from 24 Celsius at night to 53 in the afternoon in the temperate zones. Hurricanes run unchecked across the oceans, with winds reaching up to 250 km per hour.<br><br>While there are some arthropod-like animals, the predominant forms of life are various kinds of toxic algae blooms that stretch hundreds of kilometers across. However, other biohydrocarbon algae blooms are suitable for use as biofuel, and farming the \"green gold\" forms the backbone of Yamm's economy."
+            },
+            {
+              "name": "tefnut",
+              "image": "Gaseous6.webp",
+              "filter": "hue-rotate(50deg) contrast(1.3)",
+              "texture": true,
+              "orbit": "4.1",
+              "year": "8.3",
+              "size": "57010/6378",
+              "day": "8.8/24",
+              "coords": "n",
+              "details": "A hydrogen-helium gas giant, Tefnut is home to a helium-3 collection and the nearest refueling facility to the Nubian Expanse's mass relay. As such, it is a major gateway to the Verge and Terminus Systems, and has become famous for its hospitality industry. Tefnut's motto is known throughout the galaxy: \"Like home, only better.\"<br><br>Visitors here can stay at expansive resort stations, watch locally-produced entertainment, buy mind-affecting substances not welcome in Citadel space, and rent companionship. Resources are shipped in from Yamm at substantial discounts, allowing the small space stations to have surprising luxuries such as edible arthropods and large amounts of fresh water."
+            }
+          ]
+        },
+        {
+          "name": "Qertassi",
+          "star": "Qertassi",
+          "top": 58,
+          "left": 46,
+          "bodies": [
+            {
+              "name": "norehsa",
+              "image": "Gaseous10.webp",
+              "filter": "saturate(0.6) hue-rotate(110deg) contrast(1.3) brightness(0.5)",
+              "texture": true,
+              "orbit": "6.17",
+              "year": "2.4",
+              "size": "42214/6378",
+              "day": "19.2/24",
+              "coords": "nw",
+              "details": "Norehsa is an unremarkable methane-ammonia ice giant with a small family of icy moons. It is likely that the Qertassi system had additional worlds earlier in its history, but these have been swallowed by the aging giant star.<br><br>Qertassi is an elderly, metal-poor Population II star, broadly similar to Arcturus."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Pangaea Expanse",
       "top": 32.9,
       "left": 62.8,
