@@ -4,8 +4,8 @@ class StellarSystem {
     this.path = path;
     this.container = document.querySelector(container);
     this.stellarSystemEl = document.createElement('a');
-    this.top = (obj.top) ? obj.top : (Math.random() * 60) + 20;
-    this.left = (obj.left) ? obj.left : (Math.random() * 60) + 20;
+    this.top = (obj.top) ? obj.top : (Math.floor(Math.random() * 60)) + 20;
+    this.left = (obj.left) ? obj.left : (Math.floor(Math.random() * 60)) + 20;
     this.href = `#${path}/${spaceToDash(obj.name).toLowerCase()}`;
   }
 
