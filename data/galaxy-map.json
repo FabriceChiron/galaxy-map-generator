@@ -5205,6 +5205,13 @@
           "filter": "saturate(0.5) hue-rotate(0deg)",
           "top": 27,
           "left": 49,
+          "asteroids": [
+            {
+              "orbit": 1.2,
+              "orbit": 1.2,
+              "bodies": 100
+            }
+          ],
           "bodies": [
             {
               "name": "urdak",
