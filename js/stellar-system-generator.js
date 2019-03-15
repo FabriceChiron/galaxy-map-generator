@@ -26,11 +26,13 @@ class Asteroids {
 
   appendAsteroid() {
     for (var i = 0; i < this.itemCount; i++) {
+      const asteroidSize = (Math.floor(Math.random() * 5)) + 1;
+      
       this.astralOrbit.innerHTML += `
         <div class="asteroid-holder position" style="
           transform: translate3d(${((Math.random() * 100) - 50) / 2}px, ${((Math.random() * 100) - 50) / 2}px, ${(Math.random() * 10) - 5}px ) rotateZ(${i*(360/this.itemCount)}deg);
           ">
-          <div class="asteroid-wrapper astralBody-holder">
+          <div class="asteroid-wrapper astralBody-holder" style="width: ${asteroidSize}px; height: ${asteroidSize}px;">
             <div class="counter-orbit" style="transform: rotateZ(${i*(360/this.itemCount)* -1}deg);">
               <div class="asteroid"></div>
             </div>
