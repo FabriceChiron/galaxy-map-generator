@@ -5308,6 +5308,14 @@
       ]
     },
     {
+      "name": "Pylos Nebula",
+      "top": 27,
+      "left": 63,
+      "image": "pylos-nebula.webp",
+      "bodies": [
+      ]
+    },
+    {
       "name": "Sentry Omega",
       "top": 41.5,
       "left": 80.5,
