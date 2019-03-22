@@ -5313,6 +5313,126 @@
       "left": 63,
       "image": "pylos-nebula.webp",
       "bodies": [
+        {
+          "name": "Dirada",
+          "star": "Dirada",
+          "top": 43,
+          "left": 32,
+          "filter": "hue-rotate(120deg) saturate(0.4) brightness(1.5)",
+          "asteroids": [
+            {
+              "orbit": 5,
+              "year": 5,
+              "bodies": 200
+            }
+          ],
+          "bodies": [
+            {
+              "name": "siano",
+              "image": "mercury-texture.webp",
+              "filter": "brightness(0.5) contrast(1.2)",
+              "texture": true,
+              "orbit": "12.9",
+              "year": "26",
+              "size": "4925/6378",
+              "day": "tidal",
+              "coords": "sw",
+              "details": "Siano, named for an ancient asari philosopher known for being a contrarian, orbits Dirada at a retrograde. It is believed to be an object that fell into the system millions of years ago from parts unknown. The outermost of Dirada's two inner asteroid belts is thought to have been a small planetoid that was broken up by Siano's passage into the system.<br><br>Siano is formed of low-density rock, and is tidally locked to Dirada; the same hemisphere always faces the star. There is evidence that a complex of artificial structures once existed in the north of the sunward-facing hemisphere, but they have been badly degraded by millennia of heat and radiation. Several bunkers of radioactive waste, apparently byproducts of primitive fission plants, have been discovered on the far side."
+            },
+            {
+              "name": "thenusi",
+              "image": "moon-texture.webp",
+              "filter": "brightness(0.7) contrast(1.3)",
+              "texture": true,
+              "orbit": "25.7",
+              "year": "73.1",
+              "size": "3602/6378",
+              "day": "tidal",
+              "coords": "n",
+              "details": "Thenusi is a small, barren rock. Though there is evidence that it once had an atmosphere of carbon dioxide, only trace amounts of krypton and xenon remain. Like Siano, it is tidally locked to Dirada."
+            },
+            {
+              "name": "canalus",
+              "image": "Martian.webp",
+              "filter": "contrast(1.2) hue-rotate(-10deg)",
+              "texture": true,
+              "orbit": "46.3",
+              "year": "176.8",
+              "size": "4618/6378",
+              "day": "9.8/24",
+              "coords": "ne",
+              "details": "Canalus is smaller than Earth, but has unusually high density. The high level of tectonic activity indicates that the density is caused by an abundance of radioactive materials in the core. These, combined with the planet's unusually high rate of spin, raise the planet's internal temperature and cause volcanism. While several companies performed mineral assays in the late 2170s, the world's geological instability precluded development."
+            },
+            {
+              "name": "zeth",
+              "image": "Gaseous4.webp",
+              "filter": "brightness(0.8) hue-rotate(20deg) saturate(1.3)",
+              "texture": true,
+              "orbit": "69.5",
+              "year": "325.2",
+              "size": "60327/6378",
+              "day": "14.8/24",
+              "coords": "e",
+              "details": "Zeth is a common hydrogen-helium gas giant. An abundance of sulfur in the upper atmosphere gives it distinct yellow stripes."
+            },
+            {
+              "name": "sineus",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-74deg) saturate(1.1) brightness(0.85) contrast(1.2)",
+              "texture": true,
+              "orbit": "138.9",
+              "year": "919.2",
+              "size": "63748/6378",
+              "day": "16.4/24",
+              "coords": "w",
+              "details": "A standard hydrogen-helium gas giant, Sineus has more than 80 moons."
+            },
+            {
+              "name": "vioresa",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(190deg) contrast(1.2) saturate(0.7)",
+              "texture": true,
+              "orbit": "222.2",
+              "year": "1860.4",
+              "size": "26566/6378",
+              "day": "12.7/24",
+              "coords": "nw",
+              "details": "With an orbital period nearly two millennia long, the cold and distant Vioresa was actually missed in the initial asari survey of the system. Only a follow-up mineral assay sent to Canalus by a volus mining concern noticed its subtle movement across the stars.<br><br>Vioresa is a methane-ammonia ice giant, circled by a retinue of deep-frozen moons. Its remoteness makes it a popular drive discharge point for pirates working the Pylos Nebula cluster. In the last two years, several dozen ships have disappeared while passing through the Dirada system. As Pylos is currently unclaimed by any sovereign power, Council naval patrols are few and far between. Thus far none of the pirates responsible have been apprehended."
+            }
+          ]
+        },
+        {
+          "name": "Nariph",
+          "star": "Nariph",
+          "top": 53,
+          "left": 39,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Satent",
+          "star": "Satent",
+          "top": 36,
+          "left": 54,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Zaherin",
+          "star": "Zaherin",
+          "top": 31,
+          "left": 33,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Kriseroi",
+          "star": "Kriseroi",
+          "top": 56,
+          "left": 74,
+          "bodies": [
+          ]
+        }
       ]
     },
     {
