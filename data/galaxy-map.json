@@ -5402,11 +5402,106 @@
           ]
         },
         {
+          "name": "Kriseroi",
+          "star": "Kriseroi",
+          "top": 56,
+          "left": 74,
+          "bodies": [
+            {
+              "name": "neidus",
+              "image": "mercury-texture.webp",
+              "filter": "saturate(10) hue-rotate(180deg)",
+              "overlay": "rgba(0,130,130,0.4)",
+              "texture": true,
+              "orbit": "0.1",
+              "year": "0.1",
+              "size": "4875/6378",
+              "day": "tidal",
+              "coords": "nw",
+              "details": "Neidus lies improbably close to the red dwarf Kriseroi. This allows it to approach habitability, though it is quite frigid. It is tidally locked, with a \"hot pole\" and a \"cold pole.\" Along the terminator, the temperature averages just above freezing. On the lee side, the temperatures are well below freezing.<br><br>Neidus has developed a limited native ecology. Much of it clusters, permanently attached, around geothermal vents. There are, however, more advanced forms of life. Several arthropodal herbivore species wander back and forth across the terminator, as they require nutrients available in both environments for sustenance. More dangerous are the omnivorous predator species that devour the arthropods. Most animal life on Neidus has limited vision, but finely-developed thermal sense."
+            },
+            {
+              "name": "theonax",
+              "image": "Swamp.webp",
+              "filter": "hue-rotate(100deg) saturate(0.4) brightness(1.7)",
+              "texture": true,
+              "orbit": "0.18",
+              "year": "0.1",
+              "size": "10442/6378",
+              "day": "69.9/24",
+              "coords": "e",
+              "details": "Theonax's surface is covered by water and ammonia-hydrate ices, which are constantly repaved by cryovolcanic processes. The world's size and density suggest the core contains heavier elements, and retains much of the heat of the system's formation."
+            },
+            {
+              "name": "uzin",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(120deg) brightness(0.7) contrast(1.3)",
+              "texture": true,
+              "orbit": "0.31",
+              "year": "0.3",
+              "size": "31982/6378",
+              "day": "15.2/24",
+              "coords": "n",
+              "details": "A typical methane-ammonia ice giant, Uzin has 37 moons of various sizes. Chithess, one of the largest, orbits at a retrograde, suggesting it was a planetesimal that was captured by the gas giant gravity well. The planet itself is believed to be an extrasolar capture as well, though millions of years before Chithess came on the scene.<br><br>Evidence collected by planetary geologists suggest that Chithess was for many centuries a water-world, heated by tidal flexing as its orbit circularized around Uzin. The planetary ocean, once hundreds of kilometers deep, must now be frozen solid. Some have recommended drilling test bores to see if life ever developed in Uzin's seas, but the question is considered academic."
+            },
+            {
+              "name": "geus",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(120deg) brightness(0.4) contrast(1.3)",
+              "texture": true,
+              "orbit": "0.64",
+              "year": "0.9",
+              "size": "33036/6378",
+              "day": "24/24",
+              "coords": "s",
+              "details": "Geus is another methane-ammonia gas giant, very similar to its near-twin, Uzin. It presents a nearly featureless, robin-egg-blue face to the universe."
+            },
+            {
+              "name": "tenoth",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(120deg) brightness(0.7) contrast(1.3)",
+              "texture": true,
+              "orbit": "1.86",
+              "year": "2.6",
+              "size": "1411/6378",
+              "day": "17.9/24",
+              "coords": "se",
+              "details": "Tenoth is little more than a glorified \"ice dwarf\" that has drifted inwards from Kriseroi's Oort Cloud over the millennia. Its extremely elliptical orbit is ultimately unstable. Computer projections suggest it will impact the atmosphere of Geus in a few billion years."
+            }
+          ]
+        },
+        {
           "name": "Nariph",
           "star": "Nariph",
           "top": 53,
           "left": 39,
           "bodies": [
+            {
+              "name": "isale",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(315deg) saturate(0.8) contrast(1.4)",
+              "rings": true,
+              "ringsColor":"rgba(150, 108, 14, 0.4)",
+              "texture": true,
+              "orbit": "0.5",
+              "year": "0.6",
+              "size": "64005/6378",
+              "day": "17.7/24",
+              "coords": "e",
+              "details": "Isale is a standard hydrogen-helium gas giant. Though gas giants are known for their powerful magnetic fields, Isale's field is stronger than current models predict. Within the \"frost line\" of its solar system where gas giants do not usually form, Isale is believed to have once been extrasolar."
+            },
+            {
+              "name": "jonus",
+              "image": "Gaseous5.webp",
+              "filter": "saturate(1.3) contrast(1.3)",
+              "texture": true,
+              "orbit": "0.65",
+              "year": "1",
+              "size": "20312/6378",
+              "day": "15.1/24",
+              "coords": "n",
+              "details": "Jonus, a methane-ammonia ice giant, is being developed as a fuel depot serving the Pylos Cluster. Eldfell-Ashland Energy has established a base on one of its moons to crack water ice into hydrogen and oxygen, and skim helium-3 from its atmosphere. Jonus is also believed to be an extrasolar planet captured by its star."
+            }
           ]
         },
         {
@@ -5415,6 +5510,69 @@
           "top": 36,
           "left": 54,
           "bodies": [
+            {
+              "name": "rescel",
+              "image": "sun-texture.webp",
+              "filter": "blur(1px)",
+              "texture": true,
+              "orbit": "0.02",
+              "year": "4.65/365",
+              "size": "69155/6378",
+              "day": "tidal",
+              "coords": "e",
+              "details": "Rescel is a massive \"hot Jupiter\" gas giant that whips around the star Satent once every four and a half days. Like most planets of its type, it migrated inwards from its initial position in the system (thought to be around 0.3 AU).<br><br>Rescel is one of the few close-orbiting gas giants to show a marked temperature difference in its sun-facing and dark-side hemispheres. The atmosphere absorbs and re-radiates Satent's heat too quickly for winds to carry the heat to the dark side. There is a temperature difference of over 1,000 degrees between the gas giant's \"hot\" and \"cold\" poles."
+            },
+            {
+              "name": "raisaris",
+              "image": "moon-texture.webp",
+              "filter": "contrast(2)",
+              "overlay": "rgba(200,0,160,0.4)",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "0.5",
+              "size": "3790/6378",
+              "day": "66.3/24",
+              "coords": "s",
+              "details": "An airless rock of mixed light ores, Raisaris is only of note for the Teryinu impact crater. A relatively recent asteroid strike (within the last million years), the core of the object was partly composed of element zero. It struck at a low enough velocity that the eezo remained near the surface. Over the years, many pirates and \"wildcat\" miners have attempted to extract the ore.<br><br>It is believed that the Teryinu debris originated in the pulsar system AAP34211+19. The supernova that formed the pulsar also created the red emission nebula that human spacers have unofficially named the Sakura Nebula."
+            },
+            {
+              "name": "anedia",
+              "image": "Alpine.webp",
+              "filter": "saturate(0.7)",
+              "texture": true,
+              "orbit": "1.14",
+              "year": "1.4",
+              "size": "2949/6378",
+              "day": "38.6/24",
+              "coords": "n",
+              "details": "Anedia is a small ice body with very low density; its mass is only 4% that of Earth. It appears to be composed mainly of carbon and water ice, but over the millennia it has accrued a trace atmosphere of krypton and xenon. While Anedia's gravity is weak enough that a cruiser could land on it safely, there is no particular reason one would want to.<br><br>Pirates have been known to land to recover ice for cracking into hydrogen and oxygen. One area in the southern hemisphere, the so-called \"Anedian Scrapes\", is so frequently used for this purpose that higher-albedo raw ice can be easily seen from orbit."
+            },
+            {
+              "name": "boro",
+              "image": "Swamp.webp",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(0.65)",
+              "filter": "",
+              "texture": true,
+              "orbit": "2.1",
+              "year": "3.4",
+              "size": "10573/6378",
+              "day": "31/24",
+              "coords": "sw",
+              "details": "Boro is a young volus colony world, settled in defiance of a threat by Terminus pirate groups. The pirates, who can't use the world themselves, have \"suggested\" that the volus \"hire\" them to protect the colony. The volus responded by requesting military protection from their turian allies.<br><br>Although uncomfortably hot by volus standards, Boro has the rare combination of high pressure and ammonia ecology volus require. Development of the colony is proceeding rapidly."
+            },
+            {
+              "name": "nataisa",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(300deg) contrast(1.5) saturate(0.9)",
+              "texture": true,
+              "orbit": "4.1",
+              "year": "8.33",
+              "size": "6378/6378",
+              "day": "24/24",
+              "coords": "nw",
+              "details": "An unremarkable methane-ammonia gas giant, Nataisa would be of no consequence if it weren't the only approachable gas giant in the Satent system. Boro's volus colony has set up a few automated ice cracking stations around the planet and Narhu Combine has been contracted to set up a helium-3 extraction facility. Construction has lagged due to the CEO's arrest in a kickback scandal that reaches to the highest levels of the Vol Ministry of the Frontier."
+            }
           ]
         },
         {
@@ -5423,14 +5581,56 @@
           "top": 31,
           "left": 33,
           "bodies": [
-          ]
-        },
-        {
-          "name": "Kriseroi",
-          "star": "Kriseroi",
-          "top": 56,
-          "left": 74,
-          "bodies": [
+            {
+              "name": "ehstag",
+              "image": "mars-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.5",
+              "year": "0.4",
+              "size": "6773/6378",
+              "day": "63.6/24",
+              "coords": "w",
+              "details": "Ehstag was discovered by a joint asari-vorcha exploration team and abandoned shortly thereafter. The planet's light atmosphere of nitrogen and krypton is not overtly hostile to vorcha, but its heat makes it uninhabitable except in expensive habitats. Its low density precludes the presence of many valuable minerals, and so settling the planet was deemed not worth the effort."
+            },
+            {
+              "name": "namakli",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(-20deg) contrast(1.1) saturate(0.8)",
+              "texture": true,
+              "orbit": "0.8",
+              "year": "0.8",
+              "size": "10133/6378",
+              "day": "23.7/24",
+              "coords": "e",
+              "details": "An arid but habitable planet, Namakli was briefly colonized by the Pyrena Corporation, a consortium of asari colonists and socialized vorcha laborers. After an economic downturn, however, many asari left the planet, and the vorcha population kept growing to the point where they bred faster than could be educated. Soon they turned violent and uncontrollable, and the colonies essentially self-destructed.<br><br>Today, Namakli is a wasteland with little population, but vorcha packs are scattered across the deserts. Settlers frequently run into these packs, discouraging recolonization. The lack of complex biota and scarcity of profitable metals drove the last few proverbial nails into Namakli's coffin: no one has stepped forth in the past few years with the will, the funding, or the firepower to establish a permanent colony."
+            },
+            {
+              "name": "azrahas",
+              "image": "Martian.webp",
+              "filter": "contrast(1.2)",
+              "texture": true,
+              "orbit": "1.45",
+              "year": "1.95",
+              "size": "4715/6378",
+              "day": "36.1/24",
+              "coords": "s",
+              "details": "Azrahas is a hothouse planet rich in nitrogen, methane, and ethane. Similar to Namakli, it is metal-poor. Additionally, it is suspected that few asteroid impacts have struck it over the millennia, precluding accessible deposits of common precious metals in the crust. Decrepit asari orbital stations from scientific expeditions long ago circle the planet. None display signs of occupation."
+            },
+            {
+              "name": "rotesk",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(140deg)",
+              "rings": true,
+              "ringsColor": "rgba(93, 127, 210, 0.4)",
+              "texture": true,
+              "orbit": "6.1",
+              "year": "16.9",
+              "size": "19174/6378",
+              "day": "10.8/24",
+              "coords": "n",
+              "details": "A methane-soaked gas giant, Rotesk featured helium-3 collection machinery serving the colonists of Namakli, but it appears their kinetic barriers failed long ago due to neglect. The apparatus was destroyed by meteorites, probably originating in Rotesk's rings, creating one more hurdle for anyone trying to settle on Namakli."
+            }
           ]
         }
       ]
