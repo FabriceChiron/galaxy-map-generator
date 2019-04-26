@@ -5636,6 +5636,141 @@
       ]
     },
     {
+      "name": "Rosetta Nebula",
+      "top": 14.5,
+      "left": 63.1,
+      "image": "rosetta-nebula.webp",
+      "bodies": [
+        {
+          "name": "Alpha Draconis",
+          "star": "Alpha Draconis",
+          "top": 39,
+          "left": 61,
+          "bodies": [
+            {
+              "name": "_2175 Aeia",
+              "image": "Terrestrial3.webp",
+              "filter": "saturate(0.8) brightness(0.8)",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(0.6)",
+              "texture": true,
+              "orbit": "4.5",
+              "year": "7.3",
+              "size": "6521/6378",
+              "day": "31.6/24",
+              "coords": "e",
+              "details": "Named after an asari scientist, this remote planet appears to have been on the list of forbidden mass relays that led to uncharted space. The little data available comes from one far-off probe flyby that reports two planets orbiting a white dwarf star.<br><br>Your own scans yield far more interesting results. The planet is within the habitable zone of the star. It has oceans of liquid water and a thin nitrogen-oxygen atmosphere consistent with carbon-based plant life. It is possible this is an as-yet-unexplored garden world."
+            },
+            {
+              "name": "_2175 AR2",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(290deg) saturate(1.1)",
+              "texture": true,
+              "orbit": "9.3",
+              "year": "28.4",
+              "size": "62775/6378",
+              "day": "14/24",
+              "coords": "nw",
+              "details": "Still formally unnamed, this planet is a hydrogen-helium gas giant with 21 moon-sized objects."
+            }
+          ]
+        },
+        {
+          "name": "Enoch",
+          "star": "Enoch",
+          "top": 48,
+          "left": 46,
+          "bodies": [
+            {
+              "name": "laban",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(-20deg)",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "0.5",
+              "size": "7658/6378",
+              "day": "24.3/24",
+              "coords": "ne",
+              "details": "Laban is a desert world with sea upon sea of scorching hot iron oxide wearing away marbleized cliffs. Its atmosphere is thick and layered with significant levels of oxygen trapped under an upper helium layer. Initially, surveyors detected traces of iridium from orbit, only to find a surprising archaeological discovery - the iridium came from bunkers on the surface that were blown apart by a dreadnought-class weapon. The logical conclusion was that the civilization on Joab had reached Laban and its outposts here were destroyed to make their extermination complete."
+            },
+            {
+              "name": "mizraim",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(150deg) contrast(1.2) brightness(1.2)",
+              "rings": true,
+              "ringsColor": "rgba(63, 128, 214, 0.5)", 
+              "texture": true,
+              "orbit": "1.2",
+              "year": "1.3",
+              "size": "17932/6378",
+              "day": "10.9/24",
+              "coords": "w",
+              "details": "A small gas giant, Mizraim is primarily hydrogen and methane around a rocky core. There is no remaining trace of the civilization from Joab on Mizraim itself, but debris orbiting the planet indicates that artificial satellites were once in place before being destroyed."
+            },
+            {
+              "name": "joab",
+              "image": "Alpine.webp",
+              "filter": "saturate(0.3)",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(0.7)",
+              "texture": true,
+              "orbit": "2.3",
+              "year": "3.5",
+              "size": "6709/6378",
+              "day": "25.6/24",
+              "coords": "se",
+              "details": "Joab is a two-mooned habitable planet that is most well known for its mass extinction event. Thousands of years ago, Joab was home to a primate-like spacefaring civilization as well as abundant flora and fauna. However, this can only be deduced from time capsules put into the ground well outside habitation centers -- all cities and detectable dwellings were targeted in a massive orbital bombardment that turned them into vapor. The resulting dust shroud killed all photosynthetic life and all fauna dependent on it.<br><br>Today, humans have recolonized the planet and are rapidly introducing their own species, beginning with cyanobacteria and heterotrophic bacteria to bring a suitable level of oxygen and nitrogen for respiration."
+            },
+            {
+              "name": "goliath",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-20deg) saturate(0.7) brightness(0.7)",
+              "texture": true,
+              "orbit": "4.8",
+              "year": "10.5",
+              "size": "74985/6378",
+              "day": "14.1/24",
+              "coords": "s",
+              "details": "A hydrogen-helium gas giant, Goliath's orbit takes it near the system's mass relay, a useful event for drive core discharges and automated helium-3 refueling platforms. Unfortunately, its orbit is currently taking it away from the relay, and it will continue this inconvenience for the next three galactic standard years."
+            }
+          ]
+        },
+        {
+          "name": "Phi Clio",
+          "star": "Phi Clio",
+          "top": 25,
+          "left": 48,
+          "bodies": [
+            {
+              "name": "cyllene",
+              "image": "Gaseous10.webp",
+              "filter": "saturate(0.8) contrast(0.9) hue-rotate(200deg)",
+              "texture": true,
+              "orbit": "0.5",
+              "year": "0.4",
+              "size": "38920/6378",
+              "day": "12.8/24",
+              "coords": "nw",
+              "details": "A mid-sized hydrogen-helium gas giant, Cyllene has an automated helium-3 refueling station, indicating that this remote system was once inhabited. Its distance from the mass relay and archaic design of the fuel station suggests that this system was mapped by someone who did not go through the relay, but discovered it in independent FTL exploration.<br><br>Cyllene is within the \"frost line\" of its parent star where gas giants do not normally form. For this reason, Cyllene is believed to be an extrasolar capture."
+            },
+            {
+              "name": "parnassus",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(3)",
+              "overlay": "rgba(10, 16, 37, 0.78)",
+              "texture": true,
+              "orbit": "1.1",
+              "year": "1.2",
+              "size": "5850/6378",
+              "day": "50.2/24",
+              "coords": "e",
+              "details": "A boiling hot rock planet with extreme tectonic activity, Parnassus is home to many volcanic mountains. Surface scans reveal several geothermal and solar power stations, tapping the planet's abundant energy. There is no history of the planet or its government in Citadel Council records. Given its proximity to a mapped and recorded planet like Cyllene, someone must have deleted Parnassus from the database."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Sentry Omega",
       "top": 41.5,
       "left": 80.5,
