@@ -74,7 +74,7 @@ class AstralBody {
 
   constructor(obj, targetElement, parentName, bodyType, index, path, override) {
     this.obj = obj;
-    this.name = obj.name;
+    this.name = noFirstUnderscore(obj.name);
     this.path = `#${path.split('#')[1]}`;
     this.parentName = parentName;
     this.realOrbit = obj.orbit;
@@ -253,6 +253,10 @@ class AstralBody {
       });
     }
 
+    if(this.bodyType === 'planet') {
+      this.astralOrbit.style.setProperty('--planetFactor', `${this.bodySize}`);
+    }
+
     let tag = 'a'
     if(this.bodyType === 'star') {
       tag = 'div';
@@ -261,17 +265,19 @@ class AstralBody {
     this.astralOrbit.innerHTML += 
       `<div class="position ${this.coords}">
           <div class="astralBody-holder">
-            <${tag} href="${this.path}/${spaceToDash(this.id).toLowerCase()}" class="cc astralBody ${this.bodyType}">
-              <div class="hover-area"></div>
+            <div class="cc astralBody ${this.bodyType}">
+              <${tag} href="${this.path}/${spaceToDash(this.id).toLowerCase()}" class="hover-area"></${tag}>
               <div class="holder-infos">
                 <div class="infos">
                     <div class="name">${this.star || this.name}</div>
                 </div>
               </div>
-            </${tag}>
+            </div>
           </div>
         </div>
       </div>`;
+
+
 
     if(this.bodyType === 'satellite') {
       const container =  document.createElement('div');

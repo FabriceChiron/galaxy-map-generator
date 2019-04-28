@@ -270,19 +270,23 @@
 
   }
 
-  &.active {
+  &.active,
+  &.active:hover{
     z-index: 100;
     // --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor));
     --planet-size: 40vw;
+    --earthSize: 40vw;
     --animationName: none !important;
 
 
     .orbit.satellite {
       --orbit-size: calc(60vw * var(--thisActiveFactor));
+      --planet-size: calc(var(--earthSize) / var(--planetFactor) * var(--thisSize));
     }
 
     @media screen and (max-width: 680px) {
       --planet-size: 60vw;
+      --earthSize: 60vw;
   
       .orbit.satellite {
         --orbit-size: calc(90vw * var(--thisActiveFactor));
@@ -617,6 +621,27 @@
     }
   }
 
+  &:not(.star):hover {
+    .position {
+      .astralBody-holder {
+        width: calc(var(--planet-size) *2);
+        height: calc(var(--planet-size) *2);
+        margin: calc(var(--planet-size)/-1) 0 0 calc(var(--planet-size)/-1);
+    
+        .orbit {
+          // --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor) * 2);
+          // --planet-size: calc(var(--earthSize) * var(--thisSize) * var(--sizeFactor) * 1.25);
+        }
+    
+        .rings-holder {
+          .rings {
+            --orbit-size: calc(var(--planet-size)*2.75);
+          }
+        } 
+
+      }
+    }
+  }
 
   &.active,
   &.active:hover {
@@ -665,8 +690,8 @@
       .astralBody-holder {
         // width: var(--planet-size);
         // height: var(--planet-size);
-        width: calc(var(--planet-size) *2);
-        height: calc(var(--planet-size) *2);
+        width: calc(var(--planet-size));
+        height: calc(var(--planet-size));
         margin: calc(var(--planet-size)/-1) 0 0 calc(var(--planet-size)/-1);
         .astralBody {
           // pointer-events: auto;
@@ -786,25 +811,5 @@
 
   }
 
-  &:not(.star):hover {
-    .position {
-      .astralBody-holder {
-        width: calc(var(--planet-size) *2);
-        height: calc(var(--planet-size) *2);
-        margin: calc(var(--planet-size)/-1) 0 0 calc(var(--planet-size)/-1);
-    
-        .orbit {
-          // --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor) * 2);
-          // --planet-size: calc(var(--earthSize) * var(--thisSize) * var(--sizeFactor) * 1.25);
-        }
-    
-        .rings-holder {
-          .rings {
-            --orbit-size: calc(var(--planet-size)*2.75);
-          }
-        } 
 
-      }
-    }
-  }
 }
