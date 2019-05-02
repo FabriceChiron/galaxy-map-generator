@@ -4369,7 +4369,9 @@
                   "image": "io.webp",
                   "texture" : true,
                   "orbitFactor": 0.6,
-                  "size": "0.5",
+                  "size": "0.286",
+                  "orbit": "0.02",
+                  "year": "1.769/36.5",
                   "coords": "sw",
                   "details": "Io (Jupiter I) is the innermost of the four Galilean moons of the planet Jupiter. It is the fourth-largest moon, has the highest density of all the moons, and has the least amount of water of any known astronomical object in the Solar System. It was discovered in 1610 and was named after the mythological character Io, a priestess of Hera who became one of Zeus' lovers.."
                 },
@@ -4378,6 +4380,8 @@
                   "image": "europa.webp",
                   "texture" : true,
                   "orbitFactor": 0.65,
+                  "size": "0.245",
+                  "year": "3.55/36.5",
                   "coords": "e",
                   "details": "Europa (Jupiter II), is the smallest of the four Galilean moons orbiting Jupiter, and the sixth-closest to the planet. It is also the sixth-largest moon in the Solar System. Europa was discovered in 1610 by Galileo Galilei and was named after Europa, the legendary mother of King Minos of Crete and lover of Zeus (the Greek equivalent of the Roman god Jupiter)."
                 },
@@ -4386,6 +4390,8 @@
                   "image": "ganymede.webp",
                   "texture" : true,
                   "orbitFactor": 0.75,
+                  "size": "0.245",
+                  "year": "7.154/36.5",
                   "coords": "n",
                   "details": "Ganymede (Jupiter III) is the largest and most massive moon of Jupiter and in the Solar System. The ninth largest object in the Solar System, it is the largest without a substantial atmosphere. It has a diameter of 5,268 km (3,273 mi) and is 8% larger than the planet Mercury, although only 45% as massive. Possessing a metallic core, it has the lowest moment of inertia factor of any solid body in the Solar System and is the only moon known to have a magnetic field. It is the third of the Galilean moons, the first group of objects discovered orbiting another planet, and the seventh satellite outward from Jupiter, Ganymede orbits Jupiter in roughly seven days and is in a 1:2:4 orbital resonance with the moons Europa and Io, respectively."
                 },
@@ -4394,6 +4400,8 @@
                   "image": "callisto.webp",
                   "texture" : true,
                   "orbitFactor": 0.8,
+                  "size": 0.378,
+                  "year": "16.689/36.5",
                   "coords": "w",
                   "details": "Callisto (Jupiter IV) is the second-largest moon of Jupiter, after Ganymede. It is the third-largest moon in the Solar System after Ganymede and Saturn's largest moon Titan, and the largest object in the Solar System not to be properly differentiated. Callisto was discovered in 1610 by Galileo Galilei. At 4821 km in diameter, Callisto has about 99% the diameter of the planet Mercury but only about a third of its mass. It is the fourth Galilean moon of Jupiter by distance, with an orbital radius of about 1883000 km. It is not in an orbital resonance like the three other Galilean satellites—Io, Europa, and Ganymede—and is thus not appreciably tidally heated. Callisto's rotation is tidally locked to its orbit around Jupiter, so that the same hemisphere always faces inward; Jupiter appears to stand nearly still in Callisto's sky. It is less affected by Jupiter's magnetosphere than the other inner satellites because of its more remote orbit, located just outside Jupiter's main radiation belt."
                 }
@@ -4409,7 +4417,21 @@
               "day": "10.3/24",
               "coords": "n",
               "rings": true,
-              "details": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius about nine times that of Earth. It has only one-eighth the average density of Earth, but with its larger volume Saturn is over 95 times more massive."
+              "details": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius about nine times that of Earth. It has only one-eighth the average density of Earth, but with its larger volume Saturn is over 95 times more massive.",
+              "bodies": [
+                {
+                  "name": "titan",
+                  "image": "uranus.webp",
+                  "texture" : true,
+                  "orbitFactor": 0.6,
+                  "size": "0.404",
+                  "filter": "hue-rotate(215deg) saturate(2.2) contrast(1.4)",
+                  "year": "15.945/36.5",
+                  "day": "tidal",
+                  "coords": "e",
+                  "details": "Titan is the largest moon of Saturn and the second-largest natural satellite in the Solar System. It is the only moon known to have a dense atmosphere.<br><br>Titan is the sixth gravitationally rounded moon from Saturn. Frequently described as a planet-like moon, Titan is 50% larger than Earth's moon and 80% more massive. It is the second-largest moon in the Solar System after Jupiter's moon Ganymede, and is larger than the planet Mercury, but only 40% as massive. Discovered in 1655 by the Dutch astronomer Christiaan Huygens, Titan was the first known moon of Saturn, and the sixth known planetary satellite (after Earth's moon and the four Galilean moons of Jupiter). Titan orbits Saturn at 20 Saturn radii. From Titan's surface, Saturn subtends an arc of 5.09 degrees and would appear 11.4 times larger in the sky than the Moon from Earth.<br><br>Titan is primarily composed of ice and rocky material. Much as with Venus before the Space Age, the dense opaque atmosphere prevented understanding of Titan's surface until the Cassini–Huygens mission in 2004 provided new information, including the discovery of liquid hydrocarbon lakes in Titan's polar regions. The geologically young surface is generally smooth, with few impact craters, although mountains and several possible cryovolcanoes have been found.<br><br>The atmosphere of Titan is largely nitrogen; minor components lead to the formation of methane and ethane clouds and nitrogen-rich organic smog. The climate—including wind and rain—creates surface features similar to those of Earth, such as dunes, rivers, lakes, seas (probably of liquid methane and ethane), and deltas, and is dominated by seasonal weather patterns as on Earth. With its liquids (both surface and subsurface) and robust nitrogen atmosphere, Titan's methane cycle is analogous to Earth's water cycle, at the much lower temperature of about 94 K (−179.2 °C; −290.5 °F)."
+                }
+              ]
             },
             {
               "name": "uranus",
