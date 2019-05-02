@@ -5939,6 +5939,75 @@
       ]
     },
     {
+      "name": "Shadow Sea",
+      "top": 55.3,
+      "left": 66.4,
+      "image": "shadow-sea.webp",
+      "bodies": [
+        {
+          "name": "Iera",
+          "star": "Iera",
+          "top": 29,
+          "left": 52,
+          "bodies": [
+            {
+              "name": "venture",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(60deg)",
+              "overlay": "",
+              "texture": true,
+              "orbit": "0.7",
+              "year": "0.6",
+              "size": "10659/6378",
+              "day": "26.1/24",
+              "coords": "e",
+              "details": "A pressure-cooker of a planet, Venture has a thick nitrogen-based atmosphere that is also the source of wealth for a small colonist industry. While Venture's high temperatures are brutal, the primordial soup is not as acidic as on other hothouse planets, and xenon can be readily collected and isolated from the lower troposphere by recovery bots. This xenon is then sold for use in ion drives and electric lights. Venture's gravity is relatively low for a planet of its size, making the recovery more economical than would otherwise be expected."
+
+            },
+            {
+              "name": "prospect",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(280deg)",
+              "texture": true,
+              "orbit": "1.2",
+              "year": "1.3",
+              "size": "45277/6378",
+              "day": "18.1/24",
+              "coords": "nw",
+              "details": "Prospect is a hydrogen-nitrogen gas giant with 13 known moons, most of which seemed to have dense heavy metal deposits on first scan, starting a resource rush by the colonists from nearby Horizon. In a tragic turn of events, a galactic uranium surplus drove half the mining firms out of business, and the surfaces of some moons are littered with the bodies of executives who committed suicide by airlock. Today's mining corporations have reached a much more palatable equilibrium and hold more diversified and sustainable portfolios. Prospect is within the \"frost line\" of its solar system, where ice giants do not normally form. For this reason it is believed to have been an extrasolar capture."
+            },
+            {
+              "name": "horizon",
+              "image": "Terrestrial3.webp",
+              "filter": "saturate(0.8)",
+              "texture": true,
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(70%)",
+              "orbit": "2.1",
+              "year": "3",
+              "size": "5402/6378",
+              "day": "37.8/24",
+              "coords": "ne",
+              "details": "A temperate world that has hit the \"sweet spot\" for carbon-based life, Horizon has a nitrogen-oxygen atmosphere maintained by abundant indigenous photosynthetic plants and bacteria. While the native plants are not very palatable to humans, the soil conditions are such that a handful of introduced Earth species have flourished, and the colonists must take strict care to prevent ecological disasters. Genetically-engineered \"terminator seeds\" that grow nutritious but sterile crops to minimize outbreaks are the rule rather than the exception.<br><br>Animals on Horizon appear to be exploding in diversity, similar to Earth's Cambrian period. Large flying insect analogs take advantage of the thicker-than-Earth atmosphere and low gravity to grow enormous. Microbial life has proven relatively benign; a series of vaccinations for the most virulent strains of soil-borne diseases is all that is required for a visit."
+            },
+            {
+              "name": "watchman",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.5)",
+              "overlay": "rgba(0, 30, 100, 0.3)",
+              "texture": true,
+              "orbit": "4.1",
+              "year": "8.3",
+              "size": "5728/6378",
+              "day": "28.6/24",
+              "coords": "sw",
+              "details": "Perched on the outer edge of Iera's small solar system, Watchman is a mid-sized rock and ice planet that has picked up a dozen moon-sized objects. Its nitrogen-oxygen atmosphere is too thin to support life, with solid ice covering its calcium-heavy rocky core. Footprints of the first surveying teams to come to the planet can still be seen on its practically airless surface. The planet, devoid of valuable resources, has seen few visitors since."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Styx Theta",
       "top": 46.9,
       "left": 66.7,
