@@ -24,7 +24,7 @@ const createActiveAstralBody = (astralBody, stellarSystem) => {
   activeAstralBody.id += 'Active';
   activeAstralBody.className += ' active';
 
-  activeAstralBody.querySelector('.astralBody').href = stripHref(activeAstralBody.querySelector('.astralBody'));
+  activeAstralBody.querySelector('.hover-area').href = stripHref(activeAstralBody.querySelector('.hover-area'));
 
   // stripHref(activeAstralBody.querySelector('.astralBody').href);
 
