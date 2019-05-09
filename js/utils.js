@@ -20,6 +20,10 @@ const noDash = (str) => (
   strToFix = str.replace('-', '')
 )
 
+const noFirstUnderscore = (str) => (
+  strToFix = (str.charAt(0) === '_') ? str.slice(1) : str
+)
+
 const camelize = (str) => {
   return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(match, index) {
     if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces

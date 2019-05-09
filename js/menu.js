@@ -46,7 +46,7 @@ const generateMenu = (galaxyMap) => {
     let clusterLink = createElem('a', clusterDiv);
     clusterLink.href = `#${spaceToDash(cluster.name).toLowerCase()}`;
     clusterLink.id = `${spaceToDash(cluster.name).toLowerCase()}-link`;
-    clusterLink.innerHTML += cluster.name;
+    clusterLink.innerHTML += noFirstUnderscore(cluster.name);
 
     if(cluster.bodies && cluster.bodies.length > 0) {
       let clusterLabel = createElem('label', clusterDiv, {
@@ -67,7 +67,7 @@ const generateMenu = (galaxyMap) => {
         let systemLink = createElem('a', systemDiv);
         systemLink.href = clusterLink.href + `/${spaceToDash(system.name).toLowerCase()}`;
         systemLink.id = `${spaceToDash(system.name).toLowerCase()}-link`;
-        systemLink.innerHTML += system.name;
+        systemLink.innerHTML += noFirstUnderscore(system.name);
 
         if(system.bodies && system.bodies.length > 0) {
           let systemLabel = createElem('label', systemDiv, {
@@ -89,7 +89,7 @@ const generateMenu = (galaxyMap) => {
             let planetLink = createElem('a', planetDiv);
             planetLink.href = systemLink.href + `/${spaceToDash(planet.name).toLowerCase()}`;
             planetLink.id = `${spaceToDash(planet.name).toLowerCase()}-link`;
-            planetLink.innerHTML += planet.name;
+            planetLink.innerHTML += noFirstUnderscore(planet.name);
 
             if(planet.bodies && planet.bodies.length > 0) {
               let planetLabel = createElem('label', planetDiv, {
@@ -111,7 +111,7 @@ const generateMenu = (galaxyMap) => {
                 let satelliteLink = createElem('a', satelliteDiv);
                 satelliteLink.href = planetLink.href + `/${spaceToDash(satellite.name).toLowerCase()}`;
                 satelliteLink.id = `${spaceToDash(satellite.name).toLowerCase()}-link`;
-                satelliteLink.innerHTML += satellite.name;
+                satelliteLink.innerHTML += noFirstUnderscore(satellite.name);
               })
             } else {
               // planetLink.className += 'empty';
