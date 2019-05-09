@@ -6030,6 +6030,185 @@
       ]
     },
     {
+      "name": "Sigurd's Cradle",
+      "top": 21.7,
+      "left": 52,
+      "image": "cluster-06.webp",
+      "bodies": [
+        {
+          "name": "Decoris",
+          "star": "Decoris",
+          "filter": "hue-rotate(330deg) brightness(0.9)",
+          "top": 25,
+          "left": 50,
+          "bodies": [
+            {
+              "name": "laena",
+              "image": "Cracklepotblue.webp",
+              "filter": "hue-rotate(230deg) saturate(1.5) contrast(0.8) brightness(0.5)",
+              "texture": true,
+              "orbit": "1.4",
+              "year": "1.7",
+              "size": "6197/6378",
+              "day": "36.2/24",
+              "coords": "nw",
+              "details": "Laena (\"cloaked\") is a methane-clouded hothouse planet. Its lack of a metal-rich core and significant magnetosphere allows for an easy scan, which reveals mining equipment on its surface. It can be deduced that this mining occurred within the last five years — any longer and the machines would have been worn to nothing by the excessive heat and dust storms of hot iron oxide."
+            },
+            {
+              "name": "sanctum",
+              "image": "Rockbits1.webp",
+              "filter": "hue-rotate(180deg) contrast(0.8) brightness(0.8) saturate(1.3)",
+              "texture": true,
+              "orbit": "2.6",
+              "year": "4.2",
+              "size": "6650/6378",
+              "day": "69.4/24",
+              "coords": "se",
+              "details": "Sanctum is proof of the old spacer adage, \"just because it's called a garden world doesn't mean it's a picnic.\" Freezing ice storms cover the poles and temperate zones, leaving a narrow strip of habitable land at the equator. Dry but windy, this area is home to Sanctum's minimal terrestrial plant life. The planet has yet to develop land-based animals, though invertebrates grow quite large in its pelagic seas.<br><br>Mining, referred to as \"ice cracking\" at anywhere but the equator, is a common employment on Sanctum. The planet is rich in platinum and palladium deposits, as well as boron, which is locally used in semiconductor doping."
+            }
+          ]
+        },
+        {
+          "name": "Lenal",
+          "star": "Lenal",
+          "filter": "hue-rotate(-50deg) brightness(1.2)",
+          "top": 33,
+          "left": 20,
+          "bodies": [
+            {
+              "name": "laconix",
+              "image": "Martian.webp",
+              "filter": "brightness(0.7) saturate(1.4)",
+              "texture": true,
+              "orbit": "2.5",
+              "year": "3.6",
+              "size": "9973/6378",
+              "day": "22.1/24",
+              "coords": "e",
+              "details": "Laconix is far enough from its F-class star that its temperatures are almost tolerable to sapient life, but its extremely thin atmosphere makes it almost as hostile as a vacuum. As such, the planet was uninhabited. Mining drones, piloted from orbital stations, would brave the high gravity to extract iridium, osmium, and other valuable heavy metals."
+            },
+            {
+              "name": "triginta petra",
+              "image": "Terrestrial2.webp",
+              "filter": "hue-rotate(-30deg) saturate(0.65)",
+              "clouds": "Clouds3.webp",
+              "cloudsFilter": "opacity(70%)",
+              "texture": true,
+              "orbit": "4.8",
+              "year": "9.6",
+              "size": "8287/6378",
+              "day": "28.8/24",
+              "coords": "nw",
+              "details": "A low-density planet in comparison to Earth, Triginta Petra is also drier, with wide land masses that are largely desert. Its dextro-chirality native life has yet to make it out of the oceans, primarily producing cyanobacteria which provide a limited amount of oxygen in the atmosphere."
+            },
+            {
+              "name": "choitadix",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(50deg) saturate(0.6) brightness(0.5) contrast(1.1)",
+              "texture": true,
+              "orbit": "9.3",
+              "year": "26",
+              "size": "1260/6378",
+              "day": "62/24",
+              "coords": "se",
+              "details": "A dwarf planet, Choitadix is notable for gold deposited by an asteroid strike that, geologically speaking, happened fairly recently. Surveyors suspected Choitadix was once larger but was reduced in size by the strike, which knocked enough material out of the planet to create misshapen moonlets. Its name, which means \"gap-toothed\" in a common turian language, was retroactively added once scientists confirmed this hypothesis."
+            },
+            {
+              "name": "nutus",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(220deg)",
+              "texture": true,
+              "rings": true,
+              "ringsColor": "rgba(255,200,200,0.6)",
+              "orbit": "17.4",
+              "year": "66.5",
+              "size": "50752/6378",
+              "day": "13.4/24",
+              "coords": "w",
+              "details": "Nutus is a hydrogen-helium gas giant with high nitrogen content. It had several colonized moons.<br><br>Nutus's moon Etrat was home to the small-time Terminus Systems warlord, Rashtek Chass, who extracted tribute from the colonists on Triginta Petra and any travelers stopping by to refuel on helium-3. Rashtek's small navy appears to have fled to safer pastures in advance of the Reaper invasion."
+            }
+          ]
+        },
+        {
+          "name": "Mil",
+          "star": "Mil",
+          "filter": "hue-rotate(-50deg) brightness(1.2)",
+          "top": 62,
+          "left": 29,
+          "bodies": [
+            {
+              "name": "akraia",
+              "image": "Rockplates1.webp",
+              "filter": "saturate(0.9) contrast(0.5) brightness(0.6)",
+              "texture": true,
+              "orbit": "0.4",
+              "year": "0.3",
+              "size": "2800/6378",
+              "day": "tidal",
+              "coords": "n",
+              "details": "Tidally locked to its parent star, Mil, Akraia is a small rock-planet that never bore much development due to the asari on Chalkhos and Selvos having limited resources and instead focusing their efforts on more welcoming worlds. Old scans indicate that it may have an abundance of nickel."
+            },
+            {
+              "name": "lisir",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(40deg) saturate(0.6)",
+              "texture": true,
+              "orbit": "0.68",
+              "year": "0.56",
+              "size": "5953/6378",
+              "day": "34.7/24",
+              "coords": "sw",
+              "details": "Lisir is a low-density world notable for its appearance in the asarisploitation holo, \"Blue Steel\", one of humanity's first attempts to market entertainment galactically. The promotional campaign assured viewers that it was \"filmed on location in the most dangerous section of the galaxy, the Terminus Systems!\" In fact, the cast and crew were relatively safe, occupying a space station that orbited an unremarkable, lifeless planet.<br><br>Lisir's space stations housed a largely asari crew teleoperating robo-mining of uranium. When \"Blue Steel\" was released, human audiences still thought of this as an exotic profession. Today, it would induce yawns."
+            },
+            {
+              "name": "_",
+              "coords": "e",
+              "orbit": "1.15",
+              "year": "1.24",
+              "bodies": [
+                {
+                  "name": "chalkhos",
+                  "image": "Swamp.webp",
+                  "filter": "saturate(0.8)",
+                  "texture": true,
+                  "orbitFactor": 0.25,
+                  "size": "5005/6378",
+                  "day": "68.6/24",
+                  "coords": "e",
+                  "details": "Chalkhos is notable for being one of the few garden worlds in the Milky Way that is also part of a binary planet system: both it and its heavenly twin Selvos are in a stable orbit with one another in addition to orbiting the star Mil. Chalkhos's greenhouse gases lead to a hotter climate than Earth, and the solar eclipses caused by Selvos, while common, are not frequent enough to be a good solar shade.<br><br>This did not prevent a colony from springing up, largely asari and their varying species of mates. It was far from an idyllic settlement--like many Terminus worlds, it was rife with farmers growing psychoactive substances, armed gangs, and with genetic engineering that would be illegal in Council space--but aside from the maddening heat and photoperiod, it was quite inhabitable."
+                },
+                {
+                  "name": "selvos",
+                  "image": "Martian.webp",
+                  "filter": "brightness(1.2) saturate(0.8)",
+                  "texture": true,
+                  "orbitFactor": 0.25,
+                  "size": "6062/6378",
+                  "day": "54.9/24",
+                  "coords": "w",
+                  "details": "Chalkhos's binary twin is a barren world that's always seemed like a better terraforming prospect than it is. Its temperatures are quite tolerable for sapient life, and its gravity is suitable for retaining a thick atmosphere. Its location, close to Chalkhos, makes for a tempting investment--two garden worlds so close together would benefit from mutual trade and, if nothing else, tourism due to their near-unique status. However, Selvos has minimal water. Early attempts at creating a hydrosphere met with slow progress that only Chalkhos's asari could love."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Psi Tophet",
+          "star": "Psi Tophet",
+          "top": 39,
+          "left": 54,
+          "bodies": []
+        },
+        {
+          "name": "Skepsis",
+          "star": "Skepsis",
+          "top": 46,
+          "left": 35,
+          "bodies": []
+        }
+      ]
+    },
+    {
       "name": "Styx Theta",
       "top": 46.9,
       "left": 66.7,
