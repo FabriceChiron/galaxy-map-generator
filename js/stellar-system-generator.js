@@ -95,7 +95,7 @@ class AstralBody {
     this.texture = (obj.texture) ? "-texture" : '';
     this.filter = (obj.filter) ? obj.filter : 'none';
     this.overlay = (obj.overlay) ? obj.overlay : 'none';
-    this.bgColor = (obj.color) ? obj.color : "#ccc";
+    this.bgColor = (obj.color) ? obj.color : null;
     this.image = (obj.image) ? obj.image : null;
     this.bodyType = bodyType;
     this.isSystem = (targetElement) ? false : true;
@@ -247,8 +247,7 @@ class AstralBody {
         --sizeFactor: ${this.sizeFactor};
         --thisYear: ${this.yearLength};
         --thisDay: ${this.dayLength};
-        --thisActiveFactor: ${(1 + (this.index * 0.25))
-        };
+        --thisActiveFactor: 1;
          `,
       });
     }
@@ -322,17 +321,20 @@ class AstralBody {
       this.targetElement.parentElement.style.setProperty('--addStarSize', `${this.bodySize}`);
     }
 
-    if(this.bodyType === 'planet'){
-      setInterval(function(){
-        if(!isInViewport(self.astralBody)) {
-          if(!self.astralOrbit.classList.contains('outside')) {
-            self.astralOrbit.className += ' outside';
-          }
-        } else {
-          self.astralOrbit.className = self.astralOrbit.className.replace(' outside', '');
-        }
-      }, 2000)
-    }
+    // if(this.bodyType === 'planet'){
+    //   setInterval(function(){
+    //     console.log(isInViewport(document.querySelector('#nutus .hover-area')))
+    //     if(!isInViewport(self.astralBody.querySelector('.hover-area'))) {
+    //       // console.log('!isInViewport', self.name);
+    //       if(!self.astralOrbit.classList.contains('outside')) {
+    //         self.astralOrbit.className += ' outside';
+    //       }
+    //     } else {
+    //       // console.log('isInViewport', self.name);
+    //       self.astralOrbit.className = self.astralOrbit.className.replace(' outside', '');
+    //     }
+    //   }, 2000)
+    // }
 
     return (this.container || this.astralOrbit);
   }
@@ -461,6 +463,21 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
         window[sAsteroidField].render();
       });
     }
+
+    [...document.querySelectorAll('.astralBody.planet')].map(planet => {
+      const parentOrbit = planet.closest('.orbit');
+      setInterval(function(){
+        if(!isInViewport(planet)) {
+          // console.log('!isInViewport', self.name);
+          if(!parentOrbit.classList.contains('outside')) {
+            parentOrbit.className += ' outside';
+          }
+        } else {
+          // console.log('isInViewport', self.name);
+          parentOrbit.className = parentOrbit.className.replace(' outside', '');
+        }
+      }, 2000)
+    })
 
     setTimeout(function() {
       // setAttributes(sectionSystem, {
