@@ -1,12 +1,12 @@
 {
-  "name": "",
-  "image": "",
-  "filter": "",
-  "texture": true,
-  "orbit": "",
-  "year": "1",
-  "size": "6378/6378",
-  "day": "24/24",
-  "coords": "",
-  "details": ""
-}
+              "name": "",
+              "image": "",
+              "filter": "",
+              "texture": true,
+              "orbit": "",
+              "year": "1",
+              "size": "6378/6378",
+              "day": "24/24",
+              "coords": "",
+              "details": ""
+            }
