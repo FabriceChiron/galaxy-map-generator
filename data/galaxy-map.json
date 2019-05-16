@@ -6216,14 +6216,134 @@
           "star": "Psi Tophet",
           "top": 39,
           "left": 54,
-          "bodies": []
+          "bodies": [
+            {
+              "name": "_2181 despoina",
+              "image": "ocean.webp",
+              "filter": "",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(60%)",
+              "texture": true,
+              "orbit": "1.3",
+              "year": "1.5",
+              "size": "6908/6378",
+              "day": "22.7/24",
+              "coords": "ne",
+              "details": "This planet was only spotted recently by human space probes, and no records indicate it has been explored since. Scans indicate it is covered in an ocean of liquid water and has a nitrogen-oxygen atmosphere. It is highly likely to have at least some photosynthetic life."
+            },
+            {
+              "name": "_2181 arion",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(-20deg) contrast(1.1) saturate(1.2) brightness(0.8)",
+              "texture": true,
+              "orbit": "2.45",
+              "year": "3.84",
+              "size": "4404/6378",
+              "day": "59.6/24",
+              "coords": "se",
+              "details": "This rock planet is only known from space probes, and there are no records of its exploration. It appears to have a moderate atmosphere of hydrogen and helium over an icy surface."
+            },
+            {
+              "name": "_2181 eubolos",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-65deg) contrast(1.1) saturate(0.9)",
+              "texture": true,
+              "rings": true,
+              "ringsColor": "rgba(215,176,134,.5)",
+              "orbit": "5.2",
+              "year": "11.9",
+              "size": "66580/6378",
+              "day": "15.3/24",
+              "coords": "n",
+              "details": "Like the other planets in this system, 2181 Eubolos is an unknown quantity. It appears to be a hydrogen-helium gas giant surrounded by the usual complement of moons and rings. Scans reveal no detectable artificial satellites."
+            }
+          ]
         },
         {
           "name": "Skepsis",
           "star": "Skepsis",
           "top": 46,
           "left": 35,
-          "bodies": []
+          "bodies": [
+            {
+              "name": "wallace",
+              "image": "ocean.webp",
+              "filter": "hue-rotate(170deg) brightness(2.4) saturate(0.9)",
+              "texture": true,
+              "orbit": "0.04",
+              "year": "11/365",
+              "size": "39459/6378",
+              "day": "tidal",
+              "coords": "e",
+              "details": "An unusually small Pegasid or \"hot Jupiter\", Wallace was originally an extrasolar planet that entered this system and was captured by the gravity well of the G-class star Skepsis. Tidally locked, Wallace's \"hot side\" reaches temperatures over 2,500 degrees Celsius.<br><br>While not large enough proportionate to the star to cause eclipses visible from Watson, it is easily seen at dawn or dusk as one of the brightest objects in the sky."
+            },
+            {
+              "name": "darwin",
+              "image": "Martian.webp",
+              "filter": "saturate(1.5) contrast(1.2) brightness(1.2) hue-rotate(10deg)",
+              "texture": true,
+              "orbit": "0.9",
+              "year": "0.9",
+              "size": "6771/6378",
+              "day": "37.3/24",
+              "coords": "s",
+              "details": "A mid-sized rock planet, Darwin is ironically named, being one of the worst places for life in the galaxy. Its atmosphere is punishing, its temperature boiling, its chemical makeup toxic. Carbon monoxide and methane wrap the planet in an unyielding haze, and scans of its surface show only silicates and molten tin. Its daily thermal fluctuations lead to hurricane-level vortices, two at each pole, forming \"eyes\" that can be seen from orbit. Despite all this, Darwin is still used by spacers as a drive core discharge point -- hydrogen pierces the clouds in the upper atmosphere, making for a relatively benign approach."
+            },
+            {
+              "name": "watson",
+              "image": "Swamp.webp",
+              "filter": "",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(50%)",
+              "texture": true,
+              "orbit": "2.1",
+              "year": "3",
+              "size": "6733/6378",
+              "day": "37.8/24",
+              "coords": "nw",
+              "details": "Watson is known in human media for two things -- its spectacular tides brought on by a large moon, and the bureaucratic snafu over which Earth nations got to settle there first. Watson is a garden world, first discovered in 2165 CE, with credit claimed by the Chinese People's Federation, the United North American States, and the European Union. The Systems Alliance brokered the infamous \"Rekjavik [sic] Compromise\", allowing limited colonization from each coalition in cities comprised of populations from each nation.<br><br>Watson itself trends colder than Earth, with a temperate zone measuring about 30 degrees latitude in either direction from the equator. Its life does not easily map to Earth's evolutionary eras -- some islands have species that resemble terrestrial placental mammals, others are overrun by arthropods. It is estimated that at least two more generations of xenozoologists will be needed to properly classify all the species of the planet.",
+              "bodies": [
+                {
+                  "name": "franklin",
+                  "image": "moon-texture.webp",
+                  "filter": "",
+                  "texture": true,
+                  "orbit": "0.21",
+                  "year": "0.1",
+                  "size": "2405/6378",
+                  "day": "33",
+                  "coords": "e",
+                  "details": "A large moon, Franklin retains a trace atmosphere of carbon dioxide, but its desolate surface holds no signs of water or life. In order to defend Watson from the pirates of the Terminus Systems, Franklin is home to two Alliance spaceports and naval bases capable of fielding six fighter squadrons each and a classified number of interplanetary ballistic missiles. Mass effect fields keep the gravity in its installations at a comfortable level for long-term living."
+                }
+              ]
+            },
+            {
+              "name": "crick",
+              "image": "mercury-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "4.3",
+              "year": "8.9",
+              "size": "4738/6378",
+              "day": "60.7/24",
+              "coords": "w",
+              "details": "Known for its spectacular geysers that can be seen from orbit, Crick is a rock planet with expansive frozen oceans. Though it is within the temperature and pressure range for human habitation, its thick atmosphere is largely carbon dioxide and monoxide, making breath masks or environmental suits mandatory. The most abundant resources for exploitation are the potassium salts found in its seabeds, which fetch good prices on terraforming worlds."
+            },
+            {
+              "name": "pauling",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-65deg) contrast(1.1) saturate(0.9)",
+              "texture": true,
+              "rings": true,
+              "ringsColor": "rgba(215,176,134,.25)",
+              "orbit": "4.3",
+              "year": "8.9",
+              "size": "4738/6378",
+              "day": "60.7/24",
+              "coords": "e",
+              "details": "A hydrogen-methane gas giant, Pauling's gravitational field is believed to have cleared most of what would otherwise have been a sizable asteroid belt. The 2163 mission of the space probe \"Ultimate\" gave the inhabitants of Watson reams of data reinforcing this theory, giving the colonist an accurate count of its moons (66), rings, moonlike ring objects, and more than 200 visible impact craters on its pockmarked surface. \"Ultimate\" has since been retrieved for re-use on subsequent missions within the solar system."
+            }
+          ]
         }
       ]
     },
