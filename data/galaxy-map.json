@@ -6135,7 +6135,13 @@
           "filter": "hue-rotate(-50deg) brightness(1.2)",
           "top": 62,
           "left": 29,
-          "bodies": [
+          "asteroids": [
+            {
+              "orbit": "3.5",
+              "year": "3.5",
+              "bodies": 130
+            }
+          ],          "bodies": [
             {
               "name": "akraia",
               "image": "Rockplates1.webp",
@@ -6165,6 +6171,7 @@
               "coords": "e",
               "orbit": "1.15",
               "year": "1.24",
+              "twin": true,
               "bodies": [
                 {
                   "name": "chalkhos",
@@ -6189,6 +6196,18 @@
                   "details": "Chalkhos's binary twin is a barren world that's always seemed like a better terraforming prospect than it is. Its temperatures are quite tolerable for sapient life, and its gravity is suitable for retaining a thick atmosphere. Its location, close to Chalkhos, makes for a tempting investment--two garden worlds so close together would benefit from mutual trade and, if nothing else, tourism due to their near-unique status. However, Selvos has minimal water. Early attempts at creating a hydrosphere met with slow progress that only Chalkhos's asari could love."
                 }
               ]
+            },
+            {
+              "name": "terapso",
+              "image": "Gaseous6.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "4.53",
+              "year": "9.56",
+              "size": "63374/6378",
+              "day": "12.9/24",
+              "coords": "w",
+              "details": "A hydrogen-helium gas giant with an abundance of nitrogen in its atmosphere, Terapso was notable because of its independence from the government of Chalkhos as well as from any other governing body. As a result, its colonized moons and orbital stations overseeing the helium-3 recovery were neutral meeting grounds for all manner of deals between Terminus governments, warlords, or crime figures."
             }
           ]
         },
