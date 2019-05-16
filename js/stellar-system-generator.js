@@ -266,11 +266,6 @@ class AstralBody {
           <div class="astralBody-holder">
             <div class="cc astralBody ${this.bodyType}">
               <${tag} href="${this.path}/${spaceToDash(this.id).toLowerCase()}" class="hover-area"></${tag}>
-              <div class="holder-infos">
-                <div class="infos">
-                    <div class="name">${this.star || this.name}</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -289,6 +284,23 @@ class AstralBody {
 
     this.astralBody = astralOrbit.querySelector('.astralBody');
 
+    if(this.bodyType === 'star') {
+      this.astralBody.innerHTML += 
+      `<div class="holder-infos">
+        <div class="infos">
+            <div class="name">${this.star || this.name}</div>
+        </div>
+      </div>`
+    } else {
+      if((this.bodyType === 'planet' || this.bodyType === 'satellite') && this.name !== '') {
+        this.astralBody.innerHTML +=`<div class="holder-infos">
+          <div class="infos">
+              <div class="name">${this.star || this.name}</div>
+          </div>
+        </div>`
+      }
+    }
+
     this.addShadow();
 
     this.addBackground();
@@ -298,7 +310,9 @@ class AstralBody {
       this.astralOrbit.style.setProperty('--tilt', `${this.tilt}deg)`);
     }
     
-    this.addLight();
+    if(this.name !== ''){
+      this.addLight();
+    }
 
     if(this.clouds) {
       this.addClouds();
