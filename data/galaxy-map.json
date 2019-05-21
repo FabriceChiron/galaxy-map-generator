@@ -6342,6 +6342,18 @@
               "day": "60.7/24",
               "coords": "e",
               "details": "A hydrogen-methane gas giant, Pauling's gravitational field is believed to have cleared most of what would otherwise have been a sizable asteroid belt. The 2163 mission of the space probe \"Ultimate\" gave the inhabitants of Watson reams of data reinforcing this theory, giving the colonist an accurate count of its moons (66), rings, moonlike ring objects, and more than 200 visible impact craters on its pockmarked surface. \"Ultimate\" has since been retrieved for re-use on subsequent missions within the solar system."
+            },
+            {
+              "name": "keimowitz",
+              "image": "Terrestrial4.webp",
+              "filter": "saturate(0.1)",
+              "texture": true,
+              "orbit": "16.8",
+              "year": "69.1",
+              "size": "9586/6378",
+              "day": "29.7/24",
+              "coords": "se",
+              "details": "Named for the 21st century pioneer of groundwater remediation techniques, Keimowitz is an impressive layer of ice over a stony metallic core. Despite its size, it has only one moon, Noa, which shares its carbonaceous composition, leading astronomers to believe it formed following a giant impact. Iridium deposits have attracted miners to the planet, who must work through robots and telepresence because of the planet's strong gravity."
             }
           ]
         }
