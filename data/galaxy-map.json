@@ -6669,6 +6669,7 @@
         {
           "name": "Kyzil",
           "star": "Kyzil",
+          "filter": "hue-rotate(-30deg)",
           "top": 63,
           "left": 48,
           "bodies": [
@@ -6737,9 +6738,88 @@
         {
           "name": "Thal",
           "star": "Thal",
+          "filter": "hue-rotate(-30deg)",
           "top": 45,
           "left": 39,
-          "bodies": []
+          "asteroids": [
+            {
+              "orbit": 2.7,
+              "year": 2.7,
+              "bodies": 100
+            },
+            {
+              "orbit": 13,
+              "year": 13,
+              "bodies": 300
+            }
+          ],
+          "bodies": [
+            {
+              "name": "garan",
+              "image": "mars-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.0172",
+              "year": "17.52/365",
+              "size": "11703/6378",
+              "day": "tidal",
+              "coords": "e",
+              "details": "Garan is the innermost planet of the Thal system, which is less than 2.56 million kilometers from its K-class parent star. Temperatures on the sunward side of this tidally locked planet reach more than 2,800 Celsius, boiling away earth and stone. These gases are then carried away by wind from the hottest point to the zone where temperatures are cool enough for the gaseous mixture to recondense, leading to the unusual weather phenomenon of rains of rocks."
+            },
+            {
+              "name": "sarait",
+              "image": "pluto-texture.webp",
+              "filter": "",
+              "overlay": "rgba(104, 181, 253, 0.27)",
+              "texture": true,
+              "orbit": "0.85",
+              "year": "0.87",
+              "size": "10413/6378",
+              "day": "65/24",
+              "coords": "n",
+              "details": "A large terrestrial, Sarait's methane-rich atmosphere might be mistaken for that of a true hothouse planet. However, some terraforming corporations have targeted it for development since Sarait has already given rise to some cyanobacteria in the liquid water that can be found near its poles. There is some evidence that the planet has been fluctuating between methane-heavy and oxygen-heavy atmospheres for several million years, each cycle dependent on the nutrients in the ocean that led to bacterial growth or crashes."
+            },
+            {
+              "name": "altakiril",
+              "image": "Tropical.webp",
+              "filter": "brightness(0.9) saturate(0.6) contrast(0.8) hue-rotate(20deg)",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(10%)",
+              "texture": true,
+              "orbit": "1.6",
+              "year": "2.3",
+              "size": "4145/6378",
+              "day": "19.2/24",
+              "coords": "nw",
+              "details": "Altakiril is a garden world on the outer edge of its star's habitable zone. The planet is largely frozen, yet it features native dextro-amino-acid-based life in its lower latitudes. These species evolved to withstand periodic freezing and compensate for the cold with spectacular population explosions during the long, mild summers."
+            },
+            {
+              "name": "xerceo",
+              "image": "Gaseous6.webp",
+              "filter": "hue-rotate(0deg) brightness(1) saturate(1) contrast(1)",
+              "rings": true,
+              "ringsColor": "rgba(249, 215, 239, 0.4)",
+              "texture": true,
+              "orbit": "5.4",
+              "year": "18.1",
+              "size": "74616/6378",
+              "day": "16.4/24",
+              "coords": "se",
+              "details": "A hydrogen-helium gas giant, Xerceo's many moons were developed along with the colonization of Altakiril. It is believed that the majority of them were military in nature, a common theme among turian colonies. Specifics are few. Altakiril's government kept its records classified, and the Reapers have systematically destroyed the installations here."
+            },
+            {
+              "name": "virits",
+              "image": "mercury-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "7.3",
+              "year": "22.1",
+              "size": "651/6378",
+              "day": "11.4/24",
+              "coords": "s",
+              "details": "Virits is a large, stony asteroid in the Thal system's Rakari Belt. There are no records of its colonization, but it is included on star charts as it is well-known by astronomers on Altakiril who could observe it with low-power telescopes during certain portions of its orbit."
+            }
+          ]
         },
         {
           "name": "Urla Rast",
