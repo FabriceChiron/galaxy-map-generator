@@ -6826,14 +6826,102 @@
           "star": "Urla Rast",
           "top": 32,
           "left": 41,
-          "bodies": []
+          "bodies": [
+            {
+              "name": "bovis tor",
+              "image": "Martian.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.7",
+              "year": "0.6",
+              "size": "7307/6378",
+              "day": "33.5/24",
+              "coords": "nw",
+              "details": "Named \"the shining sea\" in an old volus language, Bovis Tor is so named for its boiling surface rich in glowing-hot alumina, flecked with dark ridges of carbon. Its thick atmosphere of nitrogen and oxygen is no indicator of life, since the temperatures are simply too high."
+            },
+            {
+              "name": "talis fia",
+              "image": "Swamp.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "1.6",
+              "year": "2",
+              "size": "7550/6378",
+              "day": "33.8/24",
+              "coords": "n",
+              "details": "Talis Fia is a planet capable of supporting life -- if that life happens to breathe ammonia. Discovered by asari explorers, the planet was used as a bargaining chip by the Citadel Council, who quickly drafted a colonization agreement with its wealthy client race, the volus. The Council would fund the volus colonization effort in return for massive trade benefits. With uncharacteristic enthusiasm, an enormous volus influx ensued, and the Council reaped the economic benefits for a dozen years before the colonization bubble burst.<br><br>Today, the economic good times on Talis Fia are long gone, and modern volus businesses are cutthroat operations. Piracy is a grave threat to shipping, as well-armed criminals see the volus as easy prey."
+            },
+            {
+              "name": "doz atab",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(120deg) brightness(0.8)",
+              "texture": true,
+              "orbit": "3.1",
+              "year": "5.5",
+              "size": "47428/6378",
+              "day": "10.3/24",
+              "coords": "e",
+              "details": "An ice giant, Doz Atab (\"sky warden\") has a bluish tinge from its hydrogen-methane atmosphere. Its axial tilt causes its seasons to vary wildly in temperature."
+            }
+          ]
         },
         {
           "name": "Xe Cha",
           "star": "Xe Cha",
           "top": 39,
           "left": 55,
-          "bodies": []
+          "bodies": [
+            {
+              "name": "zada ban",
+              "image": "Rockbits1.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.7",
+              "year": "0.9",
+              "size": "7954/6378",
+              "day": "70/24",
+              "coords": "sw",
+              "details": "Zada Ban is a large, dense planet named for a volus god of punishment. Its crust is rich in uranium, eroded by winds to create large radioactive dust storms across its surface. The volus of Talis Fia have explored the planet thoroughly with space probes and telepresent robo-mining machines, and discovered they are not the first to exploit the planet. Plastics from a mining station approximately 50,000 years old can be found near the planet's equator. Curiously, the mines nearby were not tapped out of uranium ore; they were instead abandoned at the height of their operation."
+            },
+            {
+              "name": "aphras",
+              "image": "Savannah.webp",
+              "filter": "hue-rotate(-30deg) saturate(0.8) brightness(0.9) contrast(0.9)",
+              "texture": true,
+              "orbit": "1.4",
+              "year": "2",
+              "size": "4530/6378",
+              "day": "31.3/24",
+              "coords": "e",
+              "details": "A unique discovery, Aphras is a \"heavenly twin,\" a planet in a star system that has not one but two worlds of sufficient mass to retain an [sic] nitrogen-oxygen atmosphere within the habitable life zone of its parent star. Fossil evidence shows abundant vertebrates and evidence of a sapient terrestrial avian species in its Bronze Age.<br><br>However, the only trace of contemporary life on the planet is that of single-celled organisms in its seas. All else has suffered from an extinction event -- a series of massive impacts that vaporized vast quantities of water and lofted dust into its atmosphere. Early theories that this event was a collision with a fragmenting asteroid have now been discounted -- the impact craters were aimed directly at habitation centers."
+            },
+            {
+              "name": "tosal nym",
+              "image": "Terrestrial2.webp",
+              "filter": "hue-rotate(-230deg) contrast(0.8) saturate(0.8) brightness(0.8)",
+              "texture": true,
+              "orbit": "2.1",
+              "year": "3",
+              "size": "6930/6378",
+              "day": "19.8/24",
+              "coords": "ne",
+              "details": "The sister tragedy to the extinction event on Aphras, Tosal Nym was the rarest of jewels; a second garden planet within the same life zone as Aphras. Not as old as its sister planet, its fossil evidence indicates it was home to abundant invertebrate sea life.<br><br>However, similar craters to those on Aphras created a dust shroud that killed 99% of biota on the planet. The even spacing of the craters indicates a coordinated, simultaneous attack from points around the globe, rather than an asteroid collision or supervolcanic scenario."
+            },
+            {
+              "name": "vem osca",
+              "image": "Gaseous6.webp",
+              "filter": "",
+              "clouds": "Gaseous10.webp",
+              "cloudsFilter": "hue-rotate(270deg) opacity(40%)",
+              "texture": true,
+              "orbit": "4.6",
+              "year": "9.9",
+              "size": "64826/6378",
+              "day": "11.9/24",
+              "coords": "n",
+              "details": "A Jovian gas giant, Vem Osca (\"weeping witness\" in Iperian Volus) is a low-density hydrogen-helium planet with 35 moons. Later this year, 33 of the moons will be visible from the planet's surface in a conjunction, an event that will be recorded by space probes from all over the galaxy."
+            }
+          ]
         }
       ]
     },
