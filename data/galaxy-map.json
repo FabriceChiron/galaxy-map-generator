@@ -6926,6 +6926,36 @@
       ]
     },
     {
+      "name": "Titan Nebula",
+      "top": 11.9,
+      "left": 45.8,
+      "image": "cluster-09.webp",
+      "bodies": [
+        {
+          "name": "haskins", 
+          "star": "haskins", 
+          "top": 44,
+          "left": 42,
+          "filter": "hue-rotate(100deg) brightness(2.5)",
+          "bodies": [
+            {
+              "name": "capek",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.7) saturate(3)",
+              "overlay": "rgba(208, 153, 17, 0.23)",
+              "texture": true,
+              "orbit": "4.4",
+              "year": "7.1",
+              "size": "5899/6378",
+              "day": "18.7/24",
+              "coords": "e",
+              "details": "Baked in the fierce heat of a white sun, Capek is a rocky, waterless world wrapped in a haze of hydrogen and ethane. Sulfur and iron give yellowish and black tinges to much of the planet's surface. No registered settlements appear in the records, though there are clearly metallic anomalies that indicate roofed structures."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Voyager Cluster",
       "top": 60.5,
       "left": 86.3,
