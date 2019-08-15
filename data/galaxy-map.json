@@ -4255,8 +4255,6 @@
               "year": "293.9",
               "size": "5204/6378",
               "day": "59.7/24",
-              "size": "6378/6378",
-              "day": "24/24",
               "coords": "e",
               "details": "Tula's methane-ammonia atmosphere traps the blistering heat of Nith, driving dayside temperatures up over 1000 degrees. While some lodes of useful metals are present, the planet's incredible heat makes mining impractical."
             },
@@ -5230,7 +5228,7 @@
           "asteroids": [
             {
               "orbit": 1.2,
-              "orbit": 1.2,
+              "year": 1.2,
               "bodies": 100
             }
           ],
@@ -7043,6 +7041,28 @@
               "day": "68.6/24",
               "coords": "n",
               "details": "Largest of the \"eezo trio\", Israfil is a silicate-heavy carbonaceous asteroid. It is home to approximately 40 species of microorganisms in its liquid water, and was blamed as the source of the prion-based biowarfare agent EHE (exotic humanoid encephalopathy) used by the terrorist group Totenkopf in their attack on Gagarin Station in 2184.<br><br>While many in the scientific community protested that Israfil did not have sufficient atmosphere or evolutionary history to sustain life on the prion level, the asteroid and its eezo miners were nevertheless quarantined to reassure the public that the Systems Alliance was taking action. Though no evidence has yet been found that EHE originated from Israfil or was even synthesized in a local lab, The SSV Manila and a team of epidemiologists maintain watch over the asteroid's ship traffic for now."
+            }
+          ]
+        },
+        {
+          "name": "Paz",
+          "star": "Paz",
+          "filter": "brightness(1.6)",
+          "top": 52,
+          "left": 47,
+          "bodies": [
+            {
+              "name": "garvug",
+              "image": "Alpine.webp",
+              "filter": "",
+              "clouds": "earth-clouds.webp",
+              "texture": true,
+              "orbit": "4",
+              "year": "6.1",
+              "size": "6200/6378",
+              "day": "27/24",
+              "coords": "n",
+              "details": "In 354 CE, Garvug was considered a \"bargain world\", given to the krogan to placate them because no one else wanted to live on such a frozen rock. Technically a life-bearing world, Garvug had a small farm belt around its equator and well-insulated marine life in its seas.<br><br>By the turn of the century, the krogan had completely adapted, breeding hundreds of younglings per family in vast underground bunkers. By the turn of the next century, Garvug's narrow strips of coral reef had been destroyed by overfishing and pollutants, and excess krogan took to the stars to find another planet to consume. Garvug was treated as an object lesson by the Citadel Council -- the krogan could not be trusted to check their own numbers.<br><br>Today, Garvug is a frozen wasteland, home to corporate ecoengineering efforts trying to implement sustainable agri- and aqua-culture practices. Krogan and vorcha packs are a constant threat, and the corporations pay mercenaries well to keep their operations safe."
             }
           ]
         }
