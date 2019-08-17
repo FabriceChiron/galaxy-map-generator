@@ -6345,14 +6345,16 @@
             },
             {
               "name": "keimowitz",
-              "image": "Terrestrial4.webp",
-              "filter": "saturate(0.1)",
+              "image": "Terrestrial3.webp",
+              "filter": "saturate(0.2)",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(50%)",
               "texture": true,
               "orbit": "16.8",
               "year": "69.1",
               "size": "9586/6378",
               "day": "29.7/24",
-              "coords": "se",
+              "coords": "ne",
               "details": "Named for the 21st century pioneer of groundwater remediation techniques, Keimowitz is an impressive layer of ice over a stony metallic core. Despite its size, it has only one moon, Noa, which shares its carbonaceous composition, leading astronomers to believe it formed following a giant impact. Iridium deposits have attracted miners to the planet, who must work through robots and telepresence because of the planet's strong gravity."
             }
           ]
@@ -6488,6 +6490,436 @@
               "day": "13.7",
               "coords": "nw",
               "details": "Chofen is an unusually small hydrogen-helium gas giant, with traces of sulphur and hydrocarbons in the atmosphere. The Alliance surveyor ship Ibn Battuta provided inconclusive evidence of hydrocarbon life in the atmosphere (over 1000 meters below the cloud tops), where pressure compresses Chofen's hydrogen into a liquid state.<br><br>Proof of life in the atmosphere would prove many long-standing theories. Unfortunately, only a probe with extremely expensive mass effect generators could survive the crushing pressure long enough to send back useful data – and the probe would be lost in the attempt. Simple expense makes investigation doubtful."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Phoenix Massing",
+      "top": 34.3,
+      "left": 77.9,
+      "image": "cluster-11.webp",
+      "bodies": [
+        {
+          "name": "Chomos",
+          "star": "Chomos",
+          "top": 73,
+          "left": 61,
+          "bodies": [
+            {
+              "name": "trigestis",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(145deg) contrast(1.3) brightness(0.9)",
+              "texture": true,
+              "orbit": "0.9",
+              "year": "0.9",
+              "size": "59031/6378",
+              "day": "16/24",
+              "coords": "e",
+              "details": "Trigestis is a gas giant, named for the first salarian astronomer to predict planets' occurrences mathematically rather than through direct observation. It has a faint ring system and three moons: Sidacha, Norem, and Bestia. High-altitude clouds can be seen casting shadows on Trigestis' lower atmosphere, where concentrations of methane and ammonia give it an azure color. The planet is believed to be an extrasolar capture."
+            },
+            {
+              "name": "lattesh",
+              "image": "Swamp.webp",
+              "filter": "saturate(0.3) contrast(1.2)",
+              "texture": true,
+              "orbit": "2.2",
+              "year": "5.2",
+              "size": "5500/6378",
+              "day": "35.7/24",
+              "coords": "ne",
+              "details": "Lattesh, translated from a salarian dialect as \"it's still winter\", has an almost-habitable temperature and abundant water but shows no signs of life. Regular supervolcanic eruptions in the southern hemisphere have shrouded the sun and led to a climate even more bone-chilling than usual."
+            }
+          ]
+        },
+        {
+          "name": "Salahiel",
+          "star": "Salahiel",
+          "top": 43,
+          "left": 58,
+          "filter": "hue-rotate(-30deg)",
+          "bodies": [
+            {
+              "name": "ekuna",
+              "image": "Rockbits1.webp",
+              "filter": "saturate(1.2) contrast(1.2) brightness(1.2)",
+              "texture": true,
+              "orbit": "1.6",
+              "year": "2.3",
+              "size": "10206/6378",
+              "day": "36.4/24",
+              "coords": "se",
+              "details": "Ekuna is habitable, but a second-tier choice for most species. Circling an orange sun, Ekuna averages below freezing temperatures. This led development firms to colonize at the planet's equator, where the climate is tolerable for agriculture."
+            }
+          ]
+        },
+        {
+          "name": "Tassrah",
+          "star": "Tassrah",
+          "top": 62,
+          "left": 45,
+          "bodies": [
+            {
+              "name": "pahhur",
+              "image": "moon-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "0.4",
+              "size": "10560/6378",
+              "day": "46/24",
+              "coords": "w",
+              "details": "By normal standards a large rock planet, Pahhur (\"fiery\") is constantly scorched by the white, bright giant it orbits. A dense atmosphere featuring hydrogen, helium, and clouds of vaporized magnesium float [sic] over its iron-rich core, making for a truly hellish landscape. Its spectacular temperature prevents any practical exploitation."
+            },
+            {
+              "name": "sarapai",
+              "image": "Cracklepotblue.webp",
+              "filter": "hue-rotate(300deg) saturate(0.9) contrast(1.2) brightness(0.7)",
+              "texture": true,
+              "orbit": "1.7",
+              "year": "1.7",
+              "size": "6016/6378",
+              "day": "60.8/24",
+              "coords": "n",
+              "details": "Sarapai (\"ever upward\") is the second planet orbiting the white star Tassrah. Sarapai's pressure-cooker atmosphere of carbon dioxide and ethane serves as a greenhouse to an already boiling-hot surface. Cobalt compounds are frequent [sic] found on its crust, giving spectacular blue tinges to its land. Scans from orbital probes indicate its crust contains deposits of platinum, likely to be as unexploited as its sister planet Pahhur."
+            },
+            {
+              "name": "Ishassara",
+              "image": "Gaseous1.webp",
+              "filter": "contrast(1.6) saturate(0.5) brightness(1.5)",
+              "texture": true,
+              "orbit": "3.8",
+              "year": "5.7",
+              "size": "22769/6378",
+              "day": "14/24",
+              "coords": "se",
+              "details": "A gas giant, Ishassara is composed mostly of hydrogen and nitrogen. Its orbit in recent years has taken it close to the mass relay in this system, making it a popular stop for \"scoop ships\" to refuel the hydrogen in their thrusters before moving on."
+            }
+          ]
+        },
+        {
+          "name": "Typhon",
+          "star": "Typhon",
+          "top": 27,
+          "left": 55,
+          "bodies": [
+            {
+              "name": "echidna",
+              "image": "Gaseous8.webp",
+              "filter": "hue-rotate(-40deg) saturate(1.6) contrast(0.9) brightness(1.2)",
+              "texture": true,
+              "orbit": "0.2",
+              "year": "0.1",
+              "size": "23307/6378",
+              "day": "14.7/24",
+              "coords": "n",
+              "details": "A so-called \"hot Neptune\" planet, Echidna rapidly orbits the star Typhon at a nose-to-nose distance much like a pegasid, or \"hot Jupiter.\" Also like the pegasids, it is believed to have formed further out and gradually migrated to its present position. Its core is higher in rock content than Sol's Neptune, the consequence of attracting asteroids and other debris as it journeyed through its solar system."
+            },
+            {
+              "name": "aite",
+              "image": "Alpine.webp",
+              "filter": "",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(50%)",
+              "rings": true,
+              "ringsColor": "rgba(100,120,100,0.4)",
+              "texture": true,
+              "orbit": "1.4",
+              "year": "1.7",
+              "size": "5941/6378",
+              "day": "24.9/24",
+              "coords": "e",
+              "details": "Aite is an Earth-like world with a variety of habitable land ranging from deserts to jungles to tundra. It also possesses faint rings, an unusual feature for a non-giant planet. The rings contain rocks up to a meter in length and a wide dust cloud that stretches nearly 23,000 km from the center of the planet.<br><br>This impressive celestial phenomenon, however, is dwarfed by the fact that Aite's largest moon, Litae, is in an unstable orbit and is predicted to impact the planet within the next two centuries. Knowing that any Aitian venture is living on borrowed time, colonial population and investment has been orders of magnitude less than other garden worlds."
+            },
+            {
+              "name": "moros",
+              "image": "Martian.webp",
+              "filter": "hue-rotate(-80deg) contrast(0.9) brightness(0.9) saturate(1.2)",
+              "texture": true,
+              "orbit": "2.9",
+              "year": "4.9",
+              "size": "4025/6378",
+              "day": "60.7/24",
+              "coords": "nw",
+              "details": "Moros is a small rock planet with a thin nitrogen and carbon monoxide atmosphere. Each city-state of Aite claims the rights to exploit the planet for its heavy metal deposits; individual city-state governments maintain three small habitats on Moros, as far away from one another as possible. Nevertheless, the planet's wars have extended here, and the habitats infrequently send commando teams to assault each other in small-unit actions."
+            },
+            {
+              "name": "ponos",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(120deg)",
+              "texture": true,
+              "orbit": "5.8",
+              "year": "14",
+              "size": "69740/6378",
+              "day": "14.4/24",
+              "coords": "se",
+              "details": "Ponos is a typical hydrogen-helium gas giant. Its once-vital helium-3 refining machinery in orbit around the planet was destroyed in one of Aite's many wars, and Aite's extraplanetary trade suffered severely as a result. The dictators of Aite are not pleased with this situation, but they consider it a bad strategic move to be the first to start work on a refinery before eliminating any chance of other nations (or planets) seizing it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Shrike Abyssal",
+      "top": 22.3,
+      "left": 18.1,
+      "image": "shrike-abyssal.webp",
+      "bodies": [
+        {
+          "name": "Kyzil",
+          "star": "Kyzil",
+          "filter": "hue-rotate(-30deg)",
+          "top": 63,
+          "left": 48,
+          "bodies": [
+            {
+              "name": "naskral",
+              "image": "Martian.webp",
+              "filter": "contrast(0.9) brightness(1.1) saturate(1.2) hue-rotate(10deg)",
+              "texture": true,
+              "orbit": "0.37",
+              "year": "0.3",
+              "size": "1754/6378",
+              "day": "tidal",
+              "coords": "w",
+              "details": "Naskral is a small, hot, tidally locked inner planet that had modest minerals development on its dark side. Within a generation of the vorcha's first contact with spacefaring species, robo-mining interests attempted to exploit it only to find their trading partners violently overthrown on a regular basis. The vorcha's own culture disenfranchised them in Naskral's case, as their legal claims to the planet were inevitably backed up by violence as a show of dominance. This nuance was lost on the mining corporations, who hired mercenaries to guard their operations with lethal force and never surrendered it to vorcha claimants."
+            },
+            {
+              "name": "heshtok",
+              "image": "Savannah.webp",
+              "filter": "hue-rotate(100deg) saturate(1.5) contrast(0.8) brightness(0.8)",
+              "texture": true,
+              "orbit": "0.75",
+              "year": "0.72",
+              "size": "3902/6378",
+              "day": "44.9/24",
+              "coords": "se",
+              "details": "A Systems Alliance official once summarized his tour of the vorcha homeworld as follows: \"You can make your own Heshtok in two steps: take hell, then add vorcha.\" The planet is highly volcanically active, leading to periodic releases of toxic gases into the air and water supplies, as well as other extreme situations that gave rise to the vorcha's legendary adaptability. Overcrowding and the extermination of most of their ecology led to a planet covered in weeds and hardy vermin.<br><br>The vorcha do not have a recognized single government that would allow them membership in any galactic league. Alliances between bloodlines are tenuous at best, and the vorcha's short, violent lives ensure there are few lasting institutions."
+            },
+            {
+              "name": "parasc",
+              "image": "Venusian.webp",
+              "filter": "hue-rotate(10deg) saturate(0.7) contrast(1.1) brightness(1.7)",
+              "texture": true,
+              "orbit": "1.7",
+              "year": "2.5",
+              "size": "2283/6378",
+              "day": "49.1/24",
+              "coords": "n",
+              "details": "A lifeless desert, Parasc was colonized soon after first contact with the vorcha. Several asari mining corporations, working with a siari-based charity called Mind and Hand, built settlements on the planet's surface and orbital stations. Adopting vorcha orphans from Heshtok, they raised them to live nonviolent lives and employed them in the mining industry.<br><br>While Mind and Hand's efforts were at first labeled colonialist, the orphans became minor celebrities when it was discovered that the vorcha habit of using violence to communicate was not completely innate. Several spoke throughout Citadel space on behalf of their species, but their short life spans kept their careers very brief. Even today, companies that want vorcha labor have the poor choice between adopting and educating them as youngsters just to watch them age and die or dealing with autonomous but violent adults."
+            },
+            {
+              "name": "lihrat",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(270deg) saturate(1.3) contrast(1.3) brightness(0.7)",
+              "texture": true,
+              "orbit": "3.5",
+              "year": "7.3",
+              "size": "72280/6378",
+              "day": "11.9/24",
+              "coords": "e",
+              "details": "The hydrogen-helium gas giant Lihrat was the site of a brief and decisive battle between vorcha and Reaper forces. It was impoliticly characterized on the news vids as \"millennia-old death machines versus a gang of teenagers,\" a reference to the vorcha's brief life spans and inexperience. In reality, many of the ships were commanded by other species to avoid this shortcoming, but the insult still sticks."
+            },
+            {
+              "name": "rustaka",
+              "image": "Gaseous7.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "7.1",
+              "year": "21.2",
+              "size": "32734/6378",
+              "day": "14.5/24",
+              "coords": "sw",
+              "details": "This methane-ammonia gas giant was swept past during the Reaper invasion, and once its helium-3 collection equipment was destroyed, it was largely ignored. Vorcha ships that survived the attacks on Heshtok and Lihrat can be found discharging their drive cores here before making spy sorties or retreating further into space."
+            }
+          ]
+        },
+        {
+          "name": "Thal",
+          "star": "Thal",
+          "filter": "hue-rotate(-30deg)",
+          "top": 45,
+          "left": 39,
+          "asteroids": [
+            {
+              "orbit": 2.7,
+              "year": 2.7,
+              "bodies": 100
+            },
+            {
+              "orbit": 13,
+              "year": 13,
+              "bodies": 300
+            }
+          ],
+          "bodies": [
+            {
+              "name": "garan",
+              "image": "mars-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.0172",
+              "year": "17.52/365",
+              "size": "11703/6378",
+              "day": "tidal",
+              "coords": "e",
+              "details": "Garan is the innermost planet of the Thal system, which is less than 2.56 million kilometers from its K-class parent star. Temperatures on the sunward side of this tidally locked planet reach more than 2,800 Celsius, boiling away earth and stone. These gases are then carried away by wind from the hottest point to the zone where temperatures are cool enough for the gaseous mixture to recondense, leading to the unusual weather phenomenon of rains of rocks."
+            },
+            {
+              "name": "sarait",
+              "image": "pluto-texture.webp",
+              "filter": "",
+              "overlay": "rgba(104, 181, 253, 0.27)",
+              "texture": true,
+              "orbit": "0.85",
+              "year": "0.87",
+              "size": "10413/6378",
+              "day": "65/24",
+              "coords": "n",
+              "details": "A large terrestrial, Sarait's methane-rich atmosphere might be mistaken for that of a true hothouse planet. However, some terraforming corporations have targeted it for development since Sarait has already given rise to some cyanobacteria in the liquid water that can be found near its poles. There is some evidence that the planet has been fluctuating between methane-heavy and oxygen-heavy atmospheres for several million years, each cycle dependent on the nutrients in the ocean that led to bacterial growth or crashes."
+            },
+            {
+              "name": "altakiril",
+              "image": "Tropical.webp",
+              "filter": "brightness(0.9) saturate(0.6) contrast(0.8) hue-rotate(20deg)",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(10%)",
+              "texture": true,
+              "orbit": "1.6",
+              "year": "2.3",
+              "size": "4145/6378",
+              "day": "19.2/24",
+              "coords": "nw",
+              "details": "Altakiril is a garden world on the outer edge of its star's habitable zone. The planet is largely frozen, yet it features native dextro-amino-acid-based life in its lower latitudes. These species evolved to withstand periodic freezing and compensate for the cold with spectacular population explosions during the long, mild summers."
+            },
+            {
+              "name": "xerceo",
+              "image": "Gaseous6.webp",
+              "filter": "hue-rotate(0deg) brightness(1) saturate(1) contrast(1)",
+              "rings": true,
+              "ringsColor": "rgba(249, 215, 239, 0.4)",
+              "texture": true,
+              "orbit": "5.4",
+              "year": "18.1",
+              "size": "74616/6378",
+              "day": "16.4/24",
+              "coords": "se",
+              "details": "A hydrogen-helium gas giant, Xerceo's many moons were developed along with the colonization of Altakiril. It is believed that the majority of them were military in nature, a common theme among turian colonies. Specifics are few. Altakiril's government kept its records classified, and the Reapers have systematically destroyed the installations here."
+            },
+            {
+              "name": "virits",
+              "image": "mercury-texture.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "7.3",
+              "year": "22.1",
+              "size": "651/6378",
+              "day": "11.4/24",
+              "coords": "s",
+              "details": "Virits is a large, stony asteroid in the Thal system's Rakari Belt. There are no records of its colonization, but it is included on star charts as it is well-known by astronomers on Altakiril who could observe it with low-power telescopes during certain portions of its orbit."
+            }
+          ]
+        },
+        {
+          "name": "Urla Rast",
+          "star": "Urla Rast",
+          "top": 32,
+          "left": 41,
+          "bodies": [
+            {
+              "name": "bovis tor",
+              "image": "Martian.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.7",
+              "year": "0.6",
+              "size": "7307/6378",
+              "day": "33.5/24",
+              "coords": "nw",
+              "details": "Named \"the shining sea\" in an old volus language, Bovis Tor is so named for its boiling surface rich in glowing-hot alumina, flecked with dark ridges of carbon. Its thick atmosphere of nitrogen and oxygen is no indicator of life, since the temperatures are simply too high."
+            },
+            {
+              "name": "talis fia",
+              "image": "Swamp.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "1.6",
+              "year": "2",
+              "size": "7550/6378",
+              "day": "33.8/24",
+              "coords": "n",
+              "details": "Talis Fia is a planet capable of supporting life -- if that life happens to breathe ammonia. Discovered by asari explorers, the planet was used as a bargaining chip by the Citadel Council, who quickly drafted a colonization agreement with its wealthy client race, the volus. The Council would fund the volus colonization effort in return for massive trade benefits. With uncharacteristic enthusiasm, an enormous volus influx ensued, and the Council reaped the economic benefits for a dozen years before the colonization bubble burst.<br><br>Today, the economic good times on Talis Fia are long gone, and modern volus businesses are cutthroat operations. Piracy is a grave threat to shipping, as well-armed criminals see the volus as easy prey."
+            },
+            {
+              "name": "doz atab",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(120deg) brightness(0.8)",
+              "texture": true,
+              "orbit": "3.1",
+              "year": "5.5",
+              "size": "47428/6378",
+              "day": "10.3/24",
+              "coords": "e",
+              "details": "An ice giant, Doz Atab (\"sky warden\") has a bluish tinge from its hydrogen-methane atmosphere. Its axial tilt causes its seasons to vary wildly in temperature."
+            }
+          ]
+        },
+        {
+          "name": "Xe Cha",
+          "star": "Xe Cha",
+          "top": 39,
+          "left": 55,
+          "bodies": [
+            {
+              "name": "zada ban",
+              "image": "Rockbits1.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "0.7",
+              "year": "0.9",
+              "size": "7954/6378",
+              "day": "70/24",
+              "coords": "sw",
+              "details": "Zada Ban is a large, dense planet named for a volus god of punishment. Its crust is rich in uranium, eroded by winds to create large radioactive dust storms across its surface. The volus of Talis Fia have explored the planet thoroughly with space probes and telepresent robo-mining machines, and discovered they are not the first to exploit the planet. Plastics from a mining station approximately 50,000 years old can be found near the planet's equator. Curiously, the mines nearby were not tapped out of uranium ore; they were instead abandoned at the height of their operation."
+            },
+            {
+              "name": "aphras",
+              "image": "Savannah.webp",
+              "filter": "hue-rotate(-30deg) saturate(0.8) brightness(0.9) contrast(0.9)",
+              "texture": true,
+              "orbit": "1.4",
+              "year": "2",
+              "size": "4530/6378",
+              "day": "31.3/24",
+              "coords": "e",
+              "details": "A unique discovery, Aphras is a \"heavenly twin,\" a planet in a star system that has not one but two worlds of sufficient mass to retain an [sic] nitrogen-oxygen atmosphere within the habitable life zone of its parent star. Fossil evidence shows abundant vertebrates and evidence of a sapient terrestrial avian species in its Bronze Age.<br><br>However, the only trace of contemporary life on the planet is that of single-celled organisms in its seas. All else has suffered from an extinction event -- a series of massive impacts that vaporized vast quantities of water and lofted dust into its atmosphere. Early theories that this event was a collision with a fragmenting asteroid have now been discounted -- the impact craters were aimed directly at habitation centers."
+            },
+            {
+              "name": "tosal nym",
+              "image": "Terrestrial2.webp",
+              "filter": "hue-rotate(-230deg) contrast(0.8) saturate(0.8) brightness(0.8)",
+              "texture": true,
+              "orbit": "2.1",
+              "year": "3",
+              "size": "6930/6378",
+              "day": "19.8/24",
+              "coords": "ne",
+              "details": "The sister tragedy to the extinction event on Aphras, Tosal Nym was the rarest of jewels; a second garden planet within the same life zone as Aphras. Not as old as its sister planet, its fossil evidence indicates it was home to abundant invertebrate sea life.<br><br>However, similar craters to those on Aphras created a dust shroud that killed 99% of biota on the planet. The even spacing of the craters indicates a coordinated, simultaneous attack from points around the globe, rather than an asteroid collision or supervolcanic scenario."
+            },
+            {
+              "name": "vem osca",
+              "image": "Gaseous6.webp",
+              "filter": "",
+              "clouds": "Gaseous10.webp",
+              "cloudsFilter": "hue-rotate(270deg) opacity(40%)",
+              "texture": true,
+              "orbit": "4.6",
+              "year": "9.9",
+              "size": "64826/6378",
+              "day": "11.9/24",
+              "coords": "n",
+              "details": "A Jovian gas giant, Vem Osca (\"weeping witness\" in Iperian Volus) is a low-density hydrogen-helium planet with 35 moons. Later this year, 33 of the moons will be visible from the planet's surface in a conjunction, an event that will be recorded by space probes from all over the galaxy."
             }
           ]
         }
