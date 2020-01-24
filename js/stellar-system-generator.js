@@ -504,7 +504,7 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
       sectionSystem.style.width = '100%';
       sectionSystem.style.height = '100vh';
       if(allowDrag === true) {
-        sectionSystem.style.cursor = "move";
+        // sectionSystem.style.cursor = "move";
       } else {
         calculateMaxDiagonal('.orbit', '.stellar-system');
       }

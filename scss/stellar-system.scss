@@ -1,3 +1,7 @@
+body:not(.allows-starship) .stellar-system_section {
+  cursor: move;
+}
+
 .stellar-system_section {
   // --top: 0;
   // --bottom: 0;

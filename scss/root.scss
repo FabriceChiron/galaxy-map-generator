@@ -57,6 +57,10 @@ body {
       cursor: none;
     }
 
+    .settings:hover + #mouseTracker {
+      display: none;
+    }
+
     #mouseTracker {
       display: block;
     }
@@ -102,7 +106,7 @@ body {
     perspective-origin: center;
     // transform: rotateZ(20deg);
     position: absolute;
-    transition: all .05s ease;
+    transition: all .1s ease;
 
     span {
       display: block;
