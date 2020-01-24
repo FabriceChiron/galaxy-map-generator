@@ -138,7 +138,8 @@
       transition: all var(--transition-duration) ease, border-radius .3s .7s ease;
       // background: url('../img/galaxy-map/cluster-1.jpg') no-repeat;
       background: #000 url("../img/2k_stars_milky_way.jpg");
-      background-size: cover;
+      /* background-size: cover; */
+      background-size: auto 100vh;
 
       // .bg {
       //   width: 100%;
