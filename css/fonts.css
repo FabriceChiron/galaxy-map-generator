@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'WebSymbolsLigaRegular';
+  src: url("../fonts/websymbolsligaregular.eot");
+  src: url("../fonts/websymbolsligaregular.eot?#iefix") format("embedded-opentype"), url("../fonts/websymbolsligaregular.woff") format("woff"), url("../fonts/websymbolsligaregular.ttf") format("truetype"), url("../fonts/websymbolsligaregular.svg#WebSymbolsRegular") format("svg");
+}
+
+/* line 10, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/fonts.scss */
+.symbols {
+  font-family: 'WebSymbolsLigaRegular';
+}
+
+@font-face {
+  font-family: 'mass-effect';
+  src: url("../fonts/me123-webfont.woff2") format("woff2"), url("../fonts/me123-webfont.woff") format("woff"), url("../fonts/me123-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=../css/fonts.map */

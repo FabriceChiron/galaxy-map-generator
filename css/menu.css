@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* line 1, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation {
+  position: fixed;
+  z-index: 3;
+  text-transform: uppercase;
+  font-size: .75rem;
+  line-height: 1.25rem;
+  overflow: auto;
+  max-height: 100%;
+}
+
+/* line 10, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 1rem;
+}
+
+/* line 16, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation ul > li > div {
+  transition: all var(--transition-duration) ease;
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 25, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation > ul {
+  margin: 1rem;
+  margin-top: 0;
+  display: none;
+}
+
+/* line 37, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  transition: all var(--transition-duration) ease;
+}
+
+/* line 43, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation a:hover {
+  color: #f33a10;
+}
+
+/* line 47, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation a.highlight {
+  color: #53cbf1;
+}
+
+/* line 50, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation a.highlight + label {
+  color: #53cbf1;
+}
+
+/* line 55, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation a.empty {
+  opacity: .5;
+}
+
+/* line 60, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation label {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 67, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation label:after {
+  font-family: 'WebSymbolsLigaRegular';
+  content: 'Ë';
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* line 76, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation > div {
+  font-size: 1rem;
+  font-weight: 600;
+  width: auto;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+/* line 83, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation > div > a {
+  /* padding: 1rem 0 0 1rem; */
+}
+
+/* line 87, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation > div > label {
+  /* padding: 1rem 0 0; */
+}
+
+/* line 92, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation input:checked + div label:after {
+  content: 'È';
+}
+
+/* line 98, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation input:checked ~ ul > li > div {
+  height: 1.25rem;
+}
+
+/* line 106, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/menu.scss */
+#navigation #toggle-map:checked ~ ul {
+  display: block;
+}
+
+/*# sourceMappingURL=../css/menu.map */

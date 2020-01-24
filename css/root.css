@@ -1,0 +1,337 @@
+/* line 1, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+:root {
+  --hover-factor: 1.5;
+  --transition-duration: .3s;
+  --cursor: default;
+  --angle: 70.2deg;
+  --decalY: -11%;
+  --tilt: none;
+  --perspective: none;
+  --orbit-tilt: 0deg;
+  --shipLength: 2rem;
+  --clusterSize: 2.5rem;
+  --sizeFactor: 1;
+  --orbitFactor: 1;
+  --thisStarSize: 0;
+  --earthYear: 30s;
+  --thisYear: 1;
+  --orbit-duration: calc(var(--earthYear) * var(--thisYear));
+  --earthSize: 1rem;
+  --thisSize: 1;
+  --planet-size: calc(var(--earthSize) * var(--thisSize) * var(--sizeFactor));
+  --earthOrbit: 15rem;
+  --thisOrbit: 1;
+  --orbit-size: calc(var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor));
+  --earthDay: 5s;
+  --thisDay: 1;
+  --revolution-duration: calc(var(--earthDay) * var(--thisDay));
+}
+
+/* line 39, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+body {
+  margin: 0;
+  background: #000 url("../img/2k_stars_milky_way.jpg") fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Assistant', sans-serif;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* line 51, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+body.allows-starship {
+  --cursor: none;
+}
+
+/* line 54, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+body.allows-starship a {
+  cursor: none;
+}
+
+/* line 58, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+body.allows-starship #mouseTracker {
+  display: block;
+}
+
+/* line 65, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#mouse-infos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1rem;
+  display: none;
+}
+
+/* line 74, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#status {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 1rem;
+}
+
+/* line 82, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#mouseTracker {
+  position: fixed;
+  height: 0;
+  width: 0;
+  background: none;
+  pointer-events: none;
+  transition: none;
+  display: none;
+  transform: rotateX(var(--angle));
+  z-index: 3;
+}
+
+/* line 97, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#mouseTracker #rotateShip {
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
+  position: absolute;
+  transition: all .05s ease;
+}
+
+/* line 105, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#mouseTracker #rotateShip span {
+  display: block;
+}
+
+/* line 109, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#mouseTracker #rotateShip #starShip {
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0);
+  width: calc(var(--shipLength) * 0.583);
+  height: var(--shipLength);
+  /* background: url(../img/tempest.svg) no-repeat; */
+  background-size: cover;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
+}
+
+/* line 120, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#mouseTracker #rotateShip #starShip .half {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
+}
+
+/* line 129, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#mouseTracker #rotateShip #starShip .half .bg {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background: url("../img/tempest.svg") no-repeat;
+  background-size: cover;
+}
+
+/* line 137, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#mouseTracker #rotateShip #starShip .half.right {
+  left: 50%;
+  transform: rotateY(-45deg);
+  transform-origin: left;
+}
+
+/* line 142, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#mouseTracker #rotateShip #starShip .half.right .bg {
+  right: 0;
+}
+
+/* line 147, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#mouseTracker #rotateShip #starShip .half.left {
+  right: 50%;
+  transform: rotateY(45deg);
+  transform-origin: right;
+}
+
+/* line 152, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#mouseTracker #rotateShip #starShip .half.left .bg {
+  left: 0;
+}
+
+/* line 159, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#mouseTracker #rotateShip #starShip .reactor {
+  display: block;
+  width: 60%;
+  height: 2rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  pointer-events: none;
+  transition: all .1s ease;
+  border-radius: 0 0 50% 50%;
+  background: radial-gradient(ellipse at top, #fcfcfc 22%, rgba(83, 203, 241, 0.5) 100%);
+}
+
+/* line 179, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.buttons {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* line 188, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.buttons label {
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: .5rem;
+  cursor: pointer;
+  width: 1.25rem;
+  height: 1.25rem;
+  text-align: center;
+}
+
+/* line 196, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.buttons label:last-child {
+  border-top: none;
+}
+
+/* line 200, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.buttons label.toggle:not(.active) {
+  opacity: .5;
+}
+
+/* line 205, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.buttons label#toggle-starship img {
+  width: 0.7rem;
+  transform: rotate(45deg);
+  filter: brightness(100) saturate(0);
+}
+
+/* line 214, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.touch #toggle-starship {
+  display: none;
+}
+
+/* line 219, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#toggle-settings:checked + .settings {
+  transform: translateX(0);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 223, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#toggle-settings:checked + .settings label[for="toggle-settings"] {
+  border-color: rgba(255, 255, 255, 0.5);
+  border-right-color: black;
+}
+
+/* line 229, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.settings {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #000 url("../img/2k_stars_milky_way.jpg") fixed;
+  background-size: 100%;
+  transition: all var(--transition-duration) ease;
+  transform: translateX(100%);
+  border: solid rgba(255, 255, 255, 0);
+  border-width: 0 0 1px 1px;
+}
+
+/* line 245, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.settings .setting {
+  display: flex;
+}
+
+/* line 248, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.settings .setting span {
+  margin: 0 1rem;
+  min-width: 3rem;
+  text-align: right;
+}
+
+/* line 253, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.settings .setting span:first-child {
+  margin-left: 0;
+}
+
+/* line 256, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.settings .setting span:last-child {
+  margin-right: 0;
+}
+
+/* line 262, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.settings input[type="range"] {
+  position: relative;
+  display: block;
+}
+
+/* line 266, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.settings input[type="range"]:before {
+  content: attr("name");
+}
+
+/* line 269, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.settings input[type="range"]:after {
+  content: attr("value");
+}
+
+/* line 275, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+#dragInfos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  z-index: 10;
+}
+
+/* line 283, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+section {
+  width: 100%;
+  height: 100vh;
+  min-width: 100%;
+  overflow: auto;
+  overflow: hidden;
+  perspective: var(--perspective);
+}
+
+/* line 292, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.hidden-input {
+  display: none;
+}
+
+/* line 296, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+[for="toggle-2d"] {
+  position: fixed;
+  z-index: 1;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+}
+
+/* line 302, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+[for="toggle-2d"] span:first-child {
+  display: block;
+}
+
+/* line 303, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+[for="toggle-2d"] span:last-child {
+  display: none;
+}
+
+/* line 306, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/root.scss */
+.cc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transition: all var(--transition-duration) ease;
+  transform-style: preserve-3d;
+}
+
+/*# sourceMappingURL=../css/root.map */

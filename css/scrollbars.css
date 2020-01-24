@@ -1,0 +1,51 @@
+/* line 1, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/scrollbars.scss */
+body,
+body * {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* line 6, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/scrollbars.scss */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* line 10, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/scrollbars.scss */
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+/* line 14, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/scrollbars.scss */
+::-webkit-scrollbar-corner {
+  /* background: #111; */
+  background: #282828;
+}
+
+/* line 19, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/scrollbars.scss */
+::-webkit-scrollbar {
+  /* background: #111; */
+  background: #282828;
+}
+
+/* Track */
+/* line 25, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/scrollbars.scss */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(40, 40, 40, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+/* line 32, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/scrollbars.scss */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(40, 40, 40, 0.5);
+}
+
+/* line 38, /Applications/MAMP/htdocs/space/2019/galaxy-map/scss/scrollbars.scss */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/*# sourceMappingURL=../css/scrollbars.map */

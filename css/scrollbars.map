@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/scrollbars.css",
+	"sources": [
+		"../scss/scrollbars.scss"
+	],
+	"sourcesContent": [
+		"body,\r\nbody *{\r\n    -ms-overflow-style: -ms-autohiding-scrollbar;\r\n}\r\n\r\n::-webkit-scrollbar {\r\n    width: 8px;\r\n}\r\n\r\n::-webkit-scrollbar:horizontal {\r\n    height: 8px;\r\n}\r\n\r\n::-webkit-scrollbar-corner{\r\n    /* background: #111; */\r\n    background: rgba(#282828, 1);\r\n}\r\n\r\n::-webkit-scrollbar{\r\n    /* background: #111; */\r\n    background: rgba(#282828, 1);\r\n}\r\n\r\n/* Track */\r\n::-webkit-scrollbar-track {\r\n    -webkit-box-shadow: inset 0 0 6px rgba(#282828,0.3); \r\n    -webkit-border-radius: 10px;\r\n    border-radius: 10px;\r\n}\r\n \r\n/* Handle */\r\n::-webkit-scrollbar-thumb {\r\n    -webkit-border-radius: 10px;\r\n    border-radius: 10px;\r\n    background: rgba(#fff,0.5); \r\n    -webkit-box-shadow: inset 0 0 6px rgba(#282828,0.5); \r\n}\r\n::-webkit-scrollbar-thumb:window-inactive {\r\n    background: rgba(#fff,0.1); \r\n}\r\n"
+	],
+	"mappings": ";AAAA,AAAA,IAAI;AACJ,AAAK,IAAD,CAAC,CAAC,CAAA;EACF,kBAAkB,EAAE,wBAAyB;CAChD;;;AAED,AAAA,mBAAmB,CAAC;EAChB,KAAK,EAAE,GAAI;CACd;;;AAED,AAAmB,mBAAA,AAAA,WAAW,CAAC;EAC3B,MAAM,EAAE,GAAI;CACf;;;AAED,AAAA,0BAA0B,CAAA;EACtB,uBAAuB;EACvB,UAAU,EAAO,OAAO;CAC3B;;;AAED,AAAA,mBAAmB,CAAA;EACf,uBAAuB;EACvB,UAAU,EAAO,OAAO;CAC3B;;AAED,WAAW;;AACX,AAAA,yBAAyB,CAAC;EACtB,kBAAkB,EAAE,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,GAAG,CAAM,qBAAO;EAC9C,qBAAqB,EAAE,IAAK;EAC5B,aAAa,EAAE,IAAK;CACvB;;AAED,YAAY;;AACZ,AAAA,yBAAyB,CAAC;EACtB,qBAAqB,EAAE,IAAK;EAC5B,aAAa,EAAE,IAAK;EACpB,UAAU,EAAO,wBAAI;EACrB,kBAAkB,EAAE,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,GAAG,CAAM,qBAAO;CACjD;;;AACD,AAAyB,yBAAA,AAAA,gBAAgB,CAAC;EACtC,UAAU,EAAO,wBAAI;CACxB",
+	"names": []
+}
