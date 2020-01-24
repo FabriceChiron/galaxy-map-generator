@@ -82,7 +82,7 @@ class AstralBody {
     this.orbitTilt = (obj.orbitTilt) ? obj.orbitTilt : 0;
     this.tilt = (obj.tilt) ? obj.tilt : 0;
     this.orbitFactor = (obj.orbitFactor) ? obj.orbitFactor : 1;
-    this.bodySize = (obj.size) ? ( (realSizes === false && bodyType === 'star') ? 3 : eval(obj.size)) : (bodyType === "star") ? ((realSizes === true) ? 50 : 3) : 1;
+    this.bodySize = (obj.size) ? ( (realSizes === false && bodyType === 'star') ? 3 : eval(obj.size)) : (bodyType === "star") ? ((realSizes === true) ? 75 : 3) : 1;
     this.realYear = obj.year;
     this.yearLength = (obj.year) ? eval(obj.year) : 1;
     this.dayLength = (obj.day) ? ( (obj.day === "tidal") ? obj.day : eval(obj.day) ) : 1;
