@@ -145,3 +145,11 @@ const isInViewport = function (elem) {
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 };
+
+const focusMethod = (selector) => {
+  const elem = document.querySelector(selector);
+
+  let isFocused = (document.activeElement === elem);
+  
+  if(!isFocused) elem.focus(); 
+}

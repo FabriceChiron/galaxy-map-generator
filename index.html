@@ -42,15 +42,18 @@
   <script src="js/generate.js" defer></script>
   <script src="js/menu.js" defer></script>
   <script src="js/navigation.js" defer></script>
+  <script src="js/search.js" defer></script>
 </head>
 <!-- <body onmousemove="mousePosition(event, '#mouseTracker')"> -->
 <body data-angle="--angle: 70.2deg; --decalY: -11%;">
 
   <input type="checkbox" id="toggle-2d" class="hidden-input" onchange="toggleInput('angle', this)">
+  <input type="checkbox" id="toggle-play" class="hidden-input">
   <input type="checkbox" id="toggle-settings" class="hidden-input" name="toggle-settings">
 
   <div class="settings">
     <div class="buttons">
+      <label for="toggle-play" class="symbols" title="Play|Pause"></label>
       <label for="toggle-sizes" id="toggle-sizes" class="symbols toggle" title="Toggle real sizes" onclick="toggleSizes(this)">p</label>
       <label for="toggle-fullscreen" id="toggle-fullscreen" class="symbols" title="Toggle Fullscreen">></label>
       <label for="toggle-starship" id="toggle-starship" title="Toggle Starship" onclick="toggleStarShip(this)"><img src="img/tempest.svg" alt=""></label>

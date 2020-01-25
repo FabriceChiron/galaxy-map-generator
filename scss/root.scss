@@ -198,6 +198,7 @@ body {
     width: 1.25rem;
     height: 1.25rem;
     text-align: center;
+    position: relative;
 
     &:last-child {
       border-top: none;
@@ -221,6 +222,17 @@ body {
   display: none;
 }
 
+label[for="toggle-play"]:after {
+  content: "Ø";
+}
+
+#toggle-play:checked ~ .settings label[for="toggle-play"]:after{
+  content: "Û";
+}
+
+#toggle-play:checked ~ section * {
+    animation-play-state: paused !important;  
+}
 
 #toggle-settings:checked + .settings {
   transform: translateX(0);

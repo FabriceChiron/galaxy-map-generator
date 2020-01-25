@@ -20,6 +20,7 @@ const generateMenu = (galaxyMap) => {
   nav.id += 'navigation';
 
 
+
   let mapInput = createElem('input', nav, {
     name: 'toggle-map',
     id: 'toggle-map',
@@ -37,8 +38,24 @@ const generateMenu = (galaxyMap) => {
     for: 'toggle-map',
   });
 
-
   let clustersUl = createElem('ul', nav);
+
+  let searchDiv = createElem('div', nav, {
+    class: "search",
+    onclick: "focusMethod('#search-input')"
+  });
+
+  const searchInput = createElem('input', searchDiv, {
+    type: "text",
+    id: "search-input",
+    name: "search-input",
+    oninput: "search(this.value, '#search-results')",
+  });
+
+  const searchRes = createElem('div', searchDiv, {
+    id: "search-results",
+    class: "search-results"
+  });
 
   galaxyMap.clusters.map(cluster => {
     let clusterItem = createElem('li', clustersUl);
@@ -130,6 +147,12 @@ const generateMenu = (galaxyMap) => {
   document.body.prepend(nav);
   hashHandler();
 
+  // console.log(search(document.querySelector("#search-input").value));
+
+  // window.addEventListener('input', document.querySelector("#search-input"), search(document.querySelector("#search-input").value));
+
+
+
   [...nav.querySelectorAll('ul a')].map(link => {
     const thisHref = link.href.split('#')[1];
     
@@ -143,4 +166,5 @@ const generateMenu = (galaxyMap) => {
       if(matchingCluster) matchingCluster.className = matchingCluster.className.replace(' hovered', '');
     };
   })
+
 }

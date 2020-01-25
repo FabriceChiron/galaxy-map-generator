@@ -8,6 +8,7 @@
   max-height: 100%;
   background: rgba(0,0,0,.5);
 
+
   ul {
     list-style: none;
     padding: 0;
@@ -106,6 +107,47 @@
   #toggle-map:checked {
     & ~ ul {
       display: block;
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 0;
+    max-width: 250px;
+
+    &:before {
+      content: "#";
+      font-family: 'WebSymbolsLigaRegular';
+    }
+
+    input {
+      width: 0;
+      transition: all .25s ease-out;
+      background: rgba(0,0,0,0);
+      border: none;
+      color: inherit;
+      font-family: inherit;
+      padding: .5rem 0;
+      margin: 0;
+
+      &:focus {
+        padding: .5rem;
+        margin: 0 .5rem;
+        width: 200px;
+        outline: none;
+        background: rgba(255,255,255,0.1);
+      }
+    }
+
+    #search-results {
+      width: 100%;
+      font-size: .75rem;
+
+      a {
+        padding: 0 .25rem;
+      }
     }
   }
 }
