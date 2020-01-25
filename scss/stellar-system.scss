@@ -1,3 +1,7 @@
+body:not(.allows-starship) .stellar-system_section {
+  cursor: move;
+}
+
 .stellar-system_section {
   // --top: 0;
   // --bottom: 0;
@@ -11,6 +15,7 @@
   // transform: scale(var(--scale));
   // transition: all 5s ease;
   background: #000 url('../img/2k_stars_milky_way.jpg');
+  background-size: auto 100vh;
   position: fixed;
   z-index: 2;
   transition: all var(--transition-duration) ease;
