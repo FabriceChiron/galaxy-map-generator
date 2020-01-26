@@ -1,15 +1,19 @@
-
-const search = (src, srcRes) => {
-
-  const menuElems = [...document.querySelectorAll("#navigation ul a")];
-  const searchRes = document.querySelector(srcRes);
-
-  const emptySearchRes = () => {
-  searchRes.innerHTML = "";
+const emptySearch = () => {
+  console.log('emptySearch');
+  document.querySelector('#search-input').value = '';
 }
 
+const emptySearchRes = () => {
+  document.querySelector('#search-results').innerHTML = '';
+}
+
+const search = (src) => {
+
+  const menuElems = [...document.querySelectorAll("#navigation ul a")];
+  const searchRes = document.querySelector('#search-results');
+
   if(src.length >= 3) {
-    searchRes.innerHTML = "";
+    emptySearchRes();
 
     menuElems.map(menuElem => {
       if(menuElem.textContent.includes(src)) {
@@ -17,11 +21,13 @@ const search = (src, srcRes) => {
         menuElemClone = menuElem.cloneNode(true);
         menuElemClone.id += '_search';
         searchRes.appendChild(menuElemClone);
+
+        menuElemClone.setAttribute('onclick', 'emptySearchRes()');
       }
     })
 
   } else {
-    searchRes.innerHTML = "";
+    emptySearchRes();
   }
 
 }

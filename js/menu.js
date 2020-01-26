@@ -38,9 +38,13 @@ const generateMenu = (galaxyMap) => {
     for: 'toggle-map',
   });
 
+  let searchLabel = createElem('label', navDiv, {
+    for: 'search-input',
+  });
+
   let clustersUl = createElem('ul', nav);
 
-  let searchDiv = createElem('div', nav, {
+  let searchDiv = createElem('div', navDiv, {
     class: "search",
     onclick: "focusMethod('#search-input')"
   });
@@ -49,7 +53,7 @@ const generateMenu = (galaxyMap) => {
     type: "text",
     id: "search-input",
     name: "search-input",
-    oninput: "search(this.value, '#search-results')",
+    oninput: "search(this.value)"
   });
 
   const searchRes = createElem('div', searchDiv, {
@@ -63,7 +67,7 @@ const generateMenu = (galaxyMap) => {
     let clusterLink = createElem('a', clusterDiv);
     clusterLink.href = `#${spaceToDash(cluster.name).toLowerCase()}`;
     clusterLink.id = `${spaceToDash(cluster.name).toLowerCase()}-link`;
-    clusterLink.innerHTML += noFirstUnderscore(cluster.name);
+    clusterLink.innerHTML += noFirstUnderscore(cluster.name.toLowerCase());
 
     if(cluster.bodies && cluster.bodies.length > 0) {
       let clusterLabel = createElem('label', clusterDiv, {
