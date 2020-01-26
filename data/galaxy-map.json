@@ -4255,8 +4255,6 @@
               "year": "293.9",
               "size": "5204/6378",
               "day": "59.7/24",
-              "size": "6378/6378",
-              "day": "24/24",
               "coords": "e",
               "details": "Tula's methane-ammonia atmosphere traps the blistering heat of Nith, driving dayside temperatures up over 1000 degrees. While some lodes of useful metals are present, the planet's incredible heat makes mining impractical."
             },
@@ -5230,7 +5228,7 @@
           "asteroids": [
             {
               "orbit": 1.2,
-              "orbit": 1.2,
+              "year": 1.2,
               "bodies": 100
             }
           ],
@@ -6927,19 +6925,22 @@
     },
     {
       "name": "Titan Nebula",
-      "top": 12,
+      "top": 11.9,
       "left": 45.8,
+      "image": "cluster-09.webp",
       "bodies": [
         {
-          "name": "Askins",
-          "star": "Askins",
-          "top": 50,
-          "left": 50,
+          "name": "haskins", 
+          "star": "haskins", 
+          "top": 44,
+          "left": 42,
+          "filter": "hue-rotate(160deg) brightness(2.5)",
           "bodies": [
             {
-              "name": "Capek",
-              "image": "Rockplates1.webp",
-              "filter": "saturate(0.5) contrast(0.6) hue-rotate(10deg)",
+              "name": "capek",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.7) saturate(3)",
+              "overlay": "rgba(208, 153, 17, 0.23)",
               "texture": true,
               "orbit": "4.4",
               "year": "7.1",
@@ -6947,6 +6948,121 @@
               "day": "18.7/24",
               "coords": "e",
               "details": "Baked in the fierce heat of a white sun, Capek is a rocky, waterless world wrapped in a haze of hydrogen and ethane. Sulfur and iron give yellowish and black tinges to much of the planet's surface. No registered settlements appear in the records, though there are clearly metallic anomalies that indicate roofed structures."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Valhallan Threshold",
+      "top": 14.5,
+      "left": 31.8,
+      "image": "cluster-10.webp",
+      "bodies": [
+        {
+          "name": "Micah",
+          "star": "Micah",
+          "filter": "hue-rotate(160deg)",
+          "top": 35,
+          "left": 60,
+          "asteroids": [
+            {
+              "orbit": 4,
+              "year": 4,
+              "bodies": 150
+            },
+            {
+              "orbit": 6,
+              "year": 6,
+              "bodies": 150
+            }
+          ],
+          "bodies": [
+            {
+              "name": "elohi",
+              "image": "Gaseous5.webp",
+              "filter": "",
+              "clouds": "Gaseous4.webp",
+              "cloudsFilter": "opacity(46%) contrast(1.5)",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "0.5",
+              "size": "38119/6378",
+              "day": "11.8/24",
+              "coords": "n",
+              "details": "A small hydrogen-helium gas giant formed around a metallic hydrogen core, Elohi will be the site of a rare astronomical event later this year. The comet Asaro will come in on its orbit of 70 galactic standard years and travel so close to the giant that it is predicted to be captured as a moon. Dozens of space probes from around the galaxy have been launched into the Raheel system to record this moment.<br><br>Elohi is within the \"frost line\" of its parent star, where gas giants do not usually form. For this reason, it is believed to be an extrasolar capture."
+            },
+            {
+              "name": "dumah",
+              "image": "Gaseous6.webp",
+              "filter": "hue-rotate(-10deg) contrast(1) saturate(3)",
+              "clouds": "Gaseous10.webp",
+              "cloudsFilter": "opacity(40%)",
+              "texture": true,
+              "orbit": "1.6",
+              "year": "2",
+              "size": "59152/6378",
+              "day": "10/24",
+              "coords": "w",
+              "details": "Home to 51 moons, including the prebiotic moon Anafiel, Dumah is a standard hydrogen-helium gas giant with violent surface winds exceeding 1,900 kph. Like its sister planet Elohi, it is believed to be an extrasolar capture."
+            },
+            {
+              "name": "farlas",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(0.5)",
+              "texture": true,
+              "orbit": "4.1",
+              "year": "8.3",
+              "size": "540/6378",
+              "day": "24.1/24",
+              "coords": "e",
+              "details": "One of a trio of asteroids formed around an element zero core, Farlas is the easiest to mine for low-yield eezo. A carbonaceous asteroid, Farlas has a trace of water-bearing minerals and organic carbon in the form of kerogen. Currently, the asteroid is surrounded by quarian mining ships extracting fuel for the flotilla."
+            },
+            {
+              "name": "kakabel",
+              "image": "venus-texture.webp",
+              "filter": "brightness(0.5) contrast(1.1) saturate(0.7)",
+              "texture": true,
+              "orbit": "4.2",
+              "year": "8.6",
+              "size": "470/6378",
+              "day": "68.3/24",
+              "coords": "s",
+              "details": "The second asteroid in the system formed around an element zero core, Kakabel is another carbonaceous asteroid, with a surface made of hydrated minerals such as carbonates and clays. Beneath its icy surface is liquid water, with some amino acids. The surface of Kakabel is pitted and scarred with strip-mining stations, where the quarians took as much eezo as possible before moving on."
+            },
+            {
+              "name": "israfil",
+              "image": "Martian.webp",
+              "filter": "brightness(0.5) contrast(1.1) saturate(0.7)",
+              "texture": true,
+              "orbit": "4.3",
+              "year": "8.9",
+              "size": "905/6378",
+              "day": "68.6/24",
+              "coords": "n",
+              "details": "Largest of the \"eezo trio\", Israfil is a silicate-heavy carbonaceous asteroid. It is home to approximately 40 species of microorganisms in its liquid water, and was blamed as the source of the prion-based biowarfare agent EHE (exotic humanoid encephalopathy) used by the terrorist group Totenkopf in their attack on Gagarin Station in 2184.<br><br>While many in the scientific community protested that Israfil did not have sufficient atmosphere or evolutionary history to sustain life on the prion level, the asteroid and its eezo miners were nevertheless quarantined to reassure the public that the Systems Alliance was taking action. Though no evidence has yet been found that EHE originated from Israfil or was even synthesized in a local lab, The SSV Manila and a team of epidemiologists maintain watch over the asteroid's ship traffic for now."
+            }
+          ]
+        },
+        {
+          "name": "Paz",
+          "star": "Paz",
+          "filter": "brightness(1.6)",
+          "top": 52,
+          "left": 47,
+          "bodies": [
+            {
+              "name": "garvug",
+              "image": "Alpine.webp",
+              "filter": "",
+              "clouds": "earth-clouds.webp",
+              "texture": true,
+              "orbit": "4",
+              "year": "6.1",
+              "size": "6200/6378",
+              "day": "27/24",
+              "coords": "n",
+              "details": "In 354 CE, Garvug was considered a \"bargain world\", given to the krogan to placate them because no one else wanted to live on such a frozen rock. Technically a life-bearing world, Garvug had a small farm belt around its equator and well-insulated marine life in its seas.<br><br>By the turn of the century, the krogan had completely adapted, breeding hundreds of younglings per family in vast underground bunkers. By the turn of the next century, Garvug's narrow strips of coral reef had been destroyed by overfishing and pollutants, and excess krogan took to the stars to find another planet to consume. Garvug was treated as an object lesson by the Citadel Council -- the krogan could not be trusted to check their own numbers.<br><br>Today, Garvug is a frozen wasteland, home to corporate ecoengineering efforts trying to implement sustainable agri- and aqua-culture practices. Krogan and vorcha packs are a constant threat, and the corporations pay mercenaries well to keep their operations safe."
             }
           ]
         }
