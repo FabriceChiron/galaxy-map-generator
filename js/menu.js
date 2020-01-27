@@ -39,24 +39,30 @@ const generateMenu = (galaxyMap) => {
   });
 
   let searchLabel = createElem('label', navDiv, {
-    for: 'search-input',
+    for: 'toggle-search',
   });
 
   let clustersUl = createElem('ul', nav);
 
   let searchDiv = createElem('div', navDiv, {
     class: "search",
-    onclick: "focusMethod('#search-input')"
   });
 
-  const searchInput = createElem('input', searchDiv, {
+  let toggleSearch = createElem('input', searchDiv, {
+    id: 'toggle-search',
+    class: 'hidden-input',
+    type: 'checkbox',
+    // onchange: "focusMethod('#search-input')"
+  });
+
+  let searchInput = createElem('input', searchDiv, {
     type: "text",
     id: "search-input",
     name: "search-input",
     oninput: "search(this.value)"
   });
 
-  const searchRes = createElem('div', searchDiv, {
+  let searchRes = createElem('div', searchDiv, {
     id: "search-results",
     class: "search-results"
   });
@@ -88,7 +94,7 @@ const generateMenu = (galaxyMap) => {
         let systemLink = createElem('a', systemDiv);
         systemLink.href = clusterLink.href + `/${spaceToDash(system.name).toLowerCase()}`;
         systemLink.id = `${spaceToDash(system.name).toLowerCase()}-link`;
-        systemLink.innerHTML += noFirstUnderscore(system.name);
+        systemLink.innerHTML += noFirstUnderscore(system.name.toLowerCase());
 
         if(system.bodies && system.bodies.length > 0) {
           let systemLabel = createElem('label', systemDiv, {
@@ -110,7 +116,7 @@ const generateMenu = (galaxyMap) => {
             let planetLink = createElem('a', planetDiv);
             planetLink.href = systemLink.href + `/${spaceToDash(planet.name).toLowerCase()}`;
             planetLink.id = `${spaceToDash(planet.name).toLowerCase()}-link`;
-            planetLink.innerHTML += noFirstUnderscore(planet.name);
+            planetLink.innerHTML += noFirstUnderscore(planet.name.toLowerCase());
 
             if(planet.bodies && planet.bodies.length > 0) {
               let planetLabel = createElem('label', planetDiv, {
@@ -132,7 +138,7 @@ const generateMenu = (galaxyMap) => {
                 let satelliteLink = createElem('a', satelliteDiv);
                 satelliteLink.href = planetLink.href + `/${spaceToDash(satellite.name).toLowerCase()}`;
                 satelliteLink.id = `${spaceToDash(satellite.name).toLowerCase()}-link`;
-                satelliteLink.innerHTML += noFirstUnderscore(satellite.name);
+                satelliteLink.innerHTML += noFirstUnderscore(satellite.name.toLowerCase());
               })
             } else {
               // planetLink.className += 'empty';

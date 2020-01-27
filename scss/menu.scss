@@ -74,7 +74,7 @@
       height: 1.25rem;
     }
 
-    &[for="search-input"]:after {
+    &[for="toggle-search"]:after {
       content: "#";
       font-size: 0.75rem;
     }
@@ -142,7 +142,7 @@
       height: 0;
       font-size: 0;
 
-      &:focus {
+      &:checked + input {
         font-size: 0.75rem;
         padding: .5rem;
         height: 30px;

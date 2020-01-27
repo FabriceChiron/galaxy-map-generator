@@ -1,6 +1,9 @@
 const emptySearch = () => {
   console.log('emptySearch');
-  document.querySelector('#search-input').value = '';
+  setTimeout(function(){
+    document.querySelector('#search-input').value = '';
+    document.querySelector('#toggle-search').checked = false;
+  })
 }
 
 const emptySearchRes = () => {
@@ -22,7 +25,7 @@ const search = (src) => {
         menuElemClone.id += '_search';
         searchRes.appendChild(menuElemClone);
 
-        menuElemClone.setAttribute('onclick', 'emptySearchRes()');
+        menuElemClone.setAttribute('onclick', 'emptySearchRes(), emptySearch()');
       }
     })
 
