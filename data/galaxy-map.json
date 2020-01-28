@@ -336,6 +336,16 @@
           "top": 33,
           "left": 29,
           "asteroids": [
+            {
+              "orbit": "8",
+              "year": "29",
+              "bodies": 100
+            },
+            {
+              "orbit": "13",
+              "year": "37",
+              "bodies": 100
+            }
           ],
           "bodies": [
             {
@@ -408,7 +418,21 @@
           "star": "Gemmae",
           "top": 50,
           "left": 50,
+          "size": 250,
+          "filter": "brightness(2) saturate(0.2)",
           "bodies": [
+            {
+              "name": "Pheiros",
+              "image": "Martian.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "16.01",
+              "year": "472.2",
+              "size": "6378/6378",
+              "day": "110.2*365",
+              "coords": "se",
+              "details": "Pheiros is an asteroid towed near the class-B blue giant Gemmae to serve as a terrestrial military base in a system devoid of planets. A vast array of solar collectors absorb energy from the star and beam it to receptors near the tidally locked asteroid's terminator zone. Beneath the surface, dozens of particle accelerators generate antiprotons for starship fuel."
+            }
           ]
         },
         {
@@ -417,6 +441,96 @@
           "top": 33,
           "left": 47,
           "bodies": [
+            {
+              "name": "Aventen",
+              "image": "Icy.webp",
+              "filter": "contrast(1.5) brightness(0.7)",
+              "overlay": "rgba(37, 49, 105, 0.57)",
+              "texture": true,
+              "orbit": "0.3",
+              "year": "0.2",
+              "size": "5488/6378",
+              "day": "19.1/24",
+              "coords": "w",
+              "details": "Aventen is named for a tactician-philosopher whose treatise on leadership is known by every turian youth who pays attention in class. It is a small, hot rock planet surrounded by a haze of methane and helium. It was thoroughly mined for valuable minerals in the early days of the turian space age, and since then has had little to offer. Aventen's token spy satellites and defense drones proved no match for even a small Reaper presence, and best reports suggest they have been eliminated."
+            },
+            {
+              "name": "Caelax",
+              "image": "Rockbits1.webp",
+              "filter": "saturate(3) hue-rotate(-30deg) brightness(0.8)",
+              "overlay": "rgba(109, 15, 15, 0.46)",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "0.4",
+              "size": "6349/6378",
+              "day": "65.4/24",
+              "coords": "ne",
+              "details": "Like nearby Aventen, Caelax was named for an ancient philosopher and author. But where Aventen wrote for the military leaders of tomorrow, Caelax focused on those who feed, clothe, heal and arm the soldier. Her enormous tome, \"Service\" features a lengthy chapter on laws that formed the basis for the turian concept of citizenship tiers. Caelax is lower in temperature than Aventen, and its minerals were thus exploited first."
+            },
+            {
+              "name": "palaven",
+              "image": "Swamp.webp",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(0.25)", 
+              "filter": "hue-rotate(20deg) saturate(0.7)",
+              "overlay": "rgba(20, 35, 47, 0.34)",
+              "texture": true,
+              "orbit": "1.15",
+              "year": "1.2",
+              "size": "8990/6378",
+              "day": "28.3/24",
+              "coords": "se",
+              "bodies": [
+                {
+                  "name": "Menae",
+                  "texture": true,
+                  "image": "moon-texture.webp",
+                  "orbit": "0.003",
+                  "orbitFactor": 50,
+                  "size": "0.273",
+                  "year": "33/365",
+                  "coords": "se",
+                  "details": "Palaven's largest moon has been shrouded in secrecy since the dawn of the turian space age. During the Krogan Rebellions, the Hierarchy classified nearly all data on Menae, and its sister moon Nanus, because they feared the krogan could use the moons as weapons by smashing them into Palaven's surface. However, some information has leaked out. Images of turian bases where personnel walk without enviro-suits indicate advanced infrastructure--likely a network of subterranean tunnels with powerful mass effect field generators that retain heat and atmosphere over swaths of the surface."
+                }
+              ],
+              "details": "\"The only thing on this planet that isn't silver are the turians. It's all too clear they're made of steel.\" These were Alliance hero Jon Grissom's impressions of the turian homeworld Palaven, seen by humans for the first time following the First Contact War. The turians' martial attitude permeates every aspect of Palaven society, from architecture to art to politics. It's no surprise that their homeworld was never occupied by an invading force until now."
+            },
+            {
+              "name": "impera",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(210deg) brightness(0.2)",
+              "texture": true,
+              "orbit": "2.4",
+              "year": "3.7",
+              "size": "1676/6378",
+              "day": "32.6/24",
+              "coords": "n",
+              "details": "The small planet Impera is a hothouse of helium and argon, the latter a product of decaying radioactive materials. Robo-mining was once lucrative here, but like the rest of the solar system, the only remaining veins are inaccessible by cost-effective means."
+            },
+            {
+              "name": "Essenus",
+              "image": "Gaseous4.webp",
+              "filter": "hue-rotate(30deg) saturate(1.7) brightness(0.9)",
+              "texture": true,
+              "orbit": "4.8",
+              "year": "10.4",
+              "size": "73976/6378",
+              "day": "12.3/24",
+              "coords": "sw",
+              "details": "Essenus is a hydrogen-helium gas giant that was home to a substantial turian garrison defending the planet's fuel infrastructure. It once held a distribution center for antiproton-based fuel as well as the more common helium-3 collectors. The garrison is now gone. The Reapers drove the turians off and destroyed all available machinery."
+            },
+            {
+              "name": "datriux",
+              "image": "Martian.webp",
+              "filter": "saturate(0.2) hue-rotate(30deg) contrast(1.2) brightness(2)",
+              "texture": true,
+              "orbit": "8.7",
+              "year": "25.7",
+              "size": "7183/6378",
+              "day": "31.8/24",
+              "coords": "",
+              "details": "Datriux is a small rock and ice planet with an extremely thin nitrogen-based atmosphere. Exploited for its metal deposits, the planet's iridium was marked as part of Palaven's strategic reserve during the Krogan Rebellions. Its facilities have been maintained to this day."
+            }
           ]
         }
       ]
