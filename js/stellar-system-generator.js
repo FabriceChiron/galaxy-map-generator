@@ -84,7 +84,7 @@ class AstralBody {
     this.orbitFactor = (obj.orbitFactor) ? obj.orbitFactor : 1;
     this.bodySize = (obj.size) ? ( (realSizes === false && bodyType === 'star') ? 3 : eval(obj.size)) : (bodyType === "star") ? ((realSizes === true) ? 75 : 3) : 1;
     this.realYear = obj.year;
-    this.yearLength = (obj.year) ? eval(obj.year) : 1;
+    this.yearLength = (obj.year) ? Math.round((eval(obj.year)) * 100) / 100 : 1;
     this.dayLength = (obj.day) ? ( (obj.day === "tidal") ? obj.day : eval(obj.day) ) : 1;
     this.coords = (override && override.coords) ? override.coords : ((obj.coords) ? obj.coords : (bodyType === "star") ? 'c' : 'nw');
     this.details = obj.details;
@@ -112,7 +112,7 @@ class AstralBody {
       `<div class="details">
         <ul>
           <li class="info-orbit">Orbit: ${this.realOrbit} AU</li>
-          <li class="info-year">Orbital Period: ${this.realYear} year(s)</li>
+          <li class="info-year">Orbital Period: ${this.yearLength} year(s)</li>
         </ul>
         <p class="details-content">${this.details}</p>
       </div>`;
