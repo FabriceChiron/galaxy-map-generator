@@ -2,6 +2,426 @@
   "name": "Milky Way",
   "clusters" : [
     {
+      "name": "Aethon Cluster",
+      "top": 83.5,
+      "left": 35.5,
+      "image": "cluster-11.webp",
+      "bodies": [
+        {
+          "name": "Aru",
+          "star": "Aru",
+          "top": 33,
+          "left": 50,
+          "asteroids": [
+            {
+              "orbit": "3.2",
+              "year": "3.2",
+              "bodies": 150
+            }
+          ],
+          "bodies": [
+            {
+              "name": "Jak Ser",
+              "image": "Mercury.webp",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "0.4",
+              "size": "10792/6378",
+              "day": "35.3/24",
+              "coords": "s",
+              "details": "Jak Ser features heavily in ancient volus mythology and folklore, since its bright white surface made it easy to chart in the night sky without the aid of a telescope. Once the volus developed advanced astronomical equipment, their scientists discovered that Jak Ser's luminosity was caused by a thick carbon monoxide cloud cover that had hidden the real face of the planet for millennia."
+            },
+            {
+              "name": "Irune",
+              "image": "Savannah.webp",
+              "clouds": "Clouds1.webp",
+              "texture": true,
+              "orbit": "1.3",
+              "year": "1.5",
+              "size": "11525/6378",
+              "day": "36.2/24",
+              "coords": "nw",
+              "details": "The volus homeworld is a high-pressure, high-gravity planet that supports an ammonia-based ecology. This rare environment means that the volus have been slow to colonize, as there are few planets that meet their habitation requirements. Most prefer to stay on Irune, working remotely via the extranet. The more adventurous don the clumsy but vital pressure suits and venture out to worlds in Citadel space to make their fortunes."
+            },
+            {
+              "name": "Locil",
+              "image": "Gaseous6.webp",
+              "texture": true,
+              "orbit": "5.8",
+              "year": "14",
+              "size": "52635/6378",
+              "day": "10.6/24",
+              "coords": "e",
+              "details": "The first of the Aru system's three gas giants, Locil is also the largest. Boasting over 96 moons, this planet's orbit bustled with hundreds of helium-3 extraction centers. Most of the work population lived on Locil's orbital stations, which were so numerous they became an unofficial city chained together by taxi services and extendable umbilical cords. The Reaper attack here has devastated the infrastructure, raining fragments down onto the gas giant."
+            },
+            {
+              "name": "Cherk Sab",
+              "image": "Gaseous8.webp",
+              "texture": true,
+              "orbit": "10.4",
+              "year": "33.6",
+              "size": "39139/6378",
+              "day": "12.1/24",
+              "coords": "se",
+              "details": "Named after a northern Irunian luck deity, Cherk Sab is overshadowed by the economy on Locil and the scientific research on Doldit. The solar system's \"middle child\", Cherk Sab now has the only functioning helium-3 fuel apparatus in the system, as the Reapers have not yet struck there. The space around it is jammed with volus ships trying to flee the system."
+            },
+            {
+              "name": "Doldit",
+              "image": "Gaseous7.webp",
+              "texture": true,
+              "orbit": "20.8",
+              "year": "95.2",
+              "size": "28982/6378",
+              "day": "10.6/24",
+              "coords": "nw",
+              "details": "Doldit's moons have long been mined out, but they still hosted dozens of corporate-owned laboratories relocated there to avoid the environmental restrictions placed on research and development firms by Irune. Everything from weapon testing to cutting-edge biological research was outsourced to facilities orbiting Doldit. This made it an attractive target for the Reapers, who sent a small but powerful force to blow the facilities into scrap."
+            }
+          ]
+        },
+        {
+          "name": "Esori",
+          "star": "Esori",
+          "top": 40,
+          "left": 45,
+          "bodies": [
+            {
+              "name": "Mola",
+              "image": "Martian.webp",
+              "texture": true,
+              "orbit": "0.3",
+              "year": "0.1",
+              "size": "7608/6378",
+              "day": "18.4/24",
+              "coords": "ne",
+              "details": "For a terrestrial planet, Mola hurtles around the system's star at breakneck speed. Its rapid orbit and molten core cause oceans of magma to be pumped out onto the surface, cooling into the continent-sized formations then erased by fresh flows of molten rock."
+            },
+            {
+              "name": "Atos Irn",
+              "image": "Venusian.webp",
+              "texture": true,
+              "orbit": "1",
+              "size": "7556/6378",
+              "day": "40.4/24",
+              "year": "1",
+              "coords": "s",
+              "details": "Atos Irn was claimed, along with the rest of its system, after the volus learned FTL travel. In the great volus exploration push of 300 BCE, the species found only a few planets capable of supporting their colonies. They did, however, discover many planets teeming with valuable elements."
+            },
+            {
+              "name": "Yan Tao",
+              "image": "Rockplates1.webp",
+              "texture": true,
+              "orbit": "1.6",
+              "year": "2",
+              "size": "11460/6378",
+              "day": "37.9/24",
+              "coords": "w",
+              "details": "Even by volus standards, the pressure on Yan Tao is crushing. With an atmosphere composed of carbon dioxide, argon, and small traces of oxygen, the surface is devoid of life. However, tiny, fossilized sea creatures have been discovered in the deepest crevices of what used to be Yan Tao's oceans."
+            },
+            {
+              "name": "Kailo",
+              "image": "Rockbits1.webp",
+              "texture": true,
+              "orbit": "3.2",
+              "year": "5.7",
+              "size": "11489/6378",
+              "day": "93.9/24",
+              "coords": "sw",
+              "details": "Kailo's frigid surface is dotted with impact craters left during a legendary meteor shower that happened more than 400,000 years ago. The meteors contained traces of cobalt, but not enough to warrant a full-scale mining expedition. The volus have largely left Kailo alone, as have the Reapers."
+            },
+            {
+              "name": "Solu Paolis",
+              "image": "Gaseous5.webp",
+              "texture": true,
+              "orbit": "6.6",
+              "year": "17.2",
+              "size": "28567/6378",
+              "day": "14.7/24",
+              "coords": "e",
+              "details": "Solu Paolis's helium-3 collection mechanisms historically turned a large profit, not because of any great immigration into the Esori system, but because Solu Paolis made a good refueling stop between Irune and Satu Arrd.<br><br>Warned of the Reapers' battle plans but left with little other option, a select team of workers at Solu Paolis sent out phony communications suggesting that important military data was being handed off here. When the Reapers sent in a force of husks, they ran into the volus's trap: a chain reaction that annihilated the station."
+            }
+          ]
+        }, 
+        {
+          "name": "Nura",
+          "star": "Nura",
+          "top": 31,
+          "left": 63,
+          "bodies": [
+            {
+              "name": "Lahu",
+              "image": "Rockbits1.webp",
+              "texture": true,
+              "orbit": "1.1",
+              "year": "1.2",
+              "size": "8616/6378",
+              "day": "53.6/24",
+              "coords": "nw",
+              "details": "Massive silicate-filled dust storms plague the surface of Lahu. In an odd partnership of commerce and science, high-rolling volus casinos on Oma Ker entered a partnership with the scientific research teams whose observation satellites watch over Lahu. The casinos took bets on how long Lahu storms would last and how high their wind speed might climb. Payouts made the rare volus rich, with jackpot winners forming a small fraternal order."
+            },
+            {
+              "name": "Oma Ker",
+              "image": "Terrestrial4.webp",
+              "texture": true,
+              "clouds": "Clouds3.webp",
+              "orbit": "2",
+              "year": "2.7",
+              "size": "6739/6378",
+              "day": "25.4/24",
+              "coords": "e",
+              "details": "Oma Ker is a temperate garden world currently in its megafauna stage. The planet's nitrogen-oxygen atmosphere and dextro-amino-acid-based life wasn't particularly attractive to the volus, so they sold the colonization rights to their turian partners. Oma Ker's spaceports and major roads were blasted into craters by the Reapers, largely immobilizing the population. Its turian defenders are slowly being pushed back by ground forces."
+            },
+            {
+              "name": "Welm Urun",
+              "image": "Gaseous3.webp",
+              "texture": true,
+              "orbit": "6.8",
+              "year": "17.7",
+              "size": "62522/6378",
+              "day": "16.4/24",
+              "coords": "n",
+              "details": "Welm Urun is a hydrogen-helium gas giant. The phrase \"Welm Urun\" in the volus native language translates to \"the golden one\", a reference to its deep yellow-orange rings. Much to prospectors' dismay, there was no gold to be found in its moons. Welm Urun's economic contributions to the system was the ubiquitous helium-3, but the collection materials have since been destroyed."
+            },
+            {
+              "name": "Gorgun",
+              "image": "Gaseous4.webp",
+              "texture": true,
+              "orbit": "13.4",
+              "year": "49.2",
+              "size": "67733/6378",
+              "day": "13/24",
+              "coords": "w",
+              "details": "Like Welm Urun, Gorgun was a hydrogen-helium gas giant whose helium-3 infrastructure was destroyed."
+            }
+          ]
+        },
+        {
+          "name": "Satu Arrd",
+          "star": "Satu Arrd",
+          "top": 53,
+          "left": 40,
+          "bodies": [
+            {
+              "name": "Poloh Tem",
+              "image": "Mercury.webp",
+              "texture": true,
+              "orbit": "2.1",
+              "year": "3.1",
+              "size": "5738/6378",
+              "day": "35.8/24",
+              "coords": "e",
+              "details": "This world is believed to be an extrasolar capture that built up its atmosphere over millions of years to become the hothouse it is today. Volus robo-miners descended on Poloh Tem when element zero was first discovered there, and in turn, pirates descended on the volus. The pirates then found out, to their detriment, that wealthy volus can buy a lot of influence in the Turian Hierarchy."
+            },
+            {
+              "name": "Rilar",
+              "image": "Rockplates1.webp",
+              "texture": true,
+              "orbit": "3",
+              "year": "5.3",
+              "size": "5082/6378",
+              "day": "23.2/24",
+              "coords": "sw",
+              "details": "Rilar is a barren, terrestrial rock world. Only a small portion of the planet has been explored, as cursory scans showed little of interest on Rilar compared to the eezo deposits on the neighboring world of Poloh Tem."
+            },
+            {
+              "name": "Nalisin",
+              "image": "Moon.webp",
+              "texture": true,
+              "orbit": "23.4",
+              "year": "113.6",
+              "size": "4494/6378",
+              "day": "20.6/24",
+              "coords": "s",
+              "details": "A lonely world of rock and ice, Nalisin clings to the outer rim of the Satu Arrd system. Its freezing temperatures and carbon-dioxide atmosphere were braved by eezo smugglers, who set up camps in the tunnels honeycombing the southern hemisphere's mountain ranges. The camps were abandoned when turian patrols began regular raids on the smugglers' cave systems."
+            }
+          ]
+        }
+      
+      ]
+    },
+    {
+      "name": "Annos Basin",
+      "top": 67.6,
+      "left": 42.9,
+      "bodies": [
+        {
+          "name": "Pranas",
+          "star": "Pranas",
+          "top": 50,
+          "left": 50,
+          "asteroids": [
+            {
+              "orbit": "6.5",
+              "year": "19",
+              "bodies": 100
+            }
+          ],
+          "bodies": [
+            {
+              "name": "Saradril",
+              "image": "moon-texture.webp",
+              "filter": "contrast(1.4) brightness(0.8)",
+              "overlay": "rgba(113, 29, 20, 0.38)",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "0.5",
+              "size": "5243/6378",
+              "day": "22.2/24",
+              "coords": "ne",
+              "details": "Sur'Kesh's sister planet is in a weak hothouse state, retaining enough carbon dioxide and monoxide to form an atmosphere thicker than a garden world's but thinner than a true hothouse like Venus. In the early days of salarian space exploration, the species saw mining the planet as an engineering challenge. When the salarians made contact with the asari, the robo-mining industry developed for planets like Saradril quickly became the galactic standard."
+            },
+            {
+              "name": "Sur'Kesh",
+              "image": "Savannah.webp",
+              "filter": "hue-rotate(15deg) saturate(0.9) brightness(0.7)",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter":"opacity(0.8)",
+              "texture": true,
+              "orbit": "1.1",
+              "year": "1.2",
+              "size": "6709/6378",
+              "day": "21.5/24",
+              "coords": "e",
+              "details": "The salarian homeworld has been likened to the jungles of Earth: pretty to look at, teeming with life, uncomfortable to live in and dangerous to the unwary. The technophilic salarians had significant pollution and waste problems early in the development of their society. They also embraced social solutions just as quickly, and through complex breeding rules, Sur'Kesh now maintains a crowded but sustainable population. The planet tends to be wetter than Earth, and salarian cities spare no expense to collect and provide fresh water, as one might expect from an amphibious species."
+            },
+            {
+              "name": "Dragel",
+              "image": "Martian.webp",
+              "filter": "brightness(0.6)",
+              "texture": true,
+              "orbit": "1.9",
+              "year": "2.5",
+              "size": "1528/6378",
+              "day": "60.2/24",
+              "coords": "s",
+              "details": "The tiny rock planet Dragel is notable for its status as a strategic reserve of heavy metals. It has been warmed slightly by a thin atmosphere of nitrogen and carbon monoxide, but otherwise remains hostile to life. In the clandestine fashion typical of salarians, a military outpost orbits the planet but does not appear on Alliance star maps."
+            },
+            {
+              "name": "Halegeuse",
+              "image": "Gaseous6.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "3.6",
+              "year": "6.8",
+              "size": "54743/6378",
+              "day": "16.8/24",
+              "coords": "n",
+              "details": "Spacer investors are fond of saying: \"You can't exhaust a gas giant.\" But the salarians have certainly tried. Halegeuse is home to a thriving community of robo-miners and those who work in helium-3 collection and refinement. More than 16 of Halegeuse's more metallic moons have been settled.<br><br>The giant bears the name of the Halegeuse Corporation, which combined the best efforts of several salarian clans to manufacture the advanced shielding necessary to colonize the planet's moons. The planet's magnetosphere retains massive amounts of radioactive ions from Pranash [sic], the system's star. Because of this, the cities on the moons are subsurface, protected from lethal radiation levels by shielding and thick layers of rock. Halegeuse was bought out centuries ago, but the name endures as a symbol of salarian innovation and cooperation."
+            },
+            {
+              "name": "Paeto",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(2.5) brightness(0.8)",
+              "overlay": "rgba(93, 67, 67, 0.65)",
+              "texture": true,
+              "orbit": "7.3",
+              "year": "19.8",
+              "size": "1681/6378",
+              "day": "29.3/24",
+              "coords": "nw",
+              "details": "Paeto, a carbonaceous asteroid, became notable for Element Zero deposits. The deposits, which indicate it was an extrasolar capture, were discovered by the salarians shortly before they found the mass relay in the Pranash [sic] system. Naturally, all element zero was mined out long ago.<br><br>The asteroid is named for the clan of Paeto Il Ginon Mal Eneste Dut Solem Ammar, known to humans as Ammar Solem. This shy, retiring eccentric was an undergraduate when more important astrogeologists passed off the first eezo deposits to him. He ran the fateful test that discovered its mass-affecting properties. For three centuries after his death, rival clans fought for credit for the discovery, but the truth won out after a lengthy academic war."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Apien Crest",
+      "top": 77.7,
+      "left": 27.3,
+      "image": "cluster-08.webp",
+      "bodies": [
+        {
+          "name": "Castellus",
+          "star": "Castellus",
+          "top": 33,
+          "left": 29,
+          "asteroids": [
+          ],
+          "bodies": [
+            {
+              "name": "Carborix",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(5) brightness(0.6)",
+              "overlay": "rgba(4, 44, 53, 0.84)",
+              "texture": true,
+              "orbit": "0.4",
+              "year": "0.3",
+              "size": "2579/6378",
+              "day": "28.8/24",
+              "coords": "se",
+              "details": "A tiny rock planet with a thin, reducing atmosphere, Carborix was remotely mined for millennia, first for rarer platinum-group metals and radioactives, then catalysts and semi-conductors, and eventually structural materials like titanium, iron, and nickel. Recovery operations were grinding to a halt just before the Reapers hit the planet. The attack turned orbital stations and the turians' early-warning satellites into molten metal."
+            },
+            {
+              "name": "Nios",
+              "image": "moon-texture.webp",
+              "filter": "contrast(1.3)",
+              "overlay": "rgba(99, 84, 11, 0.42)",
+              "texture": true,
+              "orbit": "0.75",
+              "year": "0.7",
+              "size": "2849/6378",
+              "day": "29.4/24",
+              "coords": "w",
+              "details": "A small terrestrial planet bathed in argon and carbon dioxide, Nios has a pressure-cooker atmosphere. Probes revealed calcite cliffs but few valuable minerals, and so the planet had only a few artificial satellites when the Reapers hit. Fragments from destroyed scientific research stations and spy drones litters the planet's Lagrangian points, presenting a navigation hazard."
+            },
+            {
+              "name": "Digeris",
+              "image": "Alpine.webp",
+              "filter": "",
+              "clouds": "earth-clouds.webp",
+              "texture": true,
+              "orbit": "1.35",
+              "year": "1.6",
+              "size": "4061/6378",
+              "day": "37.2/24",
+              "coords": "nw",
+              "details": "A hospitable world home to dextro-amino-acid-based life, this turian colony was famous, until recently, for being the site of the bloodiest battle in turian history. During the Krogan Rebellions, a warlord named Graken Dhal took the fight to Palaven's home cluster, bombarding the modestly defended Digeris. When reinforcements came to intercept him, Dhal's navy put their rear to Digeris so that stray shots would hit the planet. The turians won despite this severe handicap, using countless fighters and cruisers to take down the krogan dreadnoughts."
+            },
+            {
+              "name": "Fiax",
+              "image": "Martian.webp",
+              "filter": "",
+              "texture": true,
+              "orbit": "2.7",
+              "year": "4.4",
+              "size": "9735/6378",
+              "day": "68.6/24",
+              "coords": "sw",
+              "details": "Fiax is a large terrestrial planet with a frozen surface and a thin nitrogen-based atmosphere. It presented the turians with an interesting engineering challenge: how to mine its abundant heavy metals and get them off the high-gravity planet without requiring so much fuel or eezo that it ruined the profit margin. As a result, the Hierarchy heavily subsidized these mining concerns, in return for retaining large stores of gold, iridium and niobium for their strategic reserve."
+            },
+            {
+              "name": "Iritum",
+              "image": "Gaseous10.webp",
+              "filter": "saturate(0.8) hue-rotate(-10deg)",
+              "texture": true,
+              "orbit": "10.2",
+              "year": "32.7",
+              "size": "53884/6378",
+              "day": "12.8/24",
+              "coords": "n",
+              "details": "Iritum is a moderate-sized hydrogen-helium gas giant with clearly visible rings. Reaper capital ships have pounded the system's moons, methodically destroying the colonies here and dismantling the infrastructure. The star chart extolling the natural beauty of the ring system seems quite inappropriate now."
+            }
+          ]
+        },
+        {
+          "name": "Gemmae",
+          "star": "Gemmae",
+          "top": 50,
+          "left": 50,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Trebia",
+          "star": "Trebia",
+          "top": 33,
+          "left": 47,
+          "bodies": [
+          ]
+        }
+      ]
+    },
+    {
       "name": "Argos Rho",
       "top": 63.1,
       "left": 64.5,
@@ -944,243 +1364,6 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "name": "Atheon Cluster",
-      "top": 83.5,
-      "left": 35.5,
-      "image": "cluster-11.webp",
-      "bodies": [
-        {
-          "name": "Aru",
-          "star": "Aru",
-          "top": 33,
-          "left": 50,
-          "asteroids": [
-            {
-              "orbit": "3.2",
-              "year": "3.2",
-              "bodies": 150
-            }
-          ],
-          "bodies": [
-            {
-              "name": "Jak Ser",
-              "image": "Mercury.webp",
-              "texture": true,
-              "orbit": "0.6",
-              "year": "0.4",
-              "size": "10792/6378",
-              "day": "35.3/24",
-              "coords": "s",
-              "details": "Jak Ser features heavily in ancient volus mythology and folklore, since its bright white surface made it easy to chart in the night sky without the aid of a telescope. Once the volus developed advanced astronomical equipment, their scientists discovered that Jak Ser's luminosity was caused by a thick carbon monoxide cloud cover that had hidden the real face of the planet for millennia."
-            },
-            {
-              "name": "Irune",
-              "image": "Savannah.webp",
-              "clouds": "Clouds1.webp",
-              "texture": true,
-              "orbit": "1.3",
-              "year": "1.5",
-              "size": "11525/6378",
-              "day": "36.2/24",
-              "coords": "nw",
-              "details": "The volus homeworld is a high-pressure, high-gravity planet that supports an ammonia-based ecology. This rare environment means that the volus have been slow to colonize, as there are few planets that meet their habitation requirements. Most prefer to stay on Irune, working remotely via the extranet. The more adventurous don the clumsy but vital pressure suits and venture out to worlds in Citadel space to make their fortunes."
-            },
-            {
-              "name": "Locil",
-              "image": "Gaseous6.webp",
-              "texture": true,
-              "orbit": "5.8",
-              "year": "14",
-              "size": "52635/6378",
-              "day": "10.6/24",
-              "coords": "e",
-              "details": "The first of the Aru system's three gas giants, Locil is also the largest. Boasting over 96 moons, this planet's orbit bustled with hundreds of helium-3 extraction centers. Most of the work population lived on Locil's orbital stations, which were so numerous they became an unofficial city chained together by taxi services and extendable umbilical cords. The Reaper attack here has devastated the infrastructure, raining fragments down onto the gas giant."
-            },
-            {
-              "name": "Cherk Sab",
-              "image": "Gaseous8.webp",
-              "texture": true,
-              "orbit": "10.4",
-              "year": "33.6",
-              "size": "39139/6378",
-              "day": "12.1/24",
-              "coords": "se",
-              "details": "Named after a northern Irunian luck deity, Cherk Sab is overshadowed by the economy on Locil and the scientific research on Doldit. The solar system's \"middle child\", Cherk Sab now has the only functioning helium-3 fuel apparatus in the system, as the Reapers have not yet struck there. The space around it is jammed with volus ships trying to flee the system."
-            },
-            {
-              "name": "Doldit",
-              "image": "Gaseous7.webp",
-              "texture": true,
-              "orbit": "20.8",
-              "year": "95.2",
-              "size": "28982/6378",
-              "day": "10.6/24",
-              "coords": "nw",
-              "details": "Doldit's moons have long been mined out, but they still hosted dozens of corporate-owned laboratories relocated there to avoid the environmental restrictions placed on research and development firms by Irune. Everything from weapon testing to cutting-edge biological research was outsourced to facilities orbiting Doldit. This made it an attractive target for the Reapers, who sent a small but powerful force to blow the facilities into scrap."
-            }
-          ]
-        },
-        {
-          "name": "Esori",
-          "star": "Esori",
-          "top": 40,
-          "left": 45,
-          "bodies": [
-            {
-              "name": "Mola",
-              "image": "Martian.webp",
-              "texture": true,
-              "orbit": "0.3",
-              "year": "0.1",
-              "size": "7608/6378",
-              "day": "18.4/24",
-              "coords": "ne",
-              "details": "For a terrestrial planet, Mola hurtles around the system's star at breakneck speed. Its rapid orbit and molten core cause oceans of magma to be pumped out onto the surface, cooling into the continent-sized formations then erased by fresh flows of molten rock."
-            },
-            {
-              "name": "Atos Irn",
-              "image": "Venusian.webp",
-              "texture": true,
-              "orbit": "1",
-              "size": "7556/6378",
-              "day": "40.4/24",
-              "year": "1",
-              "coords": "s",
-              "details": "Atos Irn was claimed, along with the rest of its system, after the volus learned FTL travel. In the great volus exploration push of 300 BCE, the species found only a few planets capable of supporting their colonies. They did, however, discover many planets teeming with valuable elements."
-            },
-            {
-              "name": "Yan Tao",
-              "image": "Rockplates1.webp",
-              "texture": true,
-              "orbit": "1.6",
-              "year": "2",
-              "size": "11460/6378",
-              "day": "37.9/24",
-              "coords": "w",
-              "details": "Even by volus standards, the pressure on Yan Tao is crushing. With an atmosphere composed of carbon dioxide, argon, and small traces of oxygen, the surface is devoid of life. However, tiny, fossilized sea creatures have been discovered in the deepest crevices of what used to be Yan Tao's oceans."
-            },
-            {
-              "name": "Kailo",
-              "image": "Rockbits1.webp",
-              "texture": true,
-              "orbit": "3.2",
-              "year": "5.7",
-              "size": "11489/6378",
-              "day": "93.9/24",
-              "coords": "sw",
-              "details": "Kailo's frigid surface is dotted with impact craters left during a legendary meteor shower that happened more than 400,000 years ago. The meteors contained traces of cobalt, but not enough to warrant a full-scale mining expedition. The volus have largely left Kailo alone, as have the Reapers."
-            },
-            {
-              "name": "Solu Paolis",
-              "image": "Gaseous5.webp",
-              "texture": true,
-              "orbit": "6.6",
-              "year": "17.2",
-              "size": "28567/6378",
-              "day": "14.7/24",
-              "coords": "e",
-              "details": "Solu Paolis's helium-3 collection mechanisms historically turned a large profit, not because of any great immigration into the Esori system, but because Solu Paolis made a good refueling stop between Irune and Satu Arrd.<br><br>Warned of the Reapers' battle plans but left with little other option, a select team of workers at Solu Paolis sent out phony communications suggesting that important military data was being handed off here. When the Reapers sent in a force of husks, they ran into the volus's trap: a chain reaction that annihilated the station."
-            }
-          ]
-        }, 
-        {
-          "name": "Nura",
-          "star": "Nura",
-          "top": 31,
-          "left": 63,
-          "bodies": [
-            {
-              "name": "Lahu",
-              "image": "Rockbits1.webp",
-              "texture": true,
-              "orbit": "1.1",
-              "year": "1.2",
-              "size": "8616/6378",
-              "day": "53.6/24",
-              "coords": "nw",
-              "details": "Massive silicate-filled dust storms plague the surface of Lahu. In an odd partnership of commerce and science, high-rolling volus casinos on Oma Ker entered a partnership with the scientific research teams whose observation satellites watch over Lahu. The casinos took bets on how long Lahu storms would last and how high their wind speed might climb. Payouts made the rare volus rich, with jackpot winners forming a small fraternal order."
-            },
-            {
-              "name": "Oma Ker",
-              "image": "Terrestrial4.webp",
-              "texture": true,
-              "clouds": "Clouds3.webp",
-              "orbit": "2",
-              "year": "2.7",
-              "size": "6739/6378",
-              "day": "25.4/24",
-              "coords": "e",
-              "details": "Oma Ker is a temperate garden world currently in its megafauna stage. The planet's nitrogen-oxygen atmosphere and dextro-amino-acid-based life wasn't particularly attractive to the volus, so they sold the colonization rights to their turian partners. Oma Ker's spaceports and major roads were blasted into craters by the Reapers, largely immobilizing the population. Its turian defenders are slowly being pushed back by ground forces."
-            },
-            {
-              "name": "Welm Urun",
-              "image": "Gaseous3.webp",
-              "texture": true,
-              "orbit": "6.8",
-              "year": "17.7",
-              "size": "62522/6378",
-              "day": "16.4/24",
-              "coords": "n",
-              "details": "Welm Urun is a hydrogen-helium gas giant. The phrase \"Welm Urun\" in the volus native language translates to \"the golden one\", a reference to its deep yellow-orange rings. Much to prospectors' dismay, there was no gold to be found in its moons. Welm Urun's economic contributions to the system was the ubiquitous helium-3, but the collection materials have since been destroyed."
-            },
-            {
-              "name": "Gorgun",
-              "image": "Gaseous4.webp",
-              "texture": true,
-              "orbit": "13.4",
-              "year": "49.2",
-              "size": "67733/6378",
-              "day": "13/24",
-              "coords": "w",
-              "details": "Like Welm Urun, Gorgun was a hydrogen-helium gas giant whose helium-3 infrastructure was destroyed."
-            }
-          ]
-        },
-        {
-          "name": "Satu Arrd",
-          "star": "Satu Arrd",
-          "top": 53,
-          "left": 40,
-          "bodies": [
-            {
-              "name": "Poloh Tem",
-              "image": "Mercury.webp",
-              "texture": true,
-              "orbit": "2.1",
-              "year": "3.1",
-              "size": "5738/6378",
-              "day": "35.8/24",
-              "coords": "e",
-              "details": "This world is believed to be an extrasolar capture that built up its atmosphere over millions of years to become the hothouse it is today. Volus robo-miners descended on Poloh Tem when element zero was first discovered there, and in turn, pirates descended on the volus. The pirates then found out, to their detriment, that wealthy volus can buy a lot of influence in the Turian Hierarchy."
-            },
-            {
-              "name": "Rilar",
-              "image": "Rockplates1.webp",
-              "texture": true,
-              "orbit": "3",
-              "year": "5.3",
-              "size": "5082/6378",
-              "day": "23.2/24",
-              "coords": "sw",
-              "details": "Rilar is a barren, terrestrial rock world. Only a small portion of the planet has been explored, as cursory scans showed little of interest on Rilar compared to the eezo deposits on the neighboring world of Poloh Tem."
-            },
-            {
-              "name": "Nalisin",
-              "image": "Moon.webp",
-              "texture": true,
-              "orbit": "23.4",
-              "year": "113.6",
-              "size": "4494/6378",
-              "day": "20.6/24",
-              "coords": "s",
-              "details": "A lonely world of rock and ice, Nalisin clings to the outer rim of the Satu Arrd system. Its freezing temperatures and carbon-dioxide atmosphere were braved by eezo smugglers, who set up camps in the tunnels honeycombing the southern hemisphere's mountain ranges. The camps were abandoned when turian patrols began regular raids on the smugglers' cave systems."
-            }
-          ]
-        }
-      
       ]
     },
     {
@@ -4587,10 +4770,12 @@
               "image": "Terrestrial4.webp",
               "clouds": "earth-clouds.webp",
               "texture": true,
+              "rings": true,
+              "ringsColor": "rgba(255,255,255,0.15)",
               "orbit": "3",
               "year": "1.3",
               "size": "8059/6378",
-              "day": "1.3*365",
+              "day": "tidal",
               "coords": "nw",
               "details": "Chasca is a large, but low density world, fundamentally similar to its inner neighbor Inti. Like Inti, Chasca is tidally-locked to Matano. The same side always faces the sun, resulting in a scorching day side and a frozen night side. In the temperate areas around the terminator, temperatures average around 30 Celsius. Combined with a nitrogen-oxygen atmosphere, this slender band of habitable terrain allows limited colonization by humans.<br><br>Chasca's ring is unique. It appears to be, for lack of a better term, a massive piece of alien \"installation art\". The rings are made of small pieces of synthetic material, and are almost invisible from space. From the ground, they catch and scatter the light of Matano in picturesque ways. It is not known who created the ring or when.<br><br>Chasca is very early in development, with little more than a few pioneer teams scattered across the surface. Information is being collated about native hazards and ecology, while a massive colonist recruiting drive is gearing up back on Earth."
             },
@@ -7063,6 +7248,89 @@
               "day": "27/24",
               "coords": "n",
               "details": "In 354 CE, Garvug was considered a \"bargain world\", given to the krogan to placate them because no one else wanted to live on such a frozen rock. Technically a life-bearing world, Garvug had a small farm belt around its equator and well-insulated marine life in its seas.<br><br>By the turn of the century, the krogan had completely adapted, breeding hundreds of younglings per family in vast underground bunkers. By the turn of the next century, Garvug's narrow strips of coral reef had been destroyed by overfishing and pollutants, and excess krogan took to the stars to find another planet to consume. Garvug was treated as an object lesson by the Citadel Council -- the krogan could not be trusted to check their own numbers.<br><br>Today, Garvug is a frozen wasteland, home to corporate ecoengineering efforts trying to implement sustainable agri- and aqua-culture practices. Krogan and vorcha packs are a constant threat, and the corporations pay mercenaries well to keep their operations safe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Viper Nebula",
+      "top": 90.5,
+      "left": 52.1,
+      "bodies": [
+        {
+          "name": "Bahak",
+          "star": "Bahak",
+          "top": 50,
+          "left": 50,
+          "asteroids": [
+            {
+              "orbit": 14,
+              "year": 14,
+              "bodies": 100
+            }
+          ],
+          "bodies": [
+            {
+              "name": "Clogon",
+              "image": "Gaseous7.webp",
+              "filter": "contrast(2.2) brightness(0.7) hue-rotate(15deg)",
+              "texture": true,
+              "orbit": "0.6",
+              "year": "0.5",
+              "size": "2621/6378",
+              "day": "20.8/24",
+              "coords": "ne",
+              "details": "A hothouse planet with a thick atmosphere of methane and ethane, Clogon has been left relatively untouched by the Batarian Hegemony. As with many batarian planets, spy satellites circle it, watching for pirates or other enemies of the state who come by the planet to discharge their ships' drive cores."
+            },
+            {
+              "name": "Aratoht",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(320deg) saturate(1.4) brightness(0.7)",
+              "overlay": "rgba(0,0,0,0.2)",
+              "texture": true,
+              "orbit": "1.15",
+              "year": "1.2",
+              "size": "4757/6378",
+              "day": "20/24",
+              "coords": "nw",
+              "details": "\"Like Mount Everest inside an oven\", was how Jon Grissom described Aratoht while on a fact-finding mission to see if the garden world was worth contestation with the batarians. His team ultimately decided that the planet's air pressure and oxygen content were too low for large-scale human habitation. Undeterred, the Batarian Hegemony colonized the planet's polar regions and began an extensive terraforming effort with cyanobacteria and invasive plant species. Alliance intelligence has confirmed that the colony has several batarian military installations, which are too close to human space for the Alliance's comfort."
+            },
+            {
+              "name": "Yunaca",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.4) brightness(0.8)",
+              "texture": true,
+              "orbit": "2.4",
+              "year": "3.7",
+              "size": "1769/6378",
+              "day": "63.5/24",
+              "coords": "w",
+              "details": "A tiny rock planet, Yunaca's atmosphere is a thin sheen of carbon dioxide and carbon monoxide. Yunaca has abundant metals, but Hegemony protectionism makes mining on Aratoht more profitable for batarian corporations. A few aging spy satellites circle it, watching for unlicensed mining operations."
+            },
+            {
+              "name": "Urmola",
+              "image": "Gaseous4.webp",
+              "filter": "brightness(0.6) hue-rotate(320deg)",
+              "texture": true,
+              "orbit": "4.3",
+              "year": "8.8",
+              "size": "71610/6378",
+              "day": "13.7/24",
+              "coords": "se",
+              "details": "A hydrogen-helium gas giant, Urmola is home to infrastructure that generates both helium-3 and antiprotons. Both sources of fuel are restricted to Hegemony ships, forcing merchant vessels to dock at Bastzuda to refuel before their journey. A sizeable naval station is stationed at Urmola, its ships guarding the installations from enemies without and within. As with other planets in the system, spy satellites are ubiquitous."
+            },
+            {
+              "name": "Bastzuda",
+              "image": "Gaseous4.webp",
+              "filter": "contrast(1.5) saturate(0.9)",
+              "texture": true,
+              "orbit": "8.9",
+              "year": "26.6",
+              "size": "65015/6378",
+              "day": "13.1/24",
+              "coords": "sw",
+              "details": "A hydrogen-helium gas giant, Bastzuda is home to infrastructure that gathers helium-3 as well as military space stations that supply and protect the resource. Spy satellites are in abundance here, watching for undesirables entering the system or fugitives fleeing it."
             }
           ]
         }
