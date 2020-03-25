@@ -536,6 +536,135 @@
       ]
     },
     {
+      "name": "Arcturus Stream",
+      "top": 78.7,
+      "left": 48.7,
+      "image": "cluster-16.webp",
+      "bodies": [
+        {
+          "name": "Arcturus",
+          "star": "Arcturus",
+          "top": 20,
+          "left": 40,
+          "asteroids": [
+            {
+              "orbit": "1.5",
+              "year": "1.5",
+              "bodies": 100
+            }
+          ],
+          "bodies": [
+            {
+                "name": "alcyoneus",
+                "image": "moon-texture.webp",
+                "filter": "",
+                "texture": true,
+                "orbit": 2.1,
+                "year": 0.6,
+                "size": "1052/6378",
+                "day": "61.6/24",
+                "coords": "se",
+                "details": "Alcyoneus is a sizable asteroid, one of many towed through the mass relay to help build Arcturus Station in this metal-poor system. Like many of the asteroids in the belt, miners built small habitats on Alcyoneus to live closer to their excavation sites. When the station was finished, a transient population moved in.\n<br><br>Belt communities were too small for the Reapers to bother harvesting. Blasts from their weapons pierced the habitats' protective domes and burned through anticollision kinetic barriers. As far as can be told, the belt's population is now zero.\n"
+            },
+            {
+                "name": "themis",
+                "image": "Gaseous10.webp",
+                "filter": "hue-rotate(300deg) contrast(1.2) saturate(1.1)",
+                "texture": true,
+                "orbit": 3.5,
+                "year": 1.3,
+                "size": "56484/6378",
+                "day": "14.1/24",
+                "coords": "sw",
+                "details": "A hydrogen-helium gas giant, Themis is one of Arcturus's stable satellites. It rapidly orbits the massive star.\n"
+            },
+            {
+                "name": "eirene",
+                "image": "Gaseous10.webp",
+                "filter": "hue-rotate(280deg)",
+                "texture": true,
+                "orbit": 6.8,
+                "year": 3.6,
+                "size": "44077/6378",
+                "day": "10.3/24",
+                "coords": "n",
+                "details": "One of Arcturus' hydrogen-helium gas giants, Eirene had infrastructure in place for fueling civilian and military starships with helium-3 and antiprotons. None of this infrastructure has survived the Reapers.\n"
+            },
+            {
+                "name": "eunomia",
+                "image": "mercury-texture.webp",
+                "filter": "brightness(0.8) contrast(1.2)",
+                "texture": true,
+                "orbit": 13.4,
+                "year": 10,
+                "size": "4758/6378",
+                "day": "63.6/24",
+                "coords": "ne",
+                "details": "Eunomia is largely made of ice--frozen around a metal-poor core. Its deposits were of little use to the humans building Arcturus Station, who favored materials from the asteroids towed into the system. Eunomia lies neglected in the void. There is no obvious Reaper presence here.\n"
+            }
+          ]
+        },
+        {
+          "name": "Euler",
+          "star": "Euler",
+          "top": 17,
+          "left": 54,
+          "bodies": [
+            {
+              "name": "fermi",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.2)",
+              "overlay": "rgba(243, 115, 5, 0.2)",
+              "texture": true,
+              "orbit": 0.6,
+              "year": 0.4,
+              "size": "4194/6378",
+              "day": "60/24",
+              "coords": "nw",
+              "details": "Fermi is a rock wrapped in a haze of carbon dioxide and oxygen, though its temperatures and concentrations make it difficult to support life. Many moons and debris are in its immediate vicinity, leading researchers to believe that at some point Fermi was impacted by something large, launching fragments of the planet into orbit.\n<br><br>The wreckage from a scientific station can be detected here--more evidence of the Reapers' presence in the system.\n"
+            },
+            {
+              "name": "benning",
+              "image": "Alpine.Webp",
+              "clouds": "earth-clouds.webp", 
+              "filter": "",
+              "texture": true,
+              "orbit": 1.1,
+              "year": 0.9,
+              "size": "9362/6378",
+              "day": "24/24",
+              "coords": "e",
+              "details": "Benning, the nearest garden world to Arcturus Station, is the primary source of its food supply and an important staging area for starship maintenance and repair. Occupying the planet would be key in any attempt to retake the system's relay.\n<br><br>Scattered intelligence indicates that during the battles of Arcturus and Earth, the Reapers sent a small force to Benning to destroy its comm buoys, spaceports, and starships. With the population immobilized and communications cut, the main force concentrated on the larger prize, knowing they could return before repairs could be made or help could arrive.\n"
+            },
+            {
+              "name": "yukawa",
+              "image": "Martian.webp",
+              "filter": "saturate(1.5) contrast(1.2)",
+              "texture": true,
+              "orbit": 2.2,
+              "year": 2.7,
+              "size": "2943/6378",
+              "day": "64.9/24",
+              "coords": "nw",
+              "details": "Yukawa is a small rock planet with a thin atmosphere of carbon dioxide. After a labor dispute with companies shipping metallic asteroids to the nearby Arcturus system, Yukawa's iron core and blanket of hematite were briefly mined to aid in the construction of Arcturus Station. Yukawa's reputation as \"the scab planet\" persists to this day, as its other resources are not particularly notable.\n"
+            },
+            {
+              "name": "silva",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-10deg)",
+              "texture": true,
+              "orbit": 4.1,
+              "year": 6.8,
+              "size": "31096/6378",
+              "day": "17.7/24",
+              "coords": "ne",
+              "details": "Named for Mateus Silva, leader of the prospector team that unearthed the Prothean Archives on Mars, this ice giant was once home to a large recovery operation for helium-3. In its heyday, the helium-3 flowed freely here to fuel merchant ships commuting from Benning to Arcturus.\n<br><br>All infrastructure on Silva has been destroyed, along with the colony on Oliveira, its moon.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Argos Rho",
       "top": 63.1,
       "left": 64.5,
@@ -1365,6 +1494,175 @@
               "coords": "nw",
               "details": "Small, distant Alsages is a small terrestrial, with a trace atmosphere of methane and argon. The surface is composed of water ice and calcium with occasional deposits of light metals."
             }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Athena Nebula",
+      "top": 64.1,
+      "left": 21.1,
+      "image": "cluster-03.webp",
+      "bodies": [
+        {
+          "name": "Ialessa",
+          "star": "Ialessa",
+          "top": 21,
+          "left": 65,
+          "asteroids": [
+            {
+              "orbit": "3.5",
+              "year": "3.5",
+              "bodies": 100
+            }
+          ],
+          "bodies": [
+            {
+              "name": "ilmnos",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(270deg) saturate(0.5)",
+              "texture": true,
+              "orbit": 0.5,
+              "year": 0.4,
+              "size": "6528/6378",
+              "day": "22.5/24",
+              "coords": "ne",
+              "details": "The once-rich thorium reserves of Ilmnos have long been mined out, mostly by remote asari drones that operate well enough in the planet's heat and trace atmospheric pressure. There is little reason to visit this harsh world unless further deposits are discovered.\n"
+            },
+            {
+              "name": "sanves",
+              "image": "Alpine.Webp",
+              "clouds": "earth-clouds.webp", 
+              "texture": true,
+              "orbit": 1.4,
+              "year": 1.6,
+              "size": "7484/6378",
+              "day": "51.8/24",
+              "coords": "n",
+              "details": "The hospitable nitrogen-oxygen atmosphere, temperate-climate and sprawling wilderness of Sanves made the planet a popular tourist destination. Large tracks of untamed forest surrounding the capital drew in millions of sightseers, game hunters, and biologists. The asari, mindful of how rapid expansion has damaged the ecologies of other planets, restricted settlements.\n<br><br>After destroying the colony's navy and antiair defenses, Reapers landed infantry units to subjugate the local population. Destroyers keep watch in orbit, the capital ships apparently elsewhere fighting bigger battles.\n"
+            },
+            {
+              "name": "zylium",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-70deg) saturate(0.9) contrast(1.2) brightness(1.2)",
+              "texture": true,
+              "orbit": 5,
+              "year": 11.2,
+              "size": "63511/6378",
+              "day": "9.8/24",
+              "coords": "sw",
+              "details": "The hydrogen-helium gas giant Zylium once provided fuel for ships flying to and from Sanves. The equipment here was noted for its efficiency. Business flourished in its orbital stations, which promised roomy bunks, hydroponic food and attention from charming asari hostesses while ships refueled. These stations are now blasted metal. There is no fuel, aid, or comfort here.\n"
+            },
+            {
+              "name": "trikalon",
+              "image": "Martian.webp",
+              "filter": "hue-rotate(150deg) saturate(0.6) contrast(1.2)",
+              "texture": true,
+              "orbit": 10,
+              "year": 31.7,
+              "size": "1905/6378",
+              "day": "59.4/24",
+              "coords": "nw",
+              "details": "Trikalon is a small rock planet that was home to a centuries-old asari venture called the Tirii Supercollider. This massive particle accelerator encircled the entire planet at an orbital distance. When political sea change among the Asari Republics led to funding cuts, human scientists stepped in with the credits and labor to finish the project, renaming it the Susskind Supercollider. It came online just days before the Reapers invaded the galaxy.\n<br><br>When the Reapers entered the system, they dispatched a swarm of capital ships toward Trikalon, treating the supercollider as a greater threat than the asari naval fleet stationed at Sanves. They blasted it apart, sending debris hurtling to Trikalon's surface. Several ships carrying supercollider staff escaped before the Reapers hit.\n"
+            },
+            {
+              "name": "nossia",
+              "image": "Rockbits1.webp",
+              "filter": "hue-rotate(-20deg) saturate(1.5) contrast(1.3)",
+              "texture": true,
+              "orbit": 18.7,
+              "year": 81.1,
+              "size": "10909/6378",
+              "day": "54.1/24",
+              "coords": "se",
+              "details": "Scans show little of value on Nossia, aside from sizable copper deposits near the equator. The only landmark of note is the wreck of a krogan freighter, a remnant of attacks on the system during the latter half of the Krogan Rebellions.\n"
+            }
+          ]
+        },
+        {
+          "name": "Orisoni",
+          "star": "Orisoni",
+          "top": 33,
+          "left": 23,
+          "bodies": [
+            {
+              "name": "thissioni",
+              "image": "pluto-texture.webp",
+              "filter": "contrast(1.4)",
+              "overlay": "rgba(230, 205, 25, 0.17)",
+              "texture": true,
+              "orbit": 1,
+              "year": 1,
+              "size": "6039/6378",
+              "day": "46.9/24",
+              "coords": "ne",
+              "details": "Thissioni's surface is a desert of lime streaked with sodium banks. The only real features of note are empty calderas scattered around the fault lines, suggesting Thissioni was once more geologically active. While average temperatures are near-habitable, Thissioni has not retained a protective atmosphere and is thus a third-tier world unlikely to be terraformed.\n"
+            },
+            {
+              "name": "niacal",
+              "image": "swamp.webp",
+              "filter": "",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(80%)",
+              "texture": true,
+              "orbit": 1.9,
+              "year": 2.6,
+              "size": "11397/6378",
+              "day": "35.3/24",
+              "coords": "n",
+              "details": "Niacal is a lush planet with an overabundance of photosynthetic life, leading to oxygen concentrations greater than on most garden worlds. This is tolerable for a few hours, but soon oxygen toxicity becomes a real danger. Asari colonies here use breathers and sealable buildings.\n<br><br>Niacal's economy centers on agribusiness and biotechnology. Many genetically modified crops have their origin here.\n<br><br>Aware that the Reapers' plan of attack is to bombard industrial cities and enslave population centers, Niacal's soldiers and civilians alike have retreated to the planet's impenetrable jungles. A terrestrial guerrilla war may not be enough to push the Reapers off the planet, but it has proven successful at immobilizing the enemy and forcing them to commit more resources here for little gain.\n"
+            },
+            {
+              "name": "kralla",
+              "image": "pluto-texture.webp",
+              "filter": "contrast(1.4)",
+              "overlay": "rgba(222, 110, 13, 0.34)",
+              "texture": true,
+              "orbit": 3.1,
+              "year": 5.6,
+              "size": "5879/6378",
+              "day": "48.6/24",
+              "coords": "sw",
+              "details": "After half the crew of a survey ship died in a freak accident, the ship's captain named this desert planet Kralla, after an ancient asari demon of misfortune.\n<br><br>Kralla is said to delight in thwarting carefully laid plans at the last moment, tipping apparent success toward utter disaster. Legend says she only targets those whose plans are long in the making, an obvious warning against hubris for a race whose plans tend to stretch over centuries.\n"
+            },
+            {
+              "name": "egalic",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(190deg)",
+              "rings": true,
+              "ringsColor": "rgba(118, 117, 213, 0.38)",
+              "texture": true,
+              "orbit": 6.5,
+              "year": 16.6,
+              "size": "69039/6378",
+              "day": "19.2/24",
+              "coords": "w",
+              "details": "The system's only gas giant has rings laced with the faintest traces of Element Zero dust, likely form an extrasolar asteroid pulverized by a collision with the planet's moons. Collecting and refining the eezo in dust form is a long and costly process. The Elkoss Combine sought the mineral rights to Egalic from the matriarchs on Thessia, but the Reaper invasion stopped any deal from going through. The equipment here is undamaged by Reapers--the attack on Niacal likely taking priority.\n"
+            }
+          ]
+        },
+        {
+          "name": "Parnitha",
+          "star": "Parnitha",
+          "top": 35,
+          "left": 44,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Tomaros",
+          "star": "Tomaros",
+          "top": 65,
+          "left": 30,
+          "bodies": [
+          ]
+        },
+        {
+          "name": "Vernio",
+          "star": "Vernio",
+          "top": 56,
+          "left": 61,
+          "bodies": [
           ]
         }
       ]
