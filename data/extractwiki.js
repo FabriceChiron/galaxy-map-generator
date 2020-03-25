@@ -3,7 +3,7 @@ function getPlanetData () {
     "name": "",
     "image": "",
     "filter": "",
-    "overlay",
+    "overlay": "",
     "clouds": "",
     "cloudsFilter": "",
     "rings": false,
@@ -19,7 +19,7 @@ function getPlanetData () {
 
   function getPlanetDetails () {
     var aDetails = []
-    $('#mw-content-text h2 ~ p').each(function(){
+    $('#mw-content-text > h2:first-of-type ~ p').each(function(){
       aDetails.push($(this).text())
     });
 
