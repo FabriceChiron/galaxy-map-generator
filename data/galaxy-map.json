@@ -3033,87 +3033,6 @@
       ]
     },
     {
-      "name": "Far Rim",
-      "top": 22.8,
-      "left": 81,
-      "image": "far-rim.webp",
-      "bodies": [
-        {
-          "name": "Dholen",
-          "star": "Dholen",
-          "top": 35,
-          "left": 54,
-          "size": 150,
-          "filter": "hue-rotate(-66deg) saturate(2)",
-          "asteroids": [
-            {
-              "orbit": 1.9,
-              "year": 1.9,
-              "bodies": 60
-            }
-          ],
-          "bodies": [
-            {
-              "name": "gotha",
-              "image": "mars-texture.webp",
-              "filter": "hue-rotate(33deg)",
-              "texture": true,
-              "orbit": "1.5",
-              "year": "1.8",
-              "size": "1056/6378",
-              "day": "66.4/24",
-              "coords": "sw",
-              "details": "A dwarf planet, Gotha has a pressure-cooker atmosphere that brings its surface temperature to a scorching level. Carbon dioxide and ethane are plentiful in the planet's hazy atmosphere."
-            },
-            {
-              "name": "charoum",
-              "image": "Gaseous10.webp",
-              "filter": "hue-rotate(-70deg) contrast(1.2) brightness(0.8)",
-              "texture": true,
-              "orbit": "2.9",
-              "year": "4.9",
-              "size": "54532/6378",
-              "day": "11.3/24",
-              "coords": "e",
-              "details": "Once a starship refueling station for the quarians, Charoum has expanded under geth rule. Thousands of orbital platforms surround the planet and its many moons, refining helium into helium-3. A vast geth fleet comes and goes between Charoum and Haestrom, preventing all but the most stealthy of spy drones from discovering any information about it. Current estimates place the geth fleet numbers between 5,000 and 10,000 ships, with unknown levels of armament."
-            },
-            {
-              "name": "heastrom",
-              "image": "venus-texture.webp",
-              "filter": "hue-rotate(24deg) saturate(0.7)",
-              "texture": true,
-              "orbit": "6.3",
-              "year": "15.8",
-              "size": "6721/6378",
-              "day": "18.5/24",
-              "coords": "ne",
-              "details": "Formerly a quarian colony, Haestrom was established to observe the phenomena on Dholen, the system's parent star. Dholen appeared to be unstable with a high possibility of erupting prematurely into a red giant.<br><br>Haestrom was lost to the geth in 1896 CE. Soon after, all communication from the planet and its attendant space stations ceased. The geth have shown no signs of treating Dholen as a threat over the past three centuries other than establishing several space stations near it. Dholen's magnetic eruptions and solar output overwhelm most communications near it, and it is unclear how the geth have compensated."
-            }
-          ]
-        },
-        {
-          "name": "Ma-at",
-          "star": "Ma-at",
-          "top": 60,
-          "left": 62,
-          "bodies": [
-            {
-              "name": "ammut",
-              "image": "Gaseous10.webp",
-              "filter": "saturate(0.7) contrast(1.5) hue-rotate(-20deg)",
-              "texture": true,
-              "orbit": "102.1",
-              "year": "1036",
-              "size": "92430/6378",
-              "day": "12.2/24",
-              "coords": "e",
-              "details": "Ammut is an enormous hydrogen-helium gas giant with a mass approximately nine times that of Jupiter and nearly 2,900 times that of Earth. Despite massive pressure its core has failed to ignite in a fusion reaction, qualifying it as a failed star. It is believed to have captured all other planet-sized bodies in the solar system as moons or in impact events leading to its name, which means \"Devourer\". Unintimidated by this phenomena, the geth have colonized many of Ammut's moons and skim the hydrogen from Ammut's upper atmosphere."
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Exodus Cluster",
       "top": 75.8,
       "left": 53.6,
@@ -3247,6 +3166,87 @@
               "day": "61.3/24",
               "coords": "n",
               "details": "Loki is a small terrestrial world with little to recommend it. One hemisphere is largely covered by an ice cap, and the other by craggy basaltic highlands. The rough, varied terrain suggests an ancient cataclysm caused significant damage to the planet. This is seemingly reinforced by its unusually elliptical orbit, which reaches 6.5 AU at perigee and 7.1 AU at apogee."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Far Rim",
+      "top": 22.8,
+      "left": 81,
+      "image": "far-rim.webp",
+      "bodies": [
+        {
+          "name": "Dholen",
+          "star": "Dholen",
+          "top": 35,
+          "left": 54,
+          "size": 150,
+          "filter": "hue-rotate(-66deg) saturate(2)",
+          "asteroids": [
+            {
+              "orbit": 1.9,
+              "year": 1.9,
+              "bodies": 60
+            }
+          ],
+          "bodies": [
+            {
+              "name": "gotha",
+              "image": "mars-texture.webp",
+              "filter": "hue-rotate(33deg)",
+              "texture": true,
+              "orbit": "1.5",
+              "year": "1.8",
+              "size": "1056/6378",
+              "day": "66.4/24",
+              "coords": "sw",
+              "details": "A dwarf planet, Gotha has a pressure-cooker atmosphere that brings its surface temperature to a scorching level. Carbon dioxide and ethane are plentiful in the planet's hazy atmosphere."
+            },
+            {
+              "name": "charoum",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-70deg) contrast(1.2) brightness(0.8)",
+              "texture": true,
+              "orbit": "2.9",
+              "year": "4.9",
+              "size": "54532/6378",
+              "day": "11.3/24",
+              "coords": "e",
+              "details": "Once a starship refueling station for the quarians, Charoum has expanded under geth rule. Thousands of orbital platforms surround the planet and its many moons, refining helium into helium-3. A vast geth fleet comes and goes between Charoum and Haestrom, preventing all but the most stealthy of spy drones from discovering any information about it. Current estimates place the geth fleet numbers between 5,000 and 10,000 ships, with unknown levels of armament."
+            },
+            {
+              "name": "heastrom",
+              "image": "venus-texture.webp",
+              "filter": "hue-rotate(24deg) saturate(0.7)",
+              "texture": true,
+              "orbit": "6.3",
+              "year": "15.8",
+              "size": "6721/6378",
+              "day": "18.5/24",
+              "coords": "ne",
+              "details": "Formerly a quarian colony, Haestrom was established to observe the phenomena on Dholen, the system's parent star. Dholen appeared to be unstable with a high possibility of erupting prematurely into a red giant.<br><br>Haestrom was lost to the geth in 1896 CE. Soon after, all communication from the planet and its attendant space stations ceased. The geth have shown no signs of treating Dholen as a threat over the past three centuries other than establishing several space stations near it. Dholen's magnetic eruptions and solar output overwhelm most communications near it, and it is unclear how the geth have compensated."
+            }
+          ]
+        },
+        {
+          "name": "Ma-at",
+          "star": "Ma-at",
+          "top": 60,
+          "left": 62,
+          "bodies": [
+            {
+              "name": "ammut",
+              "image": "Gaseous10.webp",
+              "filter": "saturate(0.7) contrast(1.5) hue-rotate(-20deg)",
+              "texture": true,
+              "orbit": "102.1",
+              "year": "1036",
+              "size": "92430/6378",
+              "day": "12.2/24",
+              "coords": "e",
+              "details": "Ammut is an enormous hydrogen-helium gas giant with a mass approximately nine times that of Jupiter and nearly 2,900 times that of Earth. Despite massive pressure its core has failed to ignite in a fusion reaction, qualifying it as a failed star. It is believed to have captured all other planet-sized bodies in the solar system as moons or in impact events leading to its name, which means \"Devourer\". Unintimidated by this phenomena, the geth have colonized many of Ammut's moons and skim the hydrogen from Ammut's upper atmosphere."
             }
           ]
         }
@@ -4942,6 +4942,129 @@
               "details": "While the ice mines of Viantel make a great deal of profit from ships passing through Faia's mass relay, the real money is made at Hito. As the only gas giant in the Faia gateway system, Hito is heavily developed by rival helium-3 mining concerns. The world has three major and 26 minor moons, each of which is claimed by a different company. Those based on moons deeper into the gravity well tend to specialize on helium-3 extraction and refining, while those on the farther moons specialize in refueling services and shipment."
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Kite's Nest",
+      "top": 81.4,
+      "left": 71.2,
+      "image": "cluster-04.webp",
+      "bodies": [
+        {
+          "name": "harsa",
+          "star": "harsa",
+          "top": 24,
+          "left": 51,
+          "asteroids": [
+            {
+              "orbit": 3.2,
+              "year": 3.2,
+              "bodies": 125
+            }
+          ],
+          "bodies": [
+            {
+              "name": "dezda",
+              "image": "pluto-texture.webp",
+              "filter": "",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 0.8,
+              "year": 0.7,
+              "size": "1528/6378",
+              "day": "68.6/24",
+              "coords": "e",
+              "details": "A dwarf planet, Dezda was explored in the beginnings of the batarian space age and mined for its unusual occurrences of uranium, which was rare on Khar'shan. Whether the planet has been completely mined out is unclear--accurate data on the planet was lost after a power struggle within the batarian government. The Reaper attack has further worsened the information flow.\n"
+            },
+            {
+              "name": "khar'shan",
+              "image": "Terrestrial1.webp",
+              "filter": "",
+              "overlay": "rgba(8, 68, 32, 0.69)",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(60)",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 1.45,
+              "year": 1.7,
+              "size": "5222/6378",
+              "day": "18.5/24",
+              "coords": "nw",
+              "details": "Khar'shan, the batarian homeworld, is wrapped less in mystery than in outright lies. Batarian propaganda claims the world has 15 billion inhabitants and an economy that rivals the asari. Although the legal slave trade does boost the batarians' profits somewhat, Citadel sanctions have left a paper tiger of an empire, one that fights rivals through deniable terrorist actions rather than the wars of its heyday centuries ago.\n<br><br>The Reapers will likely be the death blow to that empire. Almost no information has escaped Khar'shan since the Reapers destroyed the comm buoys, but batarian refugees say that resistance has created a bond among the commoners. If a new government can rise from the ashes, that bond may sustain a new batarian society.\n<br><br>Khar'shan's harsh plains are home to the ignac, a spiky type of spice cone.\n"
+            },
+            {
+              "name": "verush",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(290deg) brightness(0.6) contrast(1.2) saturate(1.2)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 5.4,
+              "year": 12.6,
+              "size": "53150/6378",
+              "day": "11.4/24",
+              "coords": "n",
+              "details": "Verush is a hydrogen-helium gas giant named for an ancient batarian monarch whose empire spanned continents. He had such a penchant for mating that 0.6 percent of modern batarians claim to trace their lineage to him.\n<br><br>The planet's moons are named after his many recognized wives. The largest, Bira, concealed Prothean ruins that helped the batarians develop FTL travel. It is a batarian point of pride that, since the ruins were damaged by earthquakes, they had less information to go on than other spacefaring species.\n<br><br>The Reapers have destroyed all obvious military outposts in Verush's orbit. The batarians' notorious secrecy, however, may have allowed concealed subterranean facilities on Verush's moons to survive.\n"
+            },
+            {
+              "name": "ilem",
+              "image": "Martian.webp",
+              "filter": "",
+              "overlay": "rgba(45, 115, 187, 0.52)",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 11.3,
+              "year": 38.1,
+              "size": "2179/6378",
+              "day": "42.9/24",
+              "coords": "se",
+              "details": "A tiny rock and ice planet that is now missing much of its ice, Ilem was part of a grand project by a Hegemony dictator known as Grebosht the Mad. His aim was to drop enormous chunks of Ilem's ice on the surfaces of otherwise uninhabitable desert planets in the hopes of creating sustainable lakes and seas. Wiser heads than he pointed out that diverting a comet was more plausible, but Grebosht executed those who disagreed with him. Grebosht's career was surprisingly long given his loose grip on reality, mostly because his projects employed large numbers of batarians.\n<br><br>Today, Ilem lies abandoned. Hegemony spy drones still orbit the planet, but it is doubtful anyone on Khar'shan is paying attention to what data they send back.\n"
+            },
+            {
+              "name": "spekilas",
+              "image": "pluto-texture.webp",
+              "filter": "",
+              "overlay": "rgba(56, 35, 117, 0.55)",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 21,
+              "year": 96.5,
+              "size": "7594/6378",
+              "day": "49.9/24",
+              "coords": "ne",
+              "details": "Spekilas is a relatively large rock and ice planet known for its deposits of magnetically active periclase, which interferes with some starship scans. Conspiracy theories and pulp adventure claim that secret fortresses are concealed under the ice. The Reaper invasion force appears to have passed the planet by, which is likely the only insight that organics will ever have into the Reapers' literary taste.\n"
+            }
+          ]
+        },
+        {
+          "name": "Indris",
+          "name": "Indris",
+          "bodies": []
+        },
+        {
+          "name": "Untrel",
+          "name": "Untrel",
+          "bodies": []
+        },
+        {
+          "name": "Vular",
+          "name": "Vular",
+          "bodies": []
         }
       ]
     },
