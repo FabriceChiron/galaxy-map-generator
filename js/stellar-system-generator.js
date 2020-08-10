@@ -244,8 +244,6 @@ class AstralBody {
       this.sizeFactor = (this.bodySize > 5) ? .5 : 1;
     }
 
-    console.log(`${this.bodyType} - ${this.name} ${this.bodySize}`);
-
     const astralOrbit = document.createElement('div');
     
     this.astralOrbit = astralOrbit;

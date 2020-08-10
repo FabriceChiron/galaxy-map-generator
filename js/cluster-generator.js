@@ -12,7 +12,7 @@ class StellarSystem {
   createStellarSystemInCluster() {
 
     setAttributes(this.stellarSystemEl, {
-      class: `cluster cc ${(this.obj.bodies.length > 0) ? '' : 'inactive'}`,
+      class: `cluster cc ${(this.obj.bodies && this.obj.bodies.length > 0) ? '' : 'inactive'}`,
       id: `${spaceToDash(this.obj.name).toLowerCase()}`,
       href: `#${this.path}/${spaceToDash(this.obj.name).toLowerCase()}`,
       style: `
@@ -30,7 +30,7 @@ class StellarSystem {
       </div>
     `;
 
-    if(this.obj.bodies.length > 0 || (this.obj.asteroids && this.obj.asteroids.length > 0)) {
+    if(this.obj.bodies && this.obj.bodies.length > 0 || (this.obj.asteroids && this.obj.asteroids.length > 0)) {
       this.stellarSystemEl.querySelector('.name').innerHTML += `
       <ul class='details'>
         ${(this.obj.bodies.length) ? '<li>Planets: <b>'+this.obj.bodies.length+'</b></li>':''}
