@@ -65,7 +65,7 @@ class Cluster {
       setAttributes(this.clusterEl.querySelector('.container'), {
         style: `
           background: url('img/galaxy-map/clusters/${this.image}') center #000 no-repeat;
-          background-size: contain;`,
+          background-size: cover;`,
       });
     }
 
