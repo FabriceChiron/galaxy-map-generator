@@ -82,11 +82,31 @@ class AstralBody {
     this.orbitTilt = (obj.orbitTilt) ? obj.orbitTilt : 0;
     this.tilt = (obj.tilt) ? obj.tilt : 0;
     this.orbitFactor = (obj.orbitFactor) ? obj.orbitFactor : 1;
-    this.bodySize = (obj.size) ? ( (realSizes === false && bodyType === 'star') ? 3 : eval(obj.size)) : (bodyType === "star") ? ((realSizes === true) ? 75 : 3) : 1;
+    this.bodySize = (obj.size) 
+      ? (
+          (realSizes === false && bodyType.includes('star')) 
+          ? (
+              (bodyType.includes('companion')) 
+                ? 2
+                : 3
+            ) 
+          : eval(obj.size)
+        ) 
+      : (bodyType.includes('star')) 
+        ? (
+            (realSizes === true) 
+            ? 75 
+            : (
+                (bodyType.includes('companion')) 
+                  ? 2
+                  : 3
+              )
+          ) 
+        : 1;
     this.realYear = obj.year;
     this.yearLength = (obj.year) ? Math.round((eval(obj.year)) * 100) / 100 : 1;
     this.dayLength = (obj.day) ? ( (obj.day === "tidal") ? obj.day : eval(obj.day) ) : 1;
-    this.coords = (override && override.coords) ? override.coords : ((obj.coords) ? obj.coords : (bodyType === "star") ? 'c' : 'nw');
+    this.coords = (override && override.coords) ? override.coords : ((obj.coords) ? obj.coords : (bodyType === "star") ? ((obj.coords) ? obj.coords : 'c') : 'nw');
     this.details = obj.details;
     this.rings = (obj.rings) ? obj.rings : null;
     this.ringsColor = (obj.ringsColor) ? obj.ringsColor : null;
@@ -224,6 +244,8 @@ class AstralBody {
       this.sizeFactor = (this.bodySize > 5) ? .5 : 1;
     }
 
+    console.log(`${this.bodyType} - ${this.name} ${this.bodySize}`);
+
     const astralOrbit = document.createElement('div');
     
     this.astralOrbit = astralOrbit;
@@ -284,7 +306,7 @@ class AstralBody {
 
     this.astralBody = astralOrbit.querySelector('.astralBody');
 
-    if(this.bodyType === 'star') {
+    if(this.bodyType.includes('star')) {
       this.astralBody.innerHTML += 
       `<div class="holder-infos">
         <div class="infos">
@@ -455,8 +477,8 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
         item.starSize = system.size;
         item.pushSize = document.getElementById(`${divSystem.id}`).querySelector('.orbit.star .astralBody').clientWidth;
       }
-        
-      instantiateAstralBody(item, `#${divSystem.id}`, `${system.name}`, "planet", item.name, index, path);
+
+      instantiateAstralBody(item, `#${divSystem.id}`, `${system.name}`, item.type || 'planet', item.name, index, path);
 
       if(item.bodies) {
         item.bodies.map((subItem, index) => {
