@@ -30,6 +30,15 @@ class StellarSystem {
       </div>
     `;
 
+    if(this.obj.bodies.length > 0 || (this.obj.asteroids && this.obj.asteroids.length > 0)) {
+      this.stellarSystemEl.querySelector('.name').innerHTML += `
+      <ul class='details'>
+        ${(this.obj.bodies.length) ? '<li>Planets: <b>'+this.obj.bodies.length+'</b></li>':''}
+        ${(this.obj.asteroids && this.obj.asteroids.length > 0) ? '<li>Asteroid Fields: <b>'+this.obj.asteroids.length+'</b></li>':''}
+      </ul>
+      `
+    }
+
     var self = this;
 
     this.stellarSystemEl.onclick = function(e) {

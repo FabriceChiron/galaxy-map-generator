@@ -61,6 +61,14 @@ class Cluster {
       </div>
     `;
 
+    if(this.obj.bodies.length > 0) {
+      this.clusterEl.querySelector('.name').innerHTML += `
+      <ul class='details'>
+        ${(this.obj.bodies.length) ? '<li>Stellar systems: <b>'+this.obj.bodies.length+'</b></li>':''}
+      </ul>
+      `
+    }
+
     if(this.image) {
       setAttributes(this.clusterEl.querySelector('.container'), {
         style: `
