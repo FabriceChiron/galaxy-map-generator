@@ -17,6 +17,8 @@ function getPlanetData () {
     "details": ""
   }
 
+  var arrayCoords = ["n", "ne", "e", "se", "s", "sw", "w", "nw"];
+
   function getPlanetDetails () {
     var aDetails = []
     $('#mw-content-text > h2:first-of-type ~ p').each(function(){
@@ -33,6 +35,7 @@ function getPlanetData () {
   planetData.year = parseFloat($('[data-source="orbitalperiod"] div').html());
   planetData.size = parseInt($('[data-source="radius"] div').html().replace(',', '')) + "/6378";
   planetData.day = parseFloat($('[data-source="daylength"] div').html()) + "/24";
+  planetData.coords = arrayCoords[Math.floor(Math.random() * arrayCoords.length)];
 
   planetData.details = getPlanetDetails(); $('#mw-content-text h2 ~ p').each(function(){
     console.log($(this).text())
