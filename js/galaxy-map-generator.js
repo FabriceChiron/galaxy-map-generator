@@ -1,14 +1,15 @@
 const galaxyMapEl = document.getElementById('galaxy-map');
 
 class Cluster {
-  constructor(obj, container) {
+  constructor(obj, container, path) {
+    this.obj = obj;
+    this.path = path;
     this.name = obj.name;
     this.top = obj.top;
     this.left = obj.left;
     this.container = document.querySelector(container);
     this.clusterEl = document.createElement('a');
     this.id = spaceToDash(obj.name).toLowerCase();
-    this.obj = obj;
     this.innerContainer = '<div class="rotate-content"><div class="content"></div></div>';
     this.image = (obj.image) ? obj.image : null;
   }
@@ -39,7 +40,7 @@ class Cluster {
     setAttributes(this.clusterEl, {
       class: `cluster cc ${(this.obj.bodies && this.obj.bodies.length > 0) ? '' : 'inactive'}`,
       id: `${spaceToDash(this.obj.name).toLowerCase()}`,
-      href: `#${spaceToDash(this.obj.name).toLowerCase()}`,
+      href: `#${this.path}/${spaceToDash(this.obj.name).toLowerCase()}`,
       style: `
         --top: ${this.obj.top}%;
         --left: ${this.obj.left}%;
