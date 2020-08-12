@@ -4955,7 +4955,7 @@
           "name": "harsa",
           "star": "harsa",
           "top": 24,
-          "left": 51,
+          "left": 56,
           "asteroids": [
             {
               "orbit": 3.2,
@@ -5052,19 +5052,256 @@
           ]
         },
         {
-          "name": "Indris",
-          "name": "Indris",
-          "bodies": []
+          "name": "indris",
+          "star": "indris",
+          "top": 33,
+          "left": 30,
+          "bodies": [
+            {
+              "name": "cholis",
+              "image": "moon-texture.webp",
+              "filter": "",
+              "overlay": "rgba(76,70,21,0.37)",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 0.7,
+              "year": 0.7,
+              "size": "9813/6378",
+              "day": "8.1/24",
+              "coords": "sw",
+              "details": "Cholis is a large rock planet wreathed in a haze of carbon dioxide and xenon. It was discovered by batarian astronomers during the last century and first visited in the 2150s by Hegemony survey teams. A small number of colonists lived in aerostat habitats above its oppressive cloud layer, harvesting carbon dioxide. No habitats can be detected now--it is likely the Reapers eliminated them or the colonists submerged into the scorching atmosphere in an attempt to hide.\n"
+            },
+            {
+              "name": "camala",
+              "image": "mars-texture.webp",
+              "filter": "",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 1.4,
+              "year": 1.9,
+              "size": "4866/6378",
+              "day": "18.1/24",
+              "coords": "e",
+              "details": "Camala is a relatively small but eezo-rich garden world recently colonized by the batarians. In an unusually open gesture, the batarians allowed immigration of free citizens of other species, so long as they came from independent colony planets such as those in the Traverse and Terminus and retained non-citizen status during their stay. These strictures were small obstacles compared to the economic lure of eezo, and soon the planet boasted spaceports and refineries that considerably enriched the Hegemony. The planet enjoyed relative peace and prosperity, with the major lifestyle inconvenience being fresh water shortages due to a dry climate.\n<br><br>The Reaper invasion has turned Camala's cities from affluent oases into a living nightmare. Alliance intelligence suggests that early in the Reaper invasion, a high percentage of the planet's population was captured and converted to husk creatures for future offensives. The processing camps still run night and day, and the troop transports fly legions of cannibals out every hour. For this reason, Alliance command has put Camala squarely in its sights for military strikes.\n<br><br>Camala's surface consists mostly of inhospitable desert and rock, scattered with hundreds of lucrative mining and refinery operations. \n<br><br>The Official Digital Toolset for Dungeons & DragonsVisit D&D BeyondFandom may earn an affiliate commission on sales made from links on this page.In the mid-2160s, Camala was noted as being the wealthiest batarian colony and a key supplier of element zero. Besides the capital Ujon, the city of Hatre is a populous port city. The planet was home to Edan Had'dah, a batarian aristocrat, and was the site of the Dah'tan Manufacturing facility.\n<br><br>Another notable (former) resident is Jalosk Dal'Virra, who's known to have witnessed beginning of the Reaper invasion and managed to escape the planet to secure passage for himself and his children at the Andromeda Initiative ark Keelah Si'yah.\n"
+            },
+            {
+              "name": "ramlat",
+              "image": "Martian.webp",
+              "filter": "saturate(0.4) contrast(1.3) brightness(1.3)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 2.5,
+              "year": 4.4,
+              "size": "4526/6378",
+              "day": "62.9/24",
+              "coords": "n",
+              "details": "Ramlat is a small rock planet with a thin atmosphere of hydrogen and ethane. During the rush to exploit Camala for eezo and other minerals, Ramlat supported a small but steadily-growing population. Since the system was bereft of a significant asteroid belt, Ramlat became the go-to location for second-tier miners looking for work. Its tin and gold industry was modestly profitable before the Reaper attack; today, it is a wasteland scarred by the craters of kinetic impact weapons.\n"
+            },
+            {
+              "name": "hiba",
+              "image": "Gaseous8.webp",
+              "filter": "hue-rotate(-15deg) brightness(1.2) contrast(1.2) saturate(0.6)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": true,
+              "ringsColor": "rgba(187, 220, 194, .57)",
+              "texture": true,
+              "orbit": 5.1,
+              "year": 12.9,
+              "size": "58278/6378",
+              "day": "16.9/24",
+              "coords": "nw",
+              "details": "The hydrogen-helium gas giant Hiba has an unstable orbit, which over time has led to it clearing the space around it of asteroids and protoplanetary material. As a result, its rings are thick and quite visible.\n"
+            },
+            {
+              "name": "maklan",
+              "image": "mercury-texture.webp",
+              "filter": "contrast(1.4)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 9.3,
+              "year": 31.8,
+              "size": "3763/6378",
+              "day": "38.1/24",
+              "coords": "e",
+              "details": "Maklan is the outermost planet of the Indris system, a ball of rock and ice with a methane-argon atmosphere. Like Hiba, it has an unstable orbit, but where Hiba is believed to have formed closer to the star and gradually moved outward, Maklan is believed to have formed further from Indris and moved inward. Far in the future, Maklan may become a satellite of its gas giant neighbor.\n"
+            }
+          ]
         },
         {
           "name": "Untrel",
-          "name": "Untrel",
-          "bodies": []
+          "star": "Untrel",
+          "top": 43,
+          "left": 69,
+          "asteroids": [
+            {
+              "orbit": 8.4,
+              "year": 8.4,
+              "bodies": 125
+            }
+          ],
+          "bodies": [
+            {
+              "name": "ezka",
+              "image": "venus-texture.webp",
+              "filter": "contrast(0.6) hue-rotate(33deg) saturate(0.8)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 1.2,
+              "year": 1,
+              "size": "6372/6378",
+              "day": "30/24",
+              "coords": "ne",
+              "details": "According to batarian propaganda, the batarian population exceeds the Council races, the batarian military is the most powerful, and the batarians' unlivable hothouse planets are the hottest and most unlivable. Their best proof of this last point is Ezka, which closely orbits the scorching yellow-white star Untrel. Ezka's nitrogen-heavy atmosphere might once have held oxygen, but if so, it burned off long ago. Even robo-miners don't care for Ezka--although some modern mining equipment can withstand the heat, the machinery still gets stuck in the soup of molten light metals on the planet's surface.\n<br><br>Reaper presence near Ezka seems light. Scans reveal wreckage orbiting the planet, likely destroyed Hegemony surveillance drones.\n"
+            },
+            {
+              "name": "klos",
+              "image": "Martian.webp",
+              "filter": "saturate(0.3) brightness(1.4) ",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 2.3,
+              "year": 2.7,
+              "size": "10116/6378",
+              "day": "64.3/24",
+              "coords": "nw",
+              "details": "Klos is a rock planet with almost no atmosphere to speak of. Consequently, the planet retains fairly little heat considering how close it orbits to an energetic star. The relatively mild temperature made Klos attractive for robo-mining, with an emphasis on platinum. The planet also has an abundance of sodium oxide, used in the manufacture of lye, but profit margins on that compound are thin by comparison.\n<br><br>The Reapers have destroyed the orbital stations surrounding Klos and cut the strands of the space elevators that earlier generations of batarians used to transport goods to orbit.\n"
+            },
+            {
+              "name": "adek",
+              "image": "Terrestrial1.webp",
+              "filter": "saturate(.6)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 4.5,
+              "year": 7.3,
+              "size": "5075/6378",
+              "day": "58/24",
+              "coords": "ne",
+              "details": "Adek is a brutally hot and wet garden world, covered with molds and lichen analogues. It has many viruses and bacteria lethal to batarian physiology. The Hegemony colonized Adek early in its expansion, but few of the colonists wanted to stay. The result was domination by a class of landed slave-owners. A small cadre of well-paid engineers and skilled laborers kept the planet's mechs and infrastructure functioning.\n<br><br>Alliance estimates put the planet's batarian population at just over six million, but that number has likely fallen since the Reapers arrived.\n"
+            },
+            {
+              "name": "uza",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(130deg) contrast(1.2) saturate(0.8)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 18,
+              "year": 58.7,
+              "size": "37445/6378",
+              "day": "14/24",
+              "coords": "e",
+              "details": "Uza is a methane-rich gas giant. The wreckage around the helium-3 infrastructure is unusual--it looks as if fleeing batarians tried to sever the collection equipment and take it with them when they were attacked. No Reaper ships, functional or otherwise, are immediately detectable, suggesting that the batarians may have actually turned on each other.\n"
+            }
+          ]
         },
         {
           "name": "Vular",
-          "name": "Vular",
-          "bodies": []
+          "star": "Vular",
+          "top": 52,
+          "left": 31,
+          "asteroids": [
+            {
+              "orbit": 2.4,
+              "year": 2.4,
+              "bodies": 30
+            },
+            {
+              "orbit": 8.7,
+              "year": 8.7,
+              "bodies": 60
+            },
+            {
+              "orbit": 17,
+              "year": 17,
+              "bodies": 120
+            }
+          ],
+          "bodies": [
+            {
+              "name": "erszbat",
+              "image": "Swamp.webp",
+              "filter": "saturate(0.7)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 0.9,
+              "year": 1,
+              "size": "4187/6378",
+              "day": "59/24",
+              "coords": "w",
+              "details": "Erszbat was a wealthy batarian colony, rich in farmland, minerals and manufacturing infrastructure. Little recent information about it has escaped this section of space--but radio traffic from the planet paints a dire picture.\n<br><br>Indoctrinated batarian officials are offering rewards for every living body brought to the labor camps, slave or not. With the state apparatus at their disposal, Reaper units are coordinating house-to-house hunts for resistance members, and paying those who turn them in. Government propaganda dismisses the smell of the processing ships as a natural byproduct of Reaper energy consumption. Columns of dust from annihilated cities tell the story of those who disobeyed.\n"
+            },
+            {
+              "name": "azimir",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(300deg) contrast(1.2) saturate(0.8)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 3.6,
+              "year": 6.2,
+              "size": "53592/6378",
+              "day": "15.5/24",
+              "coords": "n",
+              "details": "Azimir is a hydrogen-helium gas giant whose gravitational pull perturbs the orbit of two nearby asteroid fields, adding momentum so that asteroids shatter during collisions rather than accrete into planets.\n<br><br>Debris from a great battle can be seen here. Batarian naval ships, merchant ships, and a few Reaper destroyers have been pounded into wreckage. It appears that the batarian navy tried to defend the helium-3 refueling stations, giving civilian ships time to escape the system.\n"
+            },
+            {
+              "name": "vana",
+              "image": "Martian.webp",
+              "filter": "saturate(0.4) brightness(2.2) hue-rotate(130deg) contrast(1.3)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 13.3,
+              "year": 44.4,
+              "size": "10925/6378",
+              "day": "41.4/24",
+              "coords": "se",
+              "details": "A large rock planet, Vana is covered in prodigious amounts of dry ice, leaving only thin traces of gas for its atmosphere. Uranium deposits drew batarian miners to Vana long ago, and when that was exhausted, they moved on to its magnesium. The Reapers have exterminated the colony here, punching holes in the domed cities and leaving its occupants to asphyxiate.\n"
+            }
+          ]
         }
       ]
     },
@@ -6118,6 +6355,163 @@
       ]
     },
     {
+      "name": "Ninmah Cluster",
+      "top": 44.2,
+      "left": 62.8,
+      "image": "cluster-15.webp",
+      "bodies": [
+        {
+          "name": "Maskim Xul",
+          "star": "Maskim Xul",
+          "top": 44,
+          "left": 42,
+          "asteroids": [
+            {
+              "orbit": 9.2,
+              "year": 9.2,
+              "bodies": 130
+            }
+          ],
+          "bodies": [
+            {
+              "name": "suen",
+              "image": "Terrestrial4.webp",
+              "filter": "",
+              "overlay": "",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(70%)",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 0.3,
+              "year": 0.3,
+              "size": "3029/6378",
+              "day": "tidal",
+              "coords": "w",
+              "details": "Suen, the rachni homeworld, is tidally locked to the system's red dwarf. With one side constantly bombarded by the sun and the other completely frozen, life evolved in the terminator, the perpetual twilight zone between Suen's two extremes. The rachni mainly foraged underground: Suen's abundant subterranean rivers presented them with a place to thrive. Wrestling with the engineering problems of Suen's extreme surface environment may have given the rachni their first insights into how to build interstellar spacecraft.\n<br><br>Suen was the site of the last battle in the Rachni Wars. When krogan forces bombarded the planet, the rachni abandoned their surface buildings for the security of their tunnels. The krogan, resistant to Suen's toxic atmosphere, carried weapons of mass destruction into the secret chambers of the rachni queens and detonated explosions so powerful the sinkholes are still visible today.\n"
+            },
+            {
+              "name": "kashshaptu",
+              "image": "mercury-texture.webp",
+              "filter": "brightness(0.7) contrast(1.2)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 2.2,
+              "year": 6,
+              "size": "1258/6378",
+              "day": "52.5/24",
+              "coords": "sw",
+              "details": "Kashshaptu is the first terrestrial planet the rachni visited after achieving spaceflight. Although most of Kashshaptu is composed of silicate minerals, the rachni made an important discovery when they charted \"the howling gulf,\" an enormous crater near the planet's equator. The depression was caused by the impact of several dozen extrasolar asteroids containing large quantities of element zero. The rachni took samples of the new element back to Suen for further study.\n<br><br>Centuries later, when the rachni captured the Citadel expedition that opened the relay to their system, their research on eezo helped them reverse-engineer the ships' FTL drives. The rachni built faster-than-light vessels of their own and rapidly expanded beyond their own stars.\n"
+            },
+            {
+              "name": "damkianna",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(130deg) contrast(1.2) saturate(0.8)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 5.6,
+              "year": 24.2,
+              "size": "27231/6378",
+              "day": "8.7/24",
+              "coords": "ne",
+              "details": "Damkianna, as the main source of helium-3 in the Maskim Xul system, is orbited by abandoned recovery stations that the rachni built during their days of conquest. Because the rachni trusted in their high tolerance for radiation, the stations were poorly shielded against cosmic rays and have deteriorated over time. The Citadel species built their own stations during the Rachni War, several of which have been maintained to this day.\n"
+            }
+          ]
+        },
+        {
+          "name": "Mulla Xul",
+          "star": "Mulla Xul",
+          "top": 64,
+          "left": 57,
+          "asteroids": [
+            {
+              "orbit": 2.6,
+              "year": 2.6,
+              "bodies": 130
+            }
+          ],
+          "bodies": [
+            {
+              "name": "maldor",
+              "image": "venus-texture.webp",
+              "filter": "contrast(0.7) hue-rotate(35deg) saturate(0.65)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 0.9,
+              "year": 1,
+              "size": "8356/6378",
+              "day": "36/24",
+              "coords": "s",
+              "details": "The krogan surveying team that first reported back from Maldor said, in characteristic understatement, that the planet had \"a bit of the good stuff, if you can get past a little acid.\" Although Maldor's mineral wealth includes uranium, iridium, and other heavy metals, miners must contend with crushing gravity and atmosphere, boiling temperatures, and clouds of sulfur dioxide. As such, once the planet's most accessible ores were depleted, the mining interests that exploited the planet quickly departed.\n"
+            },
+            {
+              "name": "utukku",
+              "image": "venus-texture.webp",
+              "filter": "saturate(0.5) brightness(0.4) contrast(1.4)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 1.7,
+              "year": 2.5,
+              "size": "6865/6378",
+              "day": "64.2/24",
+              "coords": "ne",
+              "details": "Although Utukku is habitable, extreme temperatures and violent weather have discouraged colonization. Because the planet has little liquid water to retain heat, surface temperatures regularly oscillate between 70 C to -60 C. Utukku's vegetation is notable for having evolved flexible central stalks to survive high-speed winds as well as leathery leaves to shrug off the planet's frequent sandstorms. Animal life is mostly confined to the planet's small oceans. Utukku has few valuable minerals.\n"
+            },
+            {
+              "name": "inakhos",
+              "image": "pluto-texture.webp",
+              "filter": "contrast(1.4) brightness(0.9)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 3.3,
+              "year": 6.7,
+              "size": "553/6378",
+              "day": "40/24",
+              "coords": "e",
+              "details": "Inakhos is a metallic asteroid. The surface was once raided for its abundant olivine, which is used for carbon sequestration on heavily populated worlds. More than half the mass of the asteroid has now been depleted, exposing its relatively pure iron-nickel core.\n"
+            },
+            {
+              "name": "keph",
+              "image": "Gaseous2.webp",
+              "filter": "saturate(1.8) contrast(1.4) brightness(0.8)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 5.8,
+              "year": 15.7,
+              "size": "70912/6378",
+              "day": "17.6/24",
+              "coords": "ne",
+              "details": "Keph is a hydrogen-helium gas giant. Records show that the planet should have a helium-3 mining infrastructure, but scans find nothing of the sort. There are neither abnormal heat sources nor space junk from destroyed refineries. If the infrastructure was removed, it was removed entirely, and within the last few years.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Nubian Expanse",
       "top": 53.6,
       "left": 85.9,
@@ -6282,7 +6676,7 @@
               "orbit": "2.4",
               "year": "2.9",
               "size": "2446/6378",
-              "day": "63.6/24",
+              "day": "tidal",
               "coords": "e",
               "details": "Karora is essentially a great rock in space, tidally locked to Amada. Its only notable feature is a chain of craters stitching across the northern hemisphere, thought to be the result of impacts by a swarm of meteors. Karora's low density suggests it contains no mineral wealth beyond common light metals. It maintains a tenuous atmosphere of krypton and xeon."
             },
@@ -6599,6 +6993,216 @@
               "day": "12.2/24",
               "coords": "e",
               "details": "Zafe is a relatively small hydrogen and helium gas giant. There are several tenuous belts of debris in equatorial orbit. Spectral analysis of the material suggests artificial origin, perhaps the remains of stations that once mined Zafe for helium-3."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Perseus Veil",
+      "top": 26.5,
+      "left": 86.9,
+      "bodies": [
+        {
+          "name": "Tikkun",
+          "star": "Tikkun",
+          "filter": "hue-rotate(-20deg) brightness(0.8)",
+          "size": "98",
+          "top": 50,
+          "left": 50,
+          "bodies": [
+            {
+              "name": "rannoch",
+              "image": "Savannah.webp",
+              "filter": "hue-rotate(30deg) saturate(0.7) contrast(0.5) brightness(0.7)",
+              "overlay": "",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "opacity(40%)",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 0.72,
+              "year": 0.64,
+              "size": "6021/6378",
+              "day": "32.3/24",
+              "coords": "ne",
+              "details": "Although its orange sun is only about 90% the mass of Sol and half as luminous, Rannoch is arid by Earth standards because it formed closer to its star and has slightly less ocean coverage. Photosynthetic life is concentrated around rivers and oceans, with large expanses of desert in between. The importance of plant life and shade in ancient quarian culture is evident in the translation of Rannoch's name--\"walled garden.\"\n<br><br>To a starship's sensors, the most obvious feature of the quarian homeworld is the numerous heat sources in orbit. Thousands of geth space stations watch over the planet. Somewhere in this artificial swarm of constructions lurks the geth armada, waiting for its moment to counterattack.\n<br><br>The planet Rannoch, an arid planet orbiting an older star in the Tikkun system, is the former quarian homeworld. Almost three hundred years ago, the quarians were driven from Rannoch by the geth, synthetic servants who gained sapience and rebelled against their creators. Although Rannoch is now largely uninhabited, the geth have acted as caretakers, working to repair the planet's ecology, restore ancient structures, and cultivate some farmland.\n<br><br>The Official Digital Toolset for Dungeons & DragonsVisit D&D BeyondFandom may earn an affiliate commission on sales made from links on this page.Rannoch has no insect life. As a result, its pollinating plants evolved to rely on animals for propagation. This symbiosis between flora and fauna is responsible for the quarians' weakened immune systems, which made colonization of other planets extremely difficult after their exile from Rannoch. For many quarians, reclaiming their homeworld from the geth is a matter of both cultural and physiological necessity.\n<br><br>Other known lifeforms native to the quarian homeworld include the qorach, an animal analogous to a carnivorous bighorn sheep whose bellies are always covered in blue-green fern pollen and seed casings. The blind newborn offspring of a qorach is called ke'sed (alternatively kes'ed).\n<br><br>The lemek worm is a planarian analogue that can grow into new lemeks after being cut to pieces. They're small, slender, and covered in metallic rose-colored scales.\n<br><br>The fa'yin is an edible nut that existed on Rannoch around the time of the first proto-quarian beasts.\n"
+            },
+            {
+              "name": "uriyah",
+              "image": "pluto-texture.webp",
+              "filter": "saturate(1.7) contrast(1.2)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 1.1,
+              "year": 1.3,
+              "size": "1440/6378",
+              "day": "23.9/24",
+              "coords": "sw",
+              "details": "Tikkun's asteroid belt is home to Uriyah, a rock large enough to qualify as a binary dwarf planet. Its companion, Etiel, is believed to have split off from the main body after an oblique impact. Both were heavily mined early in the age of quarian space exploration. Curiously, the geth have built over the old quarian space stations, even though the mined-out asteroids have little obvious use. The current theory is that they provide a staging base to exploit other asteroids in the belt.\n"
+            },
+            {
+              "name": "adas",
+              "image": "Martian.webp",
+              "filter": "hue-rotate(110deg) saturate(0.5)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 2.1,
+              "year": 3.4,
+              "size": "4145/6378",
+              "day": "18/24",
+              "coords": "e",
+              "details": "Adas is marginally warmer than Rannoch despite being further from its sun. Volcanic activity spews methane into Adas's atmosphere, and this haze retains heat in a greenhouse effect. Historically, the quarians used the geth to mine the planet, and when the geth rebelled, the small quarian population on and around Adas was quickly overrun.\n<br><br>It is clear that the quarian armada has not forgotten or forgiven. The remains of geth space stations litter Adas's orbit, now all shrapnel and fused metal. The Normandy's sensors pick up a strange croaking sound, probably some kind of distress call from geth survivors left floating in space, condemned to the eternal cold.\n"
+            },
+            {
+              "name": "kaddi",
+              "image": "Rockbits1.webp",
+              "filter": "",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 4.3,
+              "year": 10,
+              "size": "11690/6378",
+              "day": "21/24",
+              "coords": "se",
+              "details": "Kaddi has low gravity for a planet of its size, which proved a significant boon to early quarian explorers. Even before the discovery of mass-effect technology, it was easy to extract Kaddi's resources. When the quarians made first contact with the Citadel species and gained access to eezo, profits rose and the orbital stations became a beehive of activity.\n<br><br>Today, Kaddi's Lagrange points are littered with space junk, including pieces of a geth orbital station that must have massed at least half a billion tons. Such a station could have generated impressive kinetic barriers, but even these appear to have been insufficient against the quarians' attack.\n"
+            },
+            {
+              "name": "haza",
+              "image": "Gaseous3.webp",
+              "filter": "hue-rotate(70deg) brightness(0.6) contrast(1.8)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 7.8,
+              "year": 23,
+              "size": "17918/6378",
+              "day": "11.6/24",
+              "coords": "n",
+              "details": "Haza, an ice giant composed primarily of hydrogen and helium, is colored a striking aquamarine because of small concentrations of methane, water ice, and ammonia. Its relatively small size is a curiosity to human astronomers, who would have expected a larger hydrogen-helium giant to have accreted during the solar system's formation.\n<br><br>The quarians have driven the geth away from the planet's helium-3 fueling machinery, but it is clear the geth put up a fight. Wreckage from quarian fighters litters the area, and more than one refueling station appears to have been blown apart by kinetic impacts in a scorched-earth tactic.\n"
+            }
+          ] 
+        }
+      ]
+    },
+    {
+      "name": "Petra Nebula",
+      "top": 81.8,
+      "left": 57.1,
+      "image": "cluster-10.webp",
+      "bodies": [
+        {
+          "name": "vetus",
+          "star": "vetus",
+          "top": 47,
+          "left": 58,
+          "asteroids": [
+            {
+              "orbit": 7.7,
+              "year": 7.7,
+              "bodies": 100
+            }
+          ],
+          "bodies": [
+            {
+              "name": "tyre",
+              "image": "Rockbits1.webp",
+              "filter": "hue-rotate(30deg) brightness(0.7)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 0.65,
+              "year": 0.5,
+              "size": "5864/6378",
+              "day": "23.2/24",
+              "coords": "e",
+              "details": "Tyre is wrapped in a crushing atmosphere of nitrogen and carbon monoxide that make for a blistering oven of a planet. Clouds of ash from volcanic eruptions trigger frequent lightning storms on the surface, and the majority of its mineral deposits are metal-poor, not worth the expense of mining.\n"
+            },
+            {
+              "name": "elysium",
+              "image": "Terrestrial2.webp",
+              "filter": "saturate(0.7) contrast(1.1) brightness(0.7)",
+              "overlay": "",
+              "clouds": "earth-clouds.webp",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 1.3,
+              "year": 1.5,
+              "size": "5723/6378",
+              "day": "27.9/24",
+              "coords": "w",
+              "details": "When searching for a colony to retire to, Alliance hero Jon Grissom said he wanted \"the one where the sun has the decency to set at a reasonable time.\" Elysium fulfilled this criteria and many more, featuring low gravity, tolerable atmospheric pressure, and a suitable climate. Humans and aliens alike flocked to the \"alpine paradise\" early in its colonial years, and the planet remains a vibrant hub for both visitors and permanent residents.\n<br><br>Security is a constant concern for Elysium; the planet has suffered several pirate or mercenary attacks, including the Skyllian Blitz of 2176. Elysium's airspace is secured by mobile planetary defense cannons--its armed starship complement is relatively light. Materiel and volunteers from Elysium formed part of the Alliance Second Fleet, which was stationed near Arcturus before the fleet was destroyed by the Reapers.\n<br><br>Founded in 2160, Elysium is humanity's oldest colony in the Skyllian Verge, only a few hours travel from Sidon. Strategically placed at the nexus of several primary and secondary mass relays, the colony quickly became a major hub for travel and commerce. The population grew fast: in 2165, only five years after its founding, it boasted a population of several million inhabitants, nearly half of them aliens. Due to the fact half of Elysium's population is non-human, requiring extra screening procedures, security there is very tight.\n<br><br>The Official Digital Toolset for Dungeons & DragonsVisit D&D BeyondFandom may earn an affiliate commission on sales made from links on this page.Its remote location in the Skyllian Verge was ideal for the retirement of Alliance hero Jon Grissom. He arrived on the colony in 2160 and five years later became involved in an investigation into the attack on an Alliance research station. In 2176, the Jon Grissom Academy space station was commissioned in Grissom's honor. Grissom himself always refused invitations and never visited the station. He remained on Elysium until his death in 2186, at the age of 75.\n<br><br>In 2176, the colony was attacked by a large force of mercenaries and pirates under the command of Elanos Haliat in what would become known as the Skyllian Blitz. The Alliance repulsed that attack, leading to significant increases in patrols throughout the Terminus Systems. One of the ships at Elysium was the frigate SSV Agincourt. Navigator Pressly served aboard her and earned his commission after the Blitz. Haliat may be encountered by Commander Shepard in 2183.\n<br><br>If Shepard has the War Hero background, the Commander was on shore leave on Elysium when the Blitz occurred. Shepard rallied a resistance force and managed to single-handedly repulse the enemy ground force long enough for reinforcements to arrive.\n<br><br>Elysium was not attacked by the Collectors in 2185, but the possibility of attack hurt the colony nonetheless. All traffic  and trade from Illium to Elysium was canceled in response to a security advisory about the Collector threat, hampering the colony's economic development.\n<br><br>If Commander Shepard has the War Hero background, a news report mentions that a memorial was built to commemorate Shepard.\n"
+            },
+            {
+              "name": "sidon",
+              "image": "pluto-texture.webp",
+              "filter": "saturate(0.8) brightness(1.1) contrast(1.1)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 2.3,
+              "year": 3.5,
+              "size": "7645/6378",
+              "day": "31.6/24",
+              "coords": "nw",
+              "details": "A large terrestrial planet with wide, cold deserts, Sidon has a trace atmosphere that is principally carbon monoxide. Alliance planners found its gravity agreeable, however, and built a small domed research facility on the planet in the 2160s. The project was classified until recently, when Blue Suns mercenaries who allegedly attacked the facility were apprehended and brought to trial, revealing the facility's existence in open court.\n<br><br>Eager to counter the negative publicity, Elysium investment firms now advertise that Sidon is free of military facilities and just \"minutes away\" from the garden world, thanks to recent improvements in faster-than-light travel. Whether or not the marketing attracts development remains to be seen.\n"
+            },
+            {
+              "name": "joppa",
+              "image": "Gaseous10.webp",
+              "filter": "hue-rotate(-10deg) saturate(0.6) contrast(1.1)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 4.4,
+              "year": 9.2,
+              "size": "58415/6378",
+              "day": "8.7/24",
+              "coords": "se",
+              "details": "A modestly sized hydrogen-helium Jovian planet, Joppa is close enough and reflective enough to be seen in Elysium's night sky. It orbits in retrograde, possibly indicating that it was an extrasolar capture. Human and alien consortiums compete fiercely for the rights to gather helium-3 from the planet, since Elysium's favorable position along trade routes means high profits.\n"
+            },
+            {
+              "name": "gilead",
+              "image": "Rockbits1.webp",
+              "filter": "saturate(1.2) contrast(1.1) hue-rotate(30deg)",
+              "overlay": "",
+              "clouds": "",
+              "cloudsFilter": "",
+              "rings": false,
+              "ringsColor": "",
+              "texture": true,
+              "orbit": 8.7,
+              "year": 25.7,
+              "size": "2102/6378",
+              "day": "24.7/24",
+              "coords": "w",
+              "details": "The largest object in the Klein Belt, Gilead is a stony dwarf planet of rock and ice, mined for its nickel. It is notable for a recent collision with another asteroid. The residents had several weeks of advance warning and set up recording devices before they evacuated the planet. After selling footage of the asteroid strike to extranet news corporations, the residents found they were now somewhat famous--as well as a little wealthier than before. Of the 221 residents, all but 25 proceeded to leave the nickel business.\n"
             }
           ]
         }
@@ -7633,6 +8237,44 @@
               "details": "Named for the 21st century pioneer of groundwater remediation techniques, Keimowitz is an impressive layer of ice over a stony metallic core. Despite its size, it has only one moon, Noa, which shares its carbonaceous composition, leading astronomers to believe it formed following a giant impact. Iridium deposits have attracted miners to the planet, who must work through robots and telepresence because of the planet's strong gravity."
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Silean Nebula",
+      "top": 69.7,
+      "left": 20.1,
+      "image": "cluster-09.webp",
+      "bodies": [
+        {
+          "name": "Kypladon",
+          "star": "Kypladon",
+          "top": 45,
+          "left": 47
+        },
+        {
+          "name": "Loropi",
+          "star": "Loropi",
+          "top": 48,
+          "left": 36
+        },
+        {
+          "name": "Nahuala",
+          "star": "Nahuala",
+          "top": 32,
+          "left": 36
+        },
+        {
+          "name": "Phontes",
+          "star": "Phontes",
+          "top": 31,
+          "left": 47
+        },
+        {
+          "name": "Teyolia",
+          "star": "Teyolia",
+          "top": 36,
+          "left": 84
         }
       ]
     },
