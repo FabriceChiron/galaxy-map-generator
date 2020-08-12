@@ -9,7 +9,7 @@ class Cluster {
     this.clusterEl = document.createElement('a');
     this.id = spaceToDash(obj.name).toLowerCase();
     this.obj = obj;
-    this.innerContainer = (obj.bodies.length > 0) ? '<div class="rotate-content"><div class="content"></div></div>' : '';
+    this.innerContainer = '<div class="rotate-content"><div class="content"></div></div>';
     this.image = (obj.image) ? obj.image : null;
   }
 
@@ -37,7 +37,7 @@ class Cluster {
 
   createCluster() {
     setAttributes(this.clusterEl, {
-      class: `cluster cc ${(this.obj.bodies.length > 0) ? '' : 'inactive'}`,
+      class: `cluster cc ${(this.obj.bodies && this.obj.bodies.length > 0) ? '' : 'inactive'}`,
       id: `${spaceToDash(this.obj.name).toLowerCase()}`,
       href: `#${spaceToDash(this.obj.name).toLowerCase()}`,
       style: `
@@ -61,19 +61,40 @@ class Cluster {
       </div>
     `;
 
-    if(this.obj.bodies.length > 0) {
+    if(this.obj.bodies && this.obj.bodies.length > 0) {
       this.clusterEl.querySelector('.name').innerHTML += `
       <ul class='details'>
-        ${(this.obj.bodies.length) ? '<li>Stellar systems: <b>'+this.obj.bodies.length+'</b></li>':''}
+        <li>${this.obj.bodies.length} stellar system(s)</li>
       </ul>
       `
     }
+
+    // if(this.obj.details) {
+    //   const inputDetails = document.createElement('input');
+
+    //   setAttributes(inputDetails, {
+    //     type: "checkbox",
+    //     id: `${spaceToDash(this.obj.name).toLowerCase()}__details" class="hidden-input"/>`,
+    //     class: 'hidden-input'
+    //   });
+
+    //   this.clusterEl.prepend(inputDetails);
+
+    //   this.clusterEl.querySelector('.name').innerHTML += `
+    //   <span class="cluster-infos">
+    //     <label for="${spaceToDash(this.obj.name).toLowerCase()}-details" class="toggle-details">i</label>
+    //     <div class="cluster-details">
+    //       ${this.obj.details}
+    //     </div>
+    //   </span>
+    //   `
+    // }
 
     if(this.image) {
       setAttributes(this.clusterEl.querySelector('.container'), {
         style: `
           background: url('img/galaxy-map/clusters/${this.image}') center #000 no-repeat;
-          background-size: cover;`,
+          background-size: contain;`,
       });
     }
 
