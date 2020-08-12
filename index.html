@@ -31,6 +31,7 @@
     allowDrag = true;
   </script>
   <script src="js/drag.js" defer></script>
+  <script src="js/galaxies-generator.js" defer></script>
   <script src="js/galaxy-map-generator.js" defer></script>
   <script src="js/cluster-generator.js" defer></script>
   <script src="js/stellar-system-generator.js" defer></script>
@@ -122,14 +123,8 @@
   <div id="dragInfos">
   </div>
 
-  <section id="galaxy">
-    <div class="map-container">
-      <div id="galaxy-map">
-        <div id="holder-image"></div>
-        <div id="clusters"></div>
-      </div>
-    </div>
-  </section>
+  <div id="galaxies">
+  </div>
 
   <script>
     if(isMobile) {
