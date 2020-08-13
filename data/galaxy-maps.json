@@ -9285,7 +9285,238 @@
           "name": "Adnromeda Cluser test",
           "top": 83.5,
           "left": 35.5,
-          "image": "cluster-11.webp"
+          "image": "cluster-11.webp",
+          "bodies": [
+            {
+              "name": "Aru",
+              "star": "Aru",
+              "top": 33,
+              "left": 50,
+              "asteroids": [
+                {
+                  "orbit": "3.2",
+                  "year": "3.2",
+                  "bodies": 150
+                }
+              ],
+              "bodies": [
+                {
+                  "name": "Jak Ser",
+                  "image": "Mercury.webp",
+                  "texture": true,
+                  "orbit": "0.6",
+                  "year": "0.4",
+                  "size": "10792/6378",
+                  "day": "35.3/24",
+                  "coords": "s",
+                  "details": "Jak Ser features heavily in ancient volus mythology and folklore, since its bright white surface made it easy to chart in the night sky without the aid of a telescope. Once the volus developed advanced astronomical equipment, their scientists discovered that Jak Ser's luminosity was caused by a thick carbon monoxide cloud cover that had hidden the real face of the planet for millennia."
+                },
+                {
+                  "name": "Irune",
+                  "image": "Savannah.webp",
+                  "clouds": "Clouds1.webp",
+                  "texture": true,
+                  "orbit": "1.3",
+                  "year": "1.5",
+                  "size": "11525/6378",
+                  "day": "36.2/24",
+                  "coords": "nw",
+                  "details": "The volus homeworld is a high-pressure, high-gravity planet that supports an ammonia-based ecology. This rare environment means that the volus have been slow to colonize, as there are few planets that meet their habitation requirements. Most prefer to stay on Irune, working remotely via the extranet. The more adventurous don the clumsy but vital pressure suits and venture out to worlds in Citadel space to make their fortunes."
+                },
+                {
+                  "name": "Locil",
+                  "image": "Gaseous6.webp",
+                  "texture": true,
+                  "orbit": "5.8",
+                  "year": "14",
+                  "size": "52635/6378",
+                  "day": "10.6/24",
+                  "coords": "e",
+                  "details": "The first of the Aru system's three gas giants, Locil is also the largest. Boasting over 96 moons, this planet's orbit bustled with hundreds of helium-3 extraction centers. Most of the work population lived on Locil's orbital stations, which were so numerous they became an unofficial city chained together by taxi services and extendable umbilical cords. The Reaper attack here has devastated the infrastructure, raining fragments down onto the gas giant."
+                },
+                {
+                  "name": "Cherk Sab",
+                  "image": "Gaseous8.webp",
+                  "texture": true,
+                  "orbit": "10.4",
+                  "year": "33.6",
+                  "size": "39139/6378",
+                  "day": "12.1/24",
+                  "coords": "se",
+                  "details": "Named after a northern Irunian luck deity, Cherk Sab is overshadowed by the economy on Locil and the scientific research on Doldit. The solar system's \"middle child\", Cherk Sab now has the only functioning helium-3 fuel apparatus in the system, as the Reapers have not yet struck there. The space around it is jammed with volus ships trying to flee the system."
+                },
+                {
+                  "name": "Doldit",
+                  "image": "Gaseous7.webp",
+                  "texture": true,
+                  "orbit": "20.8",
+                  "year": "95.2",
+                  "size": "28982/6378",
+                  "day": "10.6/24",
+                  "coords": "nw",
+                  "details": "Doldit's moons have long been mined out, but they still hosted dozens of corporate-owned laboratories relocated there to avoid the environmental restrictions placed on research and development firms by Irune. Everything from weapon testing to cutting-edge biological research was outsourced to facilities orbiting Doldit. This made it an attractive target for the Reapers, who sent a small but powerful force to blow the facilities into scrap."
+                }
+              ]
+            },
+            {
+              "name": "Esori",
+              "star": "Esori",
+              "top": 40,
+              "left": 45,
+              "bodies": [
+                {
+                  "name": "Mola",
+                  "image": "Martian.webp",
+                  "texture": true,
+                  "orbit": "0.3",
+                  "year": "0.1",
+                  "size": "7608/6378",
+                  "day": "18.4/24",
+                  "coords": "ne",
+                  "details": "For a terrestrial planet, Mola hurtles around the system's star at breakneck speed. Its rapid orbit and molten core cause oceans of magma to be pumped out onto the surface, cooling into the continent-sized formations then erased by fresh flows of molten rock."
+                },
+                {
+                  "name": "Atos Irn",
+                  "image": "Venusian.webp",
+                  "texture": true,
+                  "orbit": "1",
+                  "size": "7556/6378",
+                  "day": "40.4/24",
+                  "year": "1",
+                  "coords": "s",
+                  "details": "Atos Irn was claimed, along with the rest of its system, after the volus learned FTL travel. In the great volus exploration push of 300 BCE, the species found only a few planets capable of supporting their colonies. They did, however, discover many planets teeming with valuable elements."
+                },
+                {
+                  "name": "Yan Tao",
+                  "image": "Rockplates1.webp",
+                  "texture": true,
+                  "orbit": "1.6",
+                  "year": "2",
+                  "size": "11460/6378",
+                  "day": "37.9/24",
+                  "coords": "w",
+                  "details": "Even by volus standards, the pressure on Yan Tao is crushing. With an atmosphere composed of carbon dioxide, argon, and small traces of oxygen, the surface is devoid of life. However, tiny, fossilized sea creatures have been discovered in the deepest crevices of what used to be Yan Tao's oceans."
+                },
+                {
+                  "name": "Kailo",
+                  "image": "Rockbits1.webp",
+                  "texture": true,
+                  "orbit": "3.2",
+                  "year": "5.7",
+                  "size": "11489/6378",
+                  "day": "93.9/24",
+                  "coords": "sw",
+                  "details": "Kailo's frigid surface is dotted with impact craters left during a legendary meteor shower that happened more than 400,000 years ago. The meteors contained traces of cobalt, but not enough to warrant a full-scale mining expedition. The volus have largely left Kailo alone, as have the Reapers."
+                },
+                {
+                  "name": "Solu Paolis",
+                  "image": "Gaseous5.webp",
+                  "texture": true,
+                  "orbit": "6.6",
+                  "year": "17.2",
+                  "size": "28567/6378",
+                  "day": "14.7/24",
+                  "coords": "e",
+                  "details": "Solu Paolis's helium-3 collection mechanisms historically turned a large profit, not because of any great immigration into the Esori system, but because Solu Paolis made a good refueling stop between Irune and Satu Arrd.<br><br>Warned of the Reapers' battle plans but left with little other option, a select team of workers at Solu Paolis sent out phony communications suggesting that important military data was being handed off here. When the Reapers sent in a force of husks, they ran into the volus's trap: a chain reaction that annihilated the station."
+                }
+              ]
+            }, 
+            {
+              "name": "Nura",
+              "star": "Nura",
+              "top": 31,
+              "left": 63,
+              "bodies": [
+                {
+                  "name": "Lahu",
+                  "image": "Rockbits1.webp",
+                  "texture": true,
+                  "orbit": "1.1",
+                  "year": "1.2",
+                  "size": "8616/6378",
+                  "day": "53.6/24",
+                  "coords": "nw",
+                  "details": "Massive silicate-filled dust storms plague the surface of Lahu. In an odd partnership of commerce and science, high-rolling volus casinos on Oma Ker entered a partnership with the scientific research teams whose observation satellites watch over Lahu. The casinos took bets on how long Lahu storms would last and how high their wind speed might climb. Payouts made the rare volus rich, with jackpot winners forming a small fraternal order."
+                },
+                {
+                  "name": "Oma Ker",
+                  "image": "Terrestrial4.webp",
+                  "texture": true,
+                  "clouds": "Clouds3.webp",
+                  "orbit": "2",
+                  "year": "2.7",
+                  "size": "6739/6378",
+                  "day": "25.4/24",
+                  "coords": "e",
+                  "details": "Oma Ker is a temperate garden world currently in its megafauna stage. The planet's nitrogen-oxygen atmosphere and dextro-amino-acid-based life wasn't particularly attractive to the volus, so they sold the colonization rights to their turian partners. Oma Ker's spaceports and major roads were blasted into craters by the Reapers, largely immobilizing the population. Its turian defenders are slowly being pushed back by ground forces."
+                },
+                {
+                  "name": "Welm Urun",
+                  "image": "Gaseous3.webp",
+                  "texture": true,
+                  "orbit": "6.8",
+                  "year": "17.7",
+                  "size": "62522/6378",
+                  "day": "16.4/24",
+                  "coords": "n",
+                  "details": "Welm Urun is a hydrogen-helium gas giant. The phrase \"Welm Urun\" in the volus native language translates to \"the golden one\", a reference to its deep yellow-orange rings. Much to prospectors' dismay, there was no gold to be found in its moons. Welm Urun's economic contributions to the system was the ubiquitous helium-3, but the collection materials have since been destroyed."
+                },
+                {
+                  "name": "Gorgun",
+                  "image": "Gaseous4.webp",
+                  "texture": true,
+                  "orbit": "13.4",
+                  "year": "49.2",
+                  "size": "67733/6378",
+                  "day": "13/24",
+                  "coords": "w",
+                  "details": "Like Welm Urun, Gorgun was a hydrogen-helium gas giant whose helium-3 infrastructure was destroyed."
+                }
+              ]
+            },
+            {
+              "name": "Satu Arrd",
+              "star": "Satu Arrd",
+              "top": 53,
+              "left": 40,
+              "bodies": [
+                {
+                  "name": "Poloh Tem",
+                  "image": "Mercury.webp",
+                  "texture": true,
+                  "orbit": "2.1",
+                  "year": "3.1",
+                  "size": "5738/6378",
+                  "day": "35.8/24",
+                  "coords": "e",
+                  "details": "This world is believed to be an extrasolar capture that built up its atmosphere over millions of years to become the hothouse it is today. Volus robo-miners descended on Poloh Tem when element zero was first discovered there, and in turn, pirates descended on the volus. The pirates then found out, to their detriment, that wealthy volus can buy a lot of influence in the Turian Hierarchy."
+                },
+                {
+                  "name": "Rilar",
+                  "image": "Rockplates1.webp",
+                  "texture": true,
+                  "orbit": "3",
+                  "year": "5.3",
+                  "size": "5082/6378",
+                  "day": "23.2/24",
+                  "coords": "sw",
+                  "details": "Rilar is a barren, terrestrial rock world. Only a small portion of the planet has been explored, as cursory scans showed little of interest on Rilar compared to the eezo deposits on the neighboring world of Poloh Tem."
+                },
+                {
+                  "name": "Nalisin",
+                  "image": "Moon.webp",
+                  "texture": true,
+                  "orbit": "23.4",
+                  "year": "113.6",
+                  "size": "4494/6378",
+                  "day": "20.6/24",
+                  "coords": "s",
+                  "details": "A lonely world of rock and ice, Nalisin clings to the outer rim of the Satu Arrd system. Its freezing temperatures and carbon-dioxide atmosphere were braved by eezo smugglers, who set up camps in the tunnels honeycombing the southern hemisphere's mountain ranges. The camps were abandoned when turian patrols began regular raids on the smugglers' cave systems."
+                }
+              ]
+            }
+          
+          ]
         }
       ]
     }

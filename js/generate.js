@@ -4,8 +4,6 @@ fetch('data/galaxy-maps.json')
   galaxyMaps.galaxies.map(
     galaxy => {
       const GalaxyName =  toClassObject(camelize(galaxy.name));
-      console.log("GalaxyName", GalaxyName);
-
       window[GalaxyName] = new Galaxy(galaxy, '#galaxies');
       window[GalaxyName].render();
 
@@ -19,7 +17,7 @@ fetch('data/galaxy-maps.json')
             if(cluster.bodies && cluster.bodies.length > 0) {
               cluster.bodies.map(stellarSystem => {
                 const StellarSystemName = toClassObject(noDash(camelize(stellarSystem.name)));
-                window[StellarSystemName] = new StellarSystem(stellarSystem, `#${spaceToDash(cluster.name).toLowerCase()}`, `${spaceToDash(cluster.name).toLowerCase()}`);
+                window[StellarSystemName] = new StellarSystem(stellarSystem, `#${spaceToDash(cluster.name).toLowerCase()}`, `${spaceToDash(galaxy.name).toLowerCase()}/${spaceToDash(cluster.name).toLowerCase()}`);
                 window[StellarSystemName].render();
               })
             }
@@ -44,7 +42,7 @@ fetch('data/galaxy-maps.json')
   //   }
   // )
 
-  // generateMenu(galaxyMaps);
+  generateMenu(galaxyMaps);
 
   if(allowDrag === true) {
     const myBlock = document.querySelector('body');

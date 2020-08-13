@@ -1,5 +1,4 @@
-#galaxy,
-.galaxy {
+#galaxies {
   background: #000;
   position: relative;
   z-index: 1;
@@ -7,6 +6,43 @@
   background-size: contain;
   display: block;
   // overflow: auto;
+
+  &.active {
+    .galaxy {
+      &:first-child{
+        transform: scale(0.5) translate3d(-50vw, 0, 0);
+      }
+      &:last-child{
+        transform: scale(0.5) translate3d(50vw, 0, 0);
+      }
+    }
+  }
+}
+
+.galaxy {
+  position: absolute;
+  top: 0;
+  display: block;
+  transform: scale(0.25);
+  transition: all var(--transition-duration) ease;
+  
+  .map-container {
+    position: absolute;
+ 
+  }
+
+  &:first-child{
+    transform: scale(0.25) translate3d(-120vw, -120vh, 0);
+  }
+  &:last-child{
+    transform: scale(0.25) translate3d(120vw, -120vh, 0);
+  }
+
+  &.active {
+    transform: scale(1) translate3d(0, 0, 0);
+    z-index: 1;
+    pointer-events: none;
+  } 
 }
 
 .map-container {
@@ -20,7 +56,6 @@
   transition: all var(--transition-duration) ease;
 }
 
-#galaxy-map,
 .galaxy-map {
   transform: translate3d(-50%, -50%, 0);
   position: relative;
@@ -40,24 +75,12 @@
     height: 100vw;
   }
 
-  #holder-image,
-  #clusters,
   .holder-image,
   .clusters {
     width: 100%;
     height: 100%;
     position: absolute;
     pointer-events: none;
-  }
-
-  #holder-image {
-    background: url('../img/galaxy-map/galaxy-alpha.webp') rgba(0,0,0,.8) no-repeat center;
-    background-size: contain;
-    left: 50%;
-    top: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    box-shadow: 0 0 3vh 3vh rgba(0,0,0,.8);
-    border-radius: 50%;
   }
 
   .holder-image {
@@ -73,8 +96,6 @@
   &.active {
     transition: all var(--transition-duration) ease;
 
-
-    #holder-image,
     .holder-image {
       opacity: 0;
       pointer-events: none;
