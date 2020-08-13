@@ -32,7 +32,7 @@ const generateMenu = (galaxyMaps) => {
   let navDiv = createElem('div', nav);
   let mapLink = createElem('a', navDiv);
   mapLink.href = '#';
-  mapLink.innerHTML += 'Map';
+  mapLink.innerHTML += 'Galaxies';
 
   let mapLabel = createElem('label', navDiv, {
     for: 'toggle-map',

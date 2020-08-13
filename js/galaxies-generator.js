@@ -19,6 +19,7 @@ class Galaxy {
           <div class="clusters"></div>
         </div>
       </div>
+      <h2>${this.obj.name}</h2>
     `
 
     var self = this;

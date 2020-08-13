@@ -30,24 +30,39 @@ const decomposeHash = (sPath) => {
 
   if(aPath[0] === '') {
     console.log("Showing both galaxies");
+    closeClusterUnless();
+    removeStellarSystemUnless();
+    removeActiveAstralBodyUnless();
 
     // Activate global view
-    document.querySelector('#galaxies').className += ' active';
-  } else {
-
-    document.querySelector('#galaxies').className = document.querySelector('#galaxies').className.replace('active', '');
-
-    [...document.querySelectorAll('#galaxies .galaxy')].map(item => {
-      item.className = item.className.replace(' active', '');
-
-      if(item.id === aPath[0]) {
-        item.className += ' active';
-      }
+    setAttributes(document.querySelector('#galaxies'), {
+      class: 'active',
     });
 
+    [...document.querySelectorAll('#galaxies .galaxy')].map(item => {
+      setAttributes(item, {
+        class: 'galaxy',
+      });
+    });
+
+  } else {
+
+    console.log('coucou', aPath[0]);
+
+    setAttributes(document.querySelector('#galaxies'), {
+      class: '',
+    });
+
+    [...document.querySelectorAll('#galaxies .galaxy')].map(item => {
+      setAttributes(item, {
+        class: `galaxy ${(item.id === aPath[0]) ? 'active' : ''}`,
+      });
+    });
+    
     if(aPath.length > 1) {
       // Clusters
       if(aPath[1] === ''){
+        console.log("aPath[1] === ''");
         closeClusterUnless();
         removeStellarSystemUnless();
         removeActiveAstralBodyUnless();
@@ -99,7 +114,9 @@ const decomposeHash = (sPath) => {
         // }, 100);  
       }
     } else {
-
+      closeClusterUnless();
+      removeStellarSystemUnless();
+      removeActiveAstralBodyUnless();
     }
   }
 
