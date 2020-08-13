@@ -75,12 +75,16 @@ const createElem = (el, ctnr, attrs, where) => {
 }
 
 const openCluster = (elId, showStarship) => {
+  console.log("elId", elId);
   const el = document.getElementById(elId);
+  console.log("el.classList", el.classList);
   if(!el.classList.contains('active')){
     el.className += ' active';
     if(showStarship === true) document.body.className += ' allows-starship';
-    el.href = '#';
-    galaxyMapEl.className += ' active';
+    let trimHref = el.dataset.href.split('#')[1].split('/');
+    trimHref.pop();
+    el.href = `#${trimHref.join('/')}`;
+    el.closest('.galaxy-map').className += ' active';
   }
 }
 
@@ -91,7 +95,7 @@ const closeClusterUnless = (clusterToKeepId) => {
       el.className = el.className.replace(' active', '');
       document.body.className = document.body.className.replace(' allows-starship', '');
       el.href = el.dataset.href;
-      galaxyMapEl.className = galaxyMapEl.className.replace(' active', '');
+      el.closest('.galaxy-map').className = el.closest('.galaxy-map').className.replace(' active', '');
     }
     el.querySelector('.container').style.transform = 'scale(1)';
     el.querySelector('.container').style.opacity = null;

@@ -1,28 +1,54 @@
-fetch('data/galaxy-map.json')
+fetch('data/galaxy-maps.json')
 .then(res => res.json())
-.then(galaxyMap => {
-  galaxyMap.clusters.map(
-    cluster => {
-      const ClusterName = toClassObject(camelize(cluster.name));
-      window[ClusterName] = new Cluster(cluster, '#clusters');
-      window[ClusterName].render();
+.then(galaxyMaps => {
+  galaxyMaps.galaxies.map(
+    galaxy => {
+      const GalaxyName =  toClassObject(camelize(galaxy.name));
+      window[GalaxyName] = new Galaxy(galaxy, '#galaxies');
+      window[GalaxyName].render();
 
-      if(cluster.bodies && cluster.bodies.length > 0) {
-        cluster.bodies.map(stellarSystem => {
-          const StellarSystemName = toClassObject(noDash(camelize(stellarSystem.name)));
-          window[StellarSystemName] = new StellarSystem(stellarSystem, `#${spaceToDash(cluster.name).toLowerCase()}`, `${spaceToDash(cluster.name).toLowerCase()}`);
-          window[StellarSystemName].render();
-        })
-      }
-    })
+      if(galaxy.clusters && galaxy.clusters.length > 0) {
+        galaxy.clusters.map(
+          cluster => {
+            const ClusterName = toClassObject(camelize(cluster.name));
+            window[ClusterName] = new Cluster(cluster, `#${spaceToDash(galaxy.name).toLowerCase()} .clusters`, `${spaceToDash(galaxy.name).toLowerCase()}`);
+            window[ClusterName].render();
 
-    generateMenu(galaxyMap);
-
-    if(allowDrag === true) {
-      const myBlock = document.querySelector('body');
-      initDrag(myBlock);
+            if(cluster.bodies && cluster.bodies.length > 0) {
+              cluster.bodies.map(stellarSystem => {
+                const StellarSystemName = toClassObject(noDash(camelize(stellarSystem.name)));
+                window[StellarSystemName] = new StellarSystem(stellarSystem, `#${spaceToDash(cluster.name).toLowerCase()}`, `${spaceToDash(galaxy.name).toLowerCase()}/${spaceToDash(cluster.name).toLowerCase()}`);
+                window[StellarSystemName].render();
+              })
+            }
+          }
+        )
       }
     }
+  )
+  // galaxyMap.clusters.map(
+  //   cluster => {
+  //     const ClusterName = toClassObject(camelize(cluster.name));
+  //     window[ClusterName] = new Cluster(cluster, '#clusters');
+  //     window[ClusterName].render();
+
+  //     if(cluster.bodies && cluster.bodies.length > 0) {
+  //       cluster.bodies.map(stellarSystem => {
+  //         const StellarSystemName = toClassObject(noDash(camelize(stellarSystem.name)));
+  //         window[StellarSystemName] = new StellarSystem(stellarSystem, `#${spaceToDash(cluster.name).toLowerCase()}`, `${spaceToDash(cluster.name).toLowerCase()}`);
+  //         window[StellarSystemName].render();
+  //       })
+  //     }
+  //   }
+  // )
+
+  generateMenu(galaxyMaps);
+
+  if(allowDrag === true) {
+    const myBlock = document.querySelector('body');
+    initDrag(myBlock);
+    }
+  }
 )
 
 
