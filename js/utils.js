@@ -75,11 +75,16 @@ const createElem = (el, ctnr, attrs, where) => {
 }
 
 const openCluster = (elId, showStarship) => {
-  console.log("elId", elId);
   const el = document.getElementById(elId);
-  console.log("el.classList", el.classList);
   if(!el.classList.contains('active')){
     el.className += ' active';
+    setTimeout(function () { 
+      el.style.display = 'none';
+      el.offsetHeight;
+      setTimeout(function () { 
+        el.style.display = 'block';
+      }, 1);
+    }, 300);
     if(showStarship === true) document.body.className += ' allows-starship';
     let trimHref = el.dataset.href.split('#')[1].split('/');
     trimHref.pop();
@@ -92,12 +97,24 @@ const closeClusterUnless = (clusterToKeepId) => {
   const el = document.querySelector('.cluster.active');
   if(el !== null) {
     if(el.id !== clusterToKeepId) {
-      el.className = el.className.replace(' active', '');
+      setTimeout(function () { 
+        el.style.display = 'none';
+        el.offsetHeight;
+        setTimeout(function () { 
+          el.style.display = 'block';
+          el.className = el.className.replace(' active', '');
+        }, 1);
+      }, 1);
       document.body.className = document.body.className.replace(' allows-starship', '');
       el.href = el.dataset.href;
       el.closest('.galaxy-map').className = el.closest('.galaxy-map').className.replace(' active', '');
     }
-    el.querySelector('.container').style.transform = 'scale(1)';
+    // el.querySelector('.container').style.transform = 'scale(1)';
+    el.querySelector('.container').style.transform = '';
+    // el.querySelector('.container').style.display = 'none';
+    // el.querySelector('.container').offsetHeight;
+    // el.querySelector('.container').style.display = '';
+
     el.querySelector('.container').style.opacity = null;
   }
 }

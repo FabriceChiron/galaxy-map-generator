@@ -447,6 +447,9 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
 
     parentClusterContainer.style.transformOrigin = `${targetCoords.left}% ${targetCoords.top}% 0`;
     parentClusterContainer.style.transform = `scale(10)`;
+    // parentClusterContainer.style.display = `none`;
+    // parentClusterContainer.offsetHeight;
+    // parentClusterContainer.style.display = ``;
     parentClusterContainer.style.opacity = `0`;
 
     const divSystem = document.createElement('div');

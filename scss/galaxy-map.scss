@@ -41,7 +41,7 @@
 
   h2 {
     position: absolute;
-    top: 15%;
+    top: 5%;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -175,7 +175,7 @@
 
     .cluster {
       .name {
-        transform: rotateX(calc(var(--angle) * -1)) scale(1);
+        // transform: rotateX(calc(var(--angle) * -1)) scale(1);
 
         .details {}
       }
@@ -183,6 +183,9 @@
       &:hover,
       &.hovered {
         .name {
+          transform: rotateX(calc(var(--angle) * -1)) scale(1);
+          transform: rotate3d(1, 0, 0, calc(var(--angle) * -1)) scale(1);
+
           .details {
             margin: 0.5rem 0;
             margin-left: -0.75rem;
@@ -259,9 +262,9 @@
 
       .content {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0);
+        // top: 50%;
+        // left: 50%;
+        // transform: translate3d(-50%, -50%, 0);
         width: 100%;
         height: 100%;
 
@@ -293,6 +296,7 @@
     .name {
       position: absolute;
       transform: rotateX(calc(var(--angle) * -1)) scale(0);
+      transform: rotate3d(1, 0, 0, calc(var(--angle) * -1)) scale(0);
       white-space: nowrap;
       transform-origin: bottom left;
       text-transform: uppercase;
@@ -346,6 +350,7 @@
       }
       > .name {
         transform: rotateX(calc(var(--angle) * -1)) scale(1);
+        transform: rotate3d(1, 0, 0, calc(var(--angle) * -1)) scale(1);
 
         > .details {
             opacity: 1;
@@ -369,6 +374,7 @@
       width: 100vw;
       height: 100vh;
       transform: translate3d(-50%, -50%, 1px) rotateX( calc(var(--angle) * -1) );
+      transform: translate3d(-50%, -50%, 2px) rotate3d(0, 0, 0, calc(var(--angle) * -1));
       border-radius: 0;
       box-shadow: 0 0 0 0 var(--clusterColor);
       opacity: 1;
@@ -421,7 +427,7 @@
           --top: 50%;
           --left: 50%;
           pointer-events: auto;
-          transform: rotateX(var(--angle)) translate3d(-50%, -50%, 0);
+          // transform: translate3d(-50%, -50%, 0);
           --clusterSize: 5rem;
 
           .center {
@@ -432,6 +438,7 @@
 
       > .name {
         transform: rotateX(0deg) scale(1) translateX(-50%);
+        transform: rotate3d(1, 0, 0, calc(var(--angle) * -1)) scale(1) translateX(-50%);
         // bottom: calc(50% + 50vh - 4rem);
         bottom: calc(50% + 50vh - 4.5rem);
         // left: calc(50% - 50vw + .5rem);
