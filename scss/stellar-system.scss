@@ -14,7 +14,7 @@ body:not(.allows-starship) .stellar-system_section {
   // transform: scale(var(--scale)) translate3d(var(--translate), var(--translate), 0);
   // transform: scale(var(--scale));
   // transition: all 5s ease;
-  background: #000 url('../img/2k_stars_milky_way.jpg');
+  background: #000 url('../img/2k_stars_milky_way.jpg') center;
   background-size: auto 100vh;
   position: fixed;
   z-index: 2;
@@ -539,6 +539,7 @@ body:not(.allows-starship) .stellar-system_section {
               font-size: 1.25rem;
               letter-spacing: .25rem;
               font-weight: bold;
+              white-space: nowrap;
             }
 
             .details {
