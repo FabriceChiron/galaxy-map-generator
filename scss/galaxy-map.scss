@@ -9,8 +9,10 @@
 
   &.active {
     .galaxy {
+      opacity: 1;
+
       h2 {
-        opacity: 1;
+        // opacity: 1;
       }
       .clusters {
         opacity: 0;
@@ -31,6 +33,7 @@
   top: 0;
   display: block;
   transform: scale(0.25);
+  opacity: 0.5;
   transition: all var(--transition-duration) linear;
   transition-duration: 1s;
   overflow-y: visible;
@@ -41,7 +44,7 @@
 
   h2 {
     position: absolute;
-    top: 5%;
+    top: 10%;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -51,14 +54,27 @@
 
   &:first-child{
     transform: scale(0.15) translate3d(-200vw, -200vh, 0);
+    transform-origin: center;
+    // background-color: red;
   }
   &:last-child{
     transform: scale(0.15) translate3d(200vw, -200vh, 0);
+    transform-origin: center;
+    // background-color: blue;
+  }
+
+  @media screen and (orientation: portrait) {
+    &:first-child{
+      transform-origin: top right;
+    }
+    &:last-child{
+      transform-origin: bottom left;
+    }
   }
 
   &:not(.active) {
     h2 {
-      opacity: 0.5;
+      // opacity: 0.5;
     }
 
     .clusters {
@@ -72,6 +88,7 @@
 
   &.active {
     transform: scale(1) translate3d(0, 0, 0);
+    opacity: 1;
     transition-delay: .25s;
     z-index: 1;
     pointer-events: none;
@@ -187,19 +204,27 @@
           transform: rotate3d(1, 0, 0, calc(var(--angle) * -1)) scale(1);
 
           .details {
-            margin: 0.5rem 0;
-            margin-left: -0.75rem;
-            list-style: inside;
-            position: absolute;
-            font-size: 1.1em;
-            padding: inherit;
-            border-radius: 0 .5rem .5rem .5rem;
-            text-transform: none;
-            background: rgba(0, 0, 0, 0.8);
-            background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 100%);
             opacity: 1;
-            transition: all var(--transition-duration) ease;
-            box-shadow: inset 0 0 0 1px var(--clusterColor);
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            border-radius: 0;
+            position: static;
+            box-shadow: none;
+            background: none;
+            // margin: 0.5rem 0;
+            // margin-left: -0.75rem;
+            // list-style: inside;
+            // position: absolute;
+            // font-size: 1.1em;
+            // padding: inherit;
+            // border-radius: 0 .5rem .5rem .5rem;
+            // text-transform: none;
+            // background: rgba(0, 0, 0, 0.8);
+            // background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 100%);
+            // opacity: 1;
+            // transition: all var(--transition-duration) ease;
+            // box-shadow: inset 0 0 0 1px var(--clusterColor);
           }
         }
       }
@@ -319,19 +344,29 @@
       transform-style: preserve-3d;
 
       .details {
-        margin: 0.5rem 0;
-        margin-left: -0.75rem;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        border-radius: 0;
+        position: static;
+        box-shadow: none;
+        background: none;
         list-style: inside;
-        position: absolute;
-        font-size: 1.1em;
-        padding: inherit;
-        border-radius: 0 .5rem .5rem .5rem;
         text-transform: none;
-        background: rgba(0, 0, 0, 0.8);
-        background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 100%);
-        opacity: 0;
-        transition: all var(--transition-duration) ease;
-        box-shadow: inset 0 0 0 1px var(--clusterColor);
+        // margin: 0.5rem 0;
+        // margin-left: -0.75rem;
+        // list-style: inside;
+        // position: absolute;
+        // font-size: 1.1em;
+        // padding: inherit;
+        // border-radius: 0 .5rem .5rem .5rem;
+        // text-transform: none;
+        // background: rgba(0, 0, 0, 0.8);
+        // background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 100%);
+        // opacity: 0;
+        // transition: all var(--transition-duration) ease;
+        // box-shadow: inset 0 0 0 1px var(--clusterColor);
       }
 
       .close-cluster {
