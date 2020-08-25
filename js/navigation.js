@@ -26,10 +26,7 @@ const decomposeHash = (sPath) => {
 
   highlightNav(aPath);
 
-  console.log("aPath", aPath);
-
   if(aPath[0] === '') {
-    console.log("Showing both galaxies");
     closeClusterUnless();
     removeStellarSystemUnless();
     removeActiveAstralBodyUnless();
@@ -46,9 +43,6 @@ const decomposeHash = (sPath) => {
     });
 
   } else {
-
-    console.log('coucou', aPath[0]);
-
     setAttributes(document.querySelector('#galaxies'), {
       class: '',
     });
@@ -62,16 +56,16 @@ const decomposeHash = (sPath) => {
     if(aPath.length > 1) {
       // Clusters
       if(aPath[1] === ''){
-        console.log("aPath[1] === ''");
         closeClusterUnless();
         removeStellarSystemUnless();
         removeActiveAstralBodyUnless();
-      } else {
-        console.log("aPath[1]", aPath[1]);    
+      } else {  
         closeClusterUnless(aPath[1]);
         openCluster(aPath[1], showStarShip);
         
         // Stellar systems
+
+
         if(aPath.length > 2) {
           removeStellarSystemUnless(aPath[2]);
           
@@ -80,7 +74,7 @@ const decomposeHash = (sPath) => {
 
           if(document.getElementById(`${aPath[2]}_section`) === null) {
             createStellarSystem(
-              window[`${toClassObject(noDash(camelize(aPath[2])))}`].obj, 
+              window[`${noDash(toClassObject(camelize(aPath[2])))}`].obj, 
               {
                 top: activeClusterCenter.offsetTop,
                 left: activeClusterCenter.offsetLeft,
@@ -126,7 +120,7 @@ const decomposeHash = (sPath) => {
 function hashHandler() {
   // console.log('e', e);
   const currentHash = window.location.hash.split('?')[0].substring(1);
-  console.log("currentHash", currentHash);
+  // console.log("currentHash", currentHash);
   decomposeHash(currentHash);
 }
 

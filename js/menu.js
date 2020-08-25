@@ -19,7 +19,11 @@ const generateMenu = (galaxyMaps) => {
   const nav = document.createElement('nav');
   nav.id += 'navigation';
 
-
+  let nbGalaxies = 0;
+  let nbClusters = 0;
+  let nbSystems = 0;
+  let nbPlanets = 0;
+  let nbSatellites = 0;
 
   let mapInput = createElem('input', nav, {
     name: 'toggle-map',
@@ -75,6 +79,8 @@ const generateMenu = (galaxyMaps) => {
     galaxyLink.id = `${spaceToDash(galaxy.name).toLowerCase()}-link`;
     galaxyLink.innerHTML += noFirstUnderscore(galaxy.name.toLowerCase());
 
+    nbGalaxies++;
+
     if(galaxy.clusters && galaxy.clusters.length > 0) {
       let galaxyLabel = createElem('label', galaxyDiv, {
         for: `input-${spaceToDash(galaxy.name).toLowerCase()}`,
@@ -96,6 +102,8 @@ const generateMenu = (galaxyMaps) => {
         clusterLink.id = `${spaceToDash(cluster.name).toLowerCase()}-link`;
         clusterLink.innerHTML += noFirstUnderscore(cluster.name.toLowerCase());
 
+        nbClusters++;
+
         if(cluster.bodies && cluster.bodies.length > 0) {
           let clusterLabel = createElem('label', clusterDiv, {
             for: `input-${spaceToDash(cluster.name).toLowerCase()}`,
@@ -116,6 +124,8 @@ const generateMenu = (galaxyMaps) => {
             systemLink.href = clusterLink.href + `/${spaceToDash(system.name).toLowerCase()}`;
             systemLink.id = `${spaceToDash(system.name).toLowerCase()}-link`;
             systemLink.innerHTML += noFirstUnderscore(system.name.toLowerCase());
+
+            nbSystems++;
 
             if(system.bodies && system.bodies.length > 0) {
               let systemLabel = createElem('label', systemDiv, {
@@ -139,6 +149,8 @@ const generateMenu = (galaxyMaps) => {
                 planetLink.id = `${spaceToDash(planet.name).toLowerCase()}-link`;
                 planetLink.innerHTML += noFirstUnderscore(planet.name.toLowerCase());
 
+                nbPlanets++;
+
                 if(planet.bodies && planet.bodies.length > 0) {
                   let planetLabel = createElem('label', planetDiv, {
                     for: `input-${spaceToDash(planet.name).toLowerCase()}`,
@@ -160,6 +172,8 @@ const generateMenu = (galaxyMaps) => {
                     satelliteLink.href = planetLink.href + `/${spaceToDash(satellite.name).toLowerCase()}`;
                     satelliteLink.id = `${spaceToDash(satellite.name).toLowerCase()}-link`;
                     satelliteLink.innerHTML += noFirstUnderscore(satellite.name.toLowerCase());
+
+                    nbSatellites++;
                   })
                 } else {
                   // planetLink.className += 'empty';
@@ -178,8 +192,15 @@ const generateMenu = (galaxyMaps) => {
     }
 
 
-
   });
+
+  console.log(
+    `Galaxies: ${nbGalaxies}\n`,
+    `Clusters: ${nbClusters}\n`,
+    `Systems: ${nbSystems}\n`,
+    `Planets: ${nbPlanets}\n`,
+    `Satellites: ${nbSatellites}`
+  );
 
   // galaxyMap;
 
