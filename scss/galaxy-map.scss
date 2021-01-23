@@ -36,7 +36,7 @@
   opacity: 0.5;
   transition: all var(--transition-duration) linear;
   transition-duration: 1s;
-  overflow-y: visible;
+  // overflow-y: visible;
   
   .map-container {
     position: absolute;
@@ -403,7 +403,7 @@
     &.active,
     &.active:hover,
     &.active.hovered {
-      background: #000;
+      // background: #000;
       top: 50%;
       left: 50%;
       width: 100vw;

@@ -47,8 +47,7 @@ class Cluster {
       `,
     });
 
-
-    this.clusterEl.dataset.href = this.clusterEl.href;
+    this.clusterEl.dataset.href = this.clusterEl.getAttribute('href');
 
     this.clusterEl.innerHTML += `
       <div class="container">
@@ -94,7 +93,7 @@ class Cluster {
     if(this.image) {
       setAttributes(this.clusterEl.querySelector('.container'), {
         style: `
-          background: url('img/galaxy-map/clusters/${this.image}') center #000 no-repeat;
+          background: url('img/galaxy-map/clusters/${this.image}') center no-repeat;
           background-size: contain;`,
       });
     }

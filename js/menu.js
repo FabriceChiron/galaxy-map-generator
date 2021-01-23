@@ -217,12 +217,12 @@ const generateMenu = (galaxyMaps) => {
     const thisHref = link.href.split('#')[1];
     
     link.onmouseenter = function() {
-      const matchingCluster = document.querySelector(`a.cluster[href="#${thisHref}"], a.astralBody[href="#${thisHref}"]`);
+      const matchingCluster = document.querySelector(`a.cluster[data-href="#${thisHref}"], a.astralBody[href="#${thisHref}"]`);
       if(matchingCluster) matchingCluster.className += ' hovered';
     };
 
     link.onmouseleave = function() {
-      const matchingCluster = document.querySelector(`a.cluster[href="#${thisHref}"], a.astralBody[href="#${thisHref}"]`);
+      const matchingCluster = document.querySelector(`a.cluster[data-href="#${thisHref}"], a.astralBody[href="#${thisHref}"]`);
       if(matchingCluster) matchingCluster.className = matchingCluster.className.replace(' hovered', '');
     };
   })
