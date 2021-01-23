@@ -8022,8 +8022,7 @@
                   "year": "3.5",
                   "bodies": 130
                 }
-              ],
-              "bodies": [
+              ],          "bodies": [
                 {
                   "name": "akraia",
                   "image": "Rockplates1.webp",
@@ -8253,348 +8252,31 @@
               "name": "Kypladon",
               "star": "Kypladon",
               "top": 45,
-              "left": 47,
-              "asteroids": [
-                {
-                  "orbit": "0.7",
-                  "year": "0.7",
-                  "bodies": 10
-                }
-              ],
-              "bodies": [
-                {
-                  "name": "hanalei",
-                  "image": "mercury-texture.webp",
-                  "filter": "contrast(2)",
-                  "overlay": "rgba(140, 104, 77, 0.5)",
-                  "clouds": "",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 0.5,
-                  "year": 0.4,
-                  "size": "11477/6378",
-                  "day": "46.4/24",
-                  "coords": "n",
-                  "details": "Early surveyors of Hanalei dismissed its resource potential, saying it had \"more heat than a planet needs and more argon than a galaxy would buy.\" As an enormous terrestrial planet buried under a merciless atmosphere of argon, nitrogen, and carbon dioxide, Hanalei hosted only small orbital stations that were primarily scientific in nature. The facilities have since been destroyed by the Reapers.\n"
-                },
-                {
-                  "name": "cyone",
-                  "image": "Alpine.webp",
-                  "filter": "",
-                  "overlay": "",
-                  "clouds": "earth-clouds.webp",
-                  "cloudsFilter": "opacity(80%)",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 0.9,
-                  "year": 1,
-                  "size": "6271/6378",
-                  "day": "39.6/24",
-                  "coords": "e",
-                  "details": "This garden world's claim to military fame is its [sic] that it was assaulted repeatedly during the Krogan Rebellions, but never occupied by more than token forces. The asari cut off the krogan supply line at the Citadel relay and drove the invaders out. Today, antimatter generators on the surface and in orbital stations provide fuel for military starships throughout asari space. The matriarchs defending the planet today have vowed to maintain Cyone's legacy--they pledge it will fall to no enemy, organic or synthetic.\n<br><br>Cyone, a fortified world under the protection of several asari matriarchs, has begun to supply fuel to Systems Alliance forces in the hope that an asari-human partnership might prevent the Reapers from seizing the planet. Alliance forces have since established several outposts in the system.\n<br><br>The humans and asari have been joined by a small detachment of turians, drawn from the private militia of a corporate conglomerate that does business with Cyone. The three species are so determined to defend Cyone that integration issues have been negligible.\n<br><br>The Official Digital Toolset for Dungeons & DragonsVisit D&D BeyondFandom may earn an affiliate commission on sales made from links on this page.The task force has already thrown back several Reaper attacks, although the commanders express concern that small Reaper forces could have slipped through despite their vigilance.\n"
-                },
-                {
-                  "name": "katebolo",
-                  "image": "Gaseous10.webp",
-                  "filter": "hue-rotate(130deg) contrast(1.2) saturate(0.8)",
-                  "overlay": "",
-                  "clouds": "",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 4.1,
-                  "year": 9.1,
-                  "size": "48746/6378",
-                  "day": "15.4/24",
-                  "coords": "e",
-                  "details": "Katebolo is a relatively large methane-ammonia ice giant. Although Cyone and its orbital stations offer military-grade starship fuel, commercial ships took advantage of the helium-3 refineries here. Because Katebolo was relatively near to the mass relay in the system, the Reapers destroyed the infrastructure on their way to more important targets.\n"
-                }
-              ]
+              "left": 47
             },
             {
               "name": "Loropi",
               "star": "Loropi",
               "top": 48,
-              "left": 36,
-              "asteroids": [
-                {
-                  "orbit": "52",
-                  "year": "52",
-                  "bodies": 100
-                }
-              ],
-              "bodies": [
-                {
-                  "name": "paphos",
-                  "image": "Gaseous3.webp",
-                  "filter": "hue-rotate(0deg) saturate(2) brightness(0.8) contrast(1.5)",
-                  "overlay": "rgb(226 189 119 / 50%)",
-                  "clouds": "",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 20.5,
-                  "year": 64.2,
-                  "size": "71458/6378",
-                  "day": "17.8/24",
-                  "coords": "nw",
-                  "details": "Paphos, a hydrogen-helium gas giant with a significant amount of nitrogen, is named for a prominent asari lawgiver. Her treatise on the reluctance of democracies to go to war with other democracies formed a key tenet of asari political theory that led to Thessia's modern golden age.\n<br><br>The planet itself was only notable for orbital stations that fueled transport ships by skimming deuterium and helium-3. The Reapers destroyed the stations, killing the inhabitants.\n"
-                },
-                {
-                  "name": "yasilium",
-                  "image": "Martian.webp",
-                  "filter": "brightness(1.3) contrast(0.8)",
-                  "overlay": "",
-                  "clouds": "",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 38.3,
-                  "year": 164.1,
-                  "size": "2601/6378",
-                  "day": "31.5/24",
-                  "coords": "w",
-                  "details": "Yasilium is a minor rock planet that has not quite cleared the ring of debris at the edge of Loropi's orbits. It is believed to be an extrasolar capture. For several centuries, Yasilium supported a succession of mining colonies--first iridium, then titanium, and finally light metals like bauxite and alumina. The planet was abandoned long before the Reaper invasion.\n"
-                }
-              ]
+              "left": 36
             },
             {
               "name": "Nahuala",
               "star": "Nahuala",
               "top": 32,
-              "left": 36,
-              "asteroids": [
-                {
-                  "orbit": "5.2",
-                  "year": "5.2",
-                  "bodies": 125
-                }
-              ],
-              "bodies": [
-                {
-                  "name": "agessia",
-                  "image": "Rockbits1.webp",
-                  "filter": "saturate(2) contrast(0.8)",
-                  "overlay": "",
-                  "clouds": "",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 0.48,
-                  "year": 0.4,
-                  "size": "5984/6378",
-                  "day": "45.1/24",
-                  "coords": "nw",
-                  "details": "Rife with volcanic activity and scorched by the nearby orange star Nahuala, Agessia is an unforgiving and ever-shifting puzzle box of a planet. Ceaseless solar winds and magnetic bombardment have thinned Agessia's atmosphere, but these features are actually a boon in wartime. Powerful magnetic fields and large quantities of airborne volcanic ash make many forms of scanning difficult, allowing the asari to hide valuable palladium and molybdenum mines needed for the war effort. Agessia's sheltered underground colonies remain untouched by the Reapers, at least for the moment.\n"
-                },
-                {
-                  "name": "hyetiana",
-                  "image": "Alpine.webp",
-                  "filter": "",
-                  "overlay": "",
-                  "clouds": "earth-clouds.webp",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 0.8,
-                  "year": 1.1,
-                  "size": "11245/6378",
-                  "day": "19.2/24",
-                  "coords": "s",
-                  "details": "Hyetiana serves as a bastion of research for the asari, boasting multiple observation outposts, glacial drilling stations, and educational institutions. While the planet's average temperature hovers near freezing, the equatorial band contains oceans and many fresh-water rivers. Xenobiologists of all stripes often visited the planet, as its expansive facilities were a haven for the life sciences.\n<br><br>The Reapers destroyed Hyetiana's spaceports and its uniformed defense forces. As with other asari planets, the Reapers forced the heavily biotic population into surrender through threats of massive retaliation rather than assault by husks alone.\n"
-                },
-                {
-                  "name": "phoros",
-                  "image": "Gaseous2.webp",
-                  "filter": "hue-rotate(10deg) saturate(2) contrast(1.4)",
-                  "overlay": "",
-                  "clouds": "",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 2.45,
-                  "year": 4.3,
-                  "size": "57188/6378",
-                  "day": "17.2/24",
-                  "coords": "n",
-                  "details": "Phoros is a hydrogen gas giant, tinted orange by swirling bands of ammonia and sulfur. Its four moons hosted small spaceports used to mine the moons and the nearby Haelimar asteroid belt. Unfortunately, Phoros was an early target of the Reapers. They made short work of the lunar outposts. On sensors, no survivors or Reaper forces are immediately obvious, but Phoros's ring system is filled with dust and ice that would allow concealment.\n"
-                }
-              ]
+              "left": 36
             },
             {
               "name": "Phontes",
               "star": "Phontes",
               "top": 31,
-              "left": 47,
-              "bodies": [
-                {
-                  "name": "lenuamund",
-                  "image": "venus-texture.webp",
-                  "filter": "saturate(0.25) contrast(1.25)",
-                  "overlay": "",
-                  "clouds": "",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 0.3,
-                  "year": 0.2,
-                  "size": "11975/6378",
-                  "day": "42.1/24",
-                  "coords": "s",
-                  "details": "Lenuamund's scorching hot surface is composed of lime with deposits of copper. It has faint traces of a nitrogen atmosphere. The elcor have left it untouched, aside from orbital probes that monitor the planet in case anything noteworthy should one day occur.\n"
-                },
-                {
-                  "name": "dekuuna",
-                  "image": "Swamp.webp",
-                  "filter": "",
-                  "overlay": "",
-                  "clouds": "earth-clouds.webp",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 1.1,
-                  "year": 1.1,
-                  "size": "10387/6378",
-                  "day": "68.4/24",
-                  "coords": "e",
-                  "details": "The elcor homeworld, Dekuuna, overflows with natural resources protected by law, from large deposits of precious metals to vast forests. The elcor themselves live in rich grasslands near the equator. The majority of Dekuuna's settlements are tucked within this belt, as the conservative elcor feel little desire to build outside their comfort zone. Their twin capitals are for migrations from the wet season to the dry season, a tradition made obsolete by modern technology but still observed.\n<br><br>After the destruction of the elcor navy, Reapers moved in their ground troops to occupy the cities. This has taken longer than most civilized worlds, as the elcor have spread out into smaller, distant settlements, reflecting their preference for close-knit family communities instead of densely packed cities.\n<br><br>Native flora includes the onuffri blossom. These are thick, bulbous purple flowers that grow in the planet's savannas.\n",
-                  "bodies": [
-                    {
-                      "name": "oltan",
-                      "texture": true,
-                      "image": "moon-texture.webp",
-                      "filter": "brightness(0.5) contrast(1.2)",
-                      "orbit": "0.003",
-                      "orbitFactor": 50,
-                      "size": "2,822/6378",
-                      "year": "44.45/365",
-                      "coords": "se",
-                      "details": "The Moon is an astronomical body that orbits planet Earth, being Earth's only permanent natural satellite. It is the fifth-largest natural satellite in the Solar System, and the largest among planetary satellites relative to the size of the planet that it orbits (its primary). Following Jupiter's satellite Io, the Moon is second-densest satellite among those whose densities are known."
-                    }
-                  ]
-                },
-                {
-                  "name": "telluune",
-                  "image": "Martian.webp",
-                  "filter": "hue-rotate(100deg) saturate(0.6)",
-                  "overlay": "",
-                  "clouds": "",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 2,
-                  "year": 2.9,
-                  "size": "11274/6378",
-                  "day": "57.6/24",
-                  "coords": "s",
-                  "details": "Telluune is named after the first elcor settlement in recorded history. The planet's name roughly translates to \"the deep and restful meadowland,\" which is somewhat of a misnomer, given that Telluune's thick, crushing atmosphere keeps its surface boiling hot, and the air is a noxious mixture of carbon dioxide and helium.\n"
-                },
-                {
-                  "name": "sangel",
-                  "image": "Gaseous2.webp",
-                  "filter": "hue-rotate(10deg) saturate(1.2) contrast(1.4)",
-                  "overlay": "",
-                  "clouds": "",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 8.1,
-                  "year": 23.1,
-                  "size": "75335/6378",
-                  "day": "9.7/24",
-                  "coords": "nw",
-                  "details": "When Dekuuna's government learned that the Reapers had returned, they evacuated everyone on Sangel's helium-3 recovery platforms. The sizable hydrogen-helium gas giant was abandoned, its workers relocated to Dekuuna. The move was ostensibly made because the elcor homeworld was a more defensible position. In reality, it may have been motivated by a subconscious herding instinct, as most grazing creatures come together in large groups when predators near.\n"
-                }
-              ]
+              "left": 47
             },
             {
               "name": "Teyolia",
               "star": "Teyolia",
               "top": 36,
-              "left": 84,
-              "bodies": [
-                {
-                  "name": "loxia",
-                  "image": "ice-center.webp",
-                  "filter": "hue-rotate(190deg) saturate(0.8) contrast(0.8)",
-                  "overlay": "",
-                  "clouds": "",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 0.7,
-                  "year": 0.43,
-                  "size": "3016/6378",
-                  "day": "29.3/24",
-                  "coords": "s",
-                  "details": "Loxia is a small terrestrial planet tidally locked to Teyolia. Due to its low mass and relatively small size, Loxia has an exceptionally fast stellar orbit. The planet's light atmosphere consists mainly of argon and krypton, which occasionally produces long, thin bands of luminescence along the twilight border. Loxia's crust is mainly igneous rock with wide salt flats and occasional deposits of potassium.\n"
-                },
-                {
-                  "name": "nevos",
-                  "image": "Alpine.webp",
-                  "filter": "",
-                  "overlay": "",
-                  "clouds": "earth-clouds.webp",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 1.6,
-                  "year": 1.8,
-                  "size": "7134/6378",
-                  "day": "19.7/24",
-                  "coords": "ne",
-                  "details": "First discovered by asari pioneers in 430 CE, Nevos is a vibrant garden planet and home to a thriving asari colony. Sandy beaches and romantic twin moons fuel a bustling tourism economy, while practical and secretive corporate matters are handled in spiraling arcologies built along towering cliffs. Even though it has been colonized for centuries, Nevos feels a frontier away from regulation and oversight. Consequently, a number of influential political lobbies have established sizable presences on the planet.\n"
-                },
-                {
-                  "name": "quirezia",
-                  "image": "Gaseous6.webp",
-                  "filter": "contrast(2) saturate(0.7) brightness(1.8) hue-rotate(30deg)",
-                  "overlay": "",
-                  "clouds": "",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 2.48,
-                  "year": 3.9,
-                  "size": "68541/6378",
-                  "day": "17.9/24",
-                  "coords": "ne",
-                  "details": "A typical hydrogen-helium gas giant, Quirezia serves as a naval resource for fuel-gathering and magnetic-field discharge. The planet is surrounded by a band of seven large moons that form The Necklace--a reference to a legendary jewel owned by the ancient asari queen for which Quirezia was named.\n<br><br>Quirezia's orbit places it within the system's frost line, where gas giants do not usually form. For this reason, the planet is believed to be an extrasolar capture. The alternative, that its orbit is decaying, is a horrifying prospect to the tourism and immigration boards of Nevos, since they would be in the gas giant's eventual path.\n"
-                },
-                {
-                  "name": "atebolos",
-                  "image": "mercury-texture.webp",
-                  "filter": "contrast(2.5)",
-                  "overlay": "rgba(122, 129, 182, 0.5)",
-                  "clouds": "",
-                  "cloudsFilter": "",
-                  "rings": false,
-                  "ringsColor": "",
-                  "texture": true,
-                  "orbit": 7.45,
-                  "year": 20.4,
-                  "size": "8152/6378",
-                  "day": "31.1/24",
-                  "coords": "se",
-                  "details": "Farthest out from Teyolia, Atebolos is a low-density planet peppered with outdated mining facilities and a few independent mechanical contractors. The unmanned mining scouts that first surveyed the planet conveyed positive reports, based on the light gravity, gentle atmospheric pressure, and easily penetrable crust of silica and salt. Neither methane pockets nor low temperatures were barriers to the asari, but after centuries of mining, the veins of genuinely valuable minerals are gone and all but a few inhabitants have departed.\n"
-                }
-              ]
+              "left": 84
             }
           ]
         },
@@ -9603,7 +9285,238 @@
           "name": "Heleus Cluster",
           "top": 83.5,
           "left": 35.5,
-          "image": "heleus.webp"
+          "image": "cluster-11.webp",
+          "bodies": [
+            {
+              "name": "Aru",
+              "star": "Aru",
+              "top": 33,
+              "left": 50,
+              "asteroids": [
+                {
+                  "orbit": "3.2",
+                  "year": "3.2",
+                  "bodies": 150
+                }
+              ],
+              "bodies": [
+                {
+                  "name": "Jak Ser",
+                  "image": "Mercury.webp",
+                  "texture": true,
+                  "orbit": "0.6",
+                  "year": "0.4",
+                  "size": "10792/6378",
+                  "day": "35.3/24",
+                  "coords": "s",
+                  "details": "Jak Ser features heavily in ancient volus mythology and folklore, since its bright white surface made it easy to chart in the night sky without the aid of a telescope. Once the volus developed advanced astronomical equipment, their scientists discovered that Jak Ser's luminosity was caused by a thick carbon monoxide cloud cover that had hidden the real face of the planet for millennia."
+                },
+                {
+                  "name": "Irune",
+                  "image": "Savannah.webp",
+                  "clouds": "Clouds1.webp",
+                  "texture": true,
+                  "orbit": "1.3",
+                  "year": "1.5",
+                  "size": "11525/6378",
+                  "day": "36.2/24",
+                  "coords": "nw",
+                  "details": "The volus homeworld is a high-pressure, high-gravity planet that supports an ammonia-based ecology. This rare environment means that the volus have been slow to colonize, as there are few planets that meet their habitation requirements. Most prefer to stay on Irune, working remotely via the extranet. The more adventurous don the clumsy but vital pressure suits and venture out to worlds in Citadel space to make their fortunes."
+                },
+                {
+                  "name": "Locil",
+                  "image": "Gaseous6.webp",
+                  "texture": true,
+                  "orbit": "5.8",
+                  "year": "14",
+                  "size": "52635/6378",
+                  "day": "10.6/24",
+                  "coords": "e",
+                  "details": "The first of the Aru system's three gas giants, Locil is also the largest. Boasting over 96 moons, this planet's orbit bustled with hundreds of helium-3 extraction centers. Most of the work population lived on Locil's orbital stations, which were so numerous they became an unofficial city chained together by taxi services and extendable umbilical cords. The Reaper attack here has devastated the infrastructure, raining fragments down onto the gas giant."
+                },
+                {
+                  "name": "Cherk Sab",
+                  "image": "Gaseous8.webp",
+                  "texture": true,
+                  "orbit": "10.4",
+                  "year": "33.6",
+                  "size": "39139/6378",
+                  "day": "12.1/24",
+                  "coords": "se",
+                  "details": "Named after a northern Irunian luck deity, Cherk Sab is overshadowed by the economy on Locil and the scientific research on Doldit. The solar system's \"middle child\", Cherk Sab now has the only functioning helium-3 fuel apparatus in the system, as the Reapers have not yet struck there. The space around it is jammed with volus ships trying to flee the system."
+                },
+                {
+                  "name": "Doldit",
+                  "image": "Gaseous7.webp",
+                  "texture": true,
+                  "orbit": "20.8",
+                  "year": "95.2",
+                  "size": "28982/6378",
+                  "day": "10.6/24",
+                  "coords": "nw",
+                  "details": "Doldit's moons have long been mined out, but they still hosted dozens of corporate-owned laboratories relocated there to avoid the environmental restrictions placed on research and development firms by Irune. Everything from weapon testing to cutting-edge biological research was outsourced to facilities orbiting Doldit. This made it an attractive target for the Reapers, who sent a small but powerful force to blow the facilities into scrap."
+                }
+              ]
+            },
+            {
+              "name": "Esori",
+              "star": "Esori",
+              "top": 40,
+              "left": 45,
+              "bodies": [
+                {
+                  "name": "Mola",
+                  "image": "Martian.webp",
+                  "texture": true,
+                  "orbit": "0.3",
+                  "year": "0.1",
+                  "size": "7608/6378",
+                  "day": "18.4/24",
+                  "coords": "ne",
+                  "details": "For a terrestrial planet, Mola hurtles around the system's star at breakneck speed. Its rapid orbit and molten core cause oceans of magma to be pumped out onto the surface, cooling into the continent-sized formations then erased by fresh flows of molten rock."
+                },
+                {
+                  "name": "Atos Irn",
+                  "image": "Venusian.webp",
+                  "texture": true,
+                  "orbit": "1",
+                  "size": "7556/6378",
+                  "day": "40.4/24",
+                  "year": "1",
+                  "coords": "s",
+                  "details": "Atos Irn was claimed, along with the rest of its system, after the volus learned FTL travel. In the great volus exploration push of 300 BCE, the species found only a few planets capable of supporting their colonies. They did, however, discover many planets teeming with valuable elements."
+                },
+                {
+                  "name": "Yan Tao",
+                  "image": "Rockplates1.webp",
+                  "texture": true,
+                  "orbit": "1.6",
+                  "year": "2",
+                  "size": "11460/6378",
+                  "day": "37.9/24",
+                  "coords": "w",
+                  "details": "Even by volus standards, the pressure on Yan Tao is crushing. With an atmosphere composed of carbon dioxide, argon, and small traces of oxygen, the surface is devoid of life. However, tiny, fossilized sea creatures have been discovered in the deepest crevices of what used to be Yan Tao's oceans."
+                },
+                {
+                  "name": "Kailo",
+                  "image": "Rockbits1.webp",
+                  "texture": true,
+                  "orbit": "3.2",
+                  "year": "5.7",
+                  "size": "11489/6378",
+                  "day": "93.9/24",
+                  "coords": "sw",
+                  "details": "Kailo's frigid surface is dotted with impact craters left during a legendary meteor shower that happened more than 400,000 years ago. The meteors contained traces of cobalt, but not enough to warrant a full-scale mining expedition. The volus have largely left Kailo alone, as have the Reapers."
+                },
+                {
+                  "name": "Solu Paolis",
+                  "image": "Gaseous5.webp",
+                  "texture": true,
+                  "orbit": "6.6",
+                  "year": "17.2",
+                  "size": "28567/6378",
+                  "day": "14.7/24",
+                  "coords": "e",
+                  "details": "Solu Paolis's helium-3 collection mechanisms historically turned a large profit, not because of any great immigration into the Esori system, but because Solu Paolis made a good refueling stop between Irune and Satu Arrd.<br><br>Warned of the Reapers' battle plans but left with little other option, a select team of workers at Solu Paolis sent out phony communications suggesting that important military data was being handed off here. When the Reapers sent in a force of husks, they ran into the volus's trap: a chain reaction that annihilated the station."
+                }
+              ]
+            }, 
+            {
+              "name": "Nura",
+              "star": "Nura",
+              "top": 31,
+              "left": 63,
+              "bodies": [
+                {
+                  "name": "Lahu",
+                  "image": "Rockbits1.webp",
+                  "texture": true,
+                  "orbit": "1.1",
+                  "year": "1.2",
+                  "size": "8616/6378",
+                  "day": "53.6/24",
+                  "coords": "nw",
+                  "details": "Massive silicate-filled dust storms plague the surface of Lahu. In an odd partnership of commerce and science, high-rolling volus casinos on Oma Ker entered a partnership with the scientific research teams whose observation satellites watch over Lahu. The casinos took bets on how long Lahu storms would last and how high their wind speed might climb. Payouts made the rare volus rich, with jackpot winners forming a small fraternal order."
+                },
+                {
+                  "name": "Oma Ker",
+                  "image": "Terrestrial4.webp",
+                  "texture": true,
+                  "clouds": "Clouds3.webp",
+                  "orbit": "2",
+                  "year": "2.7",
+                  "size": "6739/6378",
+                  "day": "25.4/24",
+                  "coords": "e",
+                  "details": "Oma Ker is a temperate garden world currently in its megafauna stage. The planet's nitrogen-oxygen atmosphere and dextro-amino-acid-based life wasn't particularly attractive to the volus, so they sold the colonization rights to their turian partners. Oma Ker's spaceports and major roads were blasted into craters by the Reapers, largely immobilizing the population. Its turian defenders are slowly being pushed back by ground forces."
+                },
+                {
+                  "name": "Welm Urun",
+                  "image": "Gaseous3.webp",
+                  "texture": true,
+                  "orbit": "6.8",
+                  "year": "17.7",
+                  "size": "62522/6378",
+                  "day": "16.4/24",
+                  "coords": "n",
+                  "details": "Welm Urun is a hydrogen-helium gas giant. The phrase \"Welm Urun\" in the volus native language translates to \"the golden one\", a reference to its deep yellow-orange rings. Much to prospectors' dismay, there was no gold to be found in its moons. Welm Urun's economic contributions to the system was the ubiquitous helium-3, but the collection materials have since been destroyed."
+                },
+                {
+                  "name": "Gorgun",
+                  "image": "Gaseous4.webp",
+                  "texture": true,
+                  "orbit": "13.4",
+                  "year": "49.2",
+                  "size": "67733/6378",
+                  "day": "13/24",
+                  "coords": "w",
+                  "details": "Like Welm Urun, Gorgun was a hydrogen-helium gas giant whose helium-3 infrastructure was destroyed."
+                }
+              ]
+            },
+            {
+              "name": "Satu Arrd",
+              "star": "Satu Arrd",
+              "top": 53,
+              "left": 40,
+              "bodies": [
+                {
+                  "name": "Poloh Tem",
+                  "image": "Mercury.webp",
+                  "texture": true,
+                  "orbit": "2.1",
+                  "year": "3.1",
+                  "size": "5738/6378",
+                  "day": "35.8/24",
+                  "coords": "e",
+                  "details": "This world is believed to be an extrasolar capture that built up its atmosphere over millions of years to become the hothouse it is today. Volus robo-miners descended on Poloh Tem when element zero was first discovered there, and in turn, pirates descended on the volus. The pirates then found out, to their detriment, that wealthy volus can buy a lot of influence in the Turian Hierarchy."
+                },
+                {
+                  "name": "Rilar",
+                  "image": "Rockplates1.webp",
+                  "texture": true,
+                  "orbit": "3",
+                  "year": "5.3",
+                  "size": "5082/6378",
+                  "day": "23.2/24",
+                  "coords": "sw",
+                  "details": "Rilar is a barren, terrestrial rock world. Only a small portion of the planet has been explored, as cursory scans showed little of interest on Rilar compared to the eezo deposits on the neighboring world of Poloh Tem."
+                },
+                {
+                  "name": "Nalisin",
+                  "image": "Moon.webp",
+                  "texture": true,
+                  "orbit": "23.4",
+                  "year": "113.6",
+                  "size": "4494/6378",
+                  "day": "20.6/24",
+                  "coords": "s",
+                  "details": "A lonely world of rock and ice, Nalisin clings to the outer rim of the Satu Arrd system. Its freezing temperatures and carbon-dioxide atmosphere were braved by eezo smugglers, who set up camps in the tunnels honeycombing the southern hemisphere's mountain ranges. The camps were abandoned when turian patrols began regular raids on the smugglers' cave systems."
+                }
+              ]
+            }
+          
+          ]
         }
       ]
     }
