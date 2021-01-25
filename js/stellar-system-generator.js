@@ -131,10 +131,10 @@ class AstralBody {
     this.astralOrbit.querySelector('.infos').innerHTML+=
       `<div class="details">
         <ul>
-          <li class="info-orbit">Orbit: ${this.realOrbit} AU</li>
-          <li class="info-year">Orbital Period: ${this.yearLength} year(s)</li>
+          ${this.realOrbit ? `<li class="info-orbit">Orbit: ${this.realOrbit} AU</li>` : ''}
+          ${this.yearLength ? `<li class="info-year">Orbital Period: ${this.yearLength} year(s)</li>` : ''}
         </ul>
-        <p class="details-content">${this.details}</p>
+        ${this.details ? `<p class="details-content">${this.details}</p>` : ''}
       </div>`;
   }
 
