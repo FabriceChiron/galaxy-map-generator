@@ -105,7 +105,8 @@ class AstralBody {
         : 1;
     this.realYear = obj.year;
     this.yearLength = (obj.year) ? Math.round((eval(obj.year)) * 100) / 100 : 1;
-    this.dayLength = (obj.day) ? ( (obj.day === "tidal") ? obj.day : eval(obj.day) ) : 1;
+    this.dayLength = (obj.day) ? ( (obj.day === "tidal") ? obj.day : eval(obj.day) ) : 0;
+    this.dayDirection = (obj.rotationDirection) ? obj.rotationDirection : "normal";
     this.coords = (override && override.coords) ? override.coords : ((obj.coords) ? obj.coords : (bodyType === "star") ? ((obj.coords) ? obj.coords : 'c') : 'nw');
     this.details = obj.details;
     this.rings = (obj.rings) ? obj.rings : null;
@@ -133,6 +134,16 @@ class AstralBody {
         <ul>
           ${this.realOrbit ? `<li class="info-orbit">Orbit: ${this.realOrbit} AU</li>` : ''}
           ${this.yearLength ? `<li class="info-year">Orbital Period: ${this.yearLength} year(s)</li>` : ''}
+          ${
+            (this.dayLength && typeof this.dayLength === "number" && this.dayLength !== 0) 
+              ? `<li class="info-day">Rotation Period: 
+                ${
+                  (this.dayDirection && this.dayDirection === 'reverse') 
+                  ? '-'
+                  : ''
+                }
+                ${this.dayLength.toFixed(2)} day(s)</li>` 
+              : '<li class="info-day">Tidally locked</li>'}
         </ul>
         ${this.details ? `<p class="details-content">${this.details}</p>` : ''}
       </div>`;
@@ -231,6 +242,9 @@ class AstralBody {
     } else {
       bg = `background-color: ${this.bgColor};`;
     }
+    if(this.dayDirection){
+      bg += ` animation-direction: ${this.dayDirection};`;
+    }
     if(this.filter){
       bg += ` --filter: ${this.filter};`;
     }
@@ -266,7 +280,7 @@ class AstralBody {
         --thisSize: ${this.bodySize}; 
         --sizeFactor: ${this.sizeFactor};
         --thisYear: ${this.yearLength};
-        --thisDay: ${this.dayLength};
+        --thisDay: ${(this.dayLength !== 0) ? this.dayLength : 1};
         --thisActiveFactor: 1;
          `,
       });
