@@ -190,18 +190,34 @@ body {
   // padding: .5rem;
   display: flex;
   flex-direction: column-reverse;
+  background: rgba(0, 0, 0, 0.5);
+  margin-right: 1px;
+
+  @media screen and (max-width: 680px) {
+    flex-direction: row;
+    right: 0;
+    top: auto;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    margin-right: 0;
+  }
 
   label {
     border: 1px solid rgba(255,255,255,0);
-    padding: .5rem;
+    padding: .5em;
+    font-size: 1.5rem;
     cursor: pointer;
-    width: 1.25rem;
-    height: 1.25rem;
     text-align: center;
     position: relative;
+    flex: 1;
 
     &:last-child {
-      border-top: none;
+      // border-top-width: 0;
+      @media screen and (max-width: 680px) {
+        border-top-width: 1px;
+        // border-bottom-width: 0;
+      }
     }
 
     &.toggle:not(.active) {
@@ -230,18 +246,49 @@ label[for="toggle-play"]:after {
   content: "Û";
 }
 
-#toggle-play:checked ~ section * {
+label[for="toggle-details"]:after {
+  content: "Q";
+}
+
+#toggle-details:checked ~ .settings label[for="toggle-details"]:after{
+  content: "s";
+}
+
+#toggle-play:checked ~ section *,
+#toggle-play:checked ~ section *:before,
+#toggle-play:checked ~ section *:after {
     animation-play-state: paused !important;  
 }
 
-#toggle-settings:checked + .settings {
-  transform: translateX(0);
+#toggle-details:checked ~ section .details {
+  display: none;
+}
+
+#toggle-settings:checked ~ .settings {
+  transform: translate3d(0, 0, 0);
   border-color: rgba(255,255,255,.5);
 
   label[for="toggle-settings"] {
-    border-color: rgba(255,255,255,.5);
-    border-right-color: rgba(0,0,0,1);
+    border-color: rgba(255, 255, 255, 0.5);
+    border-right: 2px solid black;
+    border-top: 0;
+    margin-right: -1px;
+
+    @media screen and (max-width: 680px) {
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 2px solid black;
+      margin-bottom: -1px;
+      margin-right: 0;   
+    }
   }
+}
+
+label[for="toggle-lightweight"] {
+  align-self: center;
+}
+
+#toggle-lightweight:checked ~ .settings label[for="toggle-lightweight"]{
+  background: #53cbf1;
 }
 
 .settings {
@@ -253,13 +300,36 @@ label[for="toggle-play"]:after {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background: #000 url('../img/2k_stars_milky_way.jpg') fixed;
-  background: rgba(0,0,0,.5);
+  background: #000 url(../img/2k_stars_milky_way.jpg) fixed;
+  background: rgba(0, 0, 0, 0.5);
   background-size: 100%;
   transition: all var(--transition-duration) ease;
-  transform: translateX(100%);
-  border: solid rgba(255,255,255,0);
-  border-width: 0 0 1px 1px;
+  transform: translate3d(100%, 0, 0);
+  border: solid rgba(255, 255, 255, 0);
+  border-width: 0 0 0 1px;
+  box-sizing: border-box;
+  gap: 1em;
+  bottom: 0;
+
+  .settings-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+
+  @media screen and (max-width: 680px) {
+    transform: translate3d(0, 100%, 0);
+    top: auto;
+    border-width: 1px 0 0 0; 
+    width: 100%;
+    right: auto;
+    gap: .5em;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: no-wrap;
+    overflow: auto;
+  }
 
   .setting {
     display: flex;
@@ -297,6 +367,13 @@ label[for="toggle-play"]:after {
   left: 0;
   padding: 1rem;
   z-index: 10;
+
+  @media screen and (max-width: 680px) {
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: auto;
+  }
 }
 
 section, .galaxy {

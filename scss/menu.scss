@@ -1,3 +1,9 @@
+@media screen and (max-width: 680px) {
+  #toggle-settings:checked ~ #navigation {
+    max-height: calc(100% - 285px);
+  }
+}
+
 #navigation {
   position: fixed;
   z-index: 3;
@@ -7,6 +13,11 @@
   overflow: auto;
   max-height: 100%;
   background: rgba(0,0,0,.5);
+  transition: all var(--transition-duration) ease;
+
+  @media screen and (max-width: 680px) {
+    max-height: calc(100% - 55px);
+  }
 
 
   ul {
@@ -42,12 +53,27 @@
     display: inline-block;
     transition: all var(--transition-duration) ease;
 
+    &.has-rings {
+      &:after {
+        content: url(../img/icon-planet-rings.svg);
+        height: .6em;
+        width: .6em;
+        margin-left: .3em;
+        display: inline-block;
+      }
+    }
+
     &:hover {
       color: #f33a10;
     }
 
     &.highlight {
       color: #53cbf1;
+      &.has-rings {
+        &:after {
+          content: url(../img/icon-planet-rings-blue.svg);
+        }
+      }
 
       & + label {
         color: #53cbf1;
@@ -86,6 +112,7 @@
     width: auto;
     padding: 1rem;
     padding-bottom: 0;
+    display: flex;
 
     > a {
       /* padding: 1rem 0 0 1rem; */
@@ -147,7 +174,7 @@
         padding: .5rem;
         margin-top: .5rem;
         height: 30px;
-        width: 200px;
+        width: 100%;
         outline: none;
         background: rgba(255,255,255,0.1);
         box-shadow: 0 0 0 5px rgba(0,0,0,1);

@@ -5,7 +5,7 @@ dimRet = (val, scale) => {
         return -diminishing_returns(-val, scale);
     var mult = val / scale;
     var trinum = (Math.sqrt(4.0 * mult + 1.0) - 1.0) / 2.0;
-    if(realSizes && realSizes === true) {
+    if(realSizes && realSizes === "true") {
       return val;
     } else {
       return trinum * scale;
@@ -84,7 +84,7 @@ class AstralBody {
     this.orbitFactor = (obj.orbitFactor) ? obj.orbitFactor : 1;
     this.bodySize = (obj.size) 
       ? (
-          (realSizes === false && bodyType.includes('star')) 
+          (realSizes === "false" && bodyType.includes('star')) 
           ? (
               (bodyType.includes('companion')) 
                 ? 2
@@ -94,7 +94,7 @@ class AstralBody {
         ) 
       : (bodyType.includes('star')) 
         ? (
-            (realSizes === true) 
+            (realSizes === "true") 
             ? 75 
             : (
                 (bodyType.includes('companion')) 
@@ -103,6 +103,7 @@ class AstralBody {
               )
           ) 
         : 1;
+    this.bodies = (obj.bodies) ? obj.bodies.length : 0;
     this.realYear = obj.year;
     this.yearLength = (obj.year) ? Math.round((eval(obj.year)) * 100) / 100 : 1;
     this.dayLength = (obj.day) ? ( (obj.day === "tidal") ? obj.day : eval(obj.day) ) : 0;
@@ -111,6 +112,7 @@ class AstralBody {
     this.details = obj.details;
     this.rings = (obj.rings) ? obj.rings : null;
     this.ringsColor = (obj.ringsColor) ? obj.ringsColor : null;
+    this.ringsDetails = (obj.ringsDetails) ? obj.ringsDetails : null;
     this.clouds = (obj.clouds) ? obj.clouds : null;
     this.cloudsFilter = (obj.cloudsFilter) ?obj.cloudsFilter : null;
     this.texture = (obj.texture) ? "-texture" : '';
@@ -142,7 +144,8 @@ class AstralBody {
                   ? '-'
                   : ''
                 }
-                ${this.dayLength.toFixed(2)} day(s)</li>` 
+                
+                ${Math.round((this.dayLength + Number.EPSILON) * 100) / 100} day(s)</li>` 
               : '<li class="info-day">Tidally locked</li>'}
         </ul>
         ${this.details ? `<p class="details-content">${this.details}</p>` : ''}
@@ -164,14 +167,44 @@ class AstralBody {
   }
 
   addRings() {
-    console.log(this.ringsColor);
+    // console.log(this.ringsColor);
     this.astralOrbit.querySelector('.astralBody-holder').innerHTML+=
-      `<div class="rings-holder"><div class="cc orbit rings"></div></div>`;
+      `<div class="tilt-mask ${(this.tilt !== 0) && 'has-no-mask'}"><div class="mask-shadow"><div class="rings-holder"><div class="cc orbit rings"></div></div></div></div>`;
 
     if(this.ringsColor) {
-      console.log(this.astralOrbit.querySelector('.orbit.rings'));
+      // console.log(this.astralOrbit.querySelector('.orbit.rings'));
       this.astralOrbit.querySelector('.astralBody-holder').style.setProperty('--ringsColor', `${this.ringsColor}`);
     }
+  }
+
+  addRingsSet() {
+    console.log(`${this.name} :`, this.rings.details);
+    console.log('isMobile:', isMobile)
+    let ringsImages = [];
+    let ringsSizes = [];
+
+    if(this.rings.details !== undefined) {
+      [...this.rings.details].map(thisRing => {
+        console.log(thisRing.image);
+        console.log(thisRing.size);
+        ringsImages.push(`url('../img/rings/${(isMobile === null) ? thisRing.image : thisRing.image.replace('-', '-mobile-')}.svg')`);
+        ringsSizes.push(`${thisRing.size}%`);
+      });
+
+      this.astralOrbit.querySelector('.cc.orbit.rings').style.setProperty('--images', `${ringsImages.join(',')}`);
+      this.astralOrbit.querySelector('.cc.orbit.rings').style.setProperty('--sizes', `${ringsSizes.join(',')}`);
+
+      console.log(ringsImages);
+      console.log(ringsSizes);
+    }
+    if(this.rings.filter !== undefined) {
+      this.astralOrbit.querySelector('.cc.orbit.rings').style.setProperty('--filter', `${(isMobile === null) ? this.rings.filter : 'none'}`);   
+    }
+
+  }
+
+  addSatellitesHolder() {
+    this.astralOrbit.querySelector('.astralBody-holder').innerHTML+= `<div class="mask-shadow satellites"><div class="toclip"></div></div>`;
   }
 
   addClouds() {
@@ -216,6 +249,7 @@ class AstralBody {
       if(this.bodyType === 'planet') {
         this.astralOrbit.style.setProperty('--planetYear', this.yearLength);
         this.astralOrbit.style.setProperty('--animationName', `shadow-${this.coords}`);
+        this.astralOrbit.style.setProperty('--animationName2', `drop-shadow-${this.coords}`);
       }
     }
   }
@@ -251,8 +285,35 @@ class AstralBody {
     this.astralBody.style = bg;
   }
 
+  checkIntersections() {
+    const toClipElem = this.astralOrbit.querySelector('.toclip');
+
+    [...this.astralOrbit.querySelectorAll('.satellite-holder')].map(satelliteHolder => {
+      if(!satelliteHolder.querySelector('.orbit').classList.contains('has-orbit-tilt')) {
+
+        const rectToCheck = toClipElem.getBoundingClientRect();
+        
+        const satelliteBody = satelliteHolder.querySelector('.astralBody-holder');
+        const rectSatelliteBody = satelliteBody.getBoundingClientRect();
+
+        if(rectSatelliteBody.top + rectSatelliteBody.height > rectToCheck.top
+        && rectSatelliteBody.left + rectSatelliteBody.width > rectToCheck.left
+        && rectSatelliteBody.bottom - rectSatelliteBody.height < rectToCheck.bottom
+        && rectSatelliteBody.right - rectSatelliteBody.width < rectToCheck.right) {
+          satelliteBody.classList.add("hidden");
+          // console.log('add hidden');
+        } else {
+          satelliteBody.classList.remove("hidden");
+          // console.log('remove hidden');
+        }
+
+      }
+
+    })
+  }
+
   createBody() {
-    if(realSizes && realSizes === true) {
+    if(realSizes && realSizes === "true") {
       this.sizeFactor = 1;
     } else {
       this.sizeFactor = (this.bodySize > 5) ? .5 : 1;
@@ -264,7 +325,7 @@ class AstralBody {
     
     setAttributes(this.astralOrbit, {
       id: `${spaceToDash(this.id).toLowerCase()}`,
-      class: `cc orbit ${this.bodyType} ${(this.dayLength === 'tidal') ? 'tidal' : ''} ${(this.override) ? 'active' : ''}`,
+      class: `cc orbit ${this.bodyType} ${(this.dayLength === 'tidal') ? 'tidal' : ''} ${(this.orbitTilt > 0) ? 'has-orbit-tilt' : ''} ${(this.override) ? 'active' : ''}`,
       'data-index': this.index,
     });
 
@@ -295,26 +356,24 @@ class AstralBody {
       tag = 'div';
     }
 
+    // console.log(`${this.name} is a ${this.bodyType} with ${this.bodies} satellite(s)`);
+
     this.astralOrbit.innerHTML += 
       `<div class="position ${this.coords}">
           <div class="astralBody-holder">
             <div class="cc astralBody ${this.bodyType}">
-              <${tag} href="${this.path}/${spaceToDash(this.id).toLowerCase()}" class="hover-area"></${tag}>
+            ${(this.bodyType !== 'star') 
+            ? `<${tag} href="${this.path}/${spaceToDash(this.id).toLowerCase()}" class="hover-area"></${tag}>`
+            : ''
+            }
             </div>
+            
           </div>
         </div>
       </div>`;
 
 
 
-    if(this.bodyType === 'satellite') {
-      const container =  document.createElement('div');
-      this.container = container;
-
-      setAttributes(this.container, {
-        class: 'satellite-holder',
-      });
-    }
 
     this.astralBody = astralOrbit.querySelector('.astralBody');
 
@@ -339,10 +398,8 @@ class AstralBody {
 
     this.addBackground();
 
-    if(this.tilt > 0) {
-      console.log(this.tilt);
-      this.astralOrbit.style.setProperty('--tilt', `${this.tilt}deg)`);
-    }
+    this.astralOrbit.style.setProperty('--tilt', `${(this.tilt) ? this.tilt : '0'}deg)`);
+    
     
     if(this.name !== ''){
       this.addLight();
@@ -353,7 +410,13 @@ class AstralBody {
     }
 
     if(this.rings) {
+      console.log(typeof this.rings);
       this.addRings();
+      this.addRingsSet();
+    }
+
+    if(this.bodies > 0 && this.bodyType === 'planet'){
+      this.addSatellitesHolder();
     }
 
 
@@ -361,12 +424,30 @@ class AstralBody {
       this.addDetails();
     }
 
+    if(this.bodyType === 'satellite') {
+      const container =  document.createElement('div');
+      this.container = container;
+
+      setAttributes(this.container, {
+        class: 'satellite-holder',
+      });
+    }
+
+
     this.container && this.container.appendChild(this.astralOrbit);
+
+    // console.log(this.container && this.container);
  
     const self = this;   
 
     if(this.bodyType === 'star') {
       this.targetElement.parentElement.style.setProperty('--addStarSize', `${this.bodySize}`);
+    }
+
+    if(this.bodies > 0 && this.bodyType === 'planet'){
+      setInterval(function(){
+        self.checkIntersections();      
+      }, 100)
     }
 
     // if(this.bodyType === 'planet'){
@@ -429,7 +510,7 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
     });
 
     if(system.bgImage) {
-      console.log('system.bgImage', system.bgImage);
+      // console.log('system.bgImage', system.bgImage);
       sectionSystem.style.backgroundImage = `url(img/galaxy-map/clusters/${system.bgImage})`;
       sectionSystem.style.backgroundSize = `contain`;
     }
@@ -488,7 +569,7 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
     instantiateAstralBody(system, `#${divSystem.id}`, `${system.star}`, "star", system.star, 0, path);
     
     system.bodies.map((item, index) => {
-      if(realSizes && realSizes === true) {
+      if(realSizes && realSizes === "true") {
         item.starSize = system.size;
         item.pushSize = document.getElementById(`${divSystem.id}`).querySelector('.orbit.star .astralBody').clientWidth;
       }
@@ -497,7 +578,7 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
 
       if(item.bodies) {
         item.bodies.map((subItem, index) => {
-          instantiateAstralBody(subItem, `#${item.name} .astralBody-holder`, item.name, "satellite", subItem.name, index, `${path}/${spaceToDash(item.name).toLowerCase()}`);
+          instantiateAstralBody(subItem, `#${item.name} .astralBody-holder .satellites`, item.name, "satellite", subItem.name, index, `${path}/${spaceToDash(item.name).toLowerCase()}`);
         });
       }
     });
@@ -505,7 +586,7 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
     if(system.asteroids) {
       
       system.asteroids.map((asteroid, index) => {
-        if(realSizes && realSizes === true) {
+        if(realSizes && realSizes === "true") {
           asteroid.starSize = system.size;
           asteroid.pushSize = document.getElementById(`${divSystem.id}`).querySelector('.orbit.star .astralBody').clientWidth;
         }

@@ -14,7 +14,11 @@ if(allowDrag === true) {
   var isDragging = false;
   function handleDrag(ev) {
     // dragInfosEl.innerHTML = 'handleDrag';
+    // if(currentHash.split('/').length >= 3){
     if(ev.target.closest('.astralBody') === null && ev.target.querySelector('.stellar-system') !== null){
+
+      console.log(ev);
+
       var elem = ev.target.querySelector('.stellar-system');
       if ( ! isDragging ) {
         isDragging = true;
@@ -29,12 +33,15 @@ if(allowDrag === true) {
       
       elem.style.left = posX + "px";
       elem.style.top = posY + "px";
+
+      // document.querySelector('#dragInfos').innerHTML = `posX: ${posX}px <br>posY: ${posY}px`;
       
       if (ev.isFinal) {
         isDragging = false;
         // dragInfos.innerHTML = isDragging;
       }
 
+      console.log('isDragging', isDragging);
     }
   }
 }

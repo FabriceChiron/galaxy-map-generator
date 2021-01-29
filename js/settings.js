@@ -36,7 +36,7 @@ const changeInput = (type, val) => {
 
       updateInputDisplay(document.getElementById(`change-${type}`), val);
 
-      result = `--perspective:${val}em;`;
+      result = `--perspective:${(val !== "none") ? `${val}em`: 'none' };`;
 
       dataSet.perspective = result;
     break;
@@ -114,8 +114,12 @@ const changeInput = (type, val) => {
 }
 
 const initValues = () => {
-  if(realSizes === true)  {
+  if(realSizes === "true")  {
     document.getElementById('change-planet').value = document.getElementById('change-planet').min;
+    document.getElementById('change-planet').disabled = true;
+  } else {
+    document.getElementById('change-planet').value = document.getElementById('change-planet').getAttribute('default');
+    document.getElementById('change-planet').disabled = false;
   }
   changeInput("angle", document.getElementById('change-angle').value);
   changeInput("perspective", document.getElementById('change-perspective').value);
@@ -130,8 +134,9 @@ const toggleInput = (type, el) => {
   changeInput(type, (el.checked) ? 90 : 22);
 }
 
-const toggleSizeClass = (realSizes) => {
-  if(realSizes === true) {
+const toggleSizeClass = () => {
+  console.log("toggleSizeClass realSizes:", realSizes);
+  if(realSizes === "true") {
     sizeButton.className += ' active';
   } else {
     sizeButton.className = sizeButton.className.replace('active', '');
@@ -139,7 +144,7 @@ const toggleSizeClass = (realSizes) => {
 }
 
 const toggleStarShipClass = (showStarShip) => {
-  if(showStarShip === true) {
+  if(showStarShip === "true") {
     shipButton.className += ' active';
   } else {
     shipButton.className = shipButton.className.replace('active', '');
@@ -147,15 +152,27 @@ const toggleStarShipClass = (showStarShip) => {
 }
 
 const toggleSizes = () => {
-  if(realSizes === true) {
-    urlParams.set('realSizes', "false");
+  console.log('init toggleSizes - realSizes:', realSizes);
+  if(realSizes === "true") {
+    // urlParams.set('realSizes', "false");
+    window.localStorage.setItem('realSizes', "false");
+    realSizes = "false"; 
   } else {
-    urlParams.set('realSizes', "true");
+    // urlParams.set('realSizes', "true");
+    window.localStorage.setItem('realSizes', "true");
+    realSizes = "true"; 
   }
 
-  toggleSizeClass(realSizes);
 
-  window.location.search = urlParams.toString();
+  toggleSizeClass();
+  initValues();
+
+  if(currentHash.split('/').length >= 3) {
+    location.reload();
+  }
+
+  
+  // window.location.search = urlParams.toString();
   // .set('id', '101');
 }
 
