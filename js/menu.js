@@ -46,11 +46,11 @@ const generateMenu = (galaxyMaps) => {
     for: 'toggle-search',
   });
 
-  let galaxiesUl = createElem('ul', nav);
-
-  let searchDiv = createElem('div', navDiv, {
+  let searchDiv = createElem('div', nav, {
     class: "search",
   });
+
+  let galaxiesUl = createElem('ul', nav);
 
   let toggleSearch = createElem('input', searchDiv, {
     id: 'toggle-search',
@@ -63,7 +63,7 @@ const generateMenu = (galaxyMaps) => {
     type: "text",
     id: "search-input",
     name: "search-input",
-    oninput: "search(this.value)"
+    oninput: "search(this.value)",
   });
 
   let searchRes = createElem('div', searchDiv, {
@@ -145,6 +145,13 @@ const generateMenu = (galaxyMaps) => {
                 let planetItem = createElem('li', planetsUl);
                 let planetDiv = createElem('div', planetItem);
                 let planetLink = createElem('a', planetDiv);
+
+                if(planet.rings && planet.rings === true) {
+                  setAttributes(planetLink, {
+                    class: 'has-rings'
+                  });
+                }
+
                 planetLink.href = systemLink.href + `/${spaceToDash(planet.name).toLowerCase()}`;
                 planetLink.id = `${spaceToDash(planet.name).toLowerCase()}-link`;
                 planetLink.innerHTML += noFirstUnderscore(planet.name.toLowerCase());
@@ -204,7 +211,7 @@ const generateMenu = (galaxyMaps) => {
 
   // galaxyMap;
 
-  document.body.prepend(nav);
+  document.body.append(nav);
   hashHandler();
 
   // console.log(search(document.querySelector("#search-input").value));

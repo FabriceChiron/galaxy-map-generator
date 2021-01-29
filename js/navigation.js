@@ -13,7 +13,7 @@ const highlightNav = (aPath) => {
 
   aPath.map((item, index) => {
     if(aPath[0].length > 0) {
-      nav.querySelector(`#${item}-link`).className += 'highlight';
+      nav.querySelector(`#${item}-link`).classList.add('highlight');
       if(nav.querySelector(`#input-${item}`)) { 
         nav.querySelector(`#input-${item}`).checked = true; 
       }
@@ -119,7 +119,7 @@ const decomposeHash = (sPath) => {
 
 function hashHandler() {
   // console.log('e', e);
-  const currentHash = window.location.hash.split('?')[0].substring(1);
+  currentHash = window.location.hash.split('?')[0].substring(1);
   // console.log("currentHash", currentHash);
   decomposeHash(currentHash);
 }

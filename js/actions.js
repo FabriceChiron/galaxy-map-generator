@@ -24,8 +24,23 @@ const createActiveAstralBody = (astralBody, stellarSystem) => {
   activeAstralBody.id += 'Active';
   activeAstralBody.className += ' active';
 
+  activeAstralBody.style.setProperty('--thisSize', `1`);
+  activeAstralBody.style.setProperty('--sizeFactor', `1`);
+
   activeAstralBody.querySelector('.hover-area').href = stripHref(activeAstralBody.querySelector('.hover-area'));
 
+  if(activeAstralBody.querySelector('.drop-shadow') !== null) {
+    activeAstralBody.querySelector('.drop-shadow').remove();
+  }
+
+  if(activeAstralBody.querySelector('.tilt-mask') !== null) {
+    activeAstralBody.querySelector('.tilt-mask').className += ' has-no-mask';
+  }
+  
+  if(activeAstralBody.querySelector('.astralBody-holder') !== null) {
+    activeAstralBody.querySelector('.astralBody-holder').classList.remove('hidden');
+  }
+  
   // stripHref(activeAstralBody.querySelector('.astralBody').href);
 
   [...activeAstralBody.querySelectorAll('.orbit')].map(innerAstralBody =>{

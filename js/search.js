@@ -1,5 +1,4 @@
 const emptySearch = () => {
-  console.log('emptySearch');
   setTimeout(function(){
     document.querySelector('#search-input').value = '';
     document.querySelector('#toggle-search').checked = false;
@@ -19,8 +18,15 @@ const search = (src) => {
     emptySearchRes();
 
     menuElems.map(menuElem => {
-      if(menuElem.textContent.includes(src)) {
-        console.log(menuElem);
+      if(src.toLowerCase().includes('rings') && menuElem.classList.contains('has-rings')) {
+        menuElemClone = menuElem.cloneNode(true);
+        menuElemClone.id += '_search';
+        searchRes.appendChild(menuElemClone);
+
+        menuElemClone.setAttribute('onclick', 'emptySearchRes(), emptySearch()');
+      }
+
+      if(menuElem.textContent.includes(src.toLowerCase())) {
         menuElemClone = menuElem.cloneNode(true);
         menuElemClone.id += '_search';
         searchRes.appendChild(menuElemClone);
