@@ -76,6 +76,7 @@ class AstralBody {
     this.obj = obj;
     this.name = noFirstUnderscore(obj.name);
     this.path = `#${path.split('#')[1]}`;
+    this.overrideStyle = (obj.style) ? obj.style : ''; 
     this.parentName = parentName;
     this.realOrbit = obj.orbit;
     this.orbitSize = (obj.orbit) ? dimRet(obj.orbit, 3) : 1;
@@ -84,7 +85,7 @@ class AstralBody {
     this.orbitFactor = (obj.orbitFactor) ? obj.orbitFactor : 1;
     this.bodySize = (obj.size) 
       ? (
-          (realSizes === "false" && bodyType.includes('star')) 
+          (realSizes === "false" && bodyType.includes('star') && !bodyType.includes('black-hole')) 
           ? (
               (bodyType.includes('companion')) 
                 ? 2
@@ -105,10 +106,10 @@ class AstralBody {
         : 1;
     this.bodies = (obj.bodies) ? obj.bodies.length : 0;
     this.realYear = obj.year;
-    this.yearLength = (obj.year) ? Math.round((eval(obj.year)) * 100) / 100 : 1;
+    this.yearLength = (obj.year) ? Math.round((eval(obj.year)) * 1000) / 1000 : 1;
     this.dayLength = (obj.day) ? ( (obj.day === "tidal") ? obj.day : eval(obj.day) ) : 0;
     this.dayDirection = (obj.rotationDirection) ? obj.rotationDirection : "normal";
-    this.coords = (override && override.coords) ? override.coords : ((obj.coords) ? obj.coords : (bodyType === "star") ? ((obj.coords) ? obj.coords : 'c') : 'nw');
+    this.coords = (override && override.coords) ? override.coords : ((obj.coords) ? obj.coords : (bodyType.includes("star")) ? ((obj.coords) ? obj.coords : 'c') : 'nw');
     this.details = obj.details;
     this.rings = (obj.rings) ? obj.rings : null;
     this.ringsColor = (obj.ringsColor) ? obj.ringsColor : null;
@@ -116,10 +117,14 @@ class AstralBody {
     this.clouds = (obj.clouds) ? obj.clouds : null;
     this.cloudsFilter = (obj.cloudsFilter) ?obj.cloudsFilter : null;
     this.texture = (obj.texture) ? "-texture" : '';
+    this.hide = (obj.hide) ? obj.hide : false;
+    this.notSphere = (obj.notSphere) ? obj.notSphere : false;
+    this.hideCoords = (obj.hideCoords) ? obj.hideCoords : false;
     this.filter = (obj.filter) ? obj.filter : 'none';
     this.overlay = (obj.overlay) ? obj.overlay : 'none';
     this.bgColor = (obj.color) ? obj.color : null;
     this.image = (obj.image) ? obj.image : null;
+    this.isBlackHole = (bodyType.includes('black-hole')) ? true : false;
     this.bodyType = bodyType;
     this.isSystem = (targetElement) ? false : true;
     this.targetElement = (targetElement) ? document.querySelector(targetElement) : null;
@@ -133,21 +138,23 @@ class AstralBody {
   addDetails() {
     this.astralOrbit.querySelector('.infos').innerHTML+=
       `<div class="details">
-        <ul>
-          ${this.realOrbit ? `<li class="info-orbit">Orbit: ${this.realOrbit} AU</li>` : ''}
-          ${this.yearLength ? `<li class="info-year">Orbital Period: ${this.yearLength} year(s)</li>` : ''}
-          ${
-            (this.dayLength && typeof this.dayLength === "number" && this.dayLength !== 0) 
-              ? `<li class="info-day">Rotation Period: 
-                ${
-                  (this.dayDirection && this.dayDirection === 'reverse') 
-                  ? '-'
-                  : ''
-                }
-                
-                ${Math.round((this.dayLength + Number.EPSILON) * 100) / 100} day(s)</li>` 
-              : '<li class="info-day">Tidally locked</li>'}
-        </ul>
+        ${(this.hideCoords === false) ? 
+          `<ul>
+            ${this.realOrbit ? `<li class="info-orbit">Orbit: ${this.realOrbit} AU</li>` : ''}
+            ${this.yearLength ? `<li class="info-year">Orbital Period: ${this.yearLength} year(s)</li>` : ''}
+            ${
+              (this.dayLength && typeof this.dayLength === "number" && this.dayLength !== 0) 
+                ? `<li class="info-day">Rotation Period: 
+                  ${
+                    (this.dayDirection && this.dayDirection === 'reverse') 
+                    ? '-'
+                    : ''
+                  }
+                  
+                  ${Math.round((this.dayLength + Number.EPSILON) * 100) / 100} day(s)</li>` 
+                : '<li class="info-day">Tidally locked</li>'}
+          </ul>` : ''
+        }
         ${this.details ? `<p class="details-content">${this.details}</p>` : ''}
       </div>`;
   }
@@ -166,10 +173,47 @@ class AstralBody {
     detailsContent.innerHTML+=str;
   }
 
+  makeBlackHole() {
+    // console.log(this.ringsColor);
+    this.astralOrbit.querySelector('.astralBody-holder').innerHTML+=
+      `<div class="tilt-mask">
+        <div class="mask-shadow">
+          <div class="rings-holder">
+            <div class="cc orbit rings"></div>
+          </div>
+        </div>
+      </div>
+      <div class="tilt-mask">
+        <div class="mask-shadow">
+          <div class="rings-holder">
+            <div class="cc orbit rings"></div>
+          </div>
+        </div>
+      </div>
+      <div class="tilt-mask">
+        <div class="mask-shadow">
+          <div class="rings-holder">
+            <div class="cc orbit rings"></div>
+          </div>
+        </div>
+      </div>`;
+
+    setAttributes(this.astralOrbit.querySelector('.astralBody-holder'), {
+      style: `
+      --images: url(../img/rings/black-hole/ripples-3.svg);
+      --imagesLightWeight: url(../img/rings/medium-mobile-60.svg),url(../img/rings/thick-mobile-60.svg),url(../img/rings/medium-mobile-80.svg);
+      --sizes: 100%,91%,87%,80%; 
+      --filter: saturate(0.8) brightness(4.5) hue-rotate(15deg);
+      --filter: brightness(1) hue-rotate(-15deg);
+      `
+    })
+
+  }
+
   addRings() {
     // console.log(this.ringsColor);
     this.astralOrbit.querySelector('.astralBody-holder').innerHTML+=
-      `<div class="tilt-mask ${(this.tilt !== 0) && 'has-no-mask'}"><div class="mask-shadow"><div class="rings-holder"><div class="cc orbit rings"></div></div></div></div>`;
+      `<div class="tilt-mask ${(this.tilt !== 0) ? 'has-no-mask' : ''}"><div class="mask-shadow"><div class="rings-holder"><div class="cc orbit rings"></div></div></div></div>`;
 
     if(this.ringsColor) {
       // console.log(this.astralOrbit.querySelector('.orbit.rings'));
@@ -178,24 +222,21 @@ class AstralBody {
   }
 
   addRingsSet() {
-    console.log(`${this.name} :`, this.rings.details);
-    console.log('isMobile:', isMobile)
     let ringsImages = [];
+    let ringsImagesLightWeight = [];
     let ringsSizes = [];
 
     if(this.rings.details !== undefined) {
       [...this.rings.details].map(thisRing => {
-        console.log(thisRing.image);
-        console.log(thisRing.size);
         ringsImages.push(`url('../img/rings/${(isMobile === null) ? thisRing.image : thisRing.image.replace('-', '-mobile-')}.svg')`);
+        ringsImagesLightWeight.push(`url('../img/rings/${thisRing.image.replace('-', '-mobile-')}.svg')`);
         ringsSizes.push(`${thisRing.size}%`);
       });
 
       this.astralOrbit.querySelector('.cc.orbit.rings').style.setProperty('--images', `${ringsImages.join(',')}`);
+      this.astralOrbit.querySelector('.cc.orbit.rings').style.setProperty('--imagesLightWeight', `${ringsImagesLightWeight.join(',')}`);
       this.astralOrbit.querySelector('.cc.orbit.rings').style.setProperty('--sizes', `${ringsSizes.join(',')}`);
 
-      console.log(ringsImages);
-      console.log(ringsSizes);
     }
     if(this.rings.filter !== undefined) {
       this.astralOrbit.querySelector('.cc.orbit.rings').style.setProperty('--filter', `${(isMobile === null) ? this.rings.filter : 'none'}`);   
@@ -204,7 +245,12 @@ class AstralBody {
   }
 
   addSatellitesHolder() {
-    this.astralOrbit.querySelector('.astralBody-holder').innerHTML+= `<div class="mask-shadow satellites"><div class="toclip"></div></div>`;
+    this.astralOrbit.querySelector('.astralBody-holder').innerHTML+= `
+    <div class="mask-shadow satellites">
+      <div class="toclip">
+        <div class="checkArea"></div>
+      </div>
+    </div>`;
   }
 
   addClouds() {
@@ -245,10 +291,11 @@ class AstralBody {
   } 
 
   addShadow() {
-    if(this.bodyType !== 'star') {
+    if(!this.bodyType.includes('star')) {
       if(this.bodyType === 'planet') {
         this.astralOrbit.style.setProperty('--planetYear', this.yearLength);
         this.astralOrbit.style.setProperty('--animationName', `shadow-${this.coords}`);
+        this.astralOrbit.style.setProperty('--animationLiteName', `shadow-old-${this.coords}`);
         this.astralOrbit.style.setProperty('--animationName2', `drop-shadow-${this.coords}`);
       }
     }
@@ -265,11 +312,12 @@ class AstralBody {
         bg = `background-image: url('img/png-hd/${subFolder}${this.name}${this.texture}.${this.image}');`;
       }
       
-      var mask = document.createElement('div');
-      mask.className += 'cc mask'; 
-      mask.style.background = this.overlay;
-      this.astralBody.prepend(mask);
-      
+      if(this.notSphere === false) {
+        var mask = document.createElement('div');
+        mask.className += 'cc mask'; 
+        mask.style.background = this.overlay;
+        this.astralBody.prepend(mask);
+      }
       if(this.texture){
         this.astralBody.className += ' texture';
       }
@@ -286,7 +334,7 @@ class AstralBody {
   }
 
   checkIntersections() {
-    const toClipElem = this.astralOrbit.querySelector('.toclip');
+    const toClipElem = this.astralOrbit.querySelector('.toclip .checkArea');
 
     [...this.astralOrbit.querySelectorAll('.satellite-holder')].map(satelliteHolder => {
       if(!satelliteHolder.querySelector('.orbit').classList.contains('has-orbit-tilt')) {
@@ -325,7 +373,9 @@ class AstralBody {
     
     setAttributes(this.astralOrbit, {
       id: `${spaceToDash(this.id).toLowerCase()}`,
-      class: `cc orbit ${this.bodyType} ${(this.dayLength === 'tidal') ? 'tidal' : ''} ${(this.orbitTilt > 0) ? 'has-orbit-tilt' : ''} ${(this.override) ? 'active' : ''}`,
+      class: `
+        cc orbit 
+        ${this.bodyType} ${(this.dayLength === 'tidal') ? 'tidal' : ''} ${(this.orbitTilt > 0) ? 'has-orbit-tilt' : ''} ${(this.override) ? 'active' : ''}`,
       'data-index': this.index,
     });
 
@@ -361,8 +411,8 @@ class AstralBody {
     this.astralOrbit.innerHTML += 
       `<div class="position ${this.coords}">
           <div class="astralBody-holder">
-            <div class="cc astralBody ${this.bodyType}">
-            ${(this.bodyType !== 'star') 
+            <div class="cc astralBody ${this.bodyType} ${(this.hide) ? 'hidden' : ''}">
+            ${(!this.bodyType.includes('star')) 
             ? `<${tag} href="${this.path}/${spaceToDash(this.id).toLowerCase()}" class="hover-area"></${tag}>`
             : ''
             }
@@ -371,9 +421,6 @@ class AstralBody {
           </div>
         </div>
       </div>`;
-
-
-
 
     this.astralBody = astralOrbit.querySelector('.astralBody');
 
@@ -386,7 +433,7 @@ class AstralBody {
       </div>`
     } else {
       if((this.bodyType === 'planet' || this.bodyType === 'satellite') && this.name !== '') {
-        this.astralBody.innerHTML +=`<div class="holder-infos">
+        this.astralBody.innerHTML +=`<div class="holder-infos" ${(this.notSphere === true) ? 'style="left: 100%;"' : ''}>
           <div class="infos">
               <div class="name">${this.star || this.name}</div>
           </div>
@@ -401,7 +448,7 @@ class AstralBody {
     this.astralOrbit.style.setProperty('--tilt', `${(this.tilt) ? this.tilt : '0'}deg)`);
     
     
-    if(this.name !== ''){
+    if(this.name !== '' && !this.isBlackHole && !this.notSphere){
       this.addLight();
     }
 
@@ -410,9 +457,12 @@ class AstralBody {
     }
 
     if(this.rings) {
-      console.log(typeof this.rings);
       this.addRings();
       this.addRingsSet();
+    }
+
+    if(this.isBlackHole) {
+      this.makeBlackHole();
     }
 
     if(this.bodies > 0 && this.bodyType === 'planet'){
@@ -440,7 +490,7 @@ class AstralBody {
  
     const self = this;   
 
-    if(this.bodyType === 'star') {
+    if(this.bodyType.includes('star')) {
       this.targetElement.parentElement.style.setProperty('--addStarSize', `${this.bodySize}`);
     }
 
@@ -477,7 +527,7 @@ class AstralBody {
 instantiateAstralBody = (bodyToCreate, containerSelector, parentName, type, name, index, path) => {
   let Name = toClassObject(name).replace(' ', '');
 
-  if(type === 'star') {
+  if(type.includes('star')) {
     Name += 'Star';
   }
   
@@ -506,7 +556,9 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
         left: ${targetCoords.left}px;
         right: ${window.innerWidth - targetCoords.left}px;
         width: 0;
-        height: 0;`,
+        height: 0;
+        background-image: ${system.image};`,
+        
     });
 
     if(system.bgImage) {
@@ -515,7 +567,7 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
       sectionSystem.style.backgroundSize = `contain`;
     }
 
-    document.body.className += (showStarShip) ? ' allows-starship' : '';
+    document.body.className += (showStarShip === 'true') ? ' allows-starship' : '';
 
     const pathToCluster = (sPath) => {
       aPath = sPath.split('/');
@@ -559,14 +611,14 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
     document.body.appendChild(sectionSystem);
 
     // if(allowDrag === true && first === true) {
-    //   const myBlock = document.querySelector('body');
+   const myBlock = document.querySelector('body');
 
-    //   initDrag(myBlock);
+   // initDrag(myBlock);
 
     //   first = false;
     // }
 
-    instantiateAstralBody(system, `#${divSystem.id}`, `${system.star}`, "star", system.star, 0, path);
+    instantiateAstralBody(system, `#${divSystem.id}`, `${system.star}`, system.type || "star", system.star, 0, path);
     
     system.bodies.map((item, index) => {
       if(realSizes && realSizes === "true") {
@@ -602,11 +654,11 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
         if(!isInViewport(planet)) {
           // console.log('!isInViewport', self.name);
           if(!parentOrbit.classList.contains('outside')) {
-            parentOrbit.className += ' outside';
+            parentOrbit.classList.add('outside');
           }
         } else {
           // console.log('isInViewport', self.name);
-          parentOrbit.className = parentOrbit.className.replace(' outside', '');
+          parentOrbit.classList.remove('outside');
         }
       }, 2000)
     })
