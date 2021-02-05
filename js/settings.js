@@ -6,8 +6,9 @@ const updateInputDisplay = (inputEl, val) => {
 
 const sizeButton = document.getElementById('toggle-sizes');
 const shipButton = document.getElementById('toggle-starship');
+const toggleLightWeight = document.querySelector('#toggle-lightweight');
 
-const changeInput = (type, val) => {
+const changeInput = (type, val, toStore) => {
 
   let result = "";
 
@@ -110,32 +111,109 @@ const changeInput = (type, val) => {
 
   document.body.style= `${dataSet.angle} ${dataSet.perspective} ${dataSet.orbit} ${dataSet.planet} ${dataSet.year} ${dataSet.day} ${dataSet.ship} `;
 
-  // calculateMaxDiagonal('.orbit', '.stellar-system');
+  if(toStore) {
+    storeSettings();
+  }
 }
 
-const initValues = () => {
+const storeSettings = () => {
+
+  settings = {
+    'angle': document.getElementById('change-angle').value,
+    'perspective': document.getElementById('change-perspective').value,
+    'orbit': (realSizes === 'true') ? document.getElementById('change-planet').getAttribute('default') : document.getElementById('change-orbit').value,
+    'planet': document.getElementById('change-planet').value,
+    'year': document.getElementById('change-year').value,
+    'day': document.getElementById('change-day').value,
+    'ship': document.getElementById('change-ship').value
+  }
+
+  window.localStorage.setItem("settings", JSON.stringify(settings));
+}
+
+const initValues = (settings, realSizes) => {
+  console.log(settings);
+
+
   if(realSizes === "true")  {
     document.getElementById('change-planet').value = document.getElementById('change-planet').min;
     document.getElementById('change-planet').disabled = true;
   } else {
-    document.getElementById('change-planet').value = document.getElementById('change-planet').getAttribute('default');
+    document.getElementById('change-planet').value = settings && settings.planet || document.getElementById('change-planet').getAttribute('default');
     document.getElementById('change-planet').disabled = false;
   }
-  changeInput("angle", document.getElementById('change-angle').value);
-  changeInput("perspective", document.getElementById('change-perspective').value);
-  changeInput("orbit", document.getElementById('change-orbit').value);
-  changeInput("planet", document.getElementById('change-planet').value);
-  changeInput("year", document.getElementById('change-year').value);
-  changeInput("day", document.getElementById('change-day').value);
-  changeInput("ship", document.getElementById('change-ship').value);
-}; 
+  changeInput("angle", 
+    settings && settings.angle || document.getElementById('change-angle').value, 
+    false
+  );
+
+  changeInput("perspective", 
+    settings && settings.perspective || document.getElementById('change-perspective').value, 
+    false
+  );
+
+  changeInput("orbit", 
+    settings && settings.orbit || document.getElementById('change-orbit').value, 
+    false
+  );
+
+  changeInput("planet", 
+    document.getElementById('change-planet').value, 
+    false
+  );
+
+  changeInput("year", 
+    settings && settings.year || document.getElementById('change-year').value, 
+    false
+  );
+
+  changeInput("day", 
+    settings && settings.day || document.getElementById('change-day').value, 
+    false
+  );
+
+  changeInput("ship", 
+    settings && settings.ship || document.getElementById('change-ship').value, 
+    false
+  );
+
+  if(settings) {
+    [...document.querySelectorAll('.settings .setting input')].map(input => {
+      const storedSetting = input.id.replace('change-','');
+
+      setAttributes(input, {
+        value: settings[storedSetting]
+      });
+    });
+  }
+
+} 
+
+[...document.querySelectorAll('.settings .setting:not(.modes)')].map(setting => {
+  setting.label = setting.querySelector('span');
+  setting.input = setting.querySelector('input');
+
+  setting.label.onclick = () => {
+    setting.input.value = setting.input.getAttribute('default');
+    changeInput(setting.input.id.replace('change-', ''), setting.input.value, true);
+  }
+});
+
+document.querySelector('#reset-settings').onclick = () => {
+  [...document.querySelectorAll('.settings .setting > span')].map(setting => {
+    setting.click();
+  })
+}
+
+const destructureObject = (obj) => {
+  console.log(obj);
+}
 
 const toggleInput = (type, el) => {
   changeInput(type, (el.checked) ? 90 : 22);
 }
 
 const toggleSizeClass = () => {
-  console.log("toggleSizeClass realSizes:", realSizes);
   if(realSizes === "true") {
     sizeButton.className += ' active';
   } else {
@@ -145,14 +223,22 @@ const toggleSizeClass = () => {
 
 const toggleStarShipClass = (showStarShip) => {
   if(showStarShip === "true") {
-    shipButton.className += ' active';
+    shipButton.classList.add('active');
   } else {
-    shipButton.className = shipButton.className.replace('active', '');
+    shipButton.classList.remove('active');
   }
 }
 
+const storeLightWeightMode = () => {
+
+  console.log(toggleLightWeight.checked);
+
+  const initLightWeightMode = (toggleLightWeight.checked) ? "on" : "off";
+  window.localStorage.setItem('lightweightMode', initLightWeightMode);
+
+}
+
 const toggleSizes = () => {
-  console.log('init toggleSizes - realSizes:', realSizes);
   if(realSizes === "true") {
     // urlParams.set('realSizes', "false");
     window.localStorage.setItem('realSizes', "false");
@@ -163,35 +249,47 @@ const toggleSizes = () => {
     realSizes = "true"; 
   }
 
-
   toggleSizeClass();
-  initValues();
+
+  initValues(settings, realSizes);
 
   if(currentHash.split('/').length >= 3) {
     location.reload();
   }
-
   
   // window.location.search = urlParams.toString();
   // .set('id', '101');
 }
 
 const toggleStarShip = () => {
-  console.log(showStarShip);
-
-  if(showStarShip === true) {
-    urlParams.set('showStarShip', "false");
+  console.log()
+  if(showStarShip === "true") {
+    window.localStorage.setItem('showStarShip', "false");
+    showStarShip = "false"; 
   } else {
-    urlParams.set('showStarShip', "true");
+    window.localStorage.setItem('showStarShip', "true");
+    showStarShip = "true"; 
   }
 
   toggleStarShipClass(showStarShip);
 
-  window.location.search = urlParams.toString();
-  // .set('id', '101');
+  if(currentHash.split('/').length >= 2) {
+    location.reload();
+  }
 }
 
 toggleSizeClass(realSizes);
 toggleStarShipClass(showStarShip);
 
-initValues();
+var lightweightMode = (window.localStorage.getItem('lightweightMode') !== null) 
+      ? window.localStorage.getItem('lightweightMode') 
+      : "off";
+
+if(lightweightMode === 'on') toggleLightWeight.checked = true;
+
+toggleLightWeight.onchange = () => {
+  storeLightWeightMode();
+}
+
+// initValues();
+

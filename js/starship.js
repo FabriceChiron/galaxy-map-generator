@@ -169,7 +169,7 @@ var update = function(velocity) {
 
 
 
-if(showStarShip === true) {
+if(showStarShip === 'true') {
   update(new MouseSpeed.Velocity());
 
   new MouseSpeed({ selector: 'body', velocityOnMouseDownOnly: false, handler: update });

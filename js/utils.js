@@ -85,7 +85,7 @@ const openCluster = (elId, showStarship) => {
         el.style.display = 'block';
       }, 1);
     }, 300);
-    if(showStarship === true) document.body.className += ' allows-starship';
+    if(showStarship === "true") document.body.className += ' allows-starship';
     let trimHref = el.dataset.href.split('#')[1].split('/');
     trimHref.pop();
     el.href = `#${trimHref.join('/')}`;

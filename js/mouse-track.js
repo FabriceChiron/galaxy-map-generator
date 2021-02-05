@@ -23,7 +23,7 @@ function throttle (callback, limit) {
 }
 
 
-if(showStarShip === true) {
+if(showStarShip === 'true') {
   // document.querySelector('body').className+= ' hideMouse';
   window.addEventListener('mousemove', throttle(function(e){mousePosition(e, '#mouseTracker')}, 10));
 }
