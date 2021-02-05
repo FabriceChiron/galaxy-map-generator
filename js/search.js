@@ -24,6 +24,8 @@ const search = (src) => {
         searchRes.appendChild(menuElemClone);
 
         menuElemClone.setAttribute('onclick', 'emptySearchRes(), emptySearch()');
+
+        highlightMatchingLink(menuElemClone);
       }
 
       if(menuElem.textContent.includes(src.toLowerCase())) {
@@ -32,6 +34,8 @@ const search = (src) => {
         searchRes.appendChild(menuElemClone);
 
         menuElemClone.setAttribute('onclick', 'emptySearchRes(), emptySearch()');
+
+        highlightMatchingLink(menuElemClone);
       }
     })
 

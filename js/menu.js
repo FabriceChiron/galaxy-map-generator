@@ -15,9 +15,29 @@ const toggleNavLayer = function(input) {
   }
 }
 
+const highlightMatchingLink = (link) => {
+  const thisHref = link.href.split('#')[1];
+  
+  link.onmouseenter = function() {
+    const matchingLink = document.querySelector(`a.cluster[data-href="#${thisHref}"], a.cluster .cluster[href="#${thisHref}"], a.hover-area[href="#${thisHref}"]`);
+    if(matchingLink) matchingLink.classList.add('hovered');
+  };
+
+  link.onmouseleave = function() {
+    const matchingLink = document.querySelector(`a.cluster[data-href="#${thisHref}"], a.cluster .cluster[href="#${thisHref}"], a.hover-area[href="#${thisHref}"]`);
+    if(matchingLink) matchingLink.classList.remove('hovered');
+  };
+}
+
+const ui = document.querySelector('#ui');
+
 const generateMenu = (galaxyMaps) => {
   const nav = document.createElement('nav');
   nav.id += 'navigation';
+
+  const navContent = createElem('div', nav, {
+    class: 'nav-container'
+  });
 
   let nbGalaxies = 0;
   let nbClusters = 0;
@@ -25,7 +45,7 @@ const generateMenu = (galaxyMaps) => {
   let nbPlanets = 0;
   let nbSatellites = 0;
 
-  let mapInput = createElem('input', nav, {
+  let mapInput = createElem('input', navContent, {
     name: 'toggle-map',
     id: 'toggle-map',
     type: 'checkbox',
@@ -33,7 +53,7 @@ const generateMenu = (galaxyMaps) => {
     onchange: 'toggleNavLayer(this)',
   });
 
-  let navDiv = createElem('div', nav);
+  let navDiv = createElem('div', navContent);
   let mapLink = createElem('a', navDiv);
   mapLink.href = '#';
   mapLink.innerHTML += 'Galaxies';
@@ -46,11 +66,11 @@ const generateMenu = (galaxyMaps) => {
     for: 'toggle-search',
   });
 
-  let searchDiv = createElem('div', nav, {
+  let searchDiv = createElem('div', navContent, {
     class: "search",
   });
 
-  let galaxiesUl = createElem('ul', nav);
+  let galaxiesUl = createElem('ul', navContent);
 
   let toggleSearch = createElem('input', searchDiv, {
     id: 'toggle-search',
@@ -211,7 +231,8 @@ const generateMenu = (galaxyMaps) => {
 
   // galaxyMap;
 
-  document.body.append(nav);
+
+  ui.prepend(nav);
   hashHandler();
 
   // console.log(search(document.querySelector("#search-input").value));
@@ -220,18 +241,10 @@ const generateMenu = (galaxyMaps) => {
 
 
 
-  [...nav.querySelectorAll('ul a')].map(link => {
-    const thisHref = link.href.split('#')[1];
-    
-    link.onmouseenter = function() {
-      const matchingCluster = document.querySelector(`a.cluster[data-href="#${thisHref}"], a.astralBody[href="#${thisHref}"]`);
-      if(matchingCluster) matchingCluster.className += ' hovered';
-    };
+  [...nav.querySelectorAll('ul a, #search-results a')].map(link => {
 
-    link.onmouseleave = function() {
-      const matchingCluster = document.querySelector(`a.cluster[data-href="#${thisHref}"], a.astralBody[href="#${thisHref}"]`);
-      if(matchingCluster) matchingCluster.className = matchingCluster.className.replace(' hovered', '');
-    };
-  })
+    highlightMatchingLink(link);
+
+  });
 
 }
