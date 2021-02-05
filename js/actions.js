@@ -52,7 +52,8 @@ const createActiveAstralBody = (astralBody, stellarSystem) => {
 
   // setTimeout(function() {
     activeAstralBody.querySelector('.position').className += ' c';
-    stellarSystem.appendChild(activeAstralBody);
+    // stellarSystem.appendChild(activeAstralBody);
+    stellarSystem.insertBefore(activeAstralBody,stellarSystem.firstChild);
   // }, 100);
 
   // activeAstralBody.onclick = function(e) {
