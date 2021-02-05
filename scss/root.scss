@@ -47,7 +47,7 @@ body {
   font-family: 'Assistant', sans-serif;
   // font-family: 'mass-effect', sans-serif;
   overflow: hidden;
-  overflow-y: auto;
+  height: 100vh;
   -webkit-font-smoothing: antialiased;
 
   &.allows-starship {
@@ -183,24 +183,15 @@ body {
 }
 
 .buttons {
-  position: absolute;
-  right: 100%;
-  top: 0;
-  z-index: 3;
-  // padding: .5rem;
   display: flex;
   flex-direction: column-reverse;
   background: rgba(0, 0, 0, 0.5);
-  margin-right: 1px;
 
-  @media screen and (max-width: 680px) {
+  @media screen and (orientation: portrait) {
     flex-direction: row;
-    right: 0;
-    top: auto;
-    bottom: 100%;
-    left: 0;
     width: 100%;
-    margin-right: 0;
+    position: fixed;
+    bottom: 0;
   }
 
   label {
@@ -214,14 +205,14 @@ body {
 
     &:last-child {
       // border-top-width: 0;
-      @media screen and (max-width: 680px) {
+      @media screen and (orientation: portrait) {
         border-top-width: 1px;
         // border-bottom-width: 0;
       }
     }
 
     &.toggle:not(.active) {
-      opacity: .5;
+      color: rgba(255, 255, 255, .5);
     }
 
     &#toggle-starship {
@@ -239,18 +230,18 @@ body {
 }
 
 label[for="toggle-play"]:after {
-  content: "Ø";
+  content: "Û";
 }
 
-#toggle-play:checked ~ .settings label[for="toggle-play"]:after{
-  content: "Û";
+#toggle-play:checked ~ #ui .settings label[for="toggle-play"]:after{
+  content: "Ø";
 }
 
 label[for="toggle-details"]:after {
   content: "Q";
 }
 
-#toggle-details:checked ~ .settings label[for="toggle-details"]:after{
+#toggle-details:checked ~ #ui .settings label[for="toggle-details"]:after{
   content: "s";
 }
 
@@ -264,75 +255,184 @@ label[for="toggle-details"]:after {
   display: none;
 }
 
-#toggle-settings:checked ~ .settings {
-  transform: translate3d(0, 0, 0);
-  border-color: rgba(255,255,255,.5);
+#toggle-settings:checked ~ #ui {
+  .settings {
+    // @media screen and (orientation: landscape) {
+    //   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    // }
+    
+    .buttons {   
+      position: static;
 
-  label[for="toggle-settings"] {
-    border-color: rgba(255, 255, 255, 0.5);
-    border-right: 2px solid black;
-    border-top: 0;
-    margin-right: -1px;
+      label {
+        border: 0px solid rgba(255, 255, 255, 0.5);
 
-    @media screen and (max-width: 680px) {
-      border-top: 1px solid rgba(255, 255, 255, 0.5);
-      border-bottom: 2px solid black;
-      margin-bottom: -1px;
-      margin-right: 0;   
+        @media screen and (orientation: landscape) {
+          border-left: 0;
+          border-right-width: 1px;
+        }
+
+        @media screen and (orientation: portrait) {
+          border-top: 0;
+          border-bottom-width: 1px;
+        }
+      }
+
+      label[for="toggle-settings"] {
+        // border-right: 2px solid transparent;
+        // margin-right: -1px;
+
+        @media screen and (orientation: landscape) {
+          border-right: 0;
+          border-left: 1px solid rgba(255, 255, 255, 0.5);
+          border-bottom-width: 1px;
+        }
+
+        @media screen and (orientation: portrait) {
+          border-top: 1px solid rgba(255, 255, 255, 0.5);
+          border-bottom: 1px solid transparent;
+          border-left-width: 1px;
+          margin-right: 0;  
+        }
+      }
+    }
+    
+    .container {
+      padding: .5rem;
+      height: auto;
+
+      @media screen and (orientation: landscape) {
+        width: auto;
+        height: auto;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+}
+
+label[for="toggle-lightweight"] {
+  display: flex;
+
+  span {
+    margin: 0 0 0 1rem;
+    min-width: 3rem;
+    text-align: right;
+    font-weight: 600;
+  
+    &:after {
+      content: 'OFF';
+      border-radius: 3px;
+      background: #666;
+      padding: 0 .5rem;
     }
   }
 }
 
-label[for="toggle-lightweight"] {
-  align-self: center;
+#toggle-lightweight:checked ~ #ui .settings label[for="toggle-lightweight"]{
+
+  span {
+    &:after {
+      content: 'ON';
+      background: #fff;
+      color: #000;
+    }
+  }
 }
 
-#toggle-lightweight:checked ~ .settings label[for="toggle-lightweight"]{
-  background: #53cbf1;
+#ui {
+    display: flex;
+    z-index: 10;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media screen and (orientation: portrait) {
+      flex-direction: column;
+    }
+
+    @media screen and (orientation: landscape) {
+      flex-direction: row;
+    }
 }
 
 .settings {
-  position: fixed;
-  right: 0;
-  top: 0;
-  padding: 1rem;
-  z-index: 3;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  background: #000 url(../img/2k_stars_milky_way.jpg) fixed;
-  background: rgba(0, 0, 0, 0.5);
+  flex-direction: row;
   background-size: 100%;
   transition: all var(--transition-duration) ease;
-  transform: translate3d(100%, 0, 0);
   border: solid rgba(255, 255, 255, 0);
   border-width: 0 0 0 1px;
   box-sizing: border-box;
-  gap: 1em;
-  bottom: 0;
+  position: relative;
+  z-index: 3;
+
+  @media screen and (orientation: portrait) {
+    align-items: center;
+    border-width: 1px 0 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .container {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    
+    @media screen and (orientation: portrait){    
+      flex-direction: row;
+      height: 0;
+      width: 100%;
+    }
+    @media screen and (orientation: landscape) {
+      flex-direction: column;
+      width: 0;
+      height: 100%;
+    }
+  }
 
   .settings-group {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    gap: .25rem;
   }
 
-
-  @media screen and (max-width: 680px) {
-    transform: translate3d(0, 100%, 0);
-    top: auto;
-    border-width: 1px 0 0 0; 
-    width: 100%;
-    right: auto;
-    gap: .5em;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: no-wrap;
-    overflow: auto;
-  }
 
   .setting {
     display: flex;
+
+    &:first-child {
+      align-self: stretch;
+      justify-content: space-between;
+    }
+
+    #reset-settings,
+    #reset-settings:focus {
+      line-height: 1rem;
+      font-size: 1rem;
+      border: none;
+      text-align: center;
+      padding: 0;
+      cursor: pointer;
+      background: none;
+      color: #fff;
+      font-family: 'Assistant', sans-serif;
+      outline: none;
+      
+      span {
+        margin: 0;
+        min-width: 0;
+        text-align: left;
+      }
+    }
 
     span {
       margin: 0 1rem;
@@ -341,6 +441,7 @@ label[for="toggle-lightweight"] {
 
       &:first-child {
         margin-left: 0;
+        cursor: pointer;
       }
       &:last-child {
         margin-right: 0;
@@ -368,7 +469,7 @@ label[for="toggle-lightweight"] {
   padding: 1rem;
   z-index: 10;
 
-  @media screen and (max-width: 680px) {
+  @media screen and (orientation: portrait) {
     top: 0;
     right: 0;
     left: auto;
