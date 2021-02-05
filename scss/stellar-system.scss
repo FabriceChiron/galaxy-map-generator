@@ -1,5 +1,9 @@
 body:not(.allows-starship) .stellar-system_section {
   cursor: move;
+
+  .orbit .astralBody-holder {
+    cursor: auto;
+  }
 }
 
 body.touch {
@@ -96,7 +100,7 @@ body.touch {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -52%, 0);
     transform-style: preserve-3d;
     --decalShadow: 0;
     // background: url('../img/masks/mask-full.svg') red;
@@ -113,6 +117,15 @@ body.touch {
         left: 50%;
         transform-style: preserve-3d;
         transform-origin: top center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .checkArea {
+          margin-top: calc(var(--planet-size) * 2/3);
+          height: calc(var(--planet-size));
+        }
       }
       
       &:before {
@@ -144,10 +157,129 @@ body.touch {
     }
 }
 
+.stellar-system .orbit.black-hole {
+  .position .astralBody-holder .astralBody {
+    background: #000;
+    box-shadow: none;
+    border: 1px solid #fb8201;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      pointer-events: none;
+    }
+
+    &:after {
+      transform: translate3d(-50%, -50%, -100px);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 calc(var(--planet-size) * 3) calc(var(--planet-size) * 2) rgba(255, 255, 255, 0.2);
+      
+    }
+
+    &:before {
+      transform: translate3d(-50%, -50%, calc(var(--planet-size) * -30));
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      background: url(../img/galaxy-map/black-hole-warp-6.webp) center no-repeat;
+      width: calc(var(--planet-size) * 6);
+      height: calc(var(--planet-size) * 6);
+      background-size: cover;
+      -webkit-mask: url(../img/masks/mask-circle-3b.svg) center no-repeat;
+      -webkit-mask-size: cover;
+    }
+  }
+
+  .astralBody {
+    & + .tilt-mask {
+      color: #000;
+
+      .mask-shadow {
+        // color: inherit;
+        // top: 50%;
+        // left: 50%;
+        // transform: scale3d(1.2, 1.2, 1) translate3d(-40%, -20%, 0);
+        // transform: translate3d(-50%, -50%, 0);
+        // -webkit-mask-image: none;
+
+        color: inherit;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-40%, -20%, 0);
+        transform: translate3d(-50%, -32%, 0) scale3d(1.1, 1.3, 1);
+        -webkit-mask-image: url(../img/masks/mask-back-black-hole-2.svg);
+
+        .rings-holder {
+          .orbit-rings {
+            animation-direction: normal;
+          }
+        }
+      }
+    }
+  }
+
+  .tilt-mask {
+    position: absolute;
+
+    &:first-child {
+
+    }
+
+    .rings-holder .rings {
+      // animation-play-state: paused !important;
+      -webkit-mask: var(--images, url("../img/rings/default.svg"));
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: 45% center;
+      -webkit-mask-size: var(--sizes, 80%);
+      filter: blur(calc(var(--orbit-size)/500)) var(--filter, grayscale(1) brightness(5));
+    }
+    .mask-shadow {
+      -webkit-mask-image: url('../img/masks/mask-back-black-hole.svg');
+    }
+  
+    & + .tilt-mask {
+      transform: rotateX(var(--angle));
+      box-shadow: 0 0 calc(var(--planet-size) * 0.5) calc(var(--planet-size) * 0.2) rgb(0, 0, 0);
+      border-radius: 50%;
+
+      .mask-shadow {
+        // -webkit-mask-image: none;
+      }
+
+      & + .tilt-mask {
+        // transform: scale3d(1,.8,1) rotateX(calc(var(--angle) + 180deg));
+        transform: scale3d(0.95, 1, 1) rotateX(calc(var(--angle) + 180deg)) rotateZ(0deg) translate3d(0,calc(var(--planet-size) * -0.05) ,0);
+      
+        .mask-shadow {
+          -webkit-mask-image: url('../img/masks/mask-bottom-black-hole.svg');
+        }
+      }
+    }
+  }
+}
+
 .tilt-mask {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
+
+
+  &+ .tilt-mask {
+    transform: rotateX(var(--angle));
+
+    .mask-shadow {
+        // -webkit-mask-image: none;
+    }
+
+    &+ .tilt-mask {
+        transform: scale3d(1,.8,1) rotateX(calc(var(--angle) + 180deg));
+    }
+  }
 
   &.has-no-mask{
     transform: rotateY(var(--tilt));
@@ -216,8 +348,8 @@ body.touch {
       &:hover {
         opacity: 1;
       
-        & + .rings-holder,
-        & + .tilt-mask .rings-holder,
+        & ~ .rings-holder,
+        & ~ .tilt-mask .rings-holder,
         & ~ .satellite-holder .astralBody,
         & ~ .satellites .satellite-holder .astralBody {
           opacity: 1;
@@ -344,9 +476,9 @@ body.touch {
   --revolution-duration: calc(var(--earthDay) * var(--thisDay));
   --orbit-size: calc(calc( var(--earthOrbit) * var(--thisOrbit) * var(--orbitFactor)) + calc(var(--addStarSize) * var(--earthSize)) *1.5);
   --planet-size: calc(var(--earthSize) * var(--thisSize) * var(--sizeFactor));
-  transform-style: preserve-3d;
+  // transform-style: preserve-3d;
   animation: orbit var(--orbit-duration) infinite linear;
-  box-shadow: 0 0 0px 1px  rgba(255,255,255,.05), inset 0 0 0px 1px rgba(255,255,255,.05);
+  box-shadow: 0 0 0px 1px  rgba(255,255,255,.03), inset 0 0 0px 1px rgba(255,255,255,.03);
   // border: 2px solid rgba(255,255,255,.1);
   width: calc(var(--orbit-size) + var(--planet-size));
   height: calc(var(--orbit-size) + var(--planet-size));
@@ -362,6 +494,7 @@ body.touch {
 
   &.satellite {
     --addStarSize: 0;
+    box-shadow: 0 0 0px 1px rgba(255, 255, 255, 0.02), inset 0 0 0px 1px rgba(255, 255, 255, 0.02);
   }
 
   &.asteroids,
@@ -441,6 +574,11 @@ body.touch {
         // --orbit-size: calc(90vw * var(--thisActiveFactor));
       }
     }
+
+    & ~ .orbit,
+    & ~ .orbit .holder-infos {
+      visibility: hidden !important;
+    }
   }
 
   &.planet {
@@ -451,7 +589,7 @@ body.touch {
       display: block;
       height: calc(calc(var(--orbit-size) - calc(var(--earthSize) * 3)) / 2);
       width: 0px;
-      box-shadow: 0 0 5px 2px rgba(83,203,241,.25);
+      box-shadow: 0 0 0 2px rgba(83,203,241,.25);
       // background: rgba(83, 203, 241, 0.4);
       // background: linear-gradient(to bottom, rgba(83,203,241,0) 0%,rgba(83,203,241,0.4) 20%,rgba(83,203,241,0.4) 60%,rgba(83,203,241,0) 90%);
       position: absolute;
@@ -551,6 +689,10 @@ body.touch {
         background-position: center;
         background-size: cover;
         pointer-events: auto;
+
+        &.hidden {
+          display: none;
+        }
 
         &.texture {
           --revolution-duration: calc(var(--earthDay) * var(--thisDay));
@@ -723,6 +865,16 @@ body.touch {
         }
 
         
+        .hover-area {
+          &.hovered {
+            + .holder-infos {
+              color: rgba(255,255,255,1);
+              line-height: 1.5rem;
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
 
 
         &:hover,
@@ -787,7 +939,7 @@ body.touch {
     }
   }
 
-  &:not(.star):hover {
+  &:not(.star):not(.black-hole):hover {
     .position {
       .astralBody-holder {
         width: calc(var(--planet-size) *2);
@@ -964,7 +1116,7 @@ body.touch {
     }
   }
 
-  &:not(.active):hover {
+  &:not(.active):not(.black-hole):hover {
     .position {
       .astralBody-holder {
         .orbit {
