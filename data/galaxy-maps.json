@@ -3255,6 +3255,45 @@
           ]
         },
         {
+          "name": "Galactic Core",
+          "top": 44,
+          "left": 50,
+          "image": "galactic-core.webp",
+          "bodies": [
+            {
+              "name": "Tartarus",
+              "star": "Tartarus",
+              "top": 27,
+              "left": 51,
+              "type": "star black-hole",
+              "size": "12",
+              "year": "1",
+              "isBlackHole": true,
+              "bodies": [
+                {
+                  "name": "Collector Ship",
+                  "image": "collector-ship.webp",
+                  "notSphere": true,
+                  "hideCoords": true,
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": "2",
+                  "year": "1",
+                  "size": "4",
+                  "day": "24/24",
+                  "coords": "se",
+                  "details": "Supposedly constructed by the long-extinct Protheans, this colossal deep-space station serves as the capital of the Citadel Council. Gravity is simulated through rotation, and is a comfortable 1.02 standard G's on the Wards and a light 0.3 standard G's on the Presidium Ring."
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Gemini Sigma",
           "top": 66.7,
           "left": 71.2,
@@ -7861,9 +7900,30 @@
             {
               "name": "Widow",
               "star": "Widow",
+              "hide": true,
               "top": 40,
               "left": 47,
+              "image": "url('./img/galaxy-map/clusters/serpent-nebula.webp');",
               "bodies": [
+                {
+                  "name": "citadel",
+                  "image": "citadel.webp",
+                  "notSphere": true,
+                  "hideCoords": true,
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": "NaN",
+                  "year": "1",
+                  "size": "2",
+                  "day": "24/24",
+                  "coords": "e",
+                  "details": "Supposedly constructed by the long-extinct Protheans, this colossal deep-space station serves as the capital of the Citadel Council. Gravity is simulated through rotation, and is a comfortable 1.02 standard G's on the Wards and a light 0.3 standard G's on the Presidium Ring."
+                }
               ]
             }
           ]
