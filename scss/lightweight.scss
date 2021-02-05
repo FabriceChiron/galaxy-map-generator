@@ -1,0 +1,50 @@
+#toggle-lightweight:checked ~ section {
+  *, *:before, *:after {
+    filter: none !important;
+  }
+
+  .mask {
+    &:after {
+      visibility: hidden;
+    }
+  }
+
+  .cc.orbit.rings {
+    background-image: var(--imagesLightWeight, url("../img/rings/default-mobile.svg")) !important;
+  }
+
+  .asteroids .asteroid-holder{
+    display: none !important;
+    
+    &:nth-child(5n+5) {
+      display: block !important;
+    }
+  }
+
+  .stellar-system .orbit.black-hole {
+    .position .astralBody-holder{ 
+      .astralBody {
+        &:before,
+        &:after {
+          box-shadow: none;
+        }
+
+        & + .tilt-mask {
+          display: none !important;
+        }
+      }
+
+      .tilt-mask {
+        box-shadow: none !important;
+
+        .mask-shadow {
+          -webkit-mask: none !important;
+        }
+
+        &:last-child {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
