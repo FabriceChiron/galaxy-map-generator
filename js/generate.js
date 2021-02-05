@@ -44,12 +44,15 @@ fetch('data/galaxy-maps.json')
 
   generateMenu(galaxyMaps);
 
-  if(allowDrag === true) {
-    const myBlock = document.querySelector('body');
-    initDrag(myBlock);
-    }
+  if(isMobile) {
+    initDrag(document.body);
   }
-)
+
+ /*   if(allowDrag === true) {
+      const myBlock = document.querySelector('body');
+      initDrag(myBlock);
+    }*/
+})
 
 
 

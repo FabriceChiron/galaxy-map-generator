@@ -84,6 +84,9 @@ const decomposeHash = (sPath) => {
           } else {
             removeActiveAstralBodyUnless();
           }
+
+          // const myBlock = document.querySelector('body');
+          if(!isMobile) {initDrag();}
       
           if(aPath.length > 3) {
             const astralBodyTarget = document.querySelector(`.orbit[id^=${aPath[aPath.length - 1]}]`);
