@@ -34,7 +34,36 @@
 
 
 
+@keyframes galactic-spin {
+  0% {
+    transform: translate3d(var(--galacticTranslation), var(--galacticTranslation), 0) rotateX(var(--galacticAngleX)) rotateY(var(--galacticAngleY)) rotateZ(var(--galacticStartAngleZ));
+    width: var(--galacticSize);
+    height: var(--galacticSize);
+  }
+  100% {
+    transform: translate3d(var(--galacticTranslation), var(--galacticTranslation), 0) rotateX(var(--galacticAngleX)) rotateY(var(--galacticAngleY)) rotateZ(var(--galacticEndAngleZ));
+    width: var(--galacticSize);
+    height: var(--galacticSize);
+  }
+}
 
+@keyframes galactic-spin-only {
+  0%{ 
+    transform: rotateZ(var(--galacticStartAngleZ));
+  }
+  100%{ 
+    transform: rotateZ(var(--galacticEndAngleZ));
+  }
+}
+
+@keyframes galactic-spin-active {
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(var(--angle)) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotateX(var(--angle)) rotateY(0deg) rotateZ(360deg);
+  }
+}
 
 
 

@@ -36,7 +36,7 @@
   display: block;
   transform: scale(0.25);
   opacity: 0.5;
-  transition: all var(--transition-duration) linear;
+  transition: all var(--transition-duration) ease-out;
   transition-duration: 1s;
   // overflow-y: visible;
   
@@ -51,7 +51,7 @@
     text-align: center;
     color: #fff;
     font-family: "mass-effect"; 
-    transition: all var(--transition-duration) linear;
+    transition: all var(--transition-duration) ease-in;
   }
 
   &:first-child{
@@ -99,26 +99,60 @@
       opacity: 0;
       pointer-events: none;
     }
-     
+
+    .galactic-spin {
+      --galacticStartAngleZ: 0deg !important;
+      --galacticEndAngleZ: 0deg !important;
+      animation-play-state: paused;
+    }
+
+    .map-container {
+      // animation-name: galactic-spin-active;
+      transform: translate3d(-50%, -50%, 0) rotateX(var(--angle)) rotateY(0deg);
+      width: inherit;
+      height: inherit;
+      // --galacticAngleX: var(--angle) !important;
+      // --galacticAngleY: 0deg !important;
+      // --galacticStartAngleZ: 0deg !important;
+      // --galacticEndAngleZ: 0deg !important;
+      // --galacticTranslation: 0 !important;
+      // --galacticSize: 100vw !important;
+    }
   }
-
-  // &:target {
-  //   h2 {
-  //     opacity: 1;
-  //   }
-  // }
-
 }
 
 .map-container {
-  transform: rotateX(var(--angle));
-  width: inherit;
-  height: inherit;
+  // transform: rotateX(var(--angle));
+  // width: inherit;
+  // height: inherit;
+  transform: translate3d(-50%, -50%, 0) rotateX(var(--galacticAngleX)) rotateY(var(--galacticAngleY));
+  // animation: galactic-spin calc(var(--earthYear) * var(--galacticSpinDuration)) infinite linear;
+  width: 50%;
+  height: 50%;
   transform-style: preserve-3d;
   transform-origin: center;
   perspective-origin: center;
   margin: auto;
-  transition: all var(--transition-duration) ease;
+  transition: all var(--transition-duration) ease-out;
+  transition-duration: 1s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  @media screen and (orientation: portrait) {
+    width: 100%;
+    height: 100vw;
+  }
+}
+
+.galactic-spin {
+  animation: galactic-spin-only calc(var(--earthYear) * var(--galacticSpinDuration)) infinite linear;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective-origin: center;
 }
 
 .galaxy-map {
@@ -151,12 +185,13 @@
   }
 
   .holder-image {
-    background: rgba(0,0,0,.8) no-repeat center;
+    background: no-repeat center;
+    // background-color: rgba(0,0,0,.8);
+    // box-shadow: 0 0 3vh 3vh rgba(0,0,0,.8);
     background-size: contain;
     left: 50%;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
-    box-shadow: 0 0 3vh 3vh rgba(0,0,0,.8);
     border-radius: 50%;
   }
   
@@ -233,7 +268,6 @@
     }
 
     .shape {
-      transition: all 1s ease;
       transition: all var(--transition-duration) ease;
       transition-property: background;
       -webkit-mask: url(../img/galaxy-map/cluster.svg);

@@ -2,6 +2,11 @@
   "galaxies": [
     {
       "name": "Milky Way",
+      "animation": {
+        "x": "50",
+        "y": "21",
+        "duration": "12"
+      }, 
       "clusters" : [
         {
           "name": "Aethon Cluster",
@@ -9685,6 +9690,11 @@
     },
     {
       "name": "Andromeda",
+      "animation": {
+        "x": "34",
+        "y": "-40",
+        "duration": "16"
+      }, 
       "clusters": [
         {
           "name": "Heleus Cluster",

@@ -35,6 +35,10 @@
   --earthDay: 5s;
   --thisDay: 1;
   --revolution-duration: calc(var(--earthDay) * var(--thisDay));
+
+  --galacticAngleX: 0deg;
+  --galacticAngleY: 0deg;
+  --galacticSpinDuration: 12;
 }
 
 body {

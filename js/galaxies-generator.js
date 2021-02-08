@@ -9,15 +9,24 @@ class Galaxy {
     setAttributes(this.galaxyEl, {
       class: "galaxy",
       id: `${spaceToDash(this.obj.name).toLowerCase()}`,
-      href: `#${spaceToDash(this.obj.name).toLowerCase()}`
-    })
+      href: `#${spaceToDash(this.obj.name).toLowerCase()}`,
+    });
 
     this.galaxyEl.innerHTML += ` 
       <div class="galaxy-map">
-        <div class="map-container">
-          <div class="holder-image" style="background-image:url('img/galaxy-map/${spaceToDash(this.obj.name).toLowerCase()}.webp')"></div>
-          <div class="clusters"></div>
-        </div>
+        <div class="map-container" style="
+        --galacticAngleX: ${this.obj.animation.x}deg;
+        --galacticAngleY: ${this.obj.animation.y}deg;
+        ">
+          <div class="galactic-spin" style="
+          --galacticStartAngleZ: 0deg;
+          --galacticEndAngleZ: 360deg;
+          --galacticSpinDuration: ${this.obj.animation.duration};
+          ">
+            <div class="holder-image" style="background-image:url('img/galaxy-map/${spaceToDash(this.obj.name).toLowerCase()}-blur.webp')"></div>
+            <div class="clusters"></div>
+          </div>
+        </div>  
       </div>
       <h2>${this.obj.name}</h2>
     `
