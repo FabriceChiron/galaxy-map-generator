@@ -59,6 +59,11 @@
       display: inline-block;
       transition: all var(--transition-duration) ease;
 
+      .home {
+        text-transform: none;
+        font-size: .9em;
+      }
+
       &.has-rings {
         &:after {
           content: url(../img/icon-planet-rings.svg);

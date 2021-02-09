@@ -15,6 +15,8 @@ const toggleNavLayer = function(input) {
   }
 }
 
+const homeAdress = "/local-cluster/solar-system/earth".split('/');
+
 const highlightMatchingLink = (link) => {
   const thisHref = link.href.split('#')[1];
   
@@ -122,6 +124,10 @@ const generateMenu = (galaxyMaps) => {
         clusterLink.id = `${spaceToDash(cluster.name).toLowerCase()}-link`;
         clusterLink.innerHTML += noFirstUnderscore(cluster.name.toLowerCase());
 
+        if(clusterLink.href.includes(homeAdress[1]) ){
+          clusterLink.innerHTML += ` <span class="symbols home">u</span>`;
+        }
+
         nbClusters++;
 
         if(cluster.bodies && cluster.bodies.length > 0) {
@@ -144,6 +150,11 @@ const generateMenu = (galaxyMaps) => {
             systemLink.href = clusterLink.href + `/${spaceToDash(system.name).toLowerCase()}`;
             systemLink.id = `${spaceToDash(system.name).toLowerCase()}-link`;
             systemLink.innerHTML += noFirstUnderscore(system.name.toLowerCase());
+
+
+            if(systemLink.href.includes(homeAdress[2]) ){
+              systemLink.innerHTML += ` <span class="symbols home">u</span>`;
+            }
 
             nbSystems++;
 
@@ -175,6 +186,11 @@ const generateMenu = (galaxyMaps) => {
                 planetLink.href = systemLink.href + `/${spaceToDash(planet.name).toLowerCase()}`;
                 planetLink.id = `${spaceToDash(planet.name).toLowerCase()}-link`;
                 planetLink.innerHTML += noFirstUnderscore(planet.name.toLowerCase());
+
+
+                if(planetLink.href.includes(homeAdress[3]) ){
+                  planetLink.innerHTML += ` <span class="symbols home">u</span>`;
+                }
 
                 nbPlanets++;
 
