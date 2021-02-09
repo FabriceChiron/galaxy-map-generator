@@ -29,6 +29,22 @@ const changeInput = (type, val, toStore) => {
       dataSet.angle = result;
     break;
 
+    case "axis":
+      
+      if(!val) val = 0;
+
+      const axisStep = ((val / 45) * 0.125) -1;
+      // const axisStep2 = axisStep * -1;
+
+      showVal = `${val}°`;
+
+      updateInputDisplay(document.getElementById(`change-${type}`), showVal);
+
+      result = `--axis:${val}deg; --axisStep: ${axisStep};`;
+
+      dataSet.axis = result;
+    break;
+
     case "perspective":
       
       // const perspective = val;
@@ -109,7 +125,7 @@ const changeInput = (type, val, toStore) => {
 
   // stellarSystem.style= `${dataSet.angle} ${dataSet.orbit} ${dataSet.planet} ${dataSet.year} ${dataSet.day} `;
 
-  document.body.style= `${dataSet.angle} ${dataSet.perspective} ${dataSet.orbit} ${dataSet.planet} ${dataSet.year} ${dataSet.day} ${dataSet.ship} `;
+  document.body.style= `${dataSet.angle} ${dataSet.axis} ${dataSet.perspective} ${dataSet.orbit} ${dataSet.planet} ${dataSet.year} ${dataSet.day} ${dataSet.ship} `;
 
   if(toStore) {
     storeSettings();
@@ -120,6 +136,7 @@ const storeSettings = () => {
 
   settings = {
     'angle': document.getElementById('change-angle').value,
+    'axis': document.getElementById('change-axis').value,
     'perspective': document.getElementById('change-perspective').value,
     'orbit': (realSizes === 'true') ? document.getElementById('change-planet').getAttribute('default') : document.getElementById('change-orbit').value,
     'planet': document.getElementById('change-planet').value,
@@ -144,6 +161,11 @@ const initValues = (settings, realSizes) => {
   }
   changeInput("angle", 
     settings && settings.angle || document.getElementById('change-angle').value, 
+    false
+  );
+
+  changeInput("axis", 
+    settings && settings.axis || document.getElementById('change-axis').value, 
     false
   );
 

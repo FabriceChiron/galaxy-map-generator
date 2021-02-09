@@ -18,13 +18,15 @@ class Galaxy {
         --galacticAngleX: ${this.obj.animation.x}deg;
         --galacticAngleY: ${this.obj.animation.y}deg;
         ">
-          <div class="galactic-spin" style="
-          --galacticStartAngleZ: 0deg;
-          --galacticEndAngleZ: 360deg;
-          --galacticSpinDuration: ${this.obj.animation.duration};
-          ">
-            <div class="holder-image" style="background-image:url('img/galaxy-map/${spaceToDash(this.obj.name).toLowerCase()}-blur.webp')"></div>
-            <div class="clusters"></div>
+          <div class="galactic-axis">
+            <div class="galactic-spin" style="
+            --galacticStartAngleZ: 0deg;
+            --galacticEndAngleZ: 360deg;
+            --galacticSpinDuration: ${this.obj.animation.duration};
+            ">
+              <div class="holder-image" style="background-image:url('img/galaxy-map/${spaceToDash(this.obj.name).toLowerCase()}-blur.webp')"></div>
+              <div class="clusters"></div>
+            </div>
           </div>
         </div>  
       </div>

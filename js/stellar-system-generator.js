@@ -294,9 +294,9 @@ class AstralBody {
     if(!this.bodyType.includes('star')) {
       if(this.bodyType === 'planet') {
         this.astralOrbit.style.setProperty('--planetYear', this.yearLength);
-        this.astralOrbit.style.setProperty('--animationName', `shadow-${this.coords}`);
-        this.astralOrbit.style.setProperty('--animationLiteName', `shadow-old-${this.coords}`);
-        this.astralOrbit.style.setProperty('--animationName2', `drop-shadow-${this.coords}`);
+        this.astralOrbit.style.setProperty('--animationName', `shadow`);
+        this.astralOrbit.style.setProperty('--animationLiteName', `shadow-old`);
+        this.astralOrbit.style.setProperty('--animationName2', `drop-shadow`);
       }
     }
   }
