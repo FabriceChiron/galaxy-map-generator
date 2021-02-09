@@ -72,6 +72,19 @@ body {
 
 }
 
+.copyright {
+  font-weight: 100;
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: #53cbf1; 
+    }
+  }
+}
+
 #mouse-infos {
   position: fixed;
   bottom: 0;
