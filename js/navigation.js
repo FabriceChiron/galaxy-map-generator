@@ -74,7 +74,7 @@ const decomposeHash = (sPath) => {
 
           if(document.getElementById(`${aPath[2]}_section`) === null) {
             createStellarSystem(
-              window[`${noDash(toClassObject(camelize(aPath[2])))}`].obj, 
+              window[`${noDash(toClassObject(camelize(aPath[2].replace("'",'-'))))}`].obj, 
               {
                 top: activeClusterCenter.offsetTop,
                 left: activeClusterCenter.offsetLeft,

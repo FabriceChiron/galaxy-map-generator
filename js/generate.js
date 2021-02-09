@@ -16,7 +16,7 @@ fetch('data/galaxy-maps.json')
 
             if(cluster.bodies && cluster.bodies.length > 0) {
               cluster.bodies.map(stellarSystem => {
-                const StellarSystemName = toClassObject(noDash(camelize(stellarSystem.name)));
+                const StellarSystemName = toClassObject(noDash(camelize(stellarSystem.name.replace("'",'-'))));
                 window[StellarSystemName] = new StellarSystem(stellarSystem, `#${spaceToDash(cluster.name).toLowerCase()}`, `${spaceToDash(galaxy.name).toLowerCase()}/${spaceToDash(cluster.name).toLowerCase()}`);
                 window[StellarSystemName].render();
               })
@@ -26,22 +26,6 @@ fetch('data/galaxy-maps.json')
       }
     }
   )
-  // galaxyMap.clusters.map(
-  //   cluster => {
-  //     const ClusterName = toClassObject(camelize(cluster.name));
-  //     window[ClusterName] = new Cluster(cluster, '#clusters');
-  //     window[ClusterName].render();
-
-  //     if(cluster.bodies && cluster.bodies.length > 0) {
-  //       cluster.bodies.map(stellarSystem => {
-  //         const StellarSystemName = toClassObject(noDash(camelize(stellarSystem.name)));
-  //         window[StellarSystemName] = new StellarSystem(stellarSystem, `#${spaceToDash(cluster.name).toLowerCase()}`, `${spaceToDash(cluster.name).toLowerCase()}`);
-  //         window[StellarSystemName].render();
-  //       })
-  //     }
-  //   }
-  // )
-
   generateMenu(galaxyMaps);
 
   if(isMobile) {
