@@ -209,8 +209,6 @@ body {
   @media screen and (orientation: portrait) {
     flex-direction: row;
     width: 100%;
-    position: fixed;
-    bottom: 0;
   }
 
   label {
@@ -362,17 +360,26 @@ label[for="toggle-lightweight"] {
 #ui {
     display: flex;
     z-index: 10;
-    height: 100vh;
     justify-content: space-between;
     align-items: flex-start;
+    pointer-events: none;
 
     @media screen and (orientation: portrait) {
       flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
     }
 
     @media screen and (orientation: landscape) {
       flex-direction: row;
+      height: 100vh;
     }
+}
+
+#ui > * {
+  pointer-events: auto;
 }
 
 .settings {
@@ -389,10 +396,11 @@ label[for="toggle-lightweight"] {
   @media screen and (orientation: portrait) {
     align-items: center;
     border-width: 1px 0 0 0;
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     position: relative;
     flex-direction: column;
+    border-top: none;
   }
 
   .container {
