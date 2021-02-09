@@ -228,7 +228,7 @@ class AstralBody {
 
     if(this.rings.details !== undefined) {
       [...this.rings.details].map(thisRing => {
-        ringsImages.push(`url('../img/rings/${(isMobile === null) ? thisRing.image : thisRing.image.replace('-', '-mobile-')}.svg')`);
+        ringsImages.push(`url('../img/rings/${thisRing.image}.svg')`);
         ringsImagesLightWeight.push(`url('../img/rings/${thisRing.image.replace('-', '-mobile-')}.svg')`);
         ringsSizes.push(`${thisRing.size}%`);
       });
@@ -239,14 +239,14 @@ class AstralBody {
 
     }
     if(this.rings.filter !== undefined) {
-      this.astralOrbit.querySelector('.cc.orbit.rings').style.setProperty('--filter', `${(isMobile === null) ? this.rings.filter : 'none'}`);   
+      this.astralOrbit.querySelector('.cc.orbit.rings').style.setProperty('--filter', `${this.rings.filter}`);   
     }
 
   }
 
   addSatellitesHolder() {
     this.astralOrbit.querySelector('.astralBody-holder').innerHTML+= `
-    <div class="mask-shadow satellites">
+    <div class="mask-shadow satellites" style="--addParentSize: var(--planet-size);">
       <div class="toclip">
         <div class="checkArea"></div>
       </div>
@@ -492,7 +492,10 @@ class AstralBody {
 
     if(this.bodyType.includes('star')) {
       this.targetElement.parentElement.style.setProperty('--addStarSize', `${this.bodySize}`);
+      this.targetElement.parentElement.style.setProperty('--addParentSize', `${this.bodySize}`);
     }
+    
+    // this.targetElement.parentElement.style.setProperty('--thisParentSize', `${this.bodySize}`);
 
     if(this.bodies > 0 && this.bodyType === 'planet'){
       setInterval(function(){

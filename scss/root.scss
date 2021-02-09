@@ -39,13 +39,15 @@
   --galacticAngleX: 0deg;
   --galacticAngleY: 0deg;
   --galacticSpinDuration: 12;
+
+  --planet-orbit-duration: 1s;
 }
 
 body {
   // --angle: 90deg;
   // --decalY: 0%;
   margin: 0;
-  background: #000 url('../img/2k_stars_milky_way.jpg') fixed;
+  background: #000 url('../img/2k_stars_milky_way.webp') fixed;
   background-size: cover;
   color: #fff;
   font-family: 'Assistant', sans-serif;
@@ -153,7 +155,7 @@ body {
           position: absolute;
           width: 200%;
           height: 100%;
-          background: url('../img/tempest.svg') no-repeat;
+          background: url('../img/normandy.webp') no-repeat;
           background-size: cover;
         }
 
@@ -420,6 +422,11 @@ label[for="toggle-lightweight"] {
     flex-direction: column;
     align-items: flex-end;
     gap: .25rem;
+
+    @media screen and (orientation: landscape) {
+      flex: 1;
+      justify-content: space-evenly;
+    }
   }
 
 
