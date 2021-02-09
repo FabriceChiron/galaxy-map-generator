@@ -192,7 +192,7 @@ body.touch {
         -webkit-mask-image: url(../img/masks/mask-back-black-hole-2.svg);
 
         .rings-holder {
-          .orbit-rings {
+          .orbit.rings {
             animation-direction: normal;
           }
         }
@@ -223,10 +223,6 @@ body.touch {
       transform: rotateX(var(--angle));
       box-shadow: 0 0 calc(var(--body-size) * 0.5) calc(var(--body-size) * 0.2) rgb(0, 0, 0);
       border-radius: 50%;
-
-      .mask-shadow {
-        // -webkit-mask-image: none;
-      }
 
       & + .tilt-mask {
         // transform: scale3d(1,.8,1) rotateX(calc(var(--angle) + 180deg));
