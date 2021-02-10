@@ -34,7 +34,7 @@ function getPlanetData () {
   planetData.orbit = parseFloat($('[data-source="orbitaldistance"] div').html());
   planetData.year = parseFloat($('[data-source="orbitalperiod"] div').html());
   planetData.size = parseInt($('[data-source="radius"] div').html().replace(',', '')) + "/6378";
-  planetData.day = parseFloat($('[data-source="daylength"] div').html()) + "/24";
+  planetData.day = ($('[data-source="daylength"] div').length > 0) ? parseFloat($('[data-source="daylength"] div').html()) + "/24" : "1";
   planetData.coords = arrayCoords[Math.floor(Math.random() * arrayCoords.length)];
 
   planetData.details = getPlanetDetails(); $('#mw-content-text h2 ~ p').each(function(){
