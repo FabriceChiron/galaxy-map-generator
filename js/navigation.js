@@ -31,6 +31,8 @@ const decomposeHash = (sPath) => {
     removeStellarSystemUnless();
     removeActiveAstralBodyUnless();
 
+    if(document.body.dataset.galaxy) delete(document.body.dataset.galaxy);
+
     // Activate global view
     setAttributes(document.querySelector('#galaxies'), {
       class: 'active',
@@ -52,6 +54,10 @@ const decomposeHash = (sPath) => {
         class: `galaxy ${(item.id === aPath[0]) ? 'active' : ''}`,
       });
     });
+
+    if(showStarShip === "true") {
+      document.body.dataset.galaxy = aPath[0];
+    }
     
     if(aPath.length > 1) {
       // Clusters

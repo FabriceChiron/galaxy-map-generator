@@ -11,6 +11,7 @@
   --tilt: 0deg;
 
   --shipLength: 2rem;
+  --shipRatio: 0.5;
 
   // Galaxy Map
   --clusterSize: 2.5rem;
@@ -59,17 +60,44 @@ body {
   &.allows-starship {
     --cursor: none;
 
-    a {
+    #galaxies a,
+    .stellar-system_section a {
       cursor: none;
     }
 
-    .settings:hover + #mouseTracker {
+    #ui:hover {
+      --cursor: default;
+    }
+
+    #ui:hover + #mouseTracker {
       display: none;
     }
 
     #mouseTracker {
       display: block;
     }
+  }
+
+  &[data-galaxy] {
+    #starShip {
+      --shipWidth: calc(var(--shipLength) * var(--shipRatio));
+
+      width: var(--shipWidth);
+
+      .bg {
+        background-image: var(--ship);
+      }
+    }
+  }
+
+  &[data-galaxy="milky-way"] {
+    --shipRatio: 0.41;
+    --ship: url('../img/normandy.webp');
+  }
+
+  &[data-galaxy="andromeda"] {
+    --shipRatio: 0.57;
+    --ship: url('../img/tempest.svg');
   }
 
 }
@@ -115,6 +143,7 @@ body {
   transition: none;
   display: none;
   transform: rotateX(var(--angle));
+  transform-style: preserve-3d;
   z-index: 3;
   // transition: all .1s ease;
   // box-sizing: border-box;
@@ -134,7 +163,6 @@ body {
     #starShip {
       position: absolute;
       transform: translate3d(-50%, -50%, 0);
-      width: calc(var(--shipLength) * 0.583);
       height: var(--shipLength);
       /* background: url(../img/tempest.svg) no-repeat; */
       background-size: cover;
@@ -155,13 +183,13 @@ body {
           position: absolute;
           width: 200%;
           height: 100%;
-          background: url('../img/normandy.webp') no-repeat;
+          background-repeat: no-repeat;
           background-size: cover;
         }
 
         &.right {
           left: 50%;
-          transform: rotateY(-45deg);
+          transform: rotateY(30deg);
           transform-origin: left;
 
           .bg {
@@ -171,7 +199,7 @@ body {
 
         &.left {
           right: 50%;
-          transform: rotateY(45deg);
+          transform: rotateY(-30deg);
           transform-origin: right;
 
           .bg {
@@ -185,17 +213,18 @@ body {
         display: block;
         width: 60%;
         height: 2rem;
+        max-height: 3rem;
         position: absolute;
         top: 100%;
         left: 50%;
-        transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, -3px);
         // transform: translate3d(-50%, 0, 0);
         // background: rgba(0, 230, 255, 1);
         pointer-events: none;
         transition: all .1s ease;
-        border-radius: 0 0 50% 50%;
+        border-radius: .5rem .5rem 50% 50%;
         // background: radial-gradient(ellipse at center, rgba(135,224,253,1) 0%,rgba(83,203,241,1) 44%,rgba(5,171,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        background: radial-gradient(ellipse at top, rgba(252,252,252,1) 22%, rgba(83,203,241,.5) 100%);
+        background: radial-gradient(ellipse at top, rgba(252,252,252,1) 22%, rgba(83,203,241,0) 50%);
       }
     }
   }
