@@ -5741,7 +5741,7 @@
                 {
                   "name": "neptune",
                   "texture": true,
-                  "image": "neptune-texture.webp",
+                  "image": "neptune-texture2.webp",
                   "orbit": "30.103",
                   "size": "4.007",
                   "year": "165",
@@ -5763,7 +5763,7 @@
                   "bodies": [
                     {
                       "name": "charon",
-                      "image": "charon.webp",
+                      "image": "charon-texture2.webp",
                       "texture" : true,
                       "orbitFactor": 1,
                       "orbit": "0.1",
