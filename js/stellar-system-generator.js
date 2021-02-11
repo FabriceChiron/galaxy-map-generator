@@ -560,13 +560,13 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
         right: ${window.innerWidth - targetCoords.left}px;
         width: 0;
         height: 0;
-        background-image: ${system.image};`,
+        ${(system.image && system.image.length > 0) ? `background-image: ${system.image}; background-repeat: no-repeat;` : '' }`,
         
     });
 
     if(system.bgImage) {
       // console.log('system.bgImage', system.bgImage);
-      sectionSystem.style.backgroundImage = `url(img/galaxy-map/clusters/${system.bgImage})`;
+      sectionSystem.style.background = `url(img/galaxy-map/clusters/${system.bgImage})`;
       sectionSystem.style.backgroundSize = `contain`;
     }
 
