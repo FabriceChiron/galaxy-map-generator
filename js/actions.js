@@ -26,6 +26,7 @@ const createActiveAstralBody = (astralBody, stellarSystem) => {
 
   activeAstralBody.style.setProperty('--thisSize', `1`);
   activeAstralBody.style.setProperty('--sizeFactor', `1`);
+  activeAstralBody.style.setProperty('--orbit-tilt', `0deg`);
 
   activeAstralBody.querySelector('.hover-area').href = stripHref(activeAstralBody.querySelector('.hover-area'));
 

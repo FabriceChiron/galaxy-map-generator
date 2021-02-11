@@ -282,8 +282,11 @@ body.touch {
     > .astralBody.satellite {
       background: #000 !important;
 
-      .light,
       .mask {
+        background: #000 !important;        
+      }
+
+      .light {
         opacity: 0 !important;
       }
     }
@@ -909,7 +912,7 @@ body.touch {
     }
   }
 
-  &:not(.star):not(.black-hole):hover {
+  &:not(.active):not(.star):not(.black-hole):hover {
     .position {
       .astralBody-holder {
         width: calc(var(--body-size) *2);
