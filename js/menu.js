@@ -177,7 +177,7 @@ const generateMenu = (galaxyMaps) => {
                 let planetDiv = createElem('div', planetItem);
                 let planetLink = createElem('a', planetDiv);
 
-                if(planet.rings && planet.rings === true) {
+                if(planet.rings && planet.rings !== false) {
                   setAttributes(planetLink, {
                     class: 'has-rings'
                   });
