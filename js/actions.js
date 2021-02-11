@@ -37,9 +37,17 @@ const createActiveAstralBody = (astralBody, stellarSystem) => {
   if(activeAstralBody.querySelector('.tilt-mask') !== null) {
     activeAstralBody.querySelector('.tilt-mask').className += ' has-no-mask';
   }
+
+  [...activeAstralBody.querySelectorAll('.satellite-holder .orbit')].map((satellite, index) => {
+    if(parseFloat(satellite.style.getPropertyValue('--orbitFactor')) > 1) {
+      satellite.style.setProperty('--orbitFactor', `${(index / 3) + 1}`);
+    }
+  })
   
   if(activeAstralBody.querySelector('.astralBody-holder') !== null) {
-    activeAstralBody.querySelector('.astralBody-holder').classList.remove('hidden');
+    [...activeAstralBody.querySelectorAll('.astralBody-holder')].map(item => {
+      item.classList.remove('hidden');
+    });
   }
   
   // stripHref(activeAstralBody.querySelector('.astralBody').href);
