@@ -10791,6 +10791,323 @@
                   "details": "On the outer edge of the Joba system, the lifeless world of Letapho creeps a few inches closer to the great black hole every year. Far in the future it will be consumed."
                 }
               ]
+            },
+            {
+              "name": "Kindrax",
+              "star": "Kindrax",
+              "top": 53.4,
+              "left": 5.6,
+              "bodies": [
+                {
+                  "name": "h-073",
+                  "image": "io-texture.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thicker-50",
+                        "size": "80"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5) blur(calc(var(--body-size) * 0.03))"
+                  },
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 0.7,
+                  "year": 0.6,
+                  "size": "6282/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "Constant volcanic activity brings magma to the surface of H-073, where it gradually solidifies in the scorching heat."
+                },
+                {
+                  "name": "mendradym",
+                  "image": "ganymede-texture.webp",
+                  "filter": "saturate(3) contrast(0.9)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 1.1,
+                  "year": 1.2,
+                  "size": "7911/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "The Scourge has torn away most of Medradym's atmosphere, leaving ravaging electrical storms above and wasted plains below. Mere traces of plant life remain on the surface."
+                },
+                {
+                  "name": "tunharaset",
+                  "image": "europa-texture.webp",
+                  "filter": "contrast(1.2) brightness(0.7)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 1.9,
+                  "year": 2.7,
+                  "size": "4822/6378",
+                  "day": "1",
+                  "coords": "sw",
+                  "details": "Traces of Remnant and kett technology are present on the planet, obscured by the warping effects of nearby Scourge. There was something here; it has since been removed."
+                },
+                {
+                  "name": "h-202",
+                  "image": "Savannah.webp",
+                  "filter": "contrast(0.4) brightness(0.3) hue-rotate(-20deg)",
+                  "overlay": "",
+                  "clouds": "earth-clouds.webp",
+                  "cloudsFilter": "opacity(30%)",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thicker-50",
+                        "size": "80"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5) blur(calc(var(--body-size) * 0.03))"
+                  },
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 2.8,
+                  "year": 4.6,
+                  "size": "9828/6378",
+                  "day": "1",
+                  "coords": "sw",
+                  "details": ""
+                }
+              ]
+            },
+            {
+              "name": "Layan",
+              "star": "Layan",
+              "top": 79.7,
+              "left": 75.6,
+              "asteroids": [
+                {
+                  "orbit": 1.1,
+                  "year": 1.1,
+                  "bodies": 50
+                }
+              ],
+              "bodies": [
+                {
+                  "name": "pas-40",
+                  "image": "Mercury-texture.webp",
+                  "filter": "contrast(0.7) brightness(0.8) hue-rotate(40deg)",
+                  "overlay": "",
+                  "clouds": "earth-clouds.webp",
+                  "cloudsFilter": "opacity(30%)",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thicker-50",
+                        "size": "80"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5) blur(calc(var(--body-size) * 0.03))"
+                  },
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 0.6,
+                  "year": 0.5,
+                  "size": "1",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "",
+                  "bodies": [
+                    {
+                      "name": "pas-40a",
+                      "image": "europa-texture.webp",
+                      "filter": "",
+                      "overlay": "",
+                      "clouds": "",
+                      "cloudsFilter": "",
+                      "rings": false,
+                      "ringsColor": "",
+                      "texture": true,
+                      "orbit": 0.2,
+                      "orbitFactor": 0.75,
+                      "year": 0.1,
+                      "size": "1712/6378",
+                      "day": "tidal",
+                      "coords": "sw",
+                      "details": "Pas-40's moon likely came into being through a massive asteroid impact millennia ago, creating both the planet's rings and Pas-40a."
+                    }
+                  ]
+                },
+                {
+                  "name": "pas-29",
+                  "image": "iapetus-texture.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "Clouds2.webp",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 1.3,
+                  "year": 1.6,
+                  "size": "6050/6378",
+                  "day": "1",
+                  "coords": "n",
+                  "details": "Pas-29's constant downpour of sulfuric acid rain evaporates before touching the planet surface, where streams of lava are spewed regularly by active volcanoes."
+                },
+                {
+                  "name": "everodaan",
+                  "image": "Swamp.webp",
+                  "filter": "hue-rotate(-10deg) contrast(1.1) brightness(1.2)",
+                  "overlay": "",
+                  "clouds": "Clouds4.webp",
+                  "cloudsFilter": "opacity(70%) blur(calc(var(--body-size) * 0.01))",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 2.4,
+                  "year": 4.3,
+                  "size": "7858/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "Images from an unmanned flyover of Everodaan brought its gemstone mountains to angaran attention centuries ago. The planet was an icon of alien beauty, now generally forgotten."
+                },
+                {
+                  "name": "pas-32",
+                  "image": "Gaseous10.webp",
+                  "filter": "saturate(0.2) hue-rotate(-30deg) brightness(0.8)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 5.8,
+                  "year": 15.7,
+                  "size": "64742/6378",
+                  "day": "1",
+                  "coords": "se",
+                  "details": ""
+                }
+              ]
+            },
+            {
+              "name": "Meos",
+              "star": "Meos",
+              "top": 89.1,
+              "left": 53.1,
+              "filter": "hue-rotate(153deg)",
+              "bodies": [
+                {
+                  "name": "h-088",
+                  "image": "ganymede-texture.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 53.8,
+                  "year": 93.2,
+                  "size": "8280/6378",
+                  "day": "1",
+                  "coords": "w",
+                  "details": "Endless flat deserts cover H-088's surface under a sky suffused with lightning. A single great gouge, like an abandoned quarry, suggests a mining effort by ancient visitors."
+                },
+                {
+                  "name": "vael",
+                  "image": "titan-texture.webp",
+                  "filter": "hue-rotate(160deg)",
+                  "overlay": "",
+                  "clouds": "earth-clouds.webp",
+                  "cloudsFilter": "opacity(60%)",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 475.6,
+                  "year": 2458,
+                  "size": "10690/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "Vael's silica and aluminum surface is spotted with anomalous materials that defy our scans. Reaching those materials through the scorching irradiated atmosphere will be the challenge of the generation."
+                },
+                {
+                  "name": "siktin",
+                  "image": "Gaseous10.webp",
+                  "filter": "saturate(0.2) hue-rotate(-30deg) brightness(0.4)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thinner-30",
+                        "size": "70"
+                      },
+                      {
+                        "image": "medium-60",
+                        "size": "80"
+                      },
+                      {
+                        "image": "thick-10",
+                        "size": "90"
+                      },
+                      {
+                        "image": "thin-70",
+                        "size": "100"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 602.1,
+                  "year": 3,
+                  "size": "31783/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": ""
+                },
+                {
+                  "name": "ossqyu",
+                  "image": "enceladus-texture.webp",
+                  "filter": "contrast(2) brightness(0.6)",
+                  "overlay": "rgba(46,59,133,0.7)",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 705.3,
+                  "year": 4439.6,
+                  "size": "3783/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": ""
+                },
+                {
+                  "name": "huiton",
+                  "image": "Gaseous1.webp",
+                  "filter": "saturate(0.2) contrast(0.8) hue-rotate(0deg)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 738.3,
+                  "year": 4765.7,
+                  "size": "47469/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "Huiton's hydrogen and nitrogen atmosphere is notable for its unique weather patterns - storms begin and end here with almost mechanized consistency."
+                }
+              ]
             }
           ]
         }
