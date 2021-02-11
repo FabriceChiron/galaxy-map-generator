@@ -6990,6 +6990,25 @@
                   "details": "Urdak is a close-orbiting brown dwarf; most red-brown dwarf binary systems have an average separation of 8 AU. The Sahrabarik system is about 12 billion years old and it has long since used up the deuterium used to fuel fusion, so Urdak is not luminous like some brown dwarfs are.<br><br>Urdak is a class L brown dwarf with a relatively low temperature of 1,300 degrees Celsius, but its heat and gravity have made it unpopular for development. There are rumors that the heads of several of Omega's crime syndicates maintain private residences on various moons. Whatever the truth of the matter, battles between syndicate vessels are often observed around the ring plane. News outlets on Omega maintain satellites at Urdak's Lagrange points for real-time coverage of these battles, which garner high viewer ratings."
                 },
                 {
+                  "name": "Omega",
+                  "image": "omega.webp",
+                  "notSphere": true,
+                  "hideCoords": true,
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": "2",
+                  "year": "1",
+                  "size": "2",
+                  "day": "24/24",
+                  "coords": "se",
+                  "details": "Originally an asteroid rich in element zero, Omega was briefly mined by the Protheans, who eventually abandoned it due to its thick, impenetrable crust. Thousands of years later, nature did what even the Protheans could not: a collision with another asteroid broke Omega in half, exposing its trove of element zero for easy mining.<br>A rush ensued as corporations and private individuals tried to strike it rich on Omega, and thieves and outlaws followed in their wake. As space became tight, construction of processing facilities extended vertically from the asteroid, creating Omega's jellyfish-like silhouette. To prevent future collisions, the station is ringed with enormous mass-effect field generators that redirect incoming debris.<br>Today, Omega is a major hub of narcotics, weapons, and eezo trafficking without even a pretense of civilian government or military control."
+                },
+                {
                   "name": "imorkan",
                   "image": "Gaseous10.webp",
                   "filter": "hue-rotate(110deg) saturate(0.8) contrast(1.2)",
