@@ -28,7 +28,7 @@ class Asteroids {
     for (var i = 0; i < this.itemCount; i++) {
       const asteroidSize = (Math.floor(Math.random() * 5)) + 1;
       
-      this.astralOrbit.innerHTML += `
+      this.astralOrbit.querySelector('.anti-axis').innerHTML += `
         <div class="asteroid-holder position" style="
           transform: translate3d(${((Math.random() * 100) - 50) / 2}px, ${((Math.random() * 100) - 50) / 2}px, ${(Math.random() * 10) - 5}px ) rotateZ(${i*(360/this.itemCount)}deg);
           ">
@@ -58,6 +58,8 @@ class Asteroids {
         --thisYear: ${this.yearLength};
          `,
     });
+
+    this.astralOrbit.innerHTML = '<div class="anti-axis"></div>';
 
     this.appendAsteroid();
 
