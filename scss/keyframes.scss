@@ -9,17 +9,6 @@
   }
 }
 
-// @keyframes orbit-asteroids {
-//   0% {
-//     // transform: rotateY(var(--orbit-tilt)) rotateZ(calc(var(--axis) * -1));
-//     transform: rotateY(var(--orbit-tilt)) rotateZ(calc(var(--axis) * -1));
-//   }
-//   100% {
-//     // transform: rotateY(var(--orbit-tilt)) rotateZ(calc(-360 - calc(var(--axis) * -1)));
-//     transform: rotateY(var(--orbit-tilt)) rotateZ(calc(-360 - calc(var(--axis) * -1)));
-//   }
-// }
-
 @keyframes counterorbit {
   0% {
     transform: rotateZ(0deg) translate3d(-50%, -50%, 0); 
@@ -52,11 +41,11 @@
     box-shadow: 0 0 0 0 rgba(255,255,255,1);
   }
 
-  66.6% {
+  33.3% {
     box-shadow: 0 0 0 0 rgba(255,255,255,1);
   }
 
-  83.4% {
+  66.6% {
     box-shadow: 0 0 0 .5rem rgba(255,255,255,1);
   }
 
