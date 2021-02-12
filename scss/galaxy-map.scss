@@ -7,7 +7,10 @@
   background: url('../img/galaxy-map/stars.webp') center;
   background-size: contain;
   display: block;
-  // overflow: auto;
+  
+  @media screen and (max-width: 680px) {
+    --clusterSize: 2rem;
+  }
 
   &.active {
     .galaxy {
@@ -517,7 +520,10 @@
           --left: 50%;
           pointer-events: auto;
           // transform: translate3d(-50%, -50%, 0);
-          --clusterSize: 5rem;
+
+          @media screen and (min-width: 680px) {
+            --clusterSize: 5rem;
+          }
 
           .center {
             opacity: 1;
