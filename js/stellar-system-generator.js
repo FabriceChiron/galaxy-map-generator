@@ -22,6 +22,7 @@ class Asteroids {
     this.itemCount = (obj.bodies) ? obj.bodies : 100;
     this.targetElement = (targetElement) ? document.querySelector(targetElement) : null;
     this.starSize = (obj.starSize) ? obj.starSize : 0;
+    this.variance = (obj.variance) ? obj.variance : 100;
   }
 
   appendAsteroid() {
@@ -30,7 +31,7 @@ class Asteroids {
       
       this.astralOrbit.querySelector('.anti-axis').innerHTML += `
         <div class="asteroid-holder position" style="
-          transform: translate3d(${((Math.random() * 100) - 50) / 2}px, ${((Math.random() * 100) - 50) / 2}px, ${(Math.random() * 10) - 5}px ) rotateZ(${i*(360/this.itemCount)}deg);
+          transform: translate3d(${((Math.random() * this.variance) - 50) / 2}px, ${((Math.random() * this.variance) - 50) / 2}px, ${(Math.random() * 10) - 5}px ) rotateZ(${i*(360/this.itemCount)}deg);
           ">
           <div class="asteroid-wrapper astralBody-holder" style="width: ${asteroidSize}px; height: ${asteroidSize}px;">
             <div class="counter-orbit" style="transform: rotateZ(${i*(360/this.itemCount)* -1}deg);">
@@ -505,21 +506,6 @@ class AstralBody {
       }, 100)
     }
 
-    // if(this.bodyType === 'planet'){
-    //   setInterval(function(){
-    //     console.log(isInViewport(document.querySelector('#nutus .hover-area')))
-    //     if(!isInViewport(self.astralBody.querySelector('.hover-area'))) {
-    //       // console.log('!isInViewport', self.name);
-    //       if(!self.astralOrbit.classList.contains('outside')) {
-    //         self.astralOrbit.className += ' outside';
-    //       }
-    //     } else {
-    //       // console.log('isInViewport', self.name);
-    //       self.astralOrbit.className = self.astralOrbit.className.replace(' outside', '');
-    //     }
-    //   }, 2000)
-    // }
-
     return (this.container || this.astralOrbit);
   }
 
@@ -652,6 +638,7 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
         window[sAsteroidField].render();
       });
     }
+
 
     [...document.querySelectorAll('.astralBody.planet')].map(planet => {
       const parentOrbit = planet.closest('.orbit');
