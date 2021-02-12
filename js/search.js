@@ -1,3 +1,7 @@
+const focusSearch = function(el) {
+  el.checked && el.nextElementSibling.focus();
+}
+
 const emptySearch = () => {
   setTimeout(function(){
     document.querySelector('#search-input').value = '';

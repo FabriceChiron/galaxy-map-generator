@@ -78,6 +78,7 @@ const generateMenu = (galaxyMaps) => {
     id: 'toggle-search',
     class: 'hidden-input',
     type: 'checkbox',
+    onchange: 'focusSearch(this)'
     // onchange: "focusMethod('#search-input')"
   });
 
