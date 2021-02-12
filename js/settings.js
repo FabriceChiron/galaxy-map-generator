@@ -284,7 +284,6 @@ const toggleSizes = () => {
 }
 
 const toggleStarShip = () => {
-  console.log()
   if(showStarShip === "true") {
     window.localStorage.setItem('showStarShip', "false");
     showStarShip = "false"; 
@@ -292,6 +291,8 @@ const toggleStarShip = () => {
     window.localStorage.setItem('showStarShip', "true");
     showStarShip = "true"; 
   }
+
+  document.body.dataset.starship = showStarShip;
 
   toggleStarShipClass(showStarShip);
 

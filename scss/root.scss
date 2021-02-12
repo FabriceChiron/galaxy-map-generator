@@ -61,11 +61,15 @@ body {
   --shipRatio: 0.4;
   --ship: url('../img/normandy.svg');
   --shipLengthButton: 1.2em;
+  cursor: var(--cursor);
+
+  &[data-starship="true"] {
+    --cursorImg: url('../img/cursor.svg');;
+    --cursor: none;
+  }
 
   &.allows-starship {
-    --cursor: none;
 
-    --cursorImg: url('../img/cursor.svg');;
     --shipLengthButton: 1em;
 
     #galaxies a,

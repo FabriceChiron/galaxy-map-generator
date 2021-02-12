@@ -472,7 +472,6 @@
       opacity: 1;
       pointer-events: none;
       transition: all var(--transition-duration) ease;
-      cursor: var(--cursor);
 
       > .shape {
         opacity: 0;

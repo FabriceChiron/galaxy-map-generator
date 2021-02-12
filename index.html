@@ -50,10 +50,12 @@
           ? window.localStorage.getItem('showStarShip') 
           : "false");
 
+
     var settings = (window.localStorage.getItem('settings') !== null) ? JSON.parse(window.localStorage.getItem('settings')) : null; 
     
     document.addEventListener('DOMContentLoaded', (event) => {
       initValues(settings, realSizes);
+      document.body.dataset.starship = showStarShip;
     })
 
 
