@@ -31,7 +31,7 @@ const decomposeHash = (sPath) => {
     removeStellarSystemUnless();
     removeActiveAstralBodyUnless();
 
-    if(document.body.dataset.galaxy) delete(document.body.dataset.galaxy);
+    document.body.dataset.galaxy = 'milky-way';
 
     // Activate global view
     setAttributes(document.querySelector('#galaxies'), {
@@ -55,9 +55,9 @@ const decomposeHash = (sPath) => {
       });
     });
 
-    if(showStarShip === "true") {
+    // if(showStarShip === "true") {
       document.body.dataset.galaxy = aPath[0];
-    }
+    // }
     
     if(aPath.length > 1) {
       // Clusters

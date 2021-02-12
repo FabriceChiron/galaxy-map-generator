@@ -57,8 +57,16 @@ body {
   height: 100vh;
   -webkit-font-smoothing: antialiased;
 
+  --shipWidth: calc(var(--shipLength) * var(--shipRatio));
+  --shipRatio: 0.4;
+  --ship: url('../img/normandy.svg');
+  --shipLengthButton: 1.2em;
+
   &.allows-starship {
     --cursor: none;
+
+    --cursorImg: url('../img/cursor.svg');;
+    --shipLengthButton: 1em;
 
     #galaxies a,
     .stellar-system_section a {
@@ -80,7 +88,6 @@ body {
 
   &[data-galaxy] {
     #starShip {
-      --shipWidth: calc(var(--shipLength) * var(--shipRatio));
 
       width: var(--shipWidth);
 
@@ -90,12 +97,9 @@ body {
     }
   }
 
-  &[data-galaxy="milky-way"] {
-    --shipRatio: 0.4;
-    --ship: url('../img/normandy.svg');
-  }
 
   &[data-galaxy="andromeda"] {
+    // --shipLengthButton: 0.7rem;
     --shipRatio: 0.57;
     --ship: url('../img/tempest.svg');
   }
@@ -257,17 +261,50 @@ body {
       }
     }
 
-    &.toggle:not(.active) {
-      color: rgba(255, 255, 255, .5);
-    }
+    &#toggle-sizes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      --opacityStart: 1;
+      --opacityEnd: 0;
 
-    &#toggle-starship {
-      img {
-        width: 0.7rem;
-        transform: rotate(45deg);
-        filter: brightness(100) saturate(0);
+      span {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: #fff;
+        margin: .25rem;
+        animation: toggle-sizes 5s infinite linear;
       }
     }
+
+    &#toggle-sizes.active {
+      span {
+        animation-direction: reverse;
+      }
+    }
+
+    &.toggle:not(.active) {
+      // color: rgba(255, 255, 255, .5);
+    }
+
+  }
+}
+
+#toggle-starship {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .25rem .5rem;
+
+  span {
+    width: var(--shipWidth);
+    height: var(--shipLengthButton);
+    transform: rotate(45deg);
+    filter: grayscale(100) brightness(100) saturate(0);
+    background: var(--cursorImg, var(--ship)) center no-repeat;
+    background-size: contain;
+    display: block;
   }
 }
 
