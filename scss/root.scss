@@ -64,8 +64,11 @@ body {
   cursor: var(--cursor);
 
   &[data-starship="true"] {
-    --cursorImg: url('../img/cursor.svg');;
-    --cursor: none;
+    --cursorImg: url('../img/cursor.svg');
+
+    &.allows-starship {
+      --cursor: none;
+    }
   }
 
   &.allows-starship {
