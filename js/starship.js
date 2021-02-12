@@ -151,11 +151,11 @@ var update = function(velocity) {
   const rotation = isNaN(angle) ? 0 : angle;
   const intensity = velocity.velocity() / 25;
 
-  infoElement.innerHTML = `linear: ${velocity.velocity()}<br>
-    x: ${velocity.velocityX()}<br>
-    y: ${velocity.velocityY()}<br>
-    intensity: ${intensity},<br>
-    rotation: ${rotation}`;
+  // infoElement.innerHTML = `linear: ${velocity.velocity()}<br>
+  //   x: ${velocity.velocityX()}<br>
+  //   y: ${velocity.velocityY()}<br>
+  //   intensity: ${intensity},<br>
+  //   rotation: ${rotation}`;
 
   if(!isNaN(angle)) {
     shipRotator.style = `transform: rotateZ(${angle}deg);`;
