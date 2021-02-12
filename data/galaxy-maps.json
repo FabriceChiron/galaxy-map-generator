@@ -11108,6 +11108,164 @@
                   "details": "Huiton's hydrogen and nitrogen atmosphere is notable for its unique weather patterns - storms begin and end here with almost mechanized consistency."
                 }
               ]
+            },
+            {
+              "name": "Nalesh",
+              "star": "Nalesh",
+              "top": 29.6,
+              "left": 76.9,
+              "filter": "saturate(0.3) hue-rotate(160deg) brightness(1.2)",
+              "asteroids": [
+                {
+                  "orbit": 3,
+                  "year": 3,
+                  "bodies": 50,
+                  "variance": 40
+                },
+                {
+                  "orbit": 6.5,
+                  "year": 6.5,
+                  "bodies": 100,
+                  "variance": 60
+                }
+              ],
+              "bodies": [
+                {
+                  "name": "tijorana",
+                  "image": "Terrestrial2.webp",
+                  "filter": "hue-rotate(-20deg)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 2.4,
+                  "year": 2.8,
+                  "size": "1622/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "An angaran poet described Tijorana as the \"gemstone eye of Nalesh.\" Its limestone surface glimmers with copper deposits, though few explorers have ever made planetfall."
+                },
+                {
+                  "name": "rahere",
+                  "image": "ganymede-texture.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 3.3,
+                  "year": 4.6,
+                  "size": "9156/6378",
+                  "day": "1",
+                  "coords": "sw",
+                  "details": "Meteors impact Rahere regularly, bringing the riches of the asteroid belt to the planet surface."
+                },
+                {
+                  "name": "gesaimo",
+                  "image": "iapetus-texture.webp",
+                  "filter": "saturate(0.5)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 3.5,
+                  "year": 5,
+                  "size": "9193/6378",
+                  "day": "1",
+                  "coords": "se",
+                  "details": "Gold and aluminum dominate Gesaimo's surface. Much of the equipment used by the angara to mine the planet remains intact, albeit damaged and nonfunctional."
+                },
+                {
+                  "name": "suiorna",
+                  "image": "Gaseous10.webp",
+                  "filter": "saturate(0.15) hue-rotate(-35deg) brightness(0.5)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 8.3,
+                  "year": 18.4,
+                  "size": "66369/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "Suiorna's gravity frequently captures passing asteroids. Most plunge into its gaseous atmosphere, but a few remain permanently in orbit."
+                }
+              ]
+            },
+            {
+              "name": "nol",
+              "star": "nol",
+              "top": 29.7,
+              "left": 66.8,
+              "filter": "hue-rotate(-20deg)",
+              "asteroids": [
+                {
+                  "orbit": 4,
+                  "year": 4,
+                  "bodies": 70
+                }
+              ],
+              "bodies": [
+                {
+                  "name": "ditivios",
+                  "image": "pluto-texture2.webp",
+                  "filter": "hue-rotate(60deg) brightness(0.5) contrast(1.3)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 2.5,
+                  "year": 4,
+                  "size": "7369/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": ""
+                },
+                {
+                  "name": "pas-55",
+                  "image": "Gaseous4.webp",
+                  "filter": "saturate(0.12) contrast(1.6) brightness(0.6)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 11,
+                  "year": 36.6,
+                  "size": "43338/6378",
+                  "day": "1",
+                  "coords": "n",
+                  "details": "Hydrogen and methane comprise the bulk of Pas-55's atmosphere. Innumerable tiny satellites drift low in the gas giant's orbit, too dispersed to form a proper \"ring.\""
+                },
+                {
+                  "name": "voeld",
+                  "image": "enceladus-texture.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 14.8,
+                  "year": 57.1,
+                  "size": "8740/6378",
+                  "day": "1",
+                  "coords": "sw",
+                  "details": "Voeld is a world going through an ice age. Once packed with dozens of urban centers, most of Voeld's angaran population now lives in scattered settlements. The remains of vast ancient cities are still entombed in ice."
+                }
+              ]
             }
           ]
         }
