@@ -17,7 +17,7 @@ var isDragging = false;
 function handleDrag(ev) {
     var elem = document.body.querySelector('.stellar-system');
 
-    if(ev.target.closest('#ui') === null) {
+    if(ev.target.closest('#ui') === null && ev.target.closest('.holder-infos') === null) {
       if ( ! isDragging ) {
         isDragging = true;
         lastPosX = elem.offsetLeft;
@@ -47,28 +47,33 @@ function dragElement(elmnt) {
   function dragMouseDown(e) {
 
     e = e || window.event;
-    e.preventDefault();
+
+    if(e.target.closest('.holder-infos') === null) {
+      
+      e.preventDefault();
 
 
-    // get the mouse cursor position at startup:
-    // call a function whenever the cursor moves:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmousemove = elementDrag;
-    document.onmouseup = closeDragElement;
-    if(e.target.tagName === 'A') {
-      e.target.onclick = function(e) {
-        e.preventDefault();
-      }
-
-      setTimeout(function() {
-        if(!elmnt.classList.contains('dragging')) {
-          if(e.button === 0) {
-            window.location.hash = e.target.getAttribute('href');
-          }
+      // get the mouse cursor position at startup:
+      // call a function whenever the cursor moves:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmousemove = elementDrag;
+      document.onmouseup = closeDragElement;
+      if(e.target.tagName === 'A') {
+        e.target.onclick = function(e) {
+          e.preventDefault();
         }
-      },100);
+
+        setTimeout(function() {
+          if(!elmnt.classList.contains('dragging')) {
+            if(e.button === 0) {
+              window.location.hash = e.target.getAttribute('href');
+            }
+          }
+        },100);
+      }
     }
+
   }
 
   function elementDrag(e) {
