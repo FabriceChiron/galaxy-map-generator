@@ -434,7 +434,7 @@
                   "filter": "",
                   "texture": true,
                   "orbit": "16.01",
-                  "year": "472.2",
+                  "year": "472.2/365",
                   "size": "6378/6378",
                   "day": "110.2*365",
                   "coords": "se",
@@ -5733,8 +5733,14 @@
                   "size": "4.007",
                   "year": "84",
                   "day": "17.3/24",
-                  "rings": true,
-                  "ringsColor": "rgba(255,255,255,0.02)",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thinner-30",
+                        "size": "80"
+                      }
+                    ]
+                  },
                   "coords": "s",
                   "details": "Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is similar in composition to Neptune, and both have different bulk chemical composition from that of the larger gas giants Jupiter and Saturn. For this reason, scientists often classify Uranus and Neptune as \"ice giants\" to distinguish them from the gas giants."
                 },
