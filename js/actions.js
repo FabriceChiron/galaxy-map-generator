@@ -47,6 +47,7 @@ const createActiveAstralBody = (astralBody, stellarSystem) => {
   if(activeAstralBody.querySelector('.astralBody-holder') !== null) {
     [...activeAstralBody.querySelectorAll('.astralBody-holder')].map(item => {
       item.classList.remove('hidden');
+      item.querySelector('.astralBody').classList.add('adjust-margin');
     });
   }
   

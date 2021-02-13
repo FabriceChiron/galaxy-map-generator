@@ -86,13 +86,10 @@ body.touch {
   }
 }
 
-// .position.s .mask {
-//   // overflow: visible !important;
+@media screen and (max-width: 680px) {
+  .adjust-margin{ margin-left: -10vw;}
+}
 
-//   &:after {
-//     animation: shadow var(--planet-orbit-duration) infinite linear !important;
-//   }
-// }
 
 .mask-shadow {
   width: 300%;
@@ -856,7 +853,7 @@ body.touch {
           }
 
           @media screen and (max-width: 680px) {
-            left: 50%;
+            left: calc(50% + 10vw);
 
             .infos {
               margin: 0;
