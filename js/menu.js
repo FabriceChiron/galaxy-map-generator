@@ -1,10 +1,10 @@
-const closeChildren = function(input) {
+const closeChildren = (input) => {
     [...input.parentElement.querySelectorAll(`ul input`)].map(input => {
       input.checked = false;
     });
 }
 
-const toggleNavLayer = function(input) {
+const toggleNavLayer = (input) => {
   [...document.querySelectorAll(`[name="${input.name}"]:not(#${input.id})`)].map(input => {
     input.checked = false;
     closeChildren(input);
@@ -13,6 +13,17 @@ const toggleNavLayer = function(input) {
   if(!input.checked){
     closeChildren(input);
   }
+
+  if(
+      (input.checked === true)  && 
+      (input.nextElementSibling.nextElementSibling.children.length === 1) &&
+      (input.nextElementSibling.nextElementSibling.querySelector('input') !== null)
+    ) {
+    input.nextElementSibling.nextElementSibling.querySelector('input').checked = true;
+  }
+
+  console.log(input.nextElementSibling.nextElementSibling.children.length);
+
 }
 
 const homeAdress = "/local-cluster/solar-system/earth".split('/');
@@ -251,11 +262,6 @@ const generateMenu = (galaxyMaps) => {
 
   ui.prepend(nav);
   hashHandler();
-
-  // console.log(search(document.querySelector("#search-input").value));
-
-  // window.addEventListener('input', document.querySelector("#search-input"), search(document.querySelector("#search-input").value));
-
 
 
   [...nav.querySelectorAll('ul a, #search-results a')].map(link => {
