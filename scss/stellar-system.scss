@@ -252,7 +252,7 @@ body.touch {
   }
 
   &.has-no-mask{
-    transform: rotateY(var(--tilt));
+    transform: rotateZ(calc(var(--axis) * -1)) rotateY(var(--tilt));
 
     .mask-shadow {
       -webkit-mask-image: url("../img/masks/mask-empty.svg");
