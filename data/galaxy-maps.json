@@ -11279,6 +11279,12 @@
               "top": 49.8,
               "left": 69.8,
               "asteroids": [
+                {
+                  "orbit": 9,
+                  "year": 9,
+                  "bodies": 150,
+                  "variance": 200
+                }
               ],
               "bodies": [
                 {
@@ -11330,6 +11336,365 @@
                   "size": "3289/6378",
                   "day": "1",
                   "coords": "w",
+                  "details": ""
+                },
+                {
+                  "name": "obayro",
+                  "image": "venus-texture3.webp",
+                  "filter": "hue-rotate(72deg) brightness(0.6) saturate(0.7)",
+                  "overlay": "",
+                  "clouds": "venus_atmosphere.webp",
+                  "cloudsFilter": "opacity(80%) hue-rotate(70deg) brightness(0.4)",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "default",
+                        "size": "100"
+                      },
+                      {
+                        "image": "default",
+                        "size": "90"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 17.7,
+                  "year": 83.2,
+                  "size": "5771/6378",
+                  "day": "1",
+                  "coords": "w",
+                  "details": "Obayro's surface is primarily composed of iron, but mountains rich with less common metals dot the landscape. Scans indicate that the angara have often sent mining expeditions here."
+                },
+                {
+                  "name": "fetvun",
+                  "image": "Gaseous10.webp",
+                  "filter": "saturate(0.15) hue-rotate(-60deg) brightness(0.5)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 20.5,
+                  "year": 103.8,
+                  "size": "55380/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "Every century, Fetvun's orbital path takes it dangerously near a stretch of Scourge. It appears to be bleeding atmosphere as a consequence."
+                }
+              ]
+            },
+            {
+              "name": "Pfeiffer",
+              "star": "Pfeiffer",
+              "top": 62.9,
+              "left": 60.2,
+              "filter": "saturate(0)",
+              "asteroids": [
+                {
+                  "orbit": 6.8,
+                  "year": 6.8,
+                  "bodies": 80
+                }
+              ],
+              "bodies": [
+                {
+                  "name": "h-480",
+                  "image": "mars-texture2.webp",
+                  "filter": "hue-rotate(30deg)",
+                  "overlay": "",
+                  "clouds": "earth-clouds.webp",
+                  "cloudsFilter": "opacity(30%)",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 1.7,
+                  "year": 1.7,
+                  "size": "8238/6378",
+                  "day": "1",
+                  "coords": "se",
+                  "details": "Thick dust clouds, dangerous electrical storms, and heavy gravity render H-480 inhospitable even for well-equipped krogan explorers."
+                },
+                {
+                  "name": "korvath",
+                  "image": "callisto-texture.webp",
+                  "filter": "hue-rotate(170deg)",
+                  "overlay": "",
+                  "clouds": "earth-clouds.webp",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 2.3,
+                  "year": 3.5,
+                  "size": "11963/6378",
+                  "day": "1",
+                  "coords": "s",
+                  "details": ""
+                },
+                {
+                  "name": "reyer",
+                  "image": "Alpine.webp",
+                  "filter": "saturate(0.1) brightness(1.4)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 4,
+                  "year": 6.1,
+                  "size": "8971/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "Though the planet is highly toxic to most known lifeforms, Reyer's helium-rich atmosphere appears to host enormous colonies of fungal spores."
+                },
+                {
+                  "name": "h-479",
+                  "image": "Terrestrial3.webp",
+                  "filter": "hue-rotate(-10deg) saturate(0.5)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 9.7,
+                  "year": 30.4,
+                  "size": "6843/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "Extreme radioactivity and high-velocity winds make H-479 a poor candidate for mining, despite its rich metal deposits. A potential candidate for future endeavors."
+                },
+                {
+                  "name": "h-461",
+                  "image": "mercury-texture.webp",
+                  "filter": "",
+                  "overlay": "rgba(16,60,111,0.66)",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 40.1,
+                  "year": 254.4,
+                  "size": "5103/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": ""
+                }
+              ]
+            },
+            {
+              "name": "Pytheas",
+              "star": "Pytheas",
+              "top": 70.3,
+              "left": 44.2,
+              "asteroids": [
+                {
+                  "orbit": 6,
+                  "year": 6,
+                  "bodies": 200,
+                  "variance": 300
+                }
+              ],
+              "bodies": [
+                {
+                  "name": "h-060",
+                  "image": "Cracklepotblue.webp",
+                  "filter": "hue-rotate(-200deg) saturate(0.6) contrast(0.7)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 0.6,
+                  "year": 11,
+                  "size": "7968/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "H-060 and its satellites attract debris from Pytheas' asteroid belt, resulting in multiple dust rings. Numerous meteorite impacts have left H-060 rich in nickel, but these same impacts make mining difficult."
+                },
+                {
+                  "name": "eos",
+                  "image": "mars-texture2.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 1.3,
+                  "year": 1.6,
+                  "size": "2952/6378",
+                  "day": "1",
+                  "coords": "sw",
+                  "details": "A desert world with significant resources, Eos is often wracked by deadly, radiation-contaminated storms. Catalogued as nonviable after numerous attempts to settle."
+                },
+                {
+                  "name": "pele",
+                  "image": "venus-texture4.webp",
+                  "filter": "contrast(0.6)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 12.1,
+                  "year": 47.2,
+                  "size": "7091/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "Tidal heating and bombardment from Pytheas' asteroid belt has aggravated Pele's volcanic activity. Methane in its upper atmosphere contributes to the planet's scorching conditions."
+                },
+                {
+                  "name": "h-276",
+                  "image": "pluto-texture2.webp",
+                  "filter": "hue-rotate(80deg)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 27.8,
+                  "year": 164.6,
+                  "size": "7185/6378",
+                  "day": "1",
+                  "coords": "w",
+                  "details": "Remote and cold, H-276 is nevertheless of interest due to phosgene gas in its thick chlorine atmosphere. This could indicate primitive chlorine-based life. However, no detailed study has been completed."
+                },
+                {
+                  "name": "nanuk",
+                  "image": "Gaseous4.webp",
+                  "filter": "saturate(0.3) contrast(1.5) brightness(0.6) hue-rotate(20deg)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 27.9,
+                  "year": 164.9,
+                  "size": "25194/6378",
+                  "day": "1",
+                  "coords": "se",
+                  "details": "Nanuk is a hydrogen-methane gas giant."
+                },
+                {
+                  "name": "khonsu",
+                  "image": "ganymede-texture.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 31.4,
+                  "year": 197,
+                  "size": "7495/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "Khonsu's oddly mild climate - given its orbital distance - and rich resources made it a candidate for a mining outpost. However, its unexpectedly rugged terrain has tabled discussions indefinitely."
+                }
+              ]
+            },
+            {
+              "name": "Ratul",
+              "star": "Ratul",
+              "top": 27.5,
+              "left": 42,
+              "filter": "hue-rotate(160deg)",
+              "bodies": [
+                {
+                  "name": "insaaron",
+                  "image": "iapetus-texture.webp",
+                  "filter": "hue-rotate(170deg) contrast(0.6) saturate(2)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 34.8,
+                  "year": 48.5,
+                  "size": "10403/6378",
+                  "day": "1",
+                  "coords": "se",
+                  "details": "Insaaron's nitrogen and carbon monoxide atmosphere is gradually being stripped away by Ratul's sun, leaving the barren surface utterly unprotected from the sun's radiation."
+                },
+                {
+                  "name": "kizrata",
+                  "image": "mars-texture.webp",
+                  "filter": "hue-rotate(200deg) brightness(0.6)",
+                  "overlay": "",
+                  "clouds": "earth-clouds.webp",
+                  "cloudsFilter": "opacity(60%)",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 56,
+                  "year": 99.2,
+                  "size": "6126/6378",
+                  "day": "1",
+                  "coords": "s",
+                  "details": "The Scourge has caused massive electromagnetic disturbances in Kizrata's atmosphere. Avoiding any closer proximity to the planet is strongly advised."
+                },
+                {
+                  "name": "hybaro",
+                  "image": "Terrestrial3.webp",
+                  "filter": "hue-rotate(30deg) contrast(1.2) brightness(0.8)",
+                  "overlay": "",
+                  "clouds": "earth-clouds.webp",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 78,
+                  "year": 162.9,
+                  "size": "6416/6378",
+                  "day": "1",
+                  "coords": "w",
+                  "details": "Hybaro has adapted bizarrely to the Scourge. For about a third of its orbital period, the Scourge's effects permit plant life to flourish; at all other times, Hybaro boils in the Ratul sun."
+                },
+                {
+                  "name": "h-494",
+                  "image": "Gaseous10.webp",
+                  "filter": "saturate(0.15) hue-rotate(-60deg) brightness(0.5)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 101.3,
+                  "year": 241.3,
+                  "size": "54173/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": ""
+                },
+                {
+                  "name": "govok's folly",
+                  "image": "Martian.webp",
+                  "filter": "hue-rotate(200deg)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 278.5,
+                  "year": 1,
+                  "size": "10782/6378",
+                  "day": "1",
+                  "coords": "n",
                   "details": ""
                 }
               ]
