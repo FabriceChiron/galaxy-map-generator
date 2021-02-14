@@ -473,9 +473,9 @@ class AstralBody {
     }
 
 
-    if(this.details && this.details.length) {
+    // if(this.details && this.details.length) {
       this.addDetails();
-    }
+    // }
 
     if(this.bodyType === 'satellite') {
       const container =  document.createElement('div');

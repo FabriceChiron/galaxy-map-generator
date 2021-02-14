@@ -848,6 +848,10 @@ body.touch {
                 margin: 0 0 1rem;
                 padding: 0;
                 list-style-position: inside;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
               }
             }
           }
