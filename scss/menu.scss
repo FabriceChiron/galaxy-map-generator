@@ -19,9 +19,6 @@
   flex-direction: column;
   
 
-  @media screen and (max-width: 680px) {
-    // max-height: calc(100% - 55px);
-  }
 
   .nav-container {
     background: rgba(0, 0, 0, 0.5);
@@ -218,7 +215,16 @@
         }
       }
 
+    }
+
+    @media screen and (orientation: landscape) {
+      max-height: 100vh;
+
+      .nav-container {
+        max-height: 100vh;
+      }
+    }
   }
 
-  }
+
 }
