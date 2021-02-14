@@ -21,9 +21,6 @@ const toggleNavLayer = (input) => {
     ) {
     input.nextElementSibling.nextElementSibling.querySelector('input').checked = true;
   }
-
-  console.log(input.nextElementSibling.nextElementSibling.children.length);
-
 }
 
 const homeAdress = "/local-cluster/solar-system/earth".split('/');
