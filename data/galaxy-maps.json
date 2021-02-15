@@ -11698,6 +11698,215 @@
                   "details": ""
                 }
               ]
+            },
+            {
+              "name": "Remav",
+              "star": "Remav",
+              "top": 27.2,
+              "left": 87.2,
+              "filter": "hue-rotate(-180deg)",
+              "bodies": [
+                {
+                  "name": "ameayono",
+                  "image": "Tropical.webp",
+                  "filter": "saturate(0.6)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 10.1,
+                  "year": 18.4,
+                  "size": "1",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "",
+                  "bodies": [
+                    {
+                      "name": "Ameayii",
+                      "texture" : true,
+                      "image":"io-texture.webp",
+                      "filter": "saturate(0.6) hue-rotate(-200deg) contrast(1.2)",
+                      "orbitFactor": 0.75,
+                      "orbit": "0.5",
+                      "size": "1468/6378",
+                      "year": "1",
+                      "day": "tidal",
+                      "coords": "sw",
+                      "details": "This barren moon is more scientifically interesting than its planet Ameayono, owing to traces of element zero detectable from orbit."
+                    }
+                  ]
+                },
+                {
+                  "name": "nuundri",
+                  "image": "Volcanic.webp",
+                  "filter": "saturate(0.6)",
+                  "overlay": "",
+                  "clouds": "venus_atmosphere.webp",
+                  "cloudsFilter": "opacity(40%)",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 9.1,
+                  "year": 15.7,
+                  "size": "5453/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "Nuundri's cracked surface contains large deposits of magnesium and cobalt. Constant volcanic activity fuels streams of lava that glimmer from orbit."
+                },
+                {
+                  "name": "phaidra",
+                  "image": "mimas-texture.webp",
+                  "filter": "saturate(3) hue-rotate(-200deg) brightness(0.5)",
+                  "overlay": "rgba(16,66,58,0.55)",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thinner-30",
+                        "size": "100"
+                      },
+                      {
+                        "image": "medium-10",
+                        "size": "100"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 129.3,
+                  "year": 839,
+                  "size": "11644/6378",
+                  "day": "1",
+                  "coords": "se",
+                  "details": "The ruins of several angaran exploratory missions dot Phaidra's surface, crushed by the planet's powerful gravity and half-buried by its winds.\n"
+                },
+                {
+                  "name": "Ark Natanus",
+                  "image": "ark.webp",
+                  "notSphere": true,
+                  "hideCoords": true,
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": "2",
+                  "year": "1",
+                  "size": "3",
+                  "day": "24/24",
+                  "coords": "se",
+                  "details": "<ul><li>Stasis Pod Count: 20,000, currently detecting 15,372</li><li>Status: Inactive</li></ul>"
+                }
+              ]
+            },
+            {
+              "name": "Rohvir",
+              "star": "Rohvir",
+              "top": 17.6,
+              "left": 50.6,
+              "bodies": [
+                {
+                  "name": "h-080",
+                  "image": "pluto-texture2.webp",
+                  "filter": "hue-rotate(-20deg) saturate(2.3) contrast(0.6) brightness(0.7)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 0.5,
+                  "year": 0.6,
+                  "size": "6918/6378",
+                  "day": "1",
+                  "coords": "se",
+                  "details": "Massive sand storms thrash H-080's surface day in and day out, wearing once-mighty mountain ranges down to smooth nubs over millenia.\n"
+                },
+                {
+                  "name": "h-162",
+                  "image": "Tropical.webp",
+                  "filter": "hue-rotate(-190deg) saturate(0.7)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thinner-30",
+                        "size": "90"
+                      },
+                      {
+                        "image": "medium-10",
+                        "size": "100"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 1.1,
+                  "year": 2.1,
+                  "size": "4429/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "Much of H-162's unusual coloration comes from what appears to be a sort of algae. The organism pervades the dense, moist atmosphere, floating on the wind.\n"
+                },
+                {
+                  "name": "h-169",
+                  "image": "Terrestrial4.webp",
+                  "filter": "saturata(0.8)",
+                  "overlay": "",
+                  "clouds": "earth-clouds.webp",
+                  "cloudsFilter": "opacity(80%)",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 1.7,
+                  "year": 4.1,
+                  "size": "11141/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "On a cursory visual inspection, the massive planet appears almost Earthlike, but its incredibly heavy gravity and crushing atmosphere make colonization a long shot.\n"
+                },
+                {
+                  "name": "momairus",
+                  "image": "Tropical.webp",
+                  "filter": "saturate(0.05) brightness(0.3)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 2.3,
+                  "year": 6.3,
+                  "size": "10835/6378",
+                  "day": "1",
+                  "coords": "n",
+                  "details": "Momairus appears to have been stripped of a breathable atmosphere by Scourge phenomena over the past century. What remains is a barren sphere of boron and carbon.\n"
+                },
+                {
+                  "name": "werius",
+                  "image": "rhea-texture.webp",
+                  "filter": "brightness(0.2)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 4.4,
+                  "year": 16.9,
+                  "size": "9769/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "Werius is inhabited by simple herds of methane breathers struggling to find shelter against the cold. It may be Scourge effects that have pushed these creatures to near extinction.\n"
+                }
+              ]
             }
           ]
         }
