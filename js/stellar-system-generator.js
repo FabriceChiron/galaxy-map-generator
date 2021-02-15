@@ -330,6 +330,10 @@ class AstralBody {
     if(this.dayDirection){
       bg += ` animation-direction: ${this.dayDirection};`;
     }
+    if(this.notSphere) {
+      console.log('notSphere!')
+      bg += ` border-radius: 0;`
+    }
     if(this.filter){
       bg += ` --filter: ${this.filter};`;
     }
