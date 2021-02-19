@@ -29,7 +29,7 @@
               "bodies": [
                 {
                   "name": "Jak Ser",
-                  "image": "Mercury.webp",
+                  "image": "mercury-texture.webp",
                   "texture": true,
                   "orbit": "0.6",
                   "year": "0.4",
@@ -209,7 +209,7 @@
               "bodies": [
                 {
                   "name": "Poloh Tem",
-                  "image": "Mercury.webp",
+                  "image": "mercury-texture.webp",
                   "texture": true,
                   "orbit": "2.1",
                   "year": "3.1",
@@ -231,7 +231,7 @@
                 },
                 {
                   "name": "Nalisin",
-                  "image": "Moon.webp",
+                  "image": "moon-texture.webp",
                   "texture": true,
                   "orbit": "23.4",
                   "year": "113.6",
@@ -759,7 +759,7 @@
                 },
                 {
                   "name": "metgos",
-                  "image": "Mercury.webp",
+                  "image": "mercury-texture.webp",
                   "texture": true,
                   "orbit": "2",
                   "year": "2.8",
@@ -781,7 +781,7 @@
                 },
                 {
                   "name": "canrum",
-                  "image": "Moon.webp",
+                  "image": "moon-texture.webp",
                   "texture": true,
                   "orbit": "16.52",
                   "year": "67.3",
@@ -1048,7 +1048,7 @@
                 },
                 {
                   "name": "treagir",
-                  "image": "Mercury.webp",
+                  "image": "mercury-texture.webp",
                   "texture": true,
                   "filter": "hue-rotate(160deg) saturate(0.5)",
                   "orbit": "20",
@@ -12058,6 +12058,94 @@
                   "day": "1",
                   "coords": "w",
                   "details": "Seas of liquid helium cover this strange world, reliably boiling whenever the temperature rises.\n"
+                }
+              ]
+            },
+            {
+              "name": "Sephesa",
+              "star": "Sephesa",
+              "top": 74.1,
+              "left": 14.2,
+              "filter": "hue-rotate(-60deg)",
+              "bodies": [
+                {
+                  "name": "nadinoor",
+                  "image": "callisto-texture.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "default",
+                        "size": "100"
+                      },
+                      {
+                        "image": "default",
+                        "size": "90"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 0.2,
+                  "year": 0.2,
+                  "size": "1437/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "Nadinoor's surface temperature varies wildly depending on local volcanic activity. Away from the lava streams, the rocky landscape can be frigid.\n"
+                },
+                {
+                  "name": "h-119",
+                  "image": "charon-texture3.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 1.1,
+                  "year": 2.2,
+                  "size": "9178/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "The size and dense metallic composition of H-119 give it a surface gravity over four times that of Earth. Despite the dangers, mining efforts may be worthwhile."
+                },
+                {
+                  "name": "chophise",
+                  "image": "Alpine.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "earth-clouds.webp",
+                  "cloudsFilter": "opacity(80%)",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 4.3,
+                  "year": 16.3,
+                  "size": "8694/6378",
+                  "day": "1",
+                  "coords": "sw",
+                  "details": "Chophise's dense atmosphere efficiently traps Sephesa's heat: its surface temperature, though frigid by human standards, is warm compared to most of the system's planets."
+                },
+                {
+                  "name": "tenesta",
+                  "image": "enceladus-texture.webp",
+                  "filter": "contrast(1.2) brightness(0.8)",
+                  "overlay": "rgba(18,40,81,0.7)",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 14.4,
+                  "year": 100.4,
+                  "size": "6547/6378",
+                  "day": "1",
+                  "coords": "s",
+                  "details": "The endless calcium deserts of Tenesta are spotted with deposits of boron. Traces of kett landing parties are present, but all are decades old.\n"
                 }
               ]
             }
