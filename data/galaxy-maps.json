@@ -12253,6 +12253,111 @@
                   "details": "A tiny gas planet at the edge of the Shojaon system, Mocalaam is a perfect location for exploring ships to restock helium-3 and discharge the static buildup in their drives.\n"
                 }
               ]
+            },
+            {
+              "name": "Skeldah",
+              "star": "Skeldah",
+              "top": 41.9,
+              "left": 12.5,
+              "filter": "hue-rotate(-60deg) contrast(0.8) brightness(1)",
+              "bodies": [
+                {
+                  "name": "bleeding ruby",
+                  "image": "Volcanic.webp",
+                  "filter": "saturate(0.7)",
+                  "overlay": "",
+                  "clouds": "Clouds4.webp",
+                  "cloudsFilter": "brightness(1.5) saturate(2.5)",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "default",
+                        "size": "80"
+                      },
+                      {
+                        "image": "default",
+                        "size": "82"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 0.1,
+                  "year": 0.1,
+                  "size": "9912/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "Named by an exile with a penchant for poetry, Bleeding Ruby's rings and tectonic instability are the result of a single asteroid impact that occurred less than a century ago.\n"
+                },
+                {
+                  "name": "kotkoborra",
+                  "image": "io-texture.webp",
+                  "filter": "saturate(0.5) brightness(0.5)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 0.3,
+                  "year": 0.3,
+                  "size": "6634/6378",
+                  "day": "1",
+                  "coords": "n",
+                  "details": "Unlike the nearby world of Bleeding Ruby, Kotkoborra appears to have been in a state of ongoing volcanism for millennia. Gasses released by this activity pervade the atmosphere."
+                },
+                {
+                  "name": "norgraqua",
+                  "image": "titan-texture.webp",
+                  "filter": "saturate(1.7) contrast(0.5) hue-rotate(-40deg) brightness(0.7)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 0.9,
+                  "year": 1.6,
+                  "size": "4797/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "A windy, frigid desert, Norgraqua is named for a mythical asari penal colony. Even with protective gear, it is unlikely anyone could survive here long.\n"
+                },
+                {
+                  "name": "h-061",
+                  "image": "pluto-texture2.webp",
+                  "filter": "brightness(0.3)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 3.5,
+                  "year": 89.3,
+                  "size": "6669/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "H-061's orbital velocity slows as the planet passes near tendrils of Scourge, radically extending its total orbital period in ways difficult to calculate.\n"
+                },
+                {
+                  "name": "h-329",
+                  "image": "rhea-texture.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "ringsColor": "",
+                  "texture": true,
+                  "orbit": 4.4,
+                  "year": 16.9,
+                  "size": "4984/6378",
+                  "day": "1",
+                  "coords": "sw",
+                  "details": "The Scourge has stripped away much of H-329's atmosphere, leaving it unable to retain heat. Its liquid nitrogen oceans are now entirely frozen.\n"
+                }
+              ]
             }
           ]
         }
