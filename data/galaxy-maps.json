@@ -12358,6 +12358,407 @@
                   "details": "The Scourge has stripped away much of H-329's atmosphere, leaving it unable to retain heat. Its liquid nitrogen oceans are now entirely frozen.\n"
                 }
               ]
+            },
+            {
+              "name": "Solminae",
+              "star": "Solminae",
+              "top": 31.4,
+              "left": 25.8,
+              "filter": "hue-rotate(-50deg) brightness(0.7) contrast(1.5)",
+              "bodies": [
+                {
+                  "name": "red qorayk",
+                  "image": "ganymede-texture.webp",
+                  "filter": "hue-rotate(-20deg) contrast(1.3) brightness(0.8)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 0.3,
+                  "year": 0.3,
+                  "size": "9508/6378",
+                  "day": "1",
+                  "coords": "sw",
+                  "details": "Brutal temperatures, noxious gasses, crushing atmospheric pressure, and constant tectonic upheavals earned this world the name of legendary Milky Way pirate \"Red Qorayk.\"\n"
+                },
+                {
+                  "name": "h-323",
+                  "image": "europa-texture.webp",
+                  "filter": "hue-rotate(-20deg) contrast(1.3) brightness(0.8)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 0.7,
+                  "year": 1,
+                  "size": "6032/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "This frigid desert world appears to have once been covered in plant life. It was reduced to its current state millions of years ago, long before the Scourge, by the aging sun.\n"
+                },
+                {
+                  "name": "avelosa",
+                  "image": "callisto-texture.webp",
+                  "filter": "hue-rotate(-20deg) contrast(1.3) brightness(0.8)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 0.9,
+                  "year": 1.6,
+                  "size": "1442/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "Given its size and position, Avelosa might once have been a moon of H-323 - though how it was displaced is unclear. Unusual radiation emissions make Avelosa difficult to scan."
+                },
+                {
+                  "name": "suuricco",
+                  "image": "charon-texture3.webp",
+                  "filter": "brightness(0.8)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "default",
+                        "size": "100"
+                      },
+                      {
+                        "image": "default",
+                        "size": "90"
+                      },
+                      {
+                        "image": "default",
+                        "size": "70"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 2.4,
+                  "year": 6.8,
+                  "size": "7658/6378",
+                  "day": "1",
+                  "coords": "s",
+                  "details": "Centuries ago, angaran explorers set out beyond their space to Suuricco, which they believed might be habitable. The colony didn't last, but it has strong symbolic significance nonetheless."
+                },
+                {
+                  "name": "h-148",
+                  "image": "Martian.webp",
+                  "filter": "saturate(0.6)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 3.9,
+                  "year": 13.9,
+                  "size": "4698/6378",
+                  "day": "1",
+                  "coords": "w",
+                  "details": "Great mountain ranges of frozen carbon dioxide cover the gloomy surface of H-148, trapping deposits of gold and aluminum underneath.\n"
+                }
+              ]
+            },
+            {
+              "name": "Tafeno",
+              "star": "Tafeno",
+              "top": 19.6,
+              "left": 61.7,
+              "bodies": [
+                {
+                  "name": "Ark Paarchero",
+                  "image": "ark-2.webp",
+                  "notSphere": true,
+                  "hideCoords": true,
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": "2",
+                  "year": "1",
+                  "size": "3",
+                  "day": "24/24",
+                  "coords": "se",
+                  "details": "<ul><li>Stasis Pod Count: 20,000</li><li>Status: Low power standby</li></ul>"
+                },
+                {
+                  "name": "pas-65",
+                  "image": "pluto-texture2.webp",
+                  "filter": "contrast(0.6)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 7.7,
+                  "year": 12.2,
+                  "size": "8877/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "Pas-65 is a scorching desert that is nonetheless surprisingly cool given the output and nearness of the Tafeno sun. The temperature is a product of Pas-65's highly reflective metal deposits."
+                },
+                {
+                  "name": "tentrobiil",
+                  "image": "Terrestrial2.webp",
+                  "filter": "hue-rotate(-100deg) contrast(0.4) brightness(0.6)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 45.9,
+                  "year": 177.1,
+                  "size": "11187/6378",
+                  "day": "1",
+                  "coords": "sw",
+                  "details": "This massive world has an extremely smooth and flat surface, primarily composed of tin and nickel. A methane and ethane atmosphere helps retain heat."
+                },
+                {
+                  "name": "duiononasa",
+                  "image": "Gaseous10.webp",
+                  "filter": "saturate(0.2) brightness(0.4) contrast(1.2)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 93,
+                  "year": 511.5,
+                  "size": "47705/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "Decades-old shards of angaran ships drift in Duiononasa's orbit, indicating that the gas giant's helium-3 is more difficult to mine than our preliminary scans suggest.\n"
+                },
+                {
+                  "name": "solad",
+                  "image": "pluto-texture.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 128.3,
+                  "year": 828.9,
+                  "size": "7126/6378",
+                  "day": "1",
+                  "coords": "s",
+                  "details": "Solad's severe storms, toxic atmosphere, and tectonic instability make it a challenging candidate for ice mining despite oceans of frozen water and liquid ammonia."
+                }
+              ]
+            },
+            {
+              "name": "Tecunis",
+              "star": "Tecunis",
+              "top": 75,
+              "left": 28.7,
+              "filter": "hue-rotate(-10deg)",
+              "bodies": [
+                {
+                  "name": "vinvaiko",
+                  "image": "Gaseous10.webp",
+                  "filter": "saturate(0.2) hue-rotate(-30deg) brightness(1.6)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 9.9,
+                  "year": 7.4,
+                  "size": "18232/6378",
+                  "day": "1",
+                  "coords": "se",
+                  "details": "The hydrogen and helium atmosphere of this gas giant has been slowly stripped away over hundreds of millions of years, consumed by the Tecunis sun. Given time, it may be reduced to a terrestrial world.\n"
+                },
+                {
+                  "name": "mosiiba",
+                  "image": "iapetus-texture.webp",
+                  "filter": "contrast(1.3) saturate(0.6) brightness(0.9)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 11.1,
+                  "year": 21,
+                  "size": "3324/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "One of three rocky planets named for the \"stones of life\" of an ancient salarian religion, Mosiiba is the smallest and hottest of the triad.\n"
+                },
+                {
+                  "name": "mosiino",
+                  "image": "charon-texture3.webp",
+                  "filter": "contrast(1.3) brightness(0.8)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 12.7,
+                  "year": 28.8,
+                  "size": "6842/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "The largest of the three sibling worlds of the Tecunis system, Mosiino has a hot surface and an extremely thin atmosphere composed of methane and argon.\n"
+                },
+                {
+                  "name": "mosiives",
+                  "image": "ganymede-texture.webp",
+                  "filter": "contrast(1.4) saturate(0.7)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 14.4,
+                  "year": 31.1,
+                  "size": "6448/6378",
+                  "day": "1",
+                  "coords": "w",
+                  "details": "The outermost of Tecunis' three sibling worlds, Mosiives is a mountainous planet of lime and potassium.\n"
+                },
+                {
+                  "name": "h-523",
+                  "image": "moon-texture.webp",
+                  "filter": "brightness(0.4) contrast(1.2)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 59.9,
+                  "year": 264.3,
+                  "size": "6314/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "H-523 appears to have been a \"rogue planet\" captured by Tecunis' gravity and brought into an unusual orbit around the star. Long-term study of its composition may reveal more of its origins.\n"
+                },
+                {
+                  "name": "slohva",
+                  "image": "Tropical.webp",
+                  "filter": "hue-rotate(-30deg) saturate(0.6) brightness(0.7)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 61.2,
+                  "year": 273,
+                  "size": "4394/6378",
+                  "day": "1",
+                  "coords": "n",
+                  "details": "Despite its ferocious heat and thick, methane-rich atmosphere, Slohva might have been capable of supporting microbial life millions of years ago.\n"
+                }
+              ]
+            },
+            {
+              "name": "Togessan",
+              "star": "Togessan",
+              "top": 70.2,
+              "left": 94,
+              "filter": "hue-rotate(-15deg)",
+              "asteroids": [
+                {
+                  "orbit": 1.5,
+                  "year": 1.5,
+                  "bodies": 30
+                },
+                {
+                  "orbit": 4.1,
+                  "year": 4.1,
+                  "bodies": 100
+                }
+              ],
+              "bodies": [
+                {
+                  "name": "waoge",
+                  "image": "rhea-texture.webp",
+                  "filter": "brightness(0.5) contrast(1.2)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 0.9,
+                  "year": 0.9,
+                  "size": "5025/6378",
+                  "day": "1",
+                  "coords": "s",
+                  "details": "Surveys from the Milky Way suggested Waoge might contain vast mineral wealth just beneath its surface. On closer examination, no such deposits exist.\n"
+                },
+                {
+                  "name": "garef",
+                  "image": "mercury-texture.webp",
+                  "filter": "brightness(0.8)",
+                  "overlay": "",
+                  "clouds": "earth-clouds.webp",
+                  "cloudsFilter": "blur(calc(var(--body-size) * 0.005)) opacity(60%)",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 2.1,
+                  "year": 3.1,
+                  "size": "6594/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "Beneath the planet's crushing argon-based atmosphere, microbial lifeforms are flourishing on Garef in and around underground pools.\n"
+                },
+                {
+                  "name": "biloun",
+                  "image": "moon-texture.webp",
+                  "filter": "brightness(0.3) contrast(1.4)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 5.9,
+                  "year": 14.5,
+                  "size": "7799/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "Named for an early angaran explorer who perished on Biloun's surface, this rocky world commands a quiet respect from the angaran people.\n"
+                },
+                {
+                  "name": "pas-31",
+                  "image": "tethys-texture.webp",
+                  "filter": "saturate(0.5) brightness(0.5)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thin-10",
+                        "size": "100"
+                      },
+                      {
+                        "image": "thin-10",
+                        "size": "98"
+                      },
+                      {
+                        "image": "thin-20",
+                        "size": "94"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 11.3,
+                  "year": 38.2,
+                  "size": "4783/6378",
+                  "day": "1",
+                  "coords": "s",
+                  "details": "Ocean plains of frozen ammonia dominate the surface of Pas-31, climbing into icy mountains along the rims of ancient craters.\n"
+                }
+              ]
             }
           ]
         }
