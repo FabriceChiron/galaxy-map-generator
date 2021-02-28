@@ -12569,6 +12569,224 @@
                   "details": "Ocean plains of frozen ammonia dominate the surface of Pas-31, climbing into icy mountains along the rims of ancient craters.\n"
                 }
               ]
+            },
+            {
+              "name": "Vaalon",
+              "star": "Vaalon",
+              "top": 50.3,
+              "left": 88.8,
+              "filter": "hue-rotate(-200deg)",
+              "bodies": [
+                {
+                  "name": "ejoda",
+                  "image": "dione-texture.webp",
+                  "filter": "brightness(0.3) contrast(1.2)",
+                  "overlay": "rgba(15,19,59,0.62)",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 11.5,
+                  "year": 9.2,
+                  "size": "5635/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "Ejoda is a world of rock and metal surrounded by a crushing atmosphere. By all logic, it should be molten, but the Scourge has somehow kept it cool despite its proximity to Vaalon's blue giant sun.\n"
+                },
+                {
+                  "name": "pas-70",
+                  "image": "Terrestrial4.webp",
+                  "filter": "hue-rotate(-20deg) saturate(0.6) contrast(1.2)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 55.3,
+                  "year": 97.2,
+                  "size": "5973/6378",
+                  "day": "1",
+                  "coords": "sw",
+                  "details": "Pas-70 appears to be a \"cthonian planet,\" a former gas giant stripped of its atmosphere down to its metallic core. It's extremely likely this process was accelerated by the Scourge.\n"
+                },
+                {
+                  "name": "pas-78",
+                  "image": "Gaseous10.webp",
+                  "filter": "saturate(0.2) hue-rotate(-30deg) brightness(0.6)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thin-10",
+                        "size": "100"
+                      },
+                      {
+                        "image": "thin-10",
+                        "size": "98"
+                      },
+                      {
+                        "image": "thin-20",
+                        "size": "94"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 89.9,
+                  "year": 201.7,
+                  "size": "57050/6378",
+                  "day": "1",
+                  "coords": "w",
+                  "details": "Pas-78 is a large gas giant ideal for helium-3 mining; only the dense Scourge activity in the system makes it a less than perfect refueling point.\n"
+                },
+                {
+                  "name": "ra madesya",
+                  "image": "Volcanic.webp",
+                  "filter": "saturate(0.2)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 69.8,
+                  "year": 138,
+                  "size": "5091/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "Ra Madesya and its neighbor, Ra Moorondi, were both thrown out of their orbits by the Scourge. Even before this, however, Ra Madesya was likely a molten sphere of iron and copper.\n"
+                },
+                {
+                  "name": "ra moorondi",
+                  "image": "venus-texture3.webp",
+                  "filter": "hue-rotate(160deg) contrast(1) brightness(0.3)",
+                  "overlay": "",
+                  "clouds": "venus_atmosphere.webp",
+                  "cloudsFilter": "grayscale(0.5) hue-rotate(100deg) opacity(30%)",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "default",
+                        "size": "110"
+                      },
+                      {
+                        "image": "default",
+                        "size": "80"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 75.2,
+                  "year": 154.3,
+                  "size": "11212/6378",
+                  "day": "1",
+                  "coords": "w",
+                  "details": "Ra Moorondi, like Ra Madesya, was thrown out of orbit by the Scourge. Its enormous mass may have pulled in dust and debris to form rings only recently.\n"
+                }
+              ]
+            },
+            {
+              "name": "Vaar",
+              "star": "Vaar",
+              "top": 28.6,
+              "left": 52.9,
+              "filter": "saturate(0.3) hue-rotate(100deg)",
+              "bodies": [
+                {
+                  "name": "mae shesa",
+                  "image": "Rockbits1.webp",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "earth-clouds.webp",
+                  "cloudsFilter": "opacity(80%)",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 4.2,
+                  "year": 4.9,
+                  "size": "8666/6378",
+                  "day": "1",
+                  "coords": "w",
+                  "details": "An Outcast mineral mining camp has been recently demolished here. A fragmentary distress call describes the attackers as other exiles. There are no survivors.\n"
+                },
+                {
+                  "name": "margoth",
+                  "image": "mercury-texture.webp",
+                  "filter": "brightness(0.5)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thin-20",
+                        "size": "100"
+                      },
+                      {
+                        "image": "thinner-30",
+                        "size": "70"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 6.9,
+                  "year": 10.2,
+                  "size": "11925/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "Margoth's extraordinarily dangerous surface is of less interest than its ring system. Its inner ring is primarily dust and rock; the outer ring is composed of large chunks of water ice.\n"
+                },
+                {
+                  "name": "h-171",
+                  "image": "enceladus-texture.webp",
+                  "filter": "brightness(0.4)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 17.4,
+                  "year": 41.3,
+                  "size": "11407/6378",
+                  "day": "1",
+                  "coords": "s",
+                  "details": "H-171 is sheltered from the heat of Vaar's sun by large dust clouds in the inner solar system. The result is a glittering orb of frozen ammonia and tin.\n"
+                },
+                {
+                  "name": "h-173",
+                  "image": "dione-texture.webp",
+                  "filter": "brightness(0.6)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 28.2,
+                  "year": 85.3,
+                  "size": "11407/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "Great oceans of ethane and thin sheets of water ice cover the surface of H-173. Ice mining might be possible here, but there are surely richer sources on more agreeable worlds.\n"
+                },
+                {
+                  "name": "h-174",
+                  "image": "mimas-texture.webp",
+                  "filter": "brightness(0.5)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 144.1,
+                  "year": 986.9,
+                  "size": "7141/6378",
+                  "day": "1",
+                  "coords": "n",
+                  "details": "Frozen ethane covers H-174, the ice sheets interrupted only by low mountains and shallow craters. Thanks to dust clouds in the inner system, little sunlight reaches this world.\n"
+                }
+              ]
             }
           ]
         }
