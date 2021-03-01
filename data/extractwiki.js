@@ -7,7 +7,6 @@ function getPlanetData () {
     "clouds": "",
     "cloudsFilter": "",
     "rings": false,
-    "ringsColor": "",
     "texture": true,
     "orbit": "",
     "year": "1",
@@ -20,9 +19,13 @@ function getPlanetData () {
   var arrayCoords = ["n", "ne", "e", "se", "s", "sw", "w", "nw"];
 
   function getPlanetDetails () {
-    var aDetails = []
-    $('#mw-content-text > h2:first-of-type ~ p').each(function(){
-      aDetails.push($(this).text())
+    var aDetails = [];
+    var i = 0;
+    $('#mw-content-text h2:first-of-type ~ p').each(function(){
+      i++;
+      if(i === 1) {
+        aDetails.push($(this).text());
+      }
     });
 
     var sSetails = aDetails.join('<br><br>');
@@ -37,7 +40,9 @@ function getPlanetData () {
   planetData.day = ($('[data-source="daylength"] div').length > 0) ? parseFloat($('[data-source="daylength"] div').html()) + "/24" : "1";
   planetData.coords = arrayCoords[Math.floor(Math.random() * arrayCoords.length)];
 
-  planetData.details = getPlanetDetails(); $('#mw-content-text h2 ~ p').each(function(){
+  planetData.details = getPlanetDetails(); 
+
+  $('#mw-content-text h2 ~ p').each(function(){
     console.log($(this).text())
   })
 
