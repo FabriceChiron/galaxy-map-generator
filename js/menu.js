@@ -53,6 +53,7 @@ const generateMenu = (galaxyMaps) => {
   let nbClusters = 0;
   let nbSystems = 0;
   let nbPlanets = 0;
+  let nbConstructs = 0;
   let nbSatellites = 0;
 
   let mapInput = createElem('input', navContent, {
@@ -201,7 +202,11 @@ const generateMenu = (galaxyMaps) => {
                   planetLink.innerHTML += ` <span class="symbols home">u</span>`;
                 }
 
-                nbPlanets++;
+                if(planet.notSphere) {
+                  nbConstructs++;
+                } else {
+                  nbPlanets++;
+                }
 
                 if(planet.bodies && planet.bodies.length > 0) {
                   let planetLabel = createElem('label', planetDiv, {
@@ -251,6 +256,7 @@ const generateMenu = (galaxyMaps) => {
     `Clusters: ${nbClusters}\n`,
     `Systems: ${nbSystems}\n`,
     `Planets: ${nbPlanets}\n`,
+    `Constructs: ${nbConstructs}\n`,
     `Satellites: ${nbSatellites}`
   );
 

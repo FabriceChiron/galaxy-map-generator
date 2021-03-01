@@ -31,9 +31,20 @@ class StellarSystem {
     `;
 
     if(this.obj.bodies && this.obj.bodies.length > 0 || (this.obj.asteroids && this.obj.asteroids.length > 0)) {
+      let planets = 0;
+      let constructs = 0;
+      this.obj.bodies.map(item => {
+        if(item.notSphere) {
+          constructs++;
+        } else {
+          planets++;
+        }
+      })
+
       this.stellarSystemEl.querySelector('.name').innerHTML += `
       <ul class='details'>
-        ${(this.obj.bodies.length) ? '<li>Planets: <b>'+this.obj.bodies.length+'</b></li>':''}
+        ${(planets > 0) ? '<li>Planets: <b>'+planets+'</b></li>':''}
+        ${(constructs > 0) ? '<li>Constructs: <b>'+constructs+'</b></li>':''}
         ${(this.obj.asteroids && this.obj.asteroids.length > 0) ? '<li>Asteroid Fields: <b>'+this.obj.asteroids.length+'</b></li>':''}
       </ul>
       `
