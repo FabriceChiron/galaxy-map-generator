@@ -12787,6 +12787,417 @@
                   "details": "Frozen ethane covers H-174, the ice sheets interrupted only by low mountains and shallow craters. Thanks to dust clouds in the inner system, little sunlight reaches this world.\n"
                 }
               ]
+            },
+            {
+              "name": "Valay",
+              "star": "Valay",
+              "top": 58.8,
+              "left": 92,
+              "filter": "saturate(0.1) brightness(2)",
+              "bodies": [
+                {
+                  "name": "hipaal",
+                  "image": "Volcanic.webp",
+                  "filter": "saturate(0.1) contrast(1.2)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 0.5,
+                  "year": 0.3,
+                  "size": "3256/6378",
+                  "day": "1",
+                  "coords": "s",
+                  "details": "Much of Hipaal's molten surface solidifies during the northern and southern hemispheres' short winters, reshaping the landscape every year.\n"
+                },
+                {
+                  "name": "phostaan",
+                  "image": "callisto-texture.webp",
+                  "filter": "saturate(0.8) contrast(0.8) hue-rotate(40deg)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "medium-20",
+                        "size": "100"
+                      },
+                      {
+                        "image": "thinner-30",
+                        "size": "100"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 1.3,
+                  "year": 1.2,
+                  "size": "6046/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "Phostaan is largely barren, bit its atmosphere is theoretically capable of producing rainfall. Powerful localized storms could appear as often as three or four times a year.\n"
+                },
+                {
+                  "name": "pas-16",
+                  "image": "pluto-texture2.webp",
+                  "filter": "brightness(0.7) contrast(0.8)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 5.3,
+                  "year": 9.5,
+                  "size": "6693/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "Pas-16 travels in a synchronous orbit around its sun, leaving one side always lit and the other always dark. The reason for this is unclear, but a thread of Scourge within its path is suspect.\n"
+                },
+                {
+                  "name": "masiid",
+                  "image": "Tropical.webp",
+                  "filter": "saturate(0.05) brightness(0.4) contrast(1.1)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 6.2,
+                  "year": 11.9,
+                  "size": "8529/6378",
+                  "day": "1",
+                  "coords": "se",
+                  "details": "Platinum and cobalt form the outer layer of Masiid's surface, pitted and cracked by innumerable meteor strikes.\n"
+                },
+                {
+                  "name": "Ark Leusinia",
+                  "image": "ark-3.webp",
+                  "notSphere": true,
+                  "hideCoords": true,
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 8,
+                  "year": 15,
+                  "size": "3",
+                  "day": "24/24",
+                  "coords": "n",
+                  "details": "<ul><li>Projected 20,000, currently detecting 12,000</li><li>Status: Multiple hull breaches, power levels sub-operational</li></ul>"
+                }
+              ]
+            },
+            {
+              "name": "Vaotessa",
+              "star": "Vaotessa",
+              "top": 72,
+              "left": 84,
+              "filter": "hue-rotate(-45deg)",
+              "asteroids": [
+                {
+                  "orbit": 1.5,
+                  "year": 1.5,
+                  "bodies": 50
+                }
+              ],
+              "bodies": [
+                {
+                  "name": "fen sayat",
+                  "image": "Volcanic.webp",
+                  "filter": "contrast(2) brightness(0.1)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 0.2,
+                  "year": 0.1,
+                  "size": "11201/6378",
+                  "day": "1",
+                  "coords": "se",
+                  "details": "Fen Sayat's crushingly heavy gravity may be more dangerous than its molten seas. It was named for a mythical angaran warlord.\n"
+                },
+                {
+                  "name": "netiquur",
+                  "image": "Rockplates1.webp",
+                  "filter": "saturate(0.2) hue-rotate(50deg) contrast(0.7)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 1.1,
+                  "year": 1.3,
+                  "size": "3774/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "Though Netiquur is arid and cold, liquid water can be found in its underground seas and during rare rains. Multiple angaran colonies were planned; none were ever founded.\n"
+                },
+                {
+                  "name": "stodraan",
+                  "image": "mercury-texture.webp",
+                  "filter": "brightness(0.5) contrast(1.2)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 2.2,
+                  "year": 3.8,
+                  "size": "3379/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "The largest moon of the gas giant Irivosna, Stodraan was at one time believed by angaran astronomers to contain pockets of water ice and, perhaps, microbial life.\n"
+                },
+                {
+                  "name": "prachonyi",
+                  "image": "Martian.webp",
+                  "filter": "hue-rotate(100deg) saturate(0.2)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thicker-20",
+                        "size": "100"
+                      },
+                      {
+                        "image": "thin-30",
+                        "size": "100"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 3.9,
+                  "year": 8.6,
+                  "size": "10649/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "Named for an angaran novel about a never-ending winter, Prachonyi is a strong candidate for mechanized and automated water ice mining.\n"
+                }
+              ]
+            },
+            {
+              "name": "Zaubray",
+              "star": "Zaubray",
+              "top": 64.7,
+              "left": 22.4,
+              "filter": "hue-rotate(-200deg)",
+              "asteroids": [
+                {
+                  "orbit": 15.3,
+                  "year": 15.3,
+                  "bodies": 100
+                }
+              ],
+              "bodies": [
+                {
+                  "name": "grogorna",
+                  "image": "Volcanic.webp",
+                  "filter": "contrast(1.7) saturate(0.2) brightness(0.5)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thin-20",
+                        "size": "100"
+                      },
+                      {
+                        "image": "thinner-30",
+                        "size": "100"
+                      },
+                      {
+                        "image": "default",
+                        "size": "75"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 10.7,
+                  "year": 8.2,
+                  "size": "4763/6378",
+                  "day": "1",
+                  "coords": "w",
+                  "details": "The radiation of the Zaubray sun keeps much of Grogorna molten at all times. Oceans of magma thwart all but the fiercest attempts at exploration.\n"
+                },
+                {
+                  "name": "dubraaci",
+                  "image": "Terrestrial2.webp",
+                  "filter": "saturate(0.2)",
+                  "overlay": "",
+                  "clouds": "earth-clouds.webp",
+                  "cloudsFilter": "opacity(10%)",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thin-10",
+                        "size": "100"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 23.9,
+                  "year": 27.6,
+                  "size": "6946/6378",
+                  "day": "1",
+                  "coords": "e",
+                  "details": "Dubraaci's nickel and cobalt surface defies the planet's intense heat to remain solid. Trace readings of element zero are present but difficult to pinpoint.\n"
+                },
+                {
+                  "name": "elaaden",
+                  "image": "titan-texture.webp",
+                  "filter": "contrast(0.6)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 32.8,
+                  "year": 44.4,
+                  "size": "6168/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "A moistureless, sweltering landscape covered by a large number of cover-subsistence sinkholes, Elaaden still supports life to a limited degree. The fledgling krogan colony of New Tuchanka is here, along with what appear to be abandoned mining facilities, scattered outposts and camps.\n"
+                },
+                {
+                  "name": "h-315",
+                  "image": "mimas-texture.webp",
+                  "filter": "hue-rotate(170deg) saturate(3.5) brightness(0.7)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 43.9,
+                  "year": 68.8,
+                  "size": "5692/6378",
+                  "day": "1",
+                  "coords": "n",
+                  "details": "H-315's day is long enough and its atmosphere thin enough that its temperature can plummet at night. At either extreme, it should be considered hazardous.\n"
+                }
+              ]
+            },
+            {
+              "name": "Zheng He",
+              "star": "Zheng He",
+              "top": 62,
+              "left": 72.3,
+              "filter": "hue-rotate(-260deg) brightness(1.3)",
+              "bodies": [
+                {
+                  "name": "fei xin",
+                  "image": "Volcanic.webp",
+                  "filter": "contrast(1.3) saturate(0.2) brightness(0.8)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 1.3,
+                  "year": 0.8,
+                  "size": "9317/6378",
+                  "day": "1",
+                  "coords": "se",
+                  "details": "Fei Xin is an extremely hot and volcanically active world. A thick carbon dioxide and ethane atmosphere covers an iron-rich surface with deposits of calcium.\n"
+                },
+                {
+                  "name": "h-599",
+                  "image": "pluto-texture2.webp",
+                  "filter": "contrast(0.5)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 3.2,
+                  "year": 3.2,
+                  "size": "8920/6378",
+                  "day": "1",
+                  "coords": "sw",
+                  "details": "With its distinctive ring, H-599 was used as a rendezvous point during the Nexus' early attempts at exploration. Pilots still use the term \"a 99 run\" for a short journey with numerous hazards.\n"
+                },
+                {
+                  "name": "gong zhen",
+                   "image": "pluto-texture2.webp",
+                  "filter": "contrast(0.9) hue-rotate(70deg)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "default",
+                        "size": "100"
+                      },
+                      {
+                        "image": "default",
+                        "size": "100"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 29.2,
+                  "year": 89.7,
+                  "size": "2720/6378",
+                  "day": "1",
+                  "coords": "nw",
+                  "details": "Gong Zhen is a small but scorching world, partially due to a crushing nitrogen-carbon dioxide atmosphere. Evidence suggests its icy ring was once a small comet.\n"
+                },
+                {
+                  "name": "Nexus",
+                  "image": "nexus.webp",
+                  "notSphere": true,
+                  "hideCoords": true,
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": "32",
+                  "year": "32",
+                  "size": "3",
+                  "day": "24/24",
+                  "coords": "se",
+                  "details": "Headquarters of the Andromeda Initiative, the Nexus is a massive space station designed to anchor the returning arks, process resources, and support colonists before their departure to new worlds. All new arrivals must pass quarantine."
+                },
+                {
+                  "name": "ma huan",
+                  "image": "Gaseous10.webp",
+                  "filter": "saturate(0.3)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "thin-50",
+                        "size": "100"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "tilt": 40,
+                  "orbit": 94.7,
+                  "year": 526,
+                  "size": "45011/6378",
+                  "day": "1",
+                  "coords": "ne",
+                  "details": "Ma Huan is largely composed of hydrogen and methane. Its relative proximity to the Nexus makes it a useful core discharge site. Plans for helium-3 skimming station are in progress.\n"
+                }
+              ]
             }
           ]
         }
