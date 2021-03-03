@@ -10500,7 +10500,7 @@
                   "size": "2841/6378",
                   "day": "1",
                   "coords": "nw",
-                  "details": ""
+                  "details": "Evidence of a kett research outpost sits atop one of Tobonoor's glaciers. The outpost has been dismantled, however; anything the kett found is long since gone."
                 }
               ]
             },
@@ -10760,7 +10760,7 @@
                   "size": "9828/6378",
                   "day": "1",
                   "coords": "sw",
-                  "details": ""
+                  "details": "Nicknamed \"Gorgeous\" by the science team, H-202 has a surface composed mainly of tin and boron. Traces of organic life are present in its rings; they may have been formed from a destroyed satellite."
                 }
               ]
             },
@@ -10866,7 +10866,7 @@
                   "size": "64742/6378",
                   "day": "1",
                   "coords": "se",
-                  "details": ""
+                  "details": "Pas-32 is, according to our best calculations, positioned at a \"safe distance\" from the Scourge, such that observations made from Pas-32 are not wildly distorted by Scourge effects."
                 }
               ]
             },
@@ -10943,7 +10943,7 @@
                   "size": "31783/6378",
                   "day": "1",
                   "coords": "ne",
-                  "details": ""
+                  "details": "Despite its size, this gas giant was not visible from the Milky Way galaxy during early surveys. Whether it was somehow missed or affected by the Scourge is unclear."
                 },
                 {
                   "name": "ossqyu",
@@ -10959,7 +10959,7 @@
                   "size": "3783/6378",
                   "day": "1",
                   "coords": "e",
-                  "details": ""
+                  "details": "Gold and silver abound in the thin rings surrounding this icy world, likely caused by numerous meteor impacts over hundreds of millennia."
                 },
                 {
                   "name": "huiton",
@@ -11094,7 +11094,7 @@
                   "size": "7369/6378",
                   "day": "1",
                   "coords": "ne",
-                  "details": ""
+                  "details": "Ditivios is largely covered in oceans of nitrogen churned by powerful winds. The storms make detailed surface scans difficult."
                 },
                 {
                   "name": "pas-55",
@@ -11190,7 +11190,7 @@
                   "size": "3289/6378",
                   "day": "1",
                   "coords": "w",
-                  "details": ""
+                  "details": "Aya is a small and lush tropical world. Its unique position, hidden by both the Scourge and Heleus's black hole, has allowed it to go undetected by the kett."
                 },
                 {
                   "name": "obayro",
@@ -11282,7 +11282,7 @@
                   "size": "11963/6378",
                   "day": "1",
                   "coords": "s",
-                  "details": ""
+                  "details": "Thanks to Korvath's thin atmosphere, its brutally cold deserts can reach extremely high temperatures in direct sunlight. Limit exploration to twilight hours only."
                 },
                 {
                   "name": "reyer",
@@ -11330,7 +11330,7 @@
                   "size": "5103/6378",
                   "day": "1",
                   "coords": "nw",
-                  "details": ""
+                  "details": "This outlying world is comprised of iron and frozen nitrogen. One oddity stands out: certain geological features suggest the nitrogen seas were once liquid."
                 }
               ]
             },
@@ -11515,7 +11515,7 @@
                   "size": "54173/6378",
                   "day": "1",
                   "coords": "ne",
-                  "details": ""
+                  "details": "Milky Way surveys suggested two gas giants were present in Ratul. Could the Scourge have collapsed them into a single world in less than six centuries? Or is something else at work?"
                 },
                 {
                   "name": "govok's folly",
@@ -11531,7 +11531,7 @@
                   "size": "10782/6378",
                   "day": "1",
                   "coords": "n",
-                  "details": ""
+                  "details": "The Scourge and some unusual orbital mechanics leave Govok's Folly ice bound at night and boiling during the day. The outcast Govok attempted to take advantage of this, to little avail."
                 }
               ]
             },
