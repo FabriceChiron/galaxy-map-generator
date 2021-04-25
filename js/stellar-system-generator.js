@@ -643,21 +643,32 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
       });
     }
 
-
-    [...document.querySelectorAll('.astralBody.planet')].map(planet => {
-      const parentOrbit = planet.closest('.orbit');
-      setInterval(function(){
-        if(!isInViewport(planet)) {
-          // console.log('!isInViewport', self.name);
-          if(!parentOrbit.classList.contains('outside')) {
-            parentOrbit.classList.add('outside');
-          }
-        } else {
-          // console.log('isInViewport', self.name);
+    let checkIfOutside = (entries, observer) => {
+      entries.forEach(entry => {
+        const parentOrbit = entry.target.closest('.orbit');
+        
+        if(entry.isIntersecting) {
+          // console.log(entry.target.querySelector('.name').innerHTML);
           parentOrbit.classList.remove('outside');
         }
-      }, 2000)
-    })
+        else {
+          parentOrbit.classList.add('outside');
+        }
+      });
+    };
+
+    let viewPortOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0
+    }
+
+    let inViewPort = new IntersectionObserver(checkIfOutside, viewPortOptions);
+
+
+    [...document.querySelectorAll('.astralBody.planet')].map(planet => {
+      inViewPort.observe(planet);
+    });
 
     setTimeout(function() {
       // setAttributes(sectionSystem, {
