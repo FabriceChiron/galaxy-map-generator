@@ -63,6 +63,10 @@ body {
   --shipLengthButton: 1.2em;
   cursor: var(--cursor);
 
+  &.no-webp {
+    background-image: url('../img/2k_stars_milky_way.jpg');
+  }
+
   &[data-starship="true"] {
     --cursorImg: url('../img/cursor.svg');
 

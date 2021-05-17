@@ -261,7 +261,7 @@ class AstralBody {
     if(this.clouds === true) {
       cloudsBg = `background-image: url('img/png-hd/${this.name}-clouds.png');`;
     } else {
-      cloudsBg = `background-image: url('img/textures/${this.clouds}');`;
+      cloudsBg = `background-image: url('img/textures/${this.clouds}.${imgFormat}');`;
     }
 
     let cloudsFlt;
@@ -309,10 +309,10 @@ class AstralBody {
 
     if(this.image) {
       if(this.image !== 'png' && this.image !== 'jpg') {
-        bg = `background-image: url('img/textures/${this.image}');`; 
+        bg = `background-image: url('img/textures/${this.image}.${imgFormat}');`; 
       } else {
         let subFolder = (this.bodyType === 'satellite') ? `${this.parentName}/` : '';
-        bg = `background-image: url('img/png-hd/${subFolder}${this.name}${this.texture}.${this.image}');`;
+        bg = `background-image: url('img/png-hd/${subFolder}${this.name}${this.texture}.${this.image}.${imgFormat}');`;
       }
       
       if(this.notSphere === false) {
@@ -558,7 +558,7 @@ createStellarSystem = (system, targetCoords, path, showStarShip) => {
 
     if(system.bgImage) {
       // console.log('system.bgImage', system.bgImage);
-      sectionSystem.style.background = `url(img/galaxy-map/clusters/${system.bgImage})`;
+      sectionSystem.style.background = `url(img/galaxy-map/clusters/${system.bgImage}.${imgFormat})`;
       sectionSystem.style.backgroundSize = `contain`;
     }
 

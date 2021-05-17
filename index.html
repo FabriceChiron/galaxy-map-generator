@@ -38,6 +38,15 @@
   <script src="js/mobile-detect.min.js"></script>
   <script src="js/utils.js"></script>
   <script defer>
+    let supportsWebp = support_format_webp();
+    let imgFormat = 'webp';
+    
+    if(!supportsWebp) {
+      imgFormat = 'png';
+    }
+  </script>
+
+  <script defer>
     const md = new MobileDetect(window.navigator.userAgent);
     const isMobile = md.mobile();
 

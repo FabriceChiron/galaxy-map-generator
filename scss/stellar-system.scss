@@ -12,6 +12,12 @@ body.touch {
   }
 }
 
+.no-webp {
+  .stellar-system_section {
+    background-image: url('../img/2k_stars_milky_way.jpg');
+  }  
+}
+
 .stellar-system_section {
   // --top: 0;
   // --bottom: 0;
@@ -133,6 +139,16 @@ body.touch {
 
 .orbit:hover .mask-shadow.satellites .toclip .checkArea {
   height: calc(var(--body-size) * 2);
+}
+
+.no-webp {
+  .stellar-system .orbit.black-hole {
+    .position .astralBody-holder .astralBody {
+      &:before {
+        background-image: url(../img/galaxy-map/black-hole-warp-6.png);
+      }
+    }  
+  }
 }
 
 .stellar-system .orbit.black-hole {
