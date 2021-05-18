@@ -1,5 +1,11 @@
 body:not(.allows-starship) .stellar-system_section {
-  cursor: move;
+  // cursor: grab;
+  
+  cursor: grab;
+
+  &.dragging {
+    cursor: grabbing;
+  }
 
   .orbit .astralBody-holder {
     cursor: auto;
@@ -324,6 +330,8 @@ body.touch {
   transition: transform var(--transition-duration) ease;
   pointer-events: none;
   position: relative;
+
+
   // background: rgba(255,0,0, 0.1);
 
   &:hover {
@@ -473,6 +481,7 @@ body.touch {
   // transform-style: preserve-3d;
   animation: orbit var(--orbit-duration) infinite linear;
   box-shadow: 0 0 0px 1px  rgba(255,255,255,.03), inset 0 0 0px 1px rgba(255,255,255,.03);
+  box-shadow: 0 0 0px 1px  rgba(83,203,241,.03), inset 0 0 0px 1px rgba(83,203,241,.03);
   // border: 2px solid rgba(255,255,255,.1);
   width: calc(var(--orbit-size) + var(--body-size));
   height: calc(var(--orbit-size) + var(--body-size));
@@ -1111,6 +1120,7 @@ body.touch {
 
   &:not(.asteroids):not(.star):hover {
     box-shadow: 0 0 0px 1px  rgba(255,255,255,.25), inset 0 0 0px 1px rgba(255,255,255,.25);
+    box-shadow: 0 0 0px 1px  rgba(83,203,241,.25), inset 0 0 0px 1px rgba(83,203,241,.25);
     // border: 2px solid rgba(255,255,255,.2);
   
     .position {

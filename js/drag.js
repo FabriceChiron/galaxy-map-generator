@@ -23,7 +23,7 @@ function handleDrag(ev) {
         lastPosX = elem.offsetLeft;
         lastPosY = elem.offsetTop;
       }
-      
+
       var posX = ev.deltaX + lastPosX;
       var posY = ev.deltaY + lastPosY;
       
@@ -78,6 +78,7 @@ function dragElement(elmnt) {
 
   function elementDrag(e) {
     elmnt.classList.add('dragging');
+    elmnt.closest('.stellar-system_section').style.cursor = 'grabbing';
     e = e || window.event;
     e.preventDefault();
     // calculate the new cursor position:
@@ -103,6 +104,7 @@ function dragElement(elmnt) {
     document.onmouseup = null;
     document.onmousemove = null;
     elmnt.classList.remove('dragging');
+    elmnt.closest('.stellar-system_section').style.cursor = 'grab';
   }
 }
 

@@ -1,3 +1,17 @@
+const displayWarning = (userAgent) => {
+  const popin = createElem('div', document.body, {
+    id: 'popin'
+  });
+
+  const popinToolbar = createElem('div', popin, {
+    class: 'popin-toolbar'
+  });
+
+  const btnClosePopin = createElem('button', popin, {
+    class: 'close-popin'
+  });
+}
+
 const support_format_webp = () => {
  const elem = document.createElement('canvas');
 
