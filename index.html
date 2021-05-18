@@ -38,6 +38,29 @@
   <script src="js/mobile-detect.min.js"></script>
   <script src="js/utils.js"></script>
   <script defer>
+    let supportsWebp = support_format_webp();
+    supportsWebp = false;
+
+    let imgFormat = 'webp'; 
+    if(!supportsWebp) {
+      imgFormat = 'png';
+    }
+
+    if(!window.localStorage.getItem('warning')) {
+      displayWarning(navigator.userAgent.includes('Chrome'))
+    }
+    // if(navigator.userAgent.includes('Chrome')){
+    // }
+    // else {
+    //   alert(
+    //   `Users beware :
+    //   This website was made using Chromium Browsers experimental features.
+    //   Other browsers (such as Safari or Firefox) are not able to display everything as intended.`);
+    // }
+
+  </script>
+
+  <script defer>
     const md = new MobileDetect(window.navigator.userAgent);
     const isMobile = md.mobile();
 
@@ -108,51 +131,51 @@
           
           <div class="setting">
             <span title="Click to reset angle">Angle:</span>
-            <input type="range" id="change-angle" name="angle" min="-90" max="90" value="22" default="22" step="1" onchange="changeInput('angle', this.value, true); ">
+            <input type="range" id="change-angle" name="angle" min="-90" max="90" value="22" default="22" step="1" oninput="changeInput('angle', this.value, true); ">
             <span>22</span>
           </div>
           
           <div class="setting">
             <span title="Click to reset axis">Axis:</span>
-            <input type="range" id="change-axis" name="axis" min="-180" max="180" value="0" default="0" step="45" onchange="changeInput('axis', this.value, true); ">
+            <input type="range" id="change-axis" name="axis" min="-180" max="180" value="0" default="0" step="45" oninput="changeInput('axis', this.value, true); ">
             <span>22</span>
           </div>
 
           <div class="setting">
             <span title="Click to reset perspective">Perspective:</span>
 
-            <input type="range" id="change-perspective" name="perspective" max="1010" min="50" value="1010" default="1010" step="10" onchange="changeInput('perspective', this.value, true); ">
+            <input type="range" id="change-perspective" name="perspective" max="1010" min="50" value="1010" default="1010" step="10" oninput="changeInput('perspective', this.value, true); ">
 
             <span>none</span>
           </div>
 
           <div class="setting">
             <span title="Click to reset orbit">Orbit scale:</span>
-            <input type="range" id="change-orbit" name="orbit" min=".05" max="10" value="3" default="3" step=".05" onchange="changeInput('orbit', this.value, true);">
+            <input type="range" id="change-orbit" name="orbit" min=".05" max="10" value="3" default="3" step=".05" oninput="changeInput('orbit', this.value, true);">
             <span>15</span>
           </div>
 
           <div class="setting">
             <span title="Click to reset planet">Planet scale:</span>
-            <input type="range" id="change-planet" name="planet" min="0.25" max="2.5" value="1" default="1" step=".25" onchange="changeInput('planet', this.value, true)">
+            <input type="range" id="change-planet" name="planet" min="0.25" max="2.5" value="1" default="1" step=".25" oninput="changeInput('planet', this.value, true)">
             <span>1</span>
           </div>
 
           <div class="setting">
             <span title="Click to reset year">Year duration:</span>
-            <input type="range" id="change-year" name="year" min="5" max="60" value="30" default="30" step="5" onchange="changeInput('year', this.value, true)">
+            <input type="range" id="change-year" name="year" min="5" max="60" value="30" default="30" step="5" oninput="changeInput('year', this.value, true)">
             <span>1</span>
           </div>
 
           <div class="setting">
             <span title="Click to reset day">Day duration:</span>
-            <input type="range" id="change-day" name="day" min=".5" max="25" value="10" default="10" step=".5" onchange="changeInput('day', this.value, true)">
+            <input type="range" id="change-day" name="day" min=".5" max="25" value="10" default="10" step=".5" oninput="changeInput('day', this.value, true)">
             <span>1</span>
           </div>
 
           <div class="setting">
             <span title="Click to reset ship">Ship size:</span>
-            <input type="range" id="change-ship" name="ship" min=".5" max="10" value="3.5" default="3.5" step=".25" onchange="changeInput('ship', this.value, true)">
+            <input type="range" id="change-ship" name="ship" min=".5" max="10" value="3.5" default="3.5" step=".25" oninput="changeInput('ship', this.value, true)">
             <span>1</span>
           </div>
 

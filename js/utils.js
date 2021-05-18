@@ -1,3 +1,32 @@
+const displayWarning = (userAgent) => {
+  const popin = createElem('div', document.body, {
+    id: 'popin'
+  });
+
+  const popinToolbar = createElem('div', popin, {
+    class: 'popin-toolbar'
+  });
+
+  const btnClosePopin = createElem('button', popin, {
+    class: 'close-popin'
+  });
+}
+
+const support_format_webp = () => {
+ const elem = document.createElement('canvas');
+
+ if (!!(elem.getContext && elem.getContext('2d')))
+ {
+  // was able or not to get WebP representation
+  return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+ }
+ else
+ {
+  // very old browser like IE 8, canvas not supported
+  return false;
+ }
+}
+
 const setAttributes = (el, attrs) => {
   for(var key in attrs) {
     el.setAttribute(key, attrs[key]);

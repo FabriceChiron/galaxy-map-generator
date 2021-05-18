@@ -24,7 +24,7 @@ class Galaxy {
             --galacticEndAngleZ: 360deg;
             --galacticSpinDuration: ${this.obj.animation.duration};
             ">
-              <div class="holder-image" style="background-image:url('img/galaxy-map/${spaceToDash(this.obj.name).toLowerCase()}-blur.webp')"></div>
+              <div class="holder-image" style="background-image:url('img/galaxy-map/${spaceToDash(this.obj.name).toLowerCase()}-blur.${imgFormat}')"></div>
               <div class="clusters"></div>
             </div>
           </div>

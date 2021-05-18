@@ -93,7 +93,7 @@ class Cluster {
     if(this.image) {
       setAttributes(this.clusterEl.querySelector('.container'), {
         style: `
-          background: url('img/galaxy-map/clusters/${this.image}') center no-repeat;
+          background: url('img/galaxy-map/clusters/${this.image}.${imgFormat}') center no-repeat;
           background-size: contain;`,
       });
     }

@@ -32,6 +32,10 @@ fetch('data/galaxy-maps.json')
     initDrag(document.body);
   }
 
+  if(!supportsWebp) {
+    document.body.classList.add('no-webp');
+  }
+
  /*   if(allowDrag === true) {
       const myBlock = document.querySelector('body');
       initDrag(myBlock);
