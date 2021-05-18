@@ -1,4 +1,4 @@
-const displayWarning = (userAgent) => {
+const displayWarning = (isChrome) => {
   const popin = createElem('div', document.body, {
     id: 'popin'
   });
@@ -7,9 +7,43 @@ const displayWarning = (userAgent) => {
     class: 'popin-toolbar'
   });
 
-  const btnClosePopin = createElem('button', popin, {
-    class: 'close-popin'
+  const popinTitle = createElem('h2', popinToolbar);
+  popinToolbar.innerHTML = '<h2>Users beware :</h2>';
+
+  const btnClosePopin = createElem('button', popinToolbar, {
+    class: 'close-popin symbols'
   });
+  btnClosePopin.innerText = 'Î';
+
+  btnClosePopin.onclick = () => {
+    popin.remove();
+    if(isChrome) {
+      window.localStorage.setItem('warning', 'done');
+    }
+  }
+
+  const popinMessageContainer = createElem('div', popin, {
+    class: 'message-container'
+  });
+
+  let message;
+
+  switch (isChrome) {
+    case true:
+      message = `This website was made using Chromium Browsers experimental features, and needs a reasonably powerful GPU in order to work properly.`
+    break;
+
+    case false:
+      message = `This website was made using Chromium Browsers experimental features.<br>Other browsers (such as Safari or Firefox) are not able to display everything as intended.`
+    break;
+  }
+
+  popinMessageContainer.innerHTML = message;
+
+  setTimeout(function() {
+    popin.classList.add('show');
+  }, 300);
+
 }
 
 const support_format_webp = () => {

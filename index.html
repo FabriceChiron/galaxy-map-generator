@@ -38,17 +38,7 @@
   <script src="js/mobile-detect.min.js"></script>
   <script src="js/utils.js"></script>
   <script defer>
-    let supportsWebp = support_format_webp();
-    supportsWebp = false;
 
-    let imgFormat = 'webp'; 
-    if(!supportsWebp) {
-      imgFormat = 'png';
-    }
-
-    if(!window.localStorage.getItem('warning')) {
-      displayWarning(navigator.userAgent.includes('Chrome'))
-    }
     // if(navigator.userAgent.includes('Chrome')){
     // }
     // else {
@@ -61,6 +51,14 @@
   </script>
 
   <script defer>
+    let supportsWebp = support_format_webp();
+    // supportsWebp = false;
+    
+    let imgFormat = 'webp'; 
+    if(!supportsWebp) {
+      imgFormat = 'png';
+    }
+
     const md = new MobileDetect(window.navigator.userAgent);
     const isMobile = md.mobile();
 
@@ -79,6 +77,10 @@
     document.addEventListener('DOMContentLoaded', (event) => {
       initValues(settings, realSizes);
       document.body.dataset.starship = showStarShip;
+
+      if(!window.localStorage.getItem('warning')) {
+        displayWarning(navigator.userAgent.includes('Chrome'))
+      }
     })
 
 
