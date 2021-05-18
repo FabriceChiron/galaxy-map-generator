@@ -117,6 +117,62 @@ body {
 
 }
 
+#popin {
+  z-index: 10;
+  position: fixed;
+  top: 150%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+
+  border: 2px solid rgb(83, 203, 241);
+  background: rgba(0,0,0,.25);
+  width: 500px;
+  max-width: 80%;
+  font-family: 'mass-effect';
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: all 1s ease-out;
+
+
+  &.show {
+    top: 50%;
+  }
+
+  .popin-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h2 {
+      margin: 0;
+    }
+
+    button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 2.5em;
+      align-self: flex-start;
+      line-height: 1em;
+      padding: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      outline: 2px solid #53cbf1;
+      margin: 0;
+    }
+  }
+
+  .message-container {
+    line-height: 2em;
+  }
+}
+
 .copyright {
   font-weight: 100;
   
@@ -469,6 +525,7 @@ label[for="toggle-lightweight"] {
   box-sizing: border-box;
   position: relative;
   z-index: 3;
+  backdrop-filter: blur(10px);
 
   @media screen and (orientation: portrait) {
     align-items: center;

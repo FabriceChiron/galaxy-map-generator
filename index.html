@@ -38,29 +38,27 @@
   <script src="js/mobile-detect.min.js"></script>
   <script src="js/utils.js"></script>
   <script defer>
-    let supportsWebp = support_format_webp();
-    supportsWebp = false;
 
+    // if(navigator.userAgent.includes('Chrome')){
+    // }
+    // else {
+    //   alert(
+    //   `Users beware :
+    //   This website was made using Chromium Browsers experimental features.
+    //   Other browsers (such as Safari or Firefox) are not able to display everything as intended.`);
+    // }
+
+  </script>
+
+  <script defer>
+    let supportsWebp = support_format_webp();
+    // supportsWebp = false;
+    
     let imgFormat = 'webp'; 
     if(!supportsWebp) {
       imgFormat = 'png';
     }
 
-    if(navigator.userAgent.includes('Chrome')){
-      if(!window.localStorage.getItem('warning')) {
-        
-      }
-    }
-    else {
-      alert(
-      `Users beware :
-      This website was made using Chromium Browsers experimental features.
-      Other browsers (such as Safari or Firefox) are not able to display everything as intended.`);
-    }
-
-  </script>
-
-  <script defer>
     const md = new MobileDetect(window.navigator.userAgent);
     const isMobile = md.mobile();
 
@@ -79,6 +77,10 @@
     document.addEventListener('DOMContentLoaded', (event) => {
       initValues(settings, realSizes);
       document.body.dataset.starship = showStarShip;
+
+      if(!window.localStorage.getItem('warning')) {
+        displayWarning(navigator.userAgent.includes('Chrome'))
+      }
     })
 
 
