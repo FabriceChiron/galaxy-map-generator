@@ -8137,7 +8137,8 @@
               "hide": true,
               "top": 40,
               "left": 47,
-              "image": "url('./img/galaxy-map/clusters/serpent-nebula');",
+              "image": "url('./img/galaxy-map/clusters/serpent-nebula.webp');",
+              "backgroundSize": "200%",
               "bodies": [
                 {
                   "name": "citadel",
