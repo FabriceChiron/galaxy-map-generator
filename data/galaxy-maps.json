@@ -1964,6 +1964,58 @@
                   "day": "67/24",
                   "coords": "s",
                   "details": "The proximity of the energetic star Hercules causes constant blue and violet auroras in Syided's nitrogen-argon atmosphere. During periods of increased solar flares, the auroras are bright enough to read by on the surface, and can be seen with off-the-shelf optics from a distance of several AU.<br><br>Syided's scorching hot surface is mainly composed of magnesium with deposits of iron. A surprising variety of simple carbon-based life flourishes in a complex network of cave systems that wind through the crust, protected from Hercules' heat and radiation."
+                },
+                {
+                  "name": "eletania",
+                  "image": "Terrestrial3",
+                  "filter": "",
+                  "overlay": "",
+                  "clouds": "earth-clouds",
+                  "cloudsFilter": "",
+                  "rings": {
+                    "details": [
+                      {
+                        "image": "medium-40",
+                        "size": "100"
+                      },
+                      {
+                        "image": "thin-50",
+                        "size": "100"
+                      },
+                      {
+                        "image": "thin-50",
+                        "size": "70"
+                      },
+                      {
+                        "image": "medium-40",
+                        "size": "75"
+                      }
+                    ],
+                    "filter": "hue-rotate(64deg) saturate(0.3) grayscale(0.5) brightness(1.5)"
+                  },
+                  "texture": true,
+                  "orbit": 12.6,
+                  "year": 34.4,
+                  "size": "8864/6378",
+                  "day": "35.6/24",
+                  "coords": "n",
+                  "details": "WARNING: Level 1 Toxic Hazard<br>Eletania appears to be a world eminently suited for colonization. Sadly, appearances are deceiving. It is covered by a verdant carpet of mosses, algae, and lichen, and possesses a thick oxygenated atmosphere, but the animal kingdom is a web of microscopic symbiotic creatures. These are impossible to filter from the air and necessary for the native life to thrive. Unfortunately, they also cause anaphylactic shock when inhaled by non-native life.<br><br>In short, settlement requires either fully sealed environment suits, or replacement of the entire world’s ecosystem. Some have proposed limited colonization at altitudes above the symbiotes' range, or in areas where favorable winds keep the air clear."
+                },
+                {
+                  "name": "zatorus",
+                  "image": "Gaseous6",
+                  "filter": "hue-rotate(0deg)",
+                  "overlay": "",
+                  "clouds": "",
+                  "cloudsFilter": "",
+                  "rings": false,
+                  "texture": true,
+                  "orbit": 27.85,
+                  "year": 113.1,
+                  "size": "52290/6378",
+                  "day": "17.2/24",
+                  "coords": "s",
+                  "details": "Zatorus is a hydrogen-helium gas giant, with high-level decks of sulphur clouds. A layer of hydrocarbons has formed deeper in the atmosphere. Vast electrical storm fronts can be seen flickering across the dark side.\n"
                 }
               ]
             },
