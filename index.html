@@ -79,7 +79,7 @@
       document.body.dataset.starship = showStarShip;
 
       if(!window.localStorage.getItem('warning')) {
-        displayWarning(navigator.userAgent.includes('Chrome'))
+        displayWarning(navigator.userAgent.includes('Chrome') || navigator.userAgent.includes('Firefox'))
       }
     })
 

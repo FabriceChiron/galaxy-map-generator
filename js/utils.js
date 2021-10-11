@@ -1,4 +1,4 @@
-const displayWarning = (isChrome) => {
+const displayWarning = (okBrowser) => {
   const popin = createElem('div', document.body, {
     id: 'popin'
   });
@@ -17,7 +17,7 @@ const displayWarning = (isChrome) => {
 
   btnClosePopin.onclick = () => {
     popin.remove();
-    if(isChrome) {
+    if(okBrowser) {
       window.localStorage.setItem('warning', 'done');
     }
   }
@@ -28,13 +28,13 @@ const displayWarning = (isChrome) => {
 
   let message;
 
-  switch (isChrome) {
+  switch (okBrowser) {
     case true:
-      message = `This website was made using Chromium Browsers experimental features, and needs a reasonably powerful GPU in order to work properly.`
+      message = `This website was made using experimental features, and needs a reasonably powerful GPU in order to work properly.`
     break;
 
     case false:
-      message = `This website was made using Chromium Browsers experimental features.<br>Other browsers (such as Safari or Firefox) are not able to display everything as intended.`
+      message = `This website was made using experimental features.<br>Some browsers (like Safari) are not able to display everything as intended.`
     break;
   }
 
