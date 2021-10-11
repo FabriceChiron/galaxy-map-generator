@@ -933,6 +933,7 @@ body.touch {
       .rings-holder {
         margin-top: 50%;
         margin-left: 50%;
+        transform-style: flat;
       
         .rings {
           --orbit-size: calc(var(--body-size)*3);

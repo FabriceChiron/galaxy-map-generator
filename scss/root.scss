@@ -186,6 +186,11 @@ body {
   }
 }
 
+.stellar-system_section *, 
+#galaxies * {
+    transform-style: preserve-3d;
+}
+
 #mouse-infos {
   position: fixed;
   bottom: 0;
