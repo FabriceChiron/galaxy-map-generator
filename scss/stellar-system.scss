@@ -503,6 +503,7 @@ body.touch {
   &.satellite {
     --addStarSize: 0;
     box-shadow: 0 0 0px 1px rgba(255, 255, 255, 0.02), inset 0 0 0px 1px rgba(255, 255, 255, 0.02);
+    left: 0;
   }
 
   &.asteroids,
@@ -649,6 +650,8 @@ body.touch {
         position: absolute;
         top: var(--top); 
         left: var(--left);
+        top: 0; 
+        left: 0;
         opacity: 0;
         transform: rotateZ(var(--lineAngle));
         transform-origin: var(--transformOrigin);
